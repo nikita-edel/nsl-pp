@@ -17,17 +17,17 @@
 # include "nsl/preprocessor/array/size.h"
 # include "nsl/preprocessor/control/if.h"
 #
-# /* NSL_PP_ARRAY_TO_TUPLE */
+# /* N_PP_ARRAY_TO_TUPLE */
 #
-#    define NSL_PP_ARRAY_TO_TUPLE(array) \
-        NSL_PP_IF \
+#    define N_PP_ARRAY_TO_TUPLE(array) \
+        N_PP_IF \
             ( \
-            NSL_PP_ARRAY_SIZE(array), \
-            NSL_PP_ARRAY_DATA, \
-            NSL_PP_ARRAY_TO_TUPLE_EMPTY \
+            N_PP_ARRAY_SIZE(array), \
+            N_PP_ARRAY_DATA, \
+            N_PP_ARRAY_TO_TUPLE_EMPTY \
             ) \
         (array) \
 /**/
-#    define NSL_PP_ARRAY_TO_TUPLE_EMPTY(array)
+#    define N_PP_ARRAY_TO_TUPLE_EMPTY(array)
 #
 # endif

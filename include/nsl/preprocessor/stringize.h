@@ -16,18 +16,18 @@
 #
 # include "nsl/preprocessor/config/config.h"
 #
-# /* NSL_PP_STR */
+# /* N_PP_STR */
 #
-# if NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_MSVC()
-#    define NSL_PP_STR(text) NSL_PP_STR_A((text))
-#    define NSL_PP_STR_A(arg) NSL_PP_STR_I arg
-# elif NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_MWCC()
-#    define NSL_PP_STR(text) NSL_PP_STR_OO((text))
-#    define NSL_PP_STR_OO(par) NSL_PP_STR_I ## par
+# if N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MSVC()
+#    define N_PP_STR(text) N_PP_STR_A((text))
+#    define N_PP_STR_A(arg) N_PP_STR_I arg
+# elif N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MWCC()
+#    define N_PP_STR(text) N_PP_STR_OO((text))
+#    define N_PP_STR_OO(par) N_PP_STR_I ## par
 # else
-#    define NSL_PP_STR(text) NSL_PP_STR_I(text)
+#    define N_PP_STR(text) N_PP_STR_I(text)
 # endif
 #
-# define NSL_PP_STR_I(...) #__VA_ARGS__
+# define N_PP_STR_I(...) #__VA_ARGS__
 #
 # endif

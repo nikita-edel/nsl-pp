@@ -17,18 +17,18 @@
 # include "nsl/preprocessor/detail/is_unary.h"
 # include "nsl/preprocessor/tuple/rem.h"
 #
-# /* NSL_PP_APPLY */
+# /* N_PP_APPLY */
 #
-# if NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_APPLY(x) NSL_PP_APPLY_I(x)
-#    define NSL_PP_APPLY_I(x) NSL_PP_EXPR_IIF(NSL_PP_IS_UNARY(x), NSL_PP_TUPLE_REM_1 x)
-# elif NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_BCC()
-#    define NSL_PP_APPLY(x) NSL_PP_APPLY_I(x)
-#    define NSL_PP_APPLY_I(x) NSL_PP_APPLY_ ## x
-#    define NSL_PP_APPLY_(x) x
-#    define NSL_PP_APPLY_NSL_PP_NIL
+# if N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_APPLY(x) N_PP_APPLY_I(x)
+#    define N_PP_APPLY_I(x) N_PP_EXPR_IIF(N_PP_IS_UNARY(x), N_PP_TUPLE_REM_1 x)
+# elif N_PP_CONFIG_FLAGS() & N_PP_CONFIG_BCC()
+#    define N_PP_APPLY(x) N_PP_APPLY_I(x)
+#    define N_PP_APPLY_I(x) N_PP_APPLY_ ## x
+#    define N_PP_APPLY_(x) x
+#    define N_PP_APPLY_N_PP_NIL
 # else
-#    define NSL_PP_APPLY(x) NSL_PP_EXPR_IIF(NSL_PP_IS_UNARY(x), NSL_PP_TUPLE_REM_1 x)
+#    define N_PP_APPLY(x) N_PP_EXPR_IIF(N_PP_IS_UNARY(x), N_PP_TUPLE_REM_1 x)
 # endif
 #
 # endif

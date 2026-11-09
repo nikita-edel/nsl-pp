@@ -12,11 +12,11 @@
 # ifndef NSL_PREPROCESSOR_ARITHMETIC_DETAIL_IS_MAXIMUM_NUMBER_H
 # define NSL_PREPROCESSOR_ARITHMETIC_DETAIL_IS_MAXIMUM_NUMBER_H
 #
-# /* NSL_PP_DETAIL_IS_MAXIMUM_NUMBER */
+# /* N_PP_DETAIL_IS_MAXIMUM_NUMBER */
 #
 # include "nsl/preprocessor/comparison/equal.h"
 # include "nsl/preprocessor/arithmetic/detail/maximum_number.h"
 #
-# define NSL_PP_DETAIL_IS_MAXIMUM_NUMBER(x) NSL_PP_EQUAL(x,NSL_PP_DETAIL_MAXIMUM_NUMBER)
+# define N_PP_DETAIL_IS_MAXIMUM_NUMBER(x) N_PP_EQUAL(x,N_PP_DETAIL_MAXIMUM_NUMBER)
 #
 # endif

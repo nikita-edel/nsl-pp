@@ -12,8 +12,8 @@
 # ifndef NSL_PREPROCESSOR_SEQ_PUSH_FRONT_H
 # define NSL_PREPROCESSOR_SEQ_PUSH_FRONT_H
 #
-# /* NSL_PP_SEQ_PUSH_FRONT */
+# /* N_PP_SEQ_PUSH_FRONT */
 #
-# define NSL_PP_SEQ_PUSH_FRONT(seq, elem) (elem)seq
+# define N_PP_SEQ_PUSH_FRONT(seq, elem) (elem)seq
 #
 # endif

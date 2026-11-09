@@ -18,13 +18,13 @@
 # include "nsl/preprocessor/tuple/eat.h"
 # include "nsl/preprocessor/tuple/elem.h"
 #
-# /* NSL_PP_SEQ_FIRST_N */
+# /* N_PP_SEQ_FIRST_N */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_SEQ_FIRST_N(n, seq) NSL_PP_IF(n, NSL_PP_TUPLE_ELEM, NSL_PP_TUPLE_EAT_3)(2, 0, NSL_PP_SEQ_SPLIT(n, seq (nil)))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_SEQ_FIRST_N(n, seq) N_PP_IF(n, N_PP_TUPLE_ELEM, N_PP_TUPLE_EAT_3)(2, 0, N_PP_SEQ_SPLIT(n, seq (nil)))
 # else
-#    define NSL_PP_SEQ_FIRST_N(n, seq) NSL_PP_SEQ_FIRST_N_I(n, seq)
-#    define NSL_PP_SEQ_FIRST_N_I(n, seq) NSL_PP_IF(n, NSL_PP_TUPLE_ELEM, NSL_PP_TUPLE_EAT_3)(2, 0, NSL_PP_SEQ_SPLIT(n, seq (nil)))
+#    define N_PP_SEQ_FIRST_N(n, seq) N_PP_SEQ_FIRST_N_I(n, seq)
+#    define N_PP_SEQ_FIRST_N_I(n, seq) N_PP_IF(n, N_PP_TUPLE_ELEM, N_PP_TUPLE_EAT_3)(2, 0, N_PP_SEQ_SPLIT(n, seq (nil)))
 # endif
 #
 # endif

@@ -18,22 +18,22 @@
 # include "nsl/preprocessor/list/adt.h"
 # include "nsl/preprocessor/list/rest_n.h"
 #
-# /* NSL_PP_LIST_AT */
+# /* N_PP_LIST_AT */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_LIST_AT(list, index) NSL_PP_LIST_FIRST(NSL_PP_LIST_REST_N(index, list))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_LIST_AT(list, index) N_PP_LIST_FIRST(N_PP_LIST_REST_N(index, list))
 # else
-#    define NSL_PP_LIST_AT(list, index) NSL_PP_LIST_AT_I(list, index)
-#    define NSL_PP_LIST_AT_I(list, index) NSL_PP_LIST_FIRST(NSL_PP_LIST_REST_N(index, list))
+#    define N_PP_LIST_AT(list, index) N_PP_LIST_AT_I(list, index)
+#    define N_PP_LIST_AT_I(list, index) N_PP_LIST_FIRST(N_PP_LIST_REST_N(index, list))
 # endif
 #
-# /* NSL_PP_LIST_AT_D */
+# /* N_PP_LIST_AT_D */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_LIST_AT_D(d, list, index) NSL_PP_LIST_FIRST(NSL_PP_LIST_REST_N_D(d, index, list))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_LIST_AT_D(d, list, index) N_PP_LIST_FIRST(N_PP_LIST_REST_N_D(d, index, list))
 # else
-#    define NSL_PP_LIST_AT_D(d, list, index) NSL_PP_LIST_AT_D_I(d, list, index)
-#    define NSL_PP_LIST_AT_D_I(d, list, index) NSL_PP_LIST_FIRST(NSL_PP_LIST_REST_N_D(d, index, list))
+#    define N_PP_LIST_AT_D(d, list, index) N_PP_LIST_AT_D_I(d, list, index)
+#    define N_PP_LIST_AT_D_I(d, list, index) N_PP_LIST_FIRST(N_PP_LIST_REST_N_D(d, index, list))
 # endif
 #
 # endif

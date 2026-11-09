@@ -16,7 +16,7 @@
 #
 # include "nsl/preprocessor/cat.h"
 #
-# define BEGIN typedef int NSL_PP_CAT(test_, __LINE__)[((
+# define BEGIN typedef int N_PP_CAT(test_, __LINE__)[((
 # define END )==1) ? 1 : -1];
 #
 # endif

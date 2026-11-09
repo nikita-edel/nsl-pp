@@ -18,36 +18,36 @@
 # include "nsl/preprocessor/control/iif.h"
 # include "nsl/preprocessor/facilities/is_1.h"
 #
-# /* NSL_PP_ARRAY_DETAIL_GET_DATA */
+# /* N_PP_ARRAY_DETAIL_GET_DATA */
 #
-# define NSL_PP_ARRAY_DETAIL_GET_DATA_NONE(size, data)
+# define N_PP_ARRAY_DETAIL_GET_DATA_NONE(size, data)
 
-# if !(NSL_PP_VARIADICS_MSVC && _MSC_VER <= 1400)
-#    if NSL_PP_VARIADICS_MSVC
-#       define NSL_PP_ARRAY_DETAIL_GET_DATA_ANY_VC_DEFAULT(size, data) NSL_PP_TUPLE_REM(size) data
-#       define NSL_PP_ARRAY_DETAIL_GET_DATA_ANY_VC_CAT(size, data) NSL_PP_TUPLE_REM_CAT(size) data
-#       define NSL_PP_ARRAY_DETAIL_GET_DATA_ANY(size, data) \
-            NSL_PP_IIF \
+# if !(N_PP_VARIADICS_MSVC && _MSC_VER <= 1400)
+#    if N_PP_VARIADICS_MSVC
+#       define N_PP_ARRAY_DETAIL_GET_DATA_ANY_VC_DEFAULT(size, data) N_PP_TUPLE_REM(size) data
+#       define N_PP_ARRAY_DETAIL_GET_DATA_ANY_VC_CAT(size, data) N_PP_TUPLE_REM_CAT(size) data
+#       define N_PP_ARRAY_DETAIL_GET_DATA_ANY(size, data) \
+            N_PP_IIF \
                 ( \
-                NSL_PP_IS_1(size), \
-                NSL_PP_ARRAY_DETAIL_GET_DATA_ANY_VC_CAT, \
-                NSL_PP_ARRAY_DETAIL_GET_DATA_ANY_VC_DEFAULT \
+                N_PP_IS_1(size), \
+                N_PP_ARRAY_DETAIL_GET_DATA_ANY_VC_CAT, \
+                N_PP_ARRAY_DETAIL_GET_DATA_ANY_VC_DEFAULT \
                 ) \
             (size,data) \
 /**/
 #    else
-#       define NSL_PP_ARRAY_DETAIL_GET_DATA_ANY(size, data) NSL_PP_TUPLE_REM(size) data
+#       define N_PP_ARRAY_DETAIL_GET_DATA_ANY(size, data) N_PP_TUPLE_REM(size) data
 #    endif
 # else
-#    define NSL_PP_ARRAY_DETAIL_GET_DATA_ANY(size, data) NSL_PP_TUPLE_REM(size) data
+#    define N_PP_ARRAY_DETAIL_GET_DATA_ANY(size, data) N_PP_TUPLE_REM(size) data
 # endif
 
-# define NSL_PP_ARRAY_DETAIL_GET_DATA(size, data) \
-    NSL_PP_IF \
+# define N_PP_ARRAY_DETAIL_GET_DATA(size, data) \
+    N_PP_IF \
         ( \
         size, \
-        NSL_PP_ARRAY_DETAIL_GET_DATA_ANY, \
-        NSL_PP_ARRAY_DETAIL_GET_DATA_NONE \
+        N_PP_ARRAY_DETAIL_GET_DATA_ANY, \
+        N_PP_ARRAY_DETAIL_GET_DATA_NONE \
         ) \
     (size,data) \
 /**/

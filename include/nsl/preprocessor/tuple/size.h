@@ -19,17 +19,17 @@
 # include "nsl/preprocessor/variadic/has_opt.h"
 # include "nsl/preprocessor/variadic/size.h"
 #
-# if NSL_PP_VARIADIC_HAS_OPT()
-#     if NSL_PP_VARIADICS_MSVC
-#         define NSL_PP_TUPLE_SIZE(tuple) NSL_PP_TUPLE_SIZE_CHECK(NSL_PP_CAT(NSL_PP_VARIADIC_SIZE tuple,))
+# if N_PP_VARIADIC_HAS_OPT()
+#     if N_PP_VARIADICS_MSVC
+#         define N_PP_TUPLE_SIZE(tuple) N_PP_TUPLE_SIZE_CHECK(N_PP_CAT(N_PP_VARIADIC_SIZE tuple,))
 #     else
-#         define NSL_PP_TUPLE_SIZE(tuple) NSL_PP_TUPLE_SIZE_CHECK(NSL_PP_VARIADIC_SIZE tuple)
+#         define N_PP_TUPLE_SIZE(tuple) N_PP_TUPLE_SIZE_CHECK(N_PP_VARIADIC_SIZE tuple)
 #     endif
-#     define NSL_PP_TUPLE_SIZE_CHECK(size) NSL_PP_IF(size,size,1)
-# elif NSL_PP_VARIADICS_MSVC
-#     define NSL_PP_TUPLE_SIZE(tuple) NSL_PP_CAT(NSL_PP_VARIADIC_SIZE tuple,)
+#     define N_PP_TUPLE_SIZE_CHECK(size) N_PP_IF(size,size,1)
+# elif N_PP_VARIADICS_MSVC
+#     define N_PP_TUPLE_SIZE(tuple) N_PP_CAT(N_PP_VARIADIC_SIZE tuple,)
 # else
-#     define NSL_PP_TUPLE_SIZE(tuple) NSL_PP_VARIADIC_SIZE tuple
+#     define N_PP_TUPLE_SIZE(tuple) N_PP_VARIADIC_SIZE tuple
 # endif
 #
 # endif

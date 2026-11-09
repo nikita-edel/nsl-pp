@@ -16,8 +16,8 @@
 # include "nsl/preprocessor/cat.h"
 # include "nsl/preprocessor/variadic/size.h"
 #
-# /* NSL_PP_OVERLOAD */
+# /* N_PP_OVERLOAD */
 #
-# define NSL_PP_OVERLOAD(prefix, ...) NSL_PP_CAT(prefix, NSL_PP_VARIADIC_SIZE(__VA_ARGS__))
+# define N_PP_OVERLOAD(prefix, ...) N_PP_CAT(prefix, N_PP_VARIADIC_SIZE(__VA_ARGS__))
 #
 # endif

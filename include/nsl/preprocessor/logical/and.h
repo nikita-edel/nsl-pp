@@ -18,13 +18,13 @@
 # include "nsl/preprocessor/logical/bool.h"
 # include "nsl/preprocessor/logical/bitand.h"
 #
-# /* NSL_PP_AND */
+# /* N_PP_AND */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_AND(p, q) NSL_PP_BITAND(NSL_PP_BOOL(p), NSL_PP_BOOL(q))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_AND(p, q) N_PP_BITAND(N_PP_BOOL(p), N_PP_BOOL(q))
 # else
-#    define NSL_PP_AND(p, q) NSL_PP_AND_I(p, q)
-#    define NSL_PP_AND_I(p, q) NSL_PP_BITAND(NSL_PP_BOOL(p), NSL_PP_BOOL(q))
+#    define N_PP_AND(p, q) N_PP_AND_I(p, q)
+#    define N_PP_AND_I(p, q) N_PP_BITAND(N_PP_BOOL(p), N_PP_BOOL(q))
 # endif
 #
 # endif

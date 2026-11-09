@@ -18,22 +18,22 @@
 # include "nsl/preprocessor/config/config.h"
 # include "nsl/preprocessor/control/iif.h"
 #
-# /* NSL_PP_MAX */
+# /* N_PP_MAX */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_MAX(x, y) NSL_PP_IIF(NSL_PP_LESS_EQUAL(x, y), y, x)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_MAX(x, y) N_PP_IIF(N_PP_LESS_EQUAL(x, y), y, x)
 # else
-#    define NSL_PP_MAX(x, y) NSL_PP_MAX_I(x, y)
-#    define NSL_PP_MAX_I(x, y) NSL_PP_IIF(NSL_PP_LESS_EQUAL(x, y), y, x)
+#    define N_PP_MAX(x, y) N_PP_MAX_I(x, y)
+#    define N_PP_MAX_I(x, y) N_PP_IIF(N_PP_LESS_EQUAL(x, y), y, x)
 # endif
 #
-# /* NSL_PP_MAX_D */
+# /* N_PP_MAX_D */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_MAX_D(d, x, y) NSL_PP_IIF(NSL_PP_LESS_EQUAL_D(d, x, y), y, x)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_MAX_D(d, x, y) N_PP_IIF(N_PP_LESS_EQUAL_D(d, x, y), y, x)
 # else
-#    define NSL_PP_MAX_D(d, x, y) NSL_PP_MAX_D_I(d, x, y)
-#    define NSL_PP_MAX_D_I(d, x, y) NSL_PP_IIF(NSL_PP_LESS_EQUAL_D(d, x, y), y, x)
+#    define N_PP_MAX_D(d, x, y) N_PP_MAX_D_I(d, x, y)
+#    define N_PP_MAX_D_I(d, x, y) N_PP_IIF(N_PP_LESS_EQUAL_D(d, x, y), y, x)
 # endif
 #
 # endif

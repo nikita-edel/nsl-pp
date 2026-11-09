@@ -21,45 +21,45 @@
 # include "nsl/preprocessor/tuple/elem.h"
 # include "nsl/preprocessor/tuple/rem.h"
 #
-# /* NSL_PP_LIST_FOR_EACH_I */
+# /* N_PP_LIST_FOR_EACH_I */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG() && ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_MSVC()
-#    define NSL_PP_LIST_FOR_EACH_I(macro, data, list) NSL_PP_FOR((macro, data, list, 0), NSL_PP_LIST_FOR_EACH_I_P, NSL_PP_LIST_FOR_EACH_I_O, NSL_PP_LIST_FOR_EACH_I_M)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG() && ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MSVC()
+#    define N_PP_LIST_FOR_EACH_I(macro, data, list) N_PP_FOR((macro, data, list, 0), N_PP_LIST_FOR_EACH_I_P, N_PP_LIST_FOR_EACH_I_O, N_PP_LIST_FOR_EACH_I_M)
 # else
-#    define NSL_PP_LIST_FOR_EACH_I(macro, data, list) NSL_PP_LIST_FOR_EACH_I_I(macro, data, list)
-#    define NSL_PP_LIST_FOR_EACH_I_I(macro, data, list) NSL_PP_FOR((macro, data, list, 0), NSL_PP_LIST_FOR_EACH_I_P, NSL_PP_LIST_FOR_EACH_I_O, NSL_PP_LIST_FOR_EACH_I_M)
+#    define N_PP_LIST_FOR_EACH_I(macro, data, list) N_PP_LIST_FOR_EACH_I_I(macro, data, list)
+#    define N_PP_LIST_FOR_EACH_I_I(macro, data, list) N_PP_FOR((macro, data, list, 0), N_PP_LIST_FOR_EACH_I_P, N_PP_LIST_FOR_EACH_I_O, N_PP_LIST_FOR_EACH_I_M)
 # endif
 #
-# if NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_STRICT()
-#    define NSL_PP_LIST_FOR_EACH_I_P(r, x) NSL_PP_LIST_FOR_EACH_I_P_D x
-#    define NSL_PP_LIST_FOR_EACH_I_P_D(m, d, l, i) NSL_PP_LIST_IS_CONS(l)
+# if N_PP_CONFIG_FLAGS() & N_PP_CONFIG_STRICT()
+#    define N_PP_LIST_FOR_EACH_I_P(r, x) N_PP_LIST_FOR_EACH_I_P_D x
+#    define N_PP_LIST_FOR_EACH_I_P_D(m, d, l, i) N_PP_LIST_IS_CONS(l)
 # else
-#    define NSL_PP_LIST_FOR_EACH_I_P(r, x) NSL_PP_LIST_IS_CONS(NSL_PP_TUPLE_ELEM(4, 2, x))
+#    define N_PP_LIST_FOR_EACH_I_P(r, x) N_PP_LIST_IS_CONS(N_PP_TUPLE_ELEM(4, 2, x))
 # endif
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_MWCC()
-#    define NSL_PP_LIST_FOR_EACH_I_O(r, x) NSL_PP_LIST_FOR_EACH_I_O_D x
-#    define NSL_PP_LIST_FOR_EACH_I_O_D(m, d, l, i) (m, d, NSL_PP_LIST_REST(l), NSL_PP_INC(i))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MWCC()
+#    define N_PP_LIST_FOR_EACH_I_O(r, x) N_PP_LIST_FOR_EACH_I_O_D x
+#    define N_PP_LIST_FOR_EACH_I_O_D(m, d, l, i) (m, d, N_PP_LIST_REST(l), N_PP_INC(i))
 # else
-#    define NSL_PP_LIST_FOR_EACH_I_O(r, x) (NSL_PP_TUPLE_ELEM(4, 0, x), NSL_PP_TUPLE_ELEM(4, 1, x), NSL_PP_LIST_REST(NSL_PP_TUPLE_ELEM(4, 2, x)), NSL_PP_INC(NSL_PP_TUPLE_ELEM(4, 3, x)))
+#    define N_PP_LIST_FOR_EACH_I_O(r, x) (N_PP_TUPLE_ELEM(4, 0, x), N_PP_TUPLE_ELEM(4, 1, x), N_PP_LIST_REST(N_PP_TUPLE_ELEM(4, 2, x)), N_PP_INC(N_PP_TUPLE_ELEM(4, 3, x)))
 # endif
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_LIST_FOR_EACH_I_M(r, x) NSL_PP_LIST_FOR_EACH_I_M_D(r, NSL_PP_TUPLE_ELEM(4, 0, x), NSL_PP_TUPLE_ELEM(4, 1, x), NSL_PP_TUPLE_ELEM(4, 2, x), NSL_PP_TUPLE_ELEM(4, 3, x))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_LIST_FOR_EACH_I_M(r, x) N_PP_LIST_FOR_EACH_I_M_D(r, N_PP_TUPLE_ELEM(4, 0, x), N_PP_TUPLE_ELEM(4, 1, x), N_PP_TUPLE_ELEM(4, 2, x), N_PP_TUPLE_ELEM(4, 3, x))
 # else
-#    define NSL_PP_LIST_FOR_EACH_I_M(r, x) NSL_PP_LIST_FOR_EACH_I_M_I(r, NSL_PP_TUPLE_REM_4 x)
-#    define NSL_PP_LIST_FOR_EACH_I_M_I(r, x_e) NSL_PP_LIST_FOR_EACH_I_M_D(r, x_e)
+#    define N_PP_LIST_FOR_EACH_I_M(r, x) N_PP_LIST_FOR_EACH_I_M_I(r, N_PP_TUPLE_REM_4 x)
+#    define N_PP_LIST_FOR_EACH_I_M_I(r, x_e) N_PP_LIST_FOR_EACH_I_M_D(r, x_e)
 # endif
 #
-# define NSL_PP_LIST_FOR_EACH_I_M_D(r, m, d, l, i) m(r, d, i, NSL_PP_LIST_FIRST(l))
+# define N_PP_LIST_FOR_EACH_I_M_D(r, m, d, l, i) m(r, d, i, N_PP_LIST_FIRST(l))
 #
-# /* NSL_PP_LIST_FOR_EACH_I_R */
+# /* N_PP_LIST_FOR_EACH_I_R */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_LIST_FOR_EACH_I_R(r, macro, data, list) NSL_PP_FOR_ ## r((macro, data, list, 0), NSL_PP_LIST_FOR_EACH_I_P, NSL_PP_LIST_FOR_EACH_I_O, NSL_PP_LIST_FOR_EACH_I_M)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_LIST_FOR_EACH_I_R(r, macro, data, list) N_PP_FOR_ ## r((macro, data, list, 0), N_PP_LIST_FOR_EACH_I_P, N_PP_LIST_FOR_EACH_I_O, N_PP_LIST_FOR_EACH_I_M)
 # else
-#    define NSL_PP_LIST_FOR_EACH_I_R(r, macro, data, list) NSL_PP_LIST_FOR_EACH_I_R_I(r, macro, data, list)
-#    define NSL_PP_LIST_FOR_EACH_I_R_I(r, macro, data, list) NSL_PP_FOR_ ## r((macro, data, list, 0), NSL_PP_LIST_FOR_EACH_I_P, NSL_PP_LIST_FOR_EACH_I_O, NSL_PP_LIST_FOR_EACH_I_M)
+#    define N_PP_LIST_FOR_EACH_I_R(r, macro, data, list) N_PP_LIST_FOR_EACH_I_R_I(r, macro, data, list)
+#    define N_PP_LIST_FOR_EACH_I_R_I(r, macro, data, list) N_PP_FOR_ ## r((macro, data, list, 0), N_PP_LIST_FOR_EACH_I_P, N_PP_LIST_FOR_EACH_I_O, N_PP_LIST_FOR_EACH_I_M)
 # endif
 #
 # endif

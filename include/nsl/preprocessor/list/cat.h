@@ -19,24 +19,24 @@
 # include "nsl/preprocessor/list/adt.h"
 # include "nsl/preprocessor/list/fold_left.h"
 #
-# /* NSL_PP_LIST_CAT */
+# /* N_PP_LIST_CAT */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_LIST_CAT(list) NSL_PP_LIST_FOLD_LEFT(NSL_PP_LIST_CAT_O, NSL_PP_LIST_FIRST(list), NSL_PP_LIST_REST(list))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_LIST_CAT(list) N_PP_LIST_FOLD_LEFT(N_PP_LIST_CAT_O, N_PP_LIST_FIRST(list), N_PP_LIST_REST(list))
 # else
-#    define NSL_PP_LIST_CAT(list) NSL_PP_LIST_CAT_I(list)
-#    define NSL_PP_LIST_CAT_I(list) NSL_PP_LIST_FOLD_LEFT(NSL_PP_LIST_CAT_O, NSL_PP_LIST_FIRST(list), NSL_PP_LIST_REST(list))
+#    define N_PP_LIST_CAT(list) N_PP_LIST_CAT_I(list)
+#    define N_PP_LIST_CAT_I(list) N_PP_LIST_FOLD_LEFT(N_PP_LIST_CAT_O, N_PP_LIST_FIRST(list), N_PP_LIST_REST(list))
 # endif
 #
-# define NSL_PP_LIST_CAT_O(d, s, x) NSL_PP_CAT(s, x)
+# define N_PP_LIST_CAT_O(d, s, x) N_PP_CAT(s, x)
 #
-# /* NSL_PP_LIST_CAT_D */
+# /* N_PP_LIST_CAT_D */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_LIST_CAT_D(d, list) NSL_PP_LIST_FOLD_LEFT_ ## d(NSL_PP_LIST_CAT_O, NSL_PP_LIST_FIRST(list), NSL_PP_LIST_REST(list))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_LIST_CAT_D(d, list) N_PP_LIST_FOLD_LEFT_ ## d(N_PP_LIST_CAT_O, N_PP_LIST_FIRST(list), N_PP_LIST_REST(list))
 # else
-#    define NSL_PP_LIST_CAT_D(d, list) NSL_PP_LIST_CAT_D_I(d, list)
-#    define NSL_PP_LIST_CAT_D_I(d, list) NSL_PP_LIST_FOLD_LEFT_ ## d(NSL_PP_LIST_CAT_O, NSL_PP_LIST_FIRST(list), NSL_PP_LIST_REST(list))
+#    define N_PP_LIST_CAT_D(d, list) N_PP_LIST_CAT_D_I(d, list)
+#    define N_PP_LIST_CAT_D_I(d, list) N_PP_LIST_FOLD_LEFT_ ## d(N_PP_LIST_CAT_O, N_PP_LIST_FIRST(list), N_PP_LIST_REST(list))
 # endif
 #
 # endif

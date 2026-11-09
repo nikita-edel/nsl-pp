@@ -20,40 +20,40 @@
 # include "nsl/preprocessor/tuple/size.h"
 # include "nsl/preprocessor/tuple/to_array.h"
 #
-# /* NSL_PP_TUPLE_REMOVE */
+# /* N_PP_TUPLE_REMOVE */
 #
-# define NSL_PP_TUPLE_REMOVE(tuple, i) \
-    NSL_PP_IIF \
+# define N_PP_TUPLE_REMOVE(tuple, i) \
+    N_PP_IIF \
         ( \
-        NSL_PP_GREATER(NSL_PP_TUPLE_SIZE(tuple),1), \
-        NSL_PP_TUPLE_REMOVE_EXEC, \
-        NSL_PP_TUPLE_REMOVE_RETURN \
+        N_PP_GREATER(N_PP_TUPLE_SIZE(tuple),1), \
+        N_PP_TUPLE_REMOVE_EXEC, \
+        N_PP_TUPLE_REMOVE_RETURN \
         ) \
     (tuple, i) \
 /**/
 #
-# define NSL_PP_TUPLE_REMOVE_EXEC(tuple, i) \
-    NSL_PP_ARRAY_TO_TUPLE(NSL_PP_ARRAY_REMOVE(NSL_PP_TUPLE_TO_ARRAY(tuple), i)) \
+# define N_PP_TUPLE_REMOVE_EXEC(tuple, i) \
+    N_PP_ARRAY_TO_TUPLE(N_PP_ARRAY_REMOVE(N_PP_TUPLE_TO_ARRAY(tuple), i)) \
 /**/
 #
-# define NSL_PP_TUPLE_REMOVE_RETURN(tuple, i) tuple
+# define N_PP_TUPLE_REMOVE_RETURN(tuple, i) tuple
 #
-# /* NSL_PP_TUPLE_REMOVE_D */
+# /* N_PP_TUPLE_REMOVE_D */
 #
-# define NSL_PP_TUPLE_REMOVE_D(d, tuple, i) \
-    NSL_PP_IIF \
+# define N_PP_TUPLE_REMOVE_D(d, tuple, i) \
+    N_PP_IIF \
         ( \
-        NSL_PP_GREATER_D(d, NSL_PP_TUPLE_SIZE(tuple), 1), \
-        NSL_PP_TUPLE_REMOVE_D_EXEC, \
-        NSL_PP_TUPLE_REMOVE_D_RETURN \
+        N_PP_GREATER_D(d, N_PP_TUPLE_SIZE(tuple), 1), \
+        N_PP_TUPLE_REMOVE_D_EXEC, \
+        N_PP_TUPLE_REMOVE_D_RETURN \
         ) \
     (d, tuple, i) \
 /**/
 #
-# define NSL_PP_TUPLE_REMOVE_D_EXEC(d, tuple, i) \
-    NSL_PP_ARRAY_TO_TUPLE(NSL_PP_ARRAY_REMOVE_D(d, NSL_PP_TUPLE_TO_ARRAY(tuple), i)) \
+# define N_PP_TUPLE_REMOVE_D_EXEC(d, tuple, i) \
+    N_PP_ARRAY_TO_TUPLE(N_PP_ARRAY_REMOVE_D(d, N_PP_TUPLE_TO_ARRAY(tuple), i)) \
 /**/
 #
-# define NSL_PP_TUPLE_REMOVE_D_RETURN(d, tuple, i) tuple
+# define N_PP_TUPLE_REMOVE_D_RETURN(d, tuple, i) tuple
 #
 # endif // NSL_PREPROCESSOR_TUPLE_REMOVE_H

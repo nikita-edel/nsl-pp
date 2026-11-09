@@ -21,15 +21,15 @@
 # include "nsl/preprocessor/tuple/rem.h"
 # include "nsl/preprocessor/array/detail/get_data.h"
 #
-# /* NSL_PP_ARRAY_PUSH_FRONT */
+# /* N_PP_ARRAY_PUSH_FRONT */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_ARRAY_PUSH_FRONT(array, elem) NSL_PP_ARRAY_PUSH_FRONT_I(NSL_PP_ARRAY_SIZE(array), NSL_PP_ARRAY_DATA(array), elem)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_ARRAY_PUSH_FRONT(array, elem) N_PP_ARRAY_PUSH_FRONT_I(N_PP_ARRAY_SIZE(array), N_PP_ARRAY_DATA(array), elem)
 # else
-#    define NSL_PP_ARRAY_PUSH_FRONT(array, elem) NSL_PP_ARRAY_PUSH_FRONT_D(array, elem)
-#    define NSL_PP_ARRAY_PUSH_FRONT_D(array, elem) NSL_PP_ARRAY_PUSH_FRONT_I(NSL_PP_ARRAY_SIZE(array), NSL_PP_ARRAY_DATA(array), elem)
+#    define N_PP_ARRAY_PUSH_FRONT(array, elem) N_PP_ARRAY_PUSH_FRONT_D(array, elem)
+#    define N_PP_ARRAY_PUSH_FRONT_D(array, elem) N_PP_ARRAY_PUSH_FRONT_I(N_PP_ARRAY_SIZE(array), N_PP_ARRAY_DATA(array), elem)
 # endif
 #
-# define NSL_PP_ARRAY_PUSH_FRONT_I(size, data, elem) (NSL_PP_INC(size), (elem NSL_PP_COMMA_IF(size) NSL_PP_ARRAY_DETAIL_GET_DATA(size,data)))
+# define N_PP_ARRAY_PUSH_FRONT_I(size, data, elem) (N_PP_INC(size), (elem N_PP_COMMA_IF(size) N_PP_ARRAY_DETAIL_GET_DATA(size,data)))
 #
 # endif

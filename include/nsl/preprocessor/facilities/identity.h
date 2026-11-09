@@ -18,10 +18,10 @@
 # include "nsl/preprocessor/facilities/empty.h"
 # include "nsl/preprocessor/tuple/eat.h"
 #
-# /* NSL_PP_IDENTITY */
+# /* N_PP_IDENTITY */
 #
-# define NSL_PP_IDENTITY(item) item NSL_PP_EMPTY
+# define N_PP_IDENTITY(item) item N_PP_EMPTY
 #
-# define NSL_PP_IDENTITY_N(item,n) item NSL_PP_TUPLE_EAT_N(n)
+# define N_PP_IDENTITY_N(item,n) item N_PP_TUPLE_EAT_N(n)
 #
 # endif

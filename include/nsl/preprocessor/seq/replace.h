@@ -21,23 +21,23 @@
 # include "nsl/preprocessor/seq/rest_n.h"
 # include "nsl/preprocessor/seq/size.h"
 #
-# /* NSL_PP_SEQ_REPLACE */
+# /* N_PP_SEQ_REPLACE */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_SEQ_REPLACE(seq, i, elem) NSL_PP_SEQ_FIRST_N(i, seq) (elem) NSL_PP_SEQ_REPLACE_DETAIL_REST(seq, i)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_SEQ_REPLACE(seq, i, elem) N_PP_SEQ_FIRST_N(i, seq) (elem) N_PP_SEQ_REPLACE_DETAIL_REST(seq, i)
 # else
-#    define NSL_PP_SEQ_REPLACE(seq, i, elem) NSL_PP_SEQ_REPLACE_I(seq, i, elem)
-#    define NSL_PP_SEQ_REPLACE_I(seq, i, elem) NSL_PP_SEQ_FIRST_N(i, seq) (elem) NSL_PP_SEQ_REPLACE_DETAIL_REST(seq, i)
+#    define N_PP_SEQ_REPLACE(seq, i, elem) N_PP_SEQ_REPLACE_I(seq, i, elem)
+#    define N_PP_SEQ_REPLACE_I(seq, i, elem) N_PP_SEQ_FIRST_N(i, seq) (elem) N_PP_SEQ_REPLACE_DETAIL_REST(seq, i)
 # endif
 #
-#    define NSL_PP_SEQ_REPLACE_DETAIL_REST_EMPTY(seq, i)
-#    define NSL_PP_SEQ_REPLACE_DETAIL_REST_VALID(seq, i) NSL_PP_SEQ_REST_N(NSL_PP_INC(i), seq)
-#    define NSL_PP_SEQ_REPLACE_DETAIL_REST(seq, i) \
-        NSL_PP_IIF \
+#    define N_PP_SEQ_REPLACE_DETAIL_REST_EMPTY(seq, i)
+#    define N_PP_SEQ_REPLACE_DETAIL_REST_VALID(seq, i) N_PP_SEQ_REST_N(N_PP_INC(i), seq)
+#    define N_PP_SEQ_REPLACE_DETAIL_REST(seq, i) \
+        N_PP_IIF \
             ( \
-            NSL_PP_EQUAL(i,NSL_PP_DEC(NSL_PP_SEQ_SIZE(seq))), \
-            NSL_PP_SEQ_REPLACE_DETAIL_REST_EMPTY, \
-            NSL_PP_SEQ_REPLACE_DETAIL_REST_VALID \
+            N_PP_EQUAL(i,N_PP_DEC(N_PP_SEQ_SIZE(seq))), \
+            N_PP_SEQ_REPLACE_DETAIL_REST_EMPTY, \
+            N_PP_SEQ_REPLACE_DETAIL_REST_VALID \
             ) \
         (seq, i) \
 /**/

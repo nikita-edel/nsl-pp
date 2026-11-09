@@ -12,8 +12,8 @@
 # ifndef NSL_PREPROCESSOR_ITERATION_SELF_H
 # define NSL_PREPROCESSOR_ITERATION_SELF_H
 #
-# /* NSL_PP_INCLUDE_SELF */
+# /* N_PP_INCLUDE_SELF */
 #
-# define NSL_PP_INCLUDE_SELF() <nsl/preprocessor/iteration/detail/self.h>
+# define N_PP_INCLUDE_SELF() <nsl/preprocessor/iteration/detail/self.h>
 #
 # endif

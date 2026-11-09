@@ -14,21 +14,21 @@
 #
 # include "nsl/preprocessor/config/config.h"
 #
-# /* NSL_PP_VARIADIC_HAS_OPT */
+# /* N_PP_VARIADIC_HAS_OPT */
 #
 # if defined(__cplusplus) && __cplusplus > 201703L
 #  if defined(__GNUC__) && !defined(__clang__) && __GNUC__ >= 8 && __GNUC__ < 10
-#   define NSL_PP_VARIADIC_HAS_OPT() 0
+#   define N_PP_VARIADIC_HAS_OPT() 0
 #  elif defined(__clang__) && __clang_major__ < 9
-#   define NSL_PP_VARIADIC_HAS_OPT() 0
+#   define N_PP_VARIADIC_HAS_OPT() 0
 #  else
 #   include "nsl/preprocessor/variadic/detail/has_opt.h"
-#   define NSL_PP_VARIADIC_HAS_OPT() \
-  NSL_PP_VARIADIC_HAS_OPT_ELEM2(NSL_PP_VARIADIC_HAS_OPT_FUNCTION(?),) \
+#   define N_PP_VARIADIC_HAS_OPT() \
+  N_PP_VARIADIC_HAS_OPT_ELEM2(N_PP_VARIADIC_HAS_OPT_FUNCTION(?),) \
 /**/
 #  endif
 # else
-# define NSL_PP_VARIADIC_HAS_OPT() 0
+# define N_PP_VARIADIC_HAS_OPT() 0
 # endif
 #
 # endif

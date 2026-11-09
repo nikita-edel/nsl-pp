@@ -14,12 +14,12 @@
 #
 # include "nsl/preprocessor/slot/detail/def.h"
 #
-# /* NSL_PP_COUNTER */
+# /* N_PP_COUNTER */
 #
-# define NSL_PP_COUNTER 0
+# define N_PP_COUNTER 0
 #
-# /* NSL_PP_UPDATE_COUNTER */
+# /* N_PP_UPDATE_COUNTER */
 #
-# define NSL_PP_UPDATE_COUNTER() <nsl/preprocessor/slot/detail/counter.h>
+# define N_PP_UPDATE_COUNTER() <nsl/preprocessor/slot/detail/counter.h>
 #
 # endif

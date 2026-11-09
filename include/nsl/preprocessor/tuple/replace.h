@@ -17,16 +17,16 @@
 # include "nsl/preprocessor/array/to_tuple.h"
 # include "nsl/preprocessor/tuple/to_array.h"
 #
-# /* NSL_PP_TUPLE_REPLACE */
+# /* N_PP_TUPLE_REPLACE */
 #
-# define NSL_PP_TUPLE_REPLACE(tuple, i, elem) \
-    NSL_PP_ARRAY_TO_TUPLE(NSL_PP_ARRAY_REPLACE(NSL_PP_TUPLE_TO_ARRAY(tuple), i, elem)) \
+# define N_PP_TUPLE_REPLACE(tuple, i, elem) \
+    N_PP_ARRAY_TO_TUPLE(N_PP_ARRAY_REPLACE(N_PP_TUPLE_TO_ARRAY(tuple), i, elem)) \
 /**/
 #
-# /* NSL_PP_TUPLE_REPLACE_D */
+# /* N_PP_TUPLE_REPLACE_D */
 #
-# define NSL_PP_TUPLE_REPLACE_D(d, tuple, i, elem) \
-    NSL_PP_ARRAY_TO_TUPLE(NSL_PP_ARRAY_REPLACE_D(d, NSL_PP_TUPLE_TO_ARRAY(tuple), i, elem)) \
+# define N_PP_TUPLE_REPLACE_D(d, tuple, i, elem) \
+    N_PP_ARRAY_TO_TUPLE(N_PP_ARRAY_REPLACE_D(d, N_PP_TUPLE_TO_ARRAY(tuple), i, elem)) \
 /**/
 #
 # endif // NSL_PREPROCESSOR_TUPLE_REPLACE_H

@@ -18,8 +18,8 @@
 # include "nsl/preprocessor/facilities/intercept.h"
 # include "nsl/preprocessor/repetition/enum_binary_params.h"
 #
-# /* NSL_PP_ENUM_PARAMS_WITH_A_DEFAULT */
+# /* N_PP_ENUM_PARAMS_WITH_A_DEFAULT */
 #
-# define NSL_PP_ENUM_PARAMS_WITH_A_DEFAULT(count, param, def) NSL_PP_ENUM_BINARY_PARAMS(count, param, = def NSL_PP_INTERCEPT)
+# define N_PP_ENUM_PARAMS_WITH_A_DEFAULT(count, param, def) N_PP_ENUM_BINARY_PARAMS(count, param, = def N_PP_INTERCEPT)
 #
 # endif

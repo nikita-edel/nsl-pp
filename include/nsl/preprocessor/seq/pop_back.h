@@ -17,13 +17,13 @@
 # include "nsl/preprocessor/seq/first_n.h"
 # include "nsl/preprocessor/seq/size.h"
 #
-# /* NSL_PP_SEQ_POP_BACK */
+# /* N_PP_SEQ_POP_BACK */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_SEQ_POP_BACK(seq) NSL_PP_SEQ_FIRST_N(NSL_PP_DEC(NSL_PP_SEQ_SIZE(seq)), seq)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_SEQ_POP_BACK(seq) N_PP_SEQ_FIRST_N(N_PP_DEC(N_PP_SEQ_SIZE(seq)), seq)
 # else
-#    define NSL_PP_SEQ_POP_BACK(seq) NSL_PP_SEQ_POP_BACK_I(seq)
-#    define NSL_PP_SEQ_POP_BACK_I(seq) NSL_PP_SEQ_FIRST_N(NSL_PP_DEC(NSL_PP_SEQ_SIZE(seq)), seq)
+#    define N_PP_SEQ_POP_BACK(seq) N_PP_SEQ_POP_BACK_I(seq)
+#    define N_PP_SEQ_POP_BACK_I(seq) N_PP_SEQ_FIRST_N(N_PP_DEC(N_PP_SEQ_SIZE(seq)), seq)
 # endif
 #
 # endif

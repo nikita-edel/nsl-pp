@@ -15,13 +15,13 @@
 # include "nsl/preprocessor/config/config.h"
 # include "nsl/preprocessor/seq/seq.h"
 #
-# /* NSL_PP_SEQ_POP_FRONT */
+# /* N_PP_SEQ_POP_FRONT */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_SEQ_POP_FRONT(seq) NSL_PP_SEQ_TAIL(seq)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_SEQ_POP_FRONT(seq) N_PP_SEQ_TAIL(seq)
 # else
-#    define NSL_PP_SEQ_POP_FRONT(seq) NSL_PP_SEQ_POP_FRONT_I(seq)
-#    define NSL_PP_SEQ_POP_FRONT_I(seq) NSL_PP_SEQ_TAIL(seq)
+#    define N_PP_SEQ_POP_FRONT(seq) N_PP_SEQ_POP_FRONT_I(seq)
+#    define N_PP_SEQ_POP_FRONT_I(seq) N_PP_SEQ_TAIL(seq)
 # endif
 #
 # endif

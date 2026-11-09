@@ -17,25 +17,25 @@
 # include "nsl/preprocessor/punctuation/paren.h"
 # include "nsl/preprocessor/seq/detail/binary_transform.h"
 #
-# /* NSL_PP_SEQ_TO_LIST */
+# /* N_PP_SEQ_TO_LIST */
 #
-# if NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_MSVC()
+# if N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MSVC()
 # include "nsl/preprocessor/seq/size.h"
 # include "nsl/preprocessor/seq/detail/to_list_msvc.h"
-# define NSL_PP_SEQ_TO_LIST(seq) \
-    NSL_PP_SEQ_DETAIL_TO_LIST_MSVC \
+# define N_PP_SEQ_TO_LIST(seq) \
+    N_PP_SEQ_DETAIL_TO_LIST_MSVC \
         ( \
-        NSL_PP_SEQ_TO_LIST_I(NSL_PP_SEQ_BINARY_TRANSFORM(seq)), \
-        NSL_PP_SEQ_SIZE(seq) \
+        N_PP_SEQ_TO_LIST_I(N_PP_SEQ_BINARY_TRANSFORM(seq)), \
+        N_PP_SEQ_SIZE(seq) \
         ) \
 /**/
 # else
-# define NSL_PP_SEQ_TO_LIST(seq) NSL_PP_SEQ_TO_LIST_I(NSL_PP_SEQ_BINARY_TRANSFORM(seq))
+# define N_PP_SEQ_TO_LIST(seq) N_PP_SEQ_TO_LIST_I(N_PP_SEQ_BINARY_TRANSFORM(seq))
 # endif
-# define NSL_PP_SEQ_TO_LIST_I(bseq) NSL_PP_SEQ_TO_LIST_A bseq NSL_PP_NIL NSL_PP_SEQ_TO_LIST_B bseq
-# define NSL_PP_SEQ_TO_LIST_A(m, e) m(NSL_PP_LPAREN() e NSL_PP_COMMA() NSL_PP_SEQ_TO_LIST_A_ID)
-# define NSL_PP_SEQ_TO_LIST_A_ID() NSL_PP_SEQ_TO_LIST_A
-# define NSL_PP_SEQ_TO_LIST_B(m, e) m(NSL_PP_RPAREN() NSL_PP_SEQ_TO_LIST_B_ID)
-# define NSL_PP_SEQ_TO_LIST_B_ID() NSL_PP_SEQ_TO_LIST_B
+# define N_PP_SEQ_TO_LIST_I(bseq) N_PP_SEQ_TO_LIST_A bseq N_PP_NIL N_PP_SEQ_TO_LIST_B bseq
+# define N_PP_SEQ_TO_LIST_A(m, e) m(N_PP_LPAREN() e N_PP_COMMA() N_PP_SEQ_TO_LIST_A_ID)
+# define N_PP_SEQ_TO_LIST_A_ID() N_PP_SEQ_TO_LIST_A
+# define N_PP_SEQ_TO_LIST_B(m, e) m(N_PP_RPAREN() N_PP_SEQ_TO_LIST_B_ID)
+# define N_PP_SEQ_TO_LIST_B_ID() N_PP_SEQ_TO_LIST_B
 #
 # endif

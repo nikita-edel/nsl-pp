@@ -15,16 +15,16 @@
 # include "nsl/preprocessor/config/config.h"
 # include "nsl/preprocessor/detail/check.h"
 #
-# /* NSL_PP_IS_NULLARY */
+# /* N_PP_IS_NULLARY */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_IS_NULLARY(x) NSL_PP_CHECK(x, NSL_PP_IS_NULLARY_CHECK)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_IS_NULLARY(x) N_PP_CHECK(x, N_PP_IS_NULLARY_CHECK)
 # else
-#    define NSL_PP_IS_NULLARY(x) NSL_PP_IS_NULLARY_I(x)
-#    define NSL_PP_IS_NULLARY_I(x) NSL_PP_CHECK(x, NSL_PP_IS_NULLARY_CHECK)
+#    define N_PP_IS_NULLARY(x) N_PP_IS_NULLARY_I(x)
+#    define N_PP_IS_NULLARY_I(x) N_PP_CHECK(x, N_PP_IS_NULLARY_CHECK)
 # endif
 #
-# define NSL_PP_IS_NULLARY_CHECK() 1
-# define NSL_PP_CHECK_RESULT_NSL_PP_IS_NULLARY_CHECK 0, NSL_PP_NIL
+# define N_PP_IS_NULLARY_CHECK() 1
+# define N_PP_CHECK_RESULT_N_PP_IS_NULLARY_CHECK 0, N_PP_NIL
 #
 # endif

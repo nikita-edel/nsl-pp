@@ -15,16 +15,16 @@
 # include "nsl/preprocessor/config/config.h"
 # include "nsl/preprocessor/detail/check.h"
 #
-# /* NSL_PP_IS_BINARY */
+# /* N_PP_IS_BINARY */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_IS_BINARY(x) NSL_PP_CHECK(x, NSL_PP_IS_BINARY_CHECK)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_IS_BINARY(x) N_PP_CHECK(x, N_PP_IS_BINARY_CHECK)
 # else
-#    define NSL_PP_IS_BINARY(x) NSL_PP_IS_BINARY_I(x)
-#    define NSL_PP_IS_BINARY_I(x) NSL_PP_CHECK(x, NSL_PP_IS_BINARY_CHECK)
+#    define N_PP_IS_BINARY(x) N_PP_IS_BINARY_I(x)
+#    define N_PP_IS_BINARY_I(x) N_PP_CHECK(x, N_PP_IS_BINARY_CHECK)
 # endif
 #
-# define NSL_PP_IS_BINARY_CHECK(a, b) 1
-# define NSL_PP_CHECK_RESULT_NSL_PP_IS_BINARY_CHECK 0, NSL_PP_NIL
+# define N_PP_IS_BINARY_CHECK(a, b) 1
+# define N_PP_CHECK_RESULT_N_PP_IS_BINARY_CHECK 0, N_PP_NIL
 #
 # endif

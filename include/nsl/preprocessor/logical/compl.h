@@ -14,23 +14,23 @@
 #
 # include "nsl/preprocessor/config/config.h"
 #
-# /* NSL_PP_COMPL */
+# /* N_PP_COMPL */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_MWCC()
-#    define NSL_PP_COMPL(x) NSL_PP_COMPL_I(x)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MWCC()
+#    define N_PP_COMPL(x) N_PP_COMPL_I(x)
 # else
-#    define NSL_PP_COMPL(x) NSL_PP_COMPL_OO((x))
-#    define NSL_PP_COMPL_OO(par) NSL_PP_COMPL_I ## par
+#    define N_PP_COMPL(x) N_PP_COMPL_OO((x))
+#    define N_PP_COMPL_OO(par) N_PP_COMPL_I ## par
 # endif
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_MSVC()
-#    define NSL_PP_COMPL_I(x) NSL_PP_COMPL_ ## x
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MSVC()
+#    define N_PP_COMPL_I(x) N_PP_COMPL_ ## x
 # else
-#    define NSL_PP_COMPL_I(x) NSL_PP_COMPL_ID(NSL_PP_COMPL_ ## x)
-#    define NSL_PP_COMPL_ID(id) id
+#    define N_PP_COMPL_I(x) N_PP_COMPL_ID(N_PP_COMPL_ ## x)
+#    define N_PP_COMPL_ID(id) id
 # endif
 #
-# define NSL_PP_COMPL_0 1
-# define NSL_PP_COMPL_1 0
+# define N_PP_COMPL_0 1
+# define N_PP_COMPL_1 0
 #
 # endif

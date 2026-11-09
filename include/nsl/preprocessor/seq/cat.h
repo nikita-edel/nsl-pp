@@ -20,30 +20,30 @@
 # include "nsl/preprocessor/seq/size.h"
 # include "nsl/preprocessor/tuple/eat.h"
 #
-# /* NSL_PP_SEQ_CAT */
+# /* N_PP_SEQ_CAT */
 #
-# define NSL_PP_SEQ_CAT(seq) \
-    NSL_PP_IF( \
-        NSL_PP_DEC(NSL_PP_SEQ_SIZE(seq)), \
-        NSL_PP_SEQ_CAT_I, \
-        NSL_PP_SEQ_HEAD \
+# define N_PP_SEQ_CAT(seq) \
+    N_PP_IF( \
+        N_PP_DEC(N_PP_SEQ_SIZE(seq)), \
+        N_PP_SEQ_CAT_I, \
+        N_PP_SEQ_HEAD \
     )(seq) \
     /**/
-# define NSL_PP_SEQ_CAT_I(seq) NSL_PP_SEQ_FOLD_LEFT(NSL_PP_SEQ_CAT_O, NSL_PP_SEQ_HEAD(seq), NSL_PP_SEQ_TAIL(seq))
+# define N_PP_SEQ_CAT_I(seq) N_PP_SEQ_FOLD_LEFT(N_PP_SEQ_CAT_O, N_PP_SEQ_HEAD(seq), N_PP_SEQ_TAIL(seq))
 #
-# define NSL_PP_SEQ_CAT_O(s, st, elem) NSL_PP_SEQ_CAT_O_I(st, elem)
-# define NSL_PP_SEQ_CAT_O_I(a, b) a ## b
+# define N_PP_SEQ_CAT_O(s, st, elem) N_PP_SEQ_CAT_O_I(st, elem)
+# define N_PP_SEQ_CAT_O_I(a, b) a ## b
 #
-# /* NSL_PP_SEQ_CAT_S */
+# /* N_PP_SEQ_CAT_S */
 #
-# define NSL_PP_SEQ_CAT_S(s, seq) \
-    NSL_PP_IF( \
-        NSL_PP_DEC(NSL_PP_SEQ_SIZE(seq)), \
-        NSL_PP_SEQ_CAT_S_I_A, \
-        NSL_PP_SEQ_CAT_S_I_B \
+# define N_PP_SEQ_CAT_S(s, seq) \
+    N_PP_IF( \
+        N_PP_DEC(N_PP_SEQ_SIZE(seq)), \
+        N_PP_SEQ_CAT_S_I_A, \
+        N_PP_SEQ_CAT_S_I_B \
     )(s, seq) \
     /**/
-# define NSL_PP_SEQ_CAT_S_I_A(s, seq) NSL_PP_SEQ_FOLD_LEFT_ ## s(NSL_PP_SEQ_CAT_O, NSL_PP_SEQ_HEAD(seq), NSL_PP_SEQ_TAIL(seq))
-# define NSL_PP_SEQ_CAT_S_I_B(s, seq) NSL_PP_SEQ_HEAD(seq)
+# define N_PP_SEQ_CAT_S_I_A(s, seq) N_PP_SEQ_FOLD_LEFT_ ## s(N_PP_SEQ_CAT_O, N_PP_SEQ_HEAD(seq), N_PP_SEQ_TAIL(seq))
+# define N_PP_SEQ_CAT_S_I_B(s, seq) N_PP_SEQ_HEAD(seq)
 #
 # endif

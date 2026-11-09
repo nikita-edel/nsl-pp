@@ -17,22 +17,22 @@
 # include "nsl/preprocessor/comparison/less_equal.h"
 # include "nsl/preprocessor/config/config.h"
 #
-# /* NSL_PP_GREATER_EQUAL */
+# /* N_PP_GREATER_EQUAL */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_GREATER_EQUAL(x, y) NSL_PP_LESS_EQUAL(y, x)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_GREATER_EQUAL(x, y) N_PP_LESS_EQUAL(y, x)
 # else
-#    define NSL_PP_GREATER_EQUAL(x, y) NSL_PP_GREATER_EQUAL_I(x, y)
-#    define NSL_PP_GREATER_EQUAL_I(x, y) NSL_PP_LESS_EQUAL(y, x)
+#    define N_PP_GREATER_EQUAL(x, y) N_PP_GREATER_EQUAL_I(x, y)
+#    define N_PP_GREATER_EQUAL_I(x, y) N_PP_LESS_EQUAL(y, x)
 # endif
 #
-# /* NSL_PP_GREATER_EQUAL_D */
+# /* N_PP_GREATER_EQUAL_D */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_GREATER_EQUAL_D(d, x, y) NSL_PP_LESS_EQUAL_D(d, y, x)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_GREATER_EQUAL_D(d, x, y) N_PP_LESS_EQUAL_D(d, y, x)
 # else
-#    define NSL_PP_GREATER_EQUAL_D(d, x, y) NSL_PP_GREATER_EQUAL_D_I(d, x, y)
-#    define NSL_PP_GREATER_EQUAL_D_I(d, x, y) NSL_PP_LESS_EQUAL_D(d, y, x)
+#    define N_PP_GREATER_EQUAL_D(d, x, y) N_PP_GREATER_EQUAL_D_I(d, x, y)
+#    define N_PP_GREATER_EQUAL_D_I(d, x, y) N_PP_LESS_EQUAL_D(d, y, x)
 # endif
 #
 # endif

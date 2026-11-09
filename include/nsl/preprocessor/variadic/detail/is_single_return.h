@@ -14,15 +14,15 @@
 #
 # include "nsl/preprocessor/config/config.h"
 #
-# /* NSL_PP_VARIADIC_IS_SINGLE_RETURN */
+# /* N_PP_VARIADIC_IS_SINGLE_RETURN */
 #
-# if NSL_PP_VARIADICS_MSVC
+# if N_PP_VARIADICS_MSVC
 # include "nsl/preprocessor/control/iif.h"
 # include "nsl/preprocessor/facilities/is_1.h"
 # include "nsl/preprocessor/variadic/size.h"
-# define NSL_PP_VARIADIC_IS_SINGLE_RETURN(sr,nsr,...) \
-    NSL_PP_IIF(NSL_PP_IS_1(NSL_PP_VARIADIC_SIZE(__VA_ARGS__)),sr,nsr) \
+# define N_PP_VARIADIC_IS_SINGLE_RETURN(sr,nsr,...) \
+    N_PP_IIF(N_PP_IS_1(N_PP_VARIADIC_SIZE(__VA_ARGS__)),sr,nsr) \
     /**/
-# endif /* NSL_PP_VARIADICS_MSVC */
+# endif /* N_PP_VARIADICS_MSVC */
 #
 # endif /* NSL_PREPROCESSOR_VARIADIC_DETAIL_IS_SINGLE_RETURN_H */

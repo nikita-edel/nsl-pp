@@ -15,12 +15,12 @@
 # include "nsl/preprocessor/cat.h"
 # include "nsl/preprocessor/config/config.h"
 #
-# /* NSL_PP_VARIADIC_SEQ_TO_SEQ */
+# /* N_PP_VARIADIC_SEQ_TO_SEQ */
 #
-#    define NSL_PP_VARIADIC_SEQ_TO_SEQ(vseq) NSL_PP_CAT(NSL_PP_VARIADIC_SEQ_TO_SEQ_A vseq, 0)
-#    define NSL_PP_VARIADIC_SEQ_TO_SEQ_A(...) ((__VA_ARGS__)) NSL_PP_VARIADIC_SEQ_TO_SEQ_B
-#    define NSL_PP_VARIADIC_SEQ_TO_SEQ_B(...) ((__VA_ARGS__)) NSL_PP_VARIADIC_SEQ_TO_SEQ_A
-#    define NSL_PP_VARIADIC_SEQ_TO_SEQ_A0
-#    define NSL_PP_VARIADIC_SEQ_TO_SEQ_B0
+#    define N_PP_VARIADIC_SEQ_TO_SEQ(vseq) N_PP_CAT(N_PP_VARIADIC_SEQ_TO_SEQ_A vseq, 0)
+#    define N_PP_VARIADIC_SEQ_TO_SEQ_A(...) ((__VA_ARGS__)) N_PP_VARIADIC_SEQ_TO_SEQ_B
+#    define N_PP_VARIADIC_SEQ_TO_SEQ_B(...) ((__VA_ARGS__)) N_PP_VARIADIC_SEQ_TO_SEQ_A
+#    define N_PP_VARIADIC_SEQ_TO_SEQ_A0
+#    define N_PP_VARIADIC_SEQ_TO_SEQ_B0
 #
 # endif

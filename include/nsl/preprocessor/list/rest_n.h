@@ -20,36 +20,36 @@
 # include "nsl/preprocessor/list/adt.h"
 # include "nsl/preprocessor/tuple/elem.h"
 #
-# /* NSL_PP_LIST_REST_N */
+# /* N_PP_LIST_REST_N */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_LIST_REST_N(count, list) NSL_PP_TUPLE_ELEM(2, 0, NSL_PP_WHILE(NSL_PP_LIST_REST_N_P, NSL_PP_LIST_REST_N_O, (list, count)))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_LIST_REST_N(count, list) N_PP_TUPLE_ELEM(2, 0, N_PP_WHILE(N_PP_LIST_REST_N_P, N_PP_LIST_REST_N_O, (list, count)))
 # else
-#    define NSL_PP_LIST_REST_N(count, list) NSL_PP_LIST_REST_N_I(count, list)
-#    define NSL_PP_LIST_REST_N_I(count, list) NSL_PP_TUPLE_ELEM(2, 0, NSL_PP_WHILE(NSL_PP_LIST_REST_N_P, NSL_PP_LIST_REST_N_O, (list, count)))
+#    define N_PP_LIST_REST_N(count, list) N_PP_LIST_REST_N_I(count, list)
+#    define N_PP_LIST_REST_N_I(count, list) N_PP_TUPLE_ELEM(2, 0, N_PP_WHILE(N_PP_LIST_REST_N_P, N_PP_LIST_REST_N_O, (list, count)))
 # endif
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_LIST_REST_N_P(d, lc) NSL_PP_TUPLE_ELEM(2, 1, lc)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_LIST_REST_N_P(d, lc) N_PP_TUPLE_ELEM(2, 1, lc)
 # else
-#    define NSL_PP_LIST_REST_N_P(d, lc) NSL_PP_LIST_REST_N_P_I lc
-#    define NSL_PP_LIST_REST_N_P_I(list, count) count
+#    define N_PP_LIST_REST_N_P(d, lc) N_PP_LIST_REST_N_P_I lc
+#    define N_PP_LIST_REST_N_P_I(list, count) count
 # endif
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_LIST_REST_N_O(d, lc) (NSL_PP_LIST_REST(NSL_PP_TUPLE_ELEM(2, 0, lc)), NSL_PP_DEC(NSL_PP_TUPLE_ELEM(2, 1, lc)))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_LIST_REST_N_O(d, lc) (N_PP_LIST_REST(N_PP_TUPLE_ELEM(2, 0, lc)), N_PP_DEC(N_PP_TUPLE_ELEM(2, 1, lc)))
 # else
-#    define NSL_PP_LIST_REST_N_O(d, lc) NSL_PP_LIST_REST_N_O_I lc
-#    define NSL_PP_LIST_REST_N_O_I(list, count) (NSL_PP_LIST_REST(list), NSL_PP_DEC(count))
+#    define N_PP_LIST_REST_N_O(d, lc) N_PP_LIST_REST_N_O_I lc
+#    define N_PP_LIST_REST_N_O_I(list, count) (N_PP_LIST_REST(list), N_PP_DEC(count))
 # endif
 #
-# /* NSL_PP_LIST_REST_N_D */
+# /* N_PP_LIST_REST_N_D */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_LIST_REST_N_D(d, count, list) NSL_PP_TUPLE_ELEM(2, 0, NSL_PP_WHILE_ ## d(NSL_PP_LIST_REST_N_P, NSL_PP_LIST_REST_N_O, (list, count)))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_LIST_REST_N_D(d, count, list) N_PP_TUPLE_ELEM(2, 0, N_PP_WHILE_ ## d(N_PP_LIST_REST_N_P, N_PP_LIST_REST_N_O, (list, count)))
 # else
-#    define NSL_PP_LIST_REST_N_D(d, count, list) NSL_PP_LIST_REST_N_D_I(d, count, list)
-#    define NSL_PP_LIST_REST_N_D_I(d, count, list) NSL_PP_TUPLE_ELEM(2, 0, NSL_PP_WHILE_ ## d(NSL_PP_LIST_REST_N_P, NSL_PP_LIST_REST_N_O, (list, count)))
+#    define N_PP_LIST_REST_N_D(d, count, list) N_PP_LIST_REST_N_D_I(d, count, list)
+#    define N_PP_LIST_REST_N_D_I(d, count, list) N_PP_TUPLE_ELEM(2, 0, N_PP_WHILE_ ## d(N_PP_LIST_REST_N_P, N_PP_LIST_REST_N_O, (list, count)))
 # endif
 #
 # endif

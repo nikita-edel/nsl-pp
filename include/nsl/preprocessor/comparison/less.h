@@ -21,26 +21,26 @@
 # include "nsl/preprocessor/logical/bitand.h"
 # include "nsl/preprocessor/tuple/eat.h"
 #
-# /* NSL_PP_LESS */
+# /* N_PP_LESS */
 #
-# if NSL_PP_CONFIG_FLAGS() & (NSL_PP_CONFIG_MWCC() | NSL_PP_CONFIG_DMC())
-#    define NSL_PP_LESS(x, y) NSL_PP_BITAND(NSL_PP_NOT_EQUAL(x, y), NSL_PP_LESS_EQUAL(x, y))
-# elif ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_LESS(x, y) NSL_PP_IIF(NSL_PP_NOT_EQUAL(x, y), NSL_PP_LESS_EQUAL, 0 NSL_PP_TUPLE_EAT_2)(x, y)
+# if N_PP_CONFIG_FLAGS() & (N_PP_CONFIG_MWCC() | N_PP_CONFIG_DMC())
+#    define N_PP_LESS(x, y) N_PP_BITAND(N_PP_NOT_EQUAL(x, y), N_PP_LESS_EQUAL(x, y))
+# elif ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_LESS(x, y) N_PP_IIF(N_PP_NOT_EQUAL(x, y), N_PP_LESS_EQUAL, 0 N_PP_TUPLE_EAT_2)(x, y)
 # else
-#    define NSL_PP_LESS(x, y) NSL_PP_LESS_I(x, y)
-#    define NSL_PP_LESS_I(x, y) NSL_PP_IIF(NSL_PP_NOT_EQUAL(x, y), NSL_PP_LESS_EQUAL, 0 NSL_PP_TUPLE_EAT_2)(x, y)
+#    define N_PP_LESS(x, y) N_PP_LESS_I(x, y)
+#    define N_PP_LESS_I(x, y) N_PP_IIF(N_PP_NOT_EQUAL(x, y), N_PP_LESS_EQUAL, 0 N_PP_TUPLE_EAT_2)(x, y)
 # endif
 #
-# /* NSL_PP_LESS_D */
+# /* N_PP_LESS_D */
 #
-# if NSL_PP_CONFIG_FLAGS() & (NSL_PP_CONFIG_MWCC() | NSL_PP_CONFIG_DMC())
-#    define NSL_PP_LESS_D(d, x, y) NSL_PP_BITAND(NSL_PP_NOT_EQUAL(x, y), NSL_PP_LESS_EQUAL_D(d, x, y))
-# elif ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_LESS_D(d, x, y) NSL_PP_IIF(NSL_PP_NOT_EQUAL(x, y), NSL_PP_LESS_EQUAL_D, 0 NSL_PP_TUPLE_EAT_3)(d, x, y)
+# if N_PP_CONFIG_FLAGS() & (N_PP_CONFIG_MWCC() | N_PP_CONFIG_DMC())
+#    define N_PP_LESS_D(d, x, y) N_PP_BITAND(N_PP_NOT_EQUAL(x, y), N_PP_LESS_EQUAL_D(d, x, y))
+# elif ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_LESS_D(d, x, y) N_PP_IIF(N_PP_NOT_EQUAL(x, y), N_PP_LESS_EQUAL_D, 0 N_PP_TUPLE_EAT_3)(d, x, y)
 # else
-#    define NSL_PP_LESS_D(d, x, y) NSL_PP_LESS_D_I(d, x, y)
-#    define NSL_PP_LESS_D_I(d, x, y) NSL_PP_IIF(NSL_PP_NOT_EQUAL(x, y), NSL_PP_LESS_EQUAL_D, 0 NSL_PP_TUPLE_EAT_3)(d, x, y)
+#    define N_PP_LESS_D(d, x, y) N_PP_LESS_D_I(d, x, y)
+#    define N_PP_LESS_D_I(d, x, y) N_PP_IIF(N_PP_NOT_EQUAL(x, y), N_PP_LESS_EQUAL_D, 0 N_PP_TUPLE_EAT_3)(d, x, y)
 # endif
 #
 # endif

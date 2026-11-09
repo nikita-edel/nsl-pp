@@ -17,16 +17,16 @@
 #define TN_GEN_ONE(p) (1)
 #define TN_GEN_ZERO(p) (0)
 #define TN_TEST_ONE_MORE(parameter,ens) \
-        NSL_PP_IF \
+        N_PP_IF \
             ( \
-            NSL_PP_CAT(NSL_PP_TUPLE_ELEM(1,0,ens),0), \
+            N_PP_CAT(N_PP_TUPLE_ELEM(1,0,ens),0), \
             TN_GEN_ONE, \
             TN_GEN_ZERO \
             ) \
         (parameter) \
 /**/
 #define TN_TEST_ONE(parameter,ens) \
-    NSL_PP_TUPLE_ELEM \
+    N_PP_TUPLE_ELEM \
         ( \
         1, \
         0, \

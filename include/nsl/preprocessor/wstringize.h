@@ -14,16 +14,16 @@
 #
 # include "nsl/preprocessor/config/config.h"
 #
-# /* NSL_PP_WSTR */
+# /* N_PP_WSTR */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_MWCC()
-#    define NSL_PP_WSTR(text) NSL_PP_WSTR_I(text)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MWCC()
+#    define N_PP_WSTR(text) N_PP_WSTR_I(text)
 # else
-#    define NSL_PP_WSTR(text) NSL_PP_WSTR_OO((text))
-#    define NSL_PP_WSTR_OO(par) NSL_PP_WSTR_I ## par
+#    define N_PP_WSTR(text) N_PP_WSTR_OO((text))
+#    define N_PP_WSTR_OO(par) N_PP_WSTR_I ## par
 # endif
 #
-# define NSL_PP_WSTR_I(...) NSL_PP_WSTR_II(#__VA_ARGS__)
-# define NSL_PP_WSTR_II(str) L ## str
+# define N_PP_WSTR_I(...) N_PP_WSTR_II(#__VA_ARGS__)
+# define N_PP_WSTR_II(str) L ## str
 #
 # endif

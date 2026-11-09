@@ -18,13 +18,13 @@
 # include "nsl/preprocessor/control/iif.h"
 # include "nsl/preprocessor/logical/bool.h"
 #
-# /* NSL_PP_IF */
+# /* N_PP_IF */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_IF(cond, t, f) NSL_PP_IIF(NSL_PP_BOOL(cond), t, f)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_IF(cond, t, f) N_PP_IIF(N_PP_BOOL(cond), t, f)
 # else
-#    define NSL_PP_IF(cond, t, f) NSL_PP_IF_I(cond, t, f)
-#    define NSL_PP_IF_I(cond, t, f) NSL_PP_IIF(NSL_PP_BOOL(cond), t, f)
+#    define N_PP_IF(cond, t, f) N_PP_IF_I(cond, t, f)
+#    define N_PP_IF_I(cond, t, f) N_PP_IIF(N_PP_BOOL(cond), t, f)
 # endif
 #
 # endif

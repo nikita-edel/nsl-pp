@@ -17,16 +17,16 @@
 # include "nsl/preprocessor/array/to_tuple.h"
 # include "nsl/preprocessor/tuple/to_array.h"
 #
-# /* NSL_PP_TUPLE_INSERT */
+# /* N_PP_TUPLE_INSERT */
 #
-# define NSL_PP_TUPLE_INSERT(tuple, i, elem) \
-    NSL_PP_ARRAY_TO_TUPLE(NSL_PP_ARRAY_INSERT(NSL_PP_TUPLE_TO_ARRAY(tuple), i, elem)) \
+# define N_PP_TUPLE_INSERT(tuple, i, elem) \
+    N_PP_ARRAY_TO_TUPLE(N_PP_ARRAY_INSERT(N_PP_TUPLE_TO_ARRAY(tuple), i, elem)) \
 /**/
 #
-# /* NSL_PP_TUPLE_INSERT_D */
+# /* N_PP_TUPLE_INSERT_D */
 #
-# define NSL_PP_TUPLE_INSERT_D(d, tuple, i, elem) \
-    NSL_PP_ARRAY_TO_TUPLE(NSL_PP_ARRAY_INSERT_D(d, NSL_PP_TUPLE_TO_ARRAY(tuple), i, elem)) \
+# define N_PP_TUPLE_INSERT_D(d, tuple, i, elem) \
+    N_PP_ARRAY_TO_TUPLE(N_PP_ARRAY_INSERT_D(d, N_PP_TUPLE_TO_ARRAY(tuple), i, elem)) \
 /**/
 #
 # endif // NSL_PREPROCESSOR_TUPLE_INSERT_H

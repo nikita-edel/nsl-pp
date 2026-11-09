@@ -50,7 +50,7 @@ void print_macro(const char* name, const char* value)
    }
 }
 
-#define PRINT_MACRO(X) print_macro(#X, NSL_PP_STR(=X))
+#define PRINT_MACRO(X) print_macro(#X, N_PP_STR(=X))
 
 void print_macros()
 {
@@ -89,11 +89,11 @@ void print_macros()
   
   print_separator();
   
-  PRINT_MACRO(NSL_PP_CONFIG_ERRORS);
-  PRINT_MACRO(NSL_PP_CONFIG_EXTENDED_LINE_INFO);
-  PRINT_MACRO(NSL_PP_CONFIG_FLAGS());
-  PRINT_MACRO(NSL_PP_VARIADICS_MSVC);
-  PRINT_MACRO(NSL_PP_VARIADIC_HAS_OPT());
+  PRINT_MACRO(N_PP_CONFIG_ERRORS);
+  PRINT_MACRO(N_PP_CONFIG_EXTENDED_LINE_INFO);
+  PRINT_MACRO(N_PP_CONFIG_FLAGS());
+  PRINT_MACRO(N_PP_VARIADICS_MSVC);
+  PRINT_MACRO(N_PP_VARIADIC_HAS_OPT());
 }
 
 int main()

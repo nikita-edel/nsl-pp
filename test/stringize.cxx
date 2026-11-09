@@ -20,17 +20,17 @@
 #define VDATA 1,2,3,4
 #define NDATA
 #define DATA data
-#define FDATA(x) NSL_PP_INC(x)
+#define FDATA(x) N_PP_INC(x)
 
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_MSVC()
-BEGIN sizeof(NSL_PP_STR(NDATA)) / sizeof(char) == 1 END
-BEGIN sizeof(NSL_PP_WSTR(NDATA)) / sizeof(wchar_t) == 1 END
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MSVC()
+BEGIN sizeof(N_PP_STR(NDATA)) / sizeof(char) == 1 END
+BEGIN sizeof(N_PP_WSTR(NDATA)) / sizeof(wchar_t) == 1 END
 #endif
-BEGIN sizeof(NSL_PP_STR(DATA)) / sizeof(char) == 5 END
-BEGIN sizeof(NSL_PP_STR(FDATA(1))) / sizeof(char) == 2 END
-BEGIN sizeof(NSL_PP_STR(FDATA(9))) / sizeof(char) == 3 END
-BEGIN sizeof(NSL_PP_WSTR(DATA)) / sizeof(wchar_t) == 5 END
-BEGIN sizeof(NSL_PP_WSTR(FDATA(1))) / sizeof(wchar_t) == 2 END
-BEGIN sizeof(NSL_PP_WSTR(FDATA(9))) / sizeof(wchar_t) == 3 END
-BEGIN sizeof(NSL_PP_STR(VDATA)) / sizeof(char) == 8 END
-BEGIN sizeof(NSL_PP_WSTR(VDATA)) / sizeof(wchar_t) == 8 END
+BEGIN sizeof(N_PP_STR(DATA)) / sizeof(char) == 5 END
+BEGIN sizeof(N_PP_STR(FDATA(1))) / sizeof(char) == 2 END
+BEGIN sizeof(N_PP_STR(FDATA(9))) / sizeof(char) == 3 END
+BEGIN sizeof(N_PP_WSTR(DATA)) / sizeof(wchar_t) == 5 END
+BEGIN sizeof(N_PP_WSTR(FDATA(1))) / sizeof(wchar_t) == 2 END
+BEGIN sizeof(N_PP_WSTR(FDATA(9))) / sizeof(wchar_t) == 3 END
+BEGIN sizeof(N_PP_STR(VDATA)) / sizeof(char) == 8 END
+BEGIN sizeof(N_PP_WSTR(VDATA)) / sizeof(wchar_t) == 8 END

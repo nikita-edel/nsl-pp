@@ -2,6 +2,8 @@
 # Distributed under the Boost Software License, Version 1.0.
 # See accompanying file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt
 
+list(APPEND CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/.boost-cmake/include")
+
 include(BoostTest OPTIONAL RESULT_VARIABLE HAVE_NSL_TEST)
 
 if(NOT HAVE_NSL_TEST)
@@ -34,8 +36,8 @@ set(tests_c_fail
 	isempty_variadic_standard_failure2
 )
 
-set(NSL_TEST_LINK_LIBRARIES Boost::preprocessor)
-set(NSL_TEST_INCLUDE_DIRECTORIES .)
+set(BOOST_TEST_LINK_LIBRARIES Boost::preprocessor)
+set(BOOST_TEST_INCLUDE_DIRECTORIES .)
 
 foreach(test IN LISTS tests_c)
 	boost_test(

@@ -14,6 +14,6 @@
 #
 # include "nsl/preprocessor/config/limits.h"
 #
-# define NSL_PP_DETAIL_MAXIMUM_NUMBER NSL_PP_LIMIT_MAG
+# define N_PP_DETAIL_MAXIMUM_NUMBER N_PP_LIMIT_MAG
 #
 # endif

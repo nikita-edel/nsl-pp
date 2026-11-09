@@ -20,25 +20,25 @@
 # include "nsl/preprocessor/logical/not.h"
 # include "nsl/preprocessor/tuple/eat.h"
 #
-# /* NSL_PP_ASSERT */
+# /* N_PP_ASSERT */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_ASSERT NSL_PP_ASSERT_D
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_ASSERT N_PP_ASSERT_D
 # else
-#    define NSL_PP_ASSERT(cond) NSL_PP_ASSERT_D(cond)
+#    define N_PP_ASSERT(cond) N_PP_ASSERT_D(cond)
 # endif
 #
-# define NSL_PP_ASSERT_D(cond) NSL_PP_IIF(NSL_PP_NOT(cond), NSL_PP_ASSERT_ERROR, NSL_PP_TUPLE_EAT_1)(...)
-# define NSL_PP_ASSERT_ERROR(x, y, z)
+# define N_PP_ASSERT_D(cond) N_PP_IIF(N_PP_NOT(cond), N_PP_ASSERT_ERROR, N_PP_TUPLE_EAT_1)(...)
+# define N_PP_ASSERT_ERROR(x, y, z)
 #
-# /* NSL_PP_ASSERT_MSG */
+# /* N_PP_ASSERT_MSG */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_ASSERT_MSG NSL_PP_ASSERT_MSG_D
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_ASSERT_MSG N_PP_ASSERT_MSG_D
 # else
-#    define NSL_PP_ASSERT_MSG(cond, msg) NSL_PP_ASSERT_MSG_D(cond, msg)
+#    define N_PP_ASSERT_MSG(cond, msg) N_PP_ASSERT_MSG_D(cond, msg)
 # endif
 #
-# define NSL_PP_ASSERT_MSG_D(cond, msg) NSL_PP_EXPR_IIF(NSL_PP_NOT(cond), msg)
+# define N_PP_ASSERT_MSG_D(cond, msg) N_PP_EXPR_IIF(N_PP_NOT(cond), msg)
 #
 # endif

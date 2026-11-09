@@ -15,9 +15,9 @@
 # include "nsl/preprocessor/cat.h"
 # include "nsl/preprocessor/facilities/is_empty.h"
 #
-# /* NSL_PP_IS_1 */
+# /* N_PP_IS_1 */
 #
-# define NSL_PP_IS_1(x) NSL_PP_IS_EMPTY(NSL_PP_CAT(NSL_PP_IS_1_HELPER_, x))
-# define NSL_PP_IS_1_HELPER_1
+# define N_PP_IS_1(x) N_PP_IS_EMPTY(N_PP_CAT(N_PP_IS_1_HELPER_, x))
+# define N_PP_IS_1_HELPER_1
 #
 # endif

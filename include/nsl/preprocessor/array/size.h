@@ -15,14 +15,14 @@
 # include "nsl/preprocessor/config/config.h"
 # include "nsl/preprocessor/tuple/elem.h"
 #
-# /* NSL_PP_ARRAY_SIZE */
+# /* N_PP_ARRAY_SIZE */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_ARRAY_SIZE(array) NSL_PP_TUPLE_ELEM(2, 0, array)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_ARRAY_SIZE(array) N_PP_TUPLE_ELEM(2, 0, array)
 # else
-#    define NSL_PP_ARRAY_SIZE(array) NSL_PP_ARRAY_SIZE_I(array)
-#    define NSL_PP_ARRAY_SIZE_I(array) NSL_PP_ARRAY_SIZE_II array
-#    define NSL_PP_ARRAY_SIZE_II(size, data) size
+#    define N_PP_ARRAY_SIZE(array) N_PP_ARRAY_SIZE_I(array)
+#    define N_PP_ARRAY_SIZE_I(array) N_PP_ARRAY_SIZE_II array
+#    define N_PP_ARRAY_SIZE_II(size, data) size
 # endif
 #
 # endif

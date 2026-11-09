@@ -12,7 +12,7 @@
 # include "nsl/preprocessor/facilities/is_empty.h"
 # include "test.h"
 
-#if (NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_STRICT()) && !NSL_PP_VARIADICS_MSVC
+#if (N_PP_CONFIG_FLAGS() & N_PP_CONFIG_STRICT()) && !N_PP_VARIADICS_MSVC
 
 #define FUNC_GEN9(x,y,z) anything
   
@@ -20,11 +20,11 @@
   
 # include "nsl/preprocessor/variadic/has_opt.h"
 
-BEGIN NSL_PP_IS_EMPTY(FUNC_GEN9) == NSL_PP_VARIADIC_HAS_OPT() END
+BEGIN N_PP_IS_EMPTY(FUNC_GEN9) == N_PP_VARIADIC_HAS_OPT() END
 
 #else
 
-BEGIN NSL_PP_IS_EMPTY(FUNC_GEN9) == 0 END
+BEGIN N_PP_IS_EMPTY(FUNC_GEN9) == 0 END
 
 #endif
 

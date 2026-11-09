@@ -17,13 +17,13 @@
 # include "nsl/preprocessor/config/config.h"
 # include "nsl/preprocessor/tuple/elem.h"
 #
-# /* NSL_PP_ARRAY_ELEM */
+# /* N_PP_ARRAY_ELEM */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_ARRAY_ELEM(i, array) NSL_PP_TUPLE_ELEM(NSL_PP_ARRAY_SIZE(array), i, NSL_PP_ARRAY_DATA(array))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_ARRAY_ELEM(i, array) N_PP_TUPLE_ELEM(N_PP_ARRAY_SIZE(array), i, N_PP_ARRAY_DATA(array))
 # else
-#    define NSL_PP_ARRAY_ELEM(i, array) NSL_PP_ARRAY_ELEM_I(i, array)
-#    define NSL_PP_ARRAY_ELEM_I(i, array) NSL_PP_TUPLE_ELEM(NSL_PP_ARRAY_SIZE(array), i, NSL_PP_ARRAY_DATA(array))
+#    define N_PP_ARRAY_ELEM(i, array) N_PP_ARRAY_ELEM_I(i, array)
+#    define N_PP_ARRAY_ELEM_I(i, array) N_PP_TUPLE_ELEM(N_PP_ARRAY_SIZE(array), i, N_PP_ARRAY_DATA(array))
 # endif
 #
 # endif

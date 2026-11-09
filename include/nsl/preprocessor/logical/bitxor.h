@@ -14,25 +14,25 @@
 #
 # include "nsl/preprocessor/config/config.h"
 #
-# /* NSL_PP_BITXOR */
+# /* N_PP_BITXOR */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_MWCC()
-#    define NSL_PP_BITXOR(x, y) NSL_PP_BITXOR_I(x, y)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MWCC()
+#    define N_PP_BITXOR(x, y) N_PP_BITXOR_I(x, y)
 # else
-#    define NSL_PP_BITXOR(x, y) NSL_PP_BITXOR_OO((x, y))
-#    define NSL_PP_BITXOR_OO(par) NSL_PP_BITXOR_I ## par
+#    define N_PP_BITXOR(x, y) N_PP_BITXOR_OO((x, y))
+#    define N_PP_BITXOR_OO(par) N_PP_BITXOR_I ## par
 # endif
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_MSVC()
-#    define NSL_PP_BITXOR_I(x, y) NSL_PP_BITXOR_ ## x ## y
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MSVC()
+#    define N_PP_BITXOR_I(x, y) N_PP_BITXOR_ ## x ## y
 # else
-#    define NSL_PP_BITXOR_I(x, y) NSL_PP_BITXOR_ID(NSL_PP_BITXOR_ ## x ## y)
-#    define NSL_PP_BITXOR_ID(id) id
+#    define N_PP_BITXOR_I(x, y) N_PP_BITXOR_ID(N_PP_BITXOR_ ## x ## y)
+#    define N_PP_BITXOR_ID(id) id
 # endif
 #
-# define NSL_PP_BITXOR_00 0
-# define NSL_PP_BITXOR_01 1
-# define NSL_PP_BITXOR_10 1
-# define NSL_PP_BITXOR_11 0
+# define N_PP_BITXOR_00 0
+# define N_PP_BITXOR_01 1
+# define N_PP_BITXOR_10 1
+# define N_PP_BITXOR_11 0
 #
 # endif

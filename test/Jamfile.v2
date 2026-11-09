@@ -57,56 +57,56 @@ alias preprocessor
 
 alias preprocessor_number_512
    :   
-        [ compile arithmetic.cpp : <define>NSL_PP_LIMIT_MAG=512 : arithmetic_num_512 ]
-        [ compile array.cpp : <define>NSL_PP_LIMIT_MAG=512 : array_num_512 ]
-        [ compile comparison.cpp : <define>NSL_PP_LIMIT_MAG=512 : comparison_num_512 ]
-        [ compile control.cpp : <define>NSL_PP_LIMIT_MAG=512 : control_num_512 ]
-        [ compile debug.cpp : <define>NSL_PP_LIMIT_MAG=512 : debug_num_512 ]
-        [ compile facilities.cpp : <define>NSL_PP_LIMIT_MAG=512 : facilities_num_512 ]
-        [ compile iteration.cpp : <define>NSL_PP_LIMIT_MAG=512 <define>NSL_PP_LIMIT_ITERATION=512 : iteration_num_512 ]
-        [ compile list.cpp : <define>NSL_PP_LIMIT_MAG=512 <define>NSL_PP_LIMIT_FOR=512 : list_num_512 ]
-        [ compile logical.cpp : <define>NSL_PP_LIMIT_MAG=512 : logical_num_512 ]
-        [ compile repetition.cpp : <define>NSL_PP_LIMIT_MAG=512 : repetition_num_512 ]
-        [ compile selection.cpp : <define>NSL_PP_LIMIT_MAG=512 : selection_num_512 ]
-        [ compile seq.cpp : <define>NSL_PP_LIMIT_MAG=512 <define>NSL_PP_LIMIT_SEQ=512 : seq_num_512 ]
-        [ compile slot.cpp : <define>NSL_PP_LIMIT_MAG=512 : slot_num_512 ]
-        [ compile stringize.cpp : <define>NSL_PP_LIMIT_MAG=512 : stringize_num_512 ]
-        [ compile tuple.cpp : <define>NSL_PP_LIMIT_MAG=512 : tuple_num_512 ]
-        [ compile variadic.cpp : <define>NSL_PP_LIMIT_MAG=512 : variadic_num_512 ]
+        [ compile arithmetic.cpp : <define>N_PP_LIMIT_MAG=512 : arithmetic_num_512 ]
+        [ compile array.cpp : <define>N_PP_LIMIT_MAG=512 : array_num_512 ]
+        [ compile comparison.cpp : <define>N_PP_LIMIT_MAG=512 : comparison_num_512 ]
+        [ compile control.cpp : <define>N_PP_LIMIT_MAG=512 : control_num_512 ]
+        [ compile debug.cpp : <define>N_PP_LIMIT_MAG=512 : debug_num_512 ]
+        [ compile facilities.cpp : <define>N_PP_LIMIT_MAG=512 : facilities_num_512 ]
+        [ compile iteration.cpp : <define>N_PP_LIMIT_MAG=512 <define>N_PP_LIMIT_ITERATION=512 : iteration_num_512 ]
+        [ compile list.cpp : <define>N_PP_LIMIT_MAG=512 <define>N_PP_LIMIT_FOR=512 : list_num_512 ]
+        [ compile logical.cpp : <define>N_PP_LIMIT_MAG=512 : logical_num_512 ]
+        [ compile repetition.cpp : <define>N_PP_LIMIT_MAG=512 : repetition_num_512 ]
+        [ compile selection.cpp : <define>N_PP_LIMIT_MAG=512 : selection_num_512 ]
+        [ compile seq.cpp : <define>N_PP_LIMIT_MAG=512 <define>N_PP_LIMIT_SEQ=512 : seq_num_512 ]
+        [ compile slot.cpp : <define>N_PP_LIMIT_MAG=512 : slot_num_512 ]
+        [ compile stringize.cpp : <define>N_PP_LIMIT_MAG=512 : stringize_num_512 ]
+        [ compile tuple.cpp : <define>N_PP_LIMIT_MAG=512 : tuple_num_512 ]
+        [ compile variadic.cpp : <define>N_PP_LIMIT_MAG=512 : variadic_num_512 ]
   ;
 
 alias preprocessor_number_1024
    :   
-        [ compile arithmetic.cpp : <define>NSL_PP_LIMIT_MAG=1024 : arithmetic_num_1024 ]
-        [ compile array.cpp : <define>NSL_PP_LIMIT_MAG=1024 : array_num_1024 ]
-        [ compile comparison.cpp : <define>NSL_PP_LIMIT_MAG=1024 : comparison_num_1024 ]
-        [ compile control.cpp : <define>NSL_PP_LIMIT_MAG=1024 : control_num_1024 ]
-        [ compile debug.cpp : <define>NSL_PP_LIMIT_MAG=1024 : debug_num_1024 ]
-        [ compile facilities.cpp : <define>NSL_PP_LIMIT_MAG=1024 : facilities_num_1024 ]
-        [ compile iteration.cpp : <define>NSL_PP_LIMIT_MAG=1024 <define>NSL_PP_LIMIT_ITERATION=1024 : iteration_num_1024 ]
-        [ compile list.cpp : <define>NSL_PP_LIMIT_MAG=1024 <define>NSL_PP_LIMIT_FOR=1024 : list_num_1024 ]
-        [ compile logical.cpp : <define>NSL_PP_LIMIT_MAG=1024 : logical_num_1024 ]
-        [ compile repetition.cpp : <define>NSL_PP_LIMIT_MAG=1024 : repetition_num_1024 ]
-        [ compile selection.cpp : <define>NSL_PP_LIMIT_MAG=1024 : selection_num_1024 ]
-        [ compile seq.cpp : <define>NSL_PP_LIMIT_MAG=1024 <define>NSL_PP_LIMIT_SEQ=1024 : seq_num_1024 ]
-        [ compile slot.cpp : <define>NSL_PP_LIMIT_MAG=1024 : slot_num_1024 ]
-        [ compile stringize.cpp : <define>NSL_PP_LIMIT_MAG=1024 : stringize_num_1024 ]
-        [ compile tuple.cpp : <define>NSL_PP_LIMIT_MAG=1024 : tuple_num_1024 ]
-        [ compile variadic.cpp : <define>NSL_PP_LIMIT_MAG=1024 : variadic_num_1024 ]
+        [ compile arithmetic.cpp : <define>N_PP_LIMIT_MAG=1024 : arithmetic_num_1024 ]
+        [ compile array.cpp : <define>N_PP_LIMIT_MAG=1024 : array_num_1024 ]
+        [ compile comparison.cpp : <define>N_PP_LIMIT_MAG=1024 : comparison_num_1024 ]
+        [ compile control.cpp : <define>N_PP_LIMIT_MAG=1024 : control_num_1024 ]
+        [ compile debug.cpp : <define>N_PP_LIMIT_MAG=1024 : debug_num_1024 ]
+        [ compile facilities.cpp : <define>N_PP_LIMIT_MAG=1024 : facilities_num_1024 ]
+        [ compile iteration.cpp : <define>N_PP_LIMIT_MAG=1024 <define>N_PP_LIMIT_ITERATION=1024 : iteration_num_1024 ]
+        [ compile list.cpp : <define>N_PP_LIMIT_MAG=1024 <define>N_PP_LIMIT_FOR=1024 : list_num_1024 ]
+        [ compile logical.cpp : <define>N_PP_LIMIT_MAG=1024 : logical_num_1024 ]
+        [ compile repetition.cpp : <define>N_PP_LIMIT_MAG=1024 : repetition_num_1024 ]
+        [ compile selection.cpp : <define>N_PP_LIMIT_MAG=1024 : selection_num_1024 ]
+        [ compile seq.cpp : <define>N_PP_LIMIT_MAG=1024 <define>N_PP_LIMIT_SEQ=1024 : seq_num_1024 ]
+        [ compile slot.cpp : <define>N_PP_LIMIT_MAG=1024 : slot_num_1024 ]
+        [ compile stringize.cpp : <define>N_PP_LIMIT_MAG=1024 : stringize_num_1024 ]
+        [ compile tuple.cpp : <define>N_PP_LIMIT_MAG=1024 : tuple_num_1024 ]
+        [ compile variadic.cpp : <define>N_PP_LIMIT_MAG=1024 : variadic_num_1024 ]
   ;
 
 alias preprocessor_v_128
    :   
-        [ compile array.cpp : <define>NSL_PP_LIMIT_TUPLE=128 : array_v_128 ]
-        [ compile tuple.cpp : <define>NSL_PP_LIMIT_TUPLE=128 : tuple_v_128 ]
-        [ compile variadic.cpp : <define>NSL_PP_LIMIT_VARIADIC=128 <define>NSL_PP_LIMIT_TUPLE=128 : variadic_v_128 ]
+        [ compile array.cpp : <define>N_PP_LIMIT_TUPLE=128 : array_v_128 ]
+        [ compile tuple.cpp : <define>N_PP_LIMIT_TUPLE=128 : tuple_v_128 ]
+        [ compile variadic.cpp : <define>N_PP_LIMIT_VARIADIC=128 <define>N_PP_LIMIT_TUPLE=128 : variadic_v_128 ]
   ;
 
 alias preprocessor_v_256
    :   
-        [ compile array.cpp : <define>NSL_PP_LIMIT_TUPLE=256 : array_v_256 ]
-        [ compile tuple.cpp : <define>NSL_PP_LIMIT_TUPLE=256 : tuple_v_256 ]
-        [ compile variadic.cpp : <define>NSL_PP_LIMIT_VARIADIC=256 <define>NSL_PP_LIMIT_TUPLE=256 : variadic_v_256 ]
+        [ compile array.cpp : <define>N_PP_LIMIT_TUPLE=256 : array_v_256 ]
+        [ compile tuple.cpp : <define>N_PP_LIMIT_TUPLE=256 : tuple_v_256 ]
+        [ compile variadic.cpp : <define>N_PP_LIMIT_VARIADIC=256 <define>N_PP_LIMIT_TUPLE=256 : variadic_v_256 ]
   ;
   
 alias preprocessor_c
@@ -176,9 +176,9 @@ alias preprocessor_c
 alias preprocessor_number_rep_512
    :   
         [ compile repetition.cpp : 
-          <define>NSL_PP_LIMIT_MAG=512 
-          <define>NSL_PP_LIMIT_REPEAT=512 
-          <define>NSL_PP_LIMIT_FOR=512 
+          <define>N_PP_LIMIT_MAG=512 
+          <define>N_PP_LIMIT_REPEAT=512 
+          <define>N_PP_LIMIT_FOR=512 
           : repetition_rep_num_512 
         ]
   ;
@@ -186,9 +186,9 @@ alias preprocessor_number_rep_512
 alias preprocessor_number_rep_1024
    :   
         [ compile repetition.cpp : 
-          <define>NSL_PP_LIMIT_MAG=1024 
-          <define>NSL_PP_LIMIT_REPEAT=1024 
-          <define>NSL_PP_LIMIT_FOR=1024 
+          <define>N_PP_LIMIT_MAG=1024 
+          <define>N_PP_LIMIT_REPEAT=1024 
+          <define>N_PP_LIMIT_FOR=1024 
           : repetition_rep_num_1024
         ]
   ;

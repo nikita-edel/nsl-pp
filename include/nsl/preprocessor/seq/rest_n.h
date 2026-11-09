@@ -22,29 +22,29 @@
 # include "nsl/preprocessor/seq/detail/split.h"
 # include "nsl/preprocessor/tuple/elem.h"
 #
-# /* NSL_PP_SEQ_REST_N */
+# /* N_PP_SEQ_REST_N */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_SEQ_REST_N(n, seq) NSL_PP_SEQ_REST_N_DETAIL_EXEC(n, seq, NSL_PP_SEQ_DETAIL_EMPTY_SIZE(seq))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_SEQ_REST_N(n, seq) N_PP_SEQ_REST_N_DETAIL_EXEC(n, seq, N_PP_SEQ_DETAIL_EMPTY_SIZE(seq))
 # else
-#    define NSL_PP_SEQ_REST_N(n, seq) NSL_PP_SEQ_REST_N_I(n, seq)
-#    define NSL_PP_SEQ_REST_N_I(n, seq) NSL_PP_SEQ_REST_N_DETAIL_EXEC(n, seq, NSL_PP_SEQ_DETAIL_EMPTY_SIZE(seq))
+#    define N_PP_SEQ_REST_N(n, seq) N_PP_SEQ_REST_N_I(n, seq)
+#    define N_PP_SEQ_REST_N_I(n, seq) N_PP_SEQ_REST_N_DETAIL_EXEC(n, seq, N_PP_SEQ_DETAIL_EMPTY_SIZE(seq))
 # endif
 #
-#    define NSL_PP_SEQ_REST_N_DETAIL_EXEC_NO_MATCH(n, seq)
-#    define NSL_PP_SEQ_REST_N_DETAIL_EXEC_MATCH(n, seq) \
-            NSL_PP_TUPLE_ELEM(2, 1, NSL_PP_SEQ_SPLIT(NSL_PP_INC(n), NSL_PP_IDENTITY( (nil) seq )))() \
+#    define N_PP_SEQ_REST_N_DETAIL_EXEC_NO_MATCH(n, seq)
+#    define N_PP_SEQ_REST_N_DETAIL_EXEC_MATCH(n, seq) \
+            N_PP_TUPLE_ELEM(2, 1, N_PP_SEQ_SPLIT(N_PP_INC(n), N_PP_IDENTITY( (nil) seq )))() \
 /**/
-#    define NSL_PP_SEQ_REST_N_DETAIL_EXEC(n, seq, size) \
-        NSL_PP_IIF \
+#    define N_PP_SEQ_REST_N_DETAIL_EXEC(n, seq, size) \
+        N_PP_IIF \
             ( \
-            NSL_PP_BITAND \
+            N_PP_BITAND \
                 ( \
-                NSL_PP_SEQ_DETAIL_IS_NOT_EMPTY_SIZE(size), \
-                NSL_PP_NOT_EQUAL(n,size) \
+                N_PP_SEQ_DETAIL_IS_NOT_EMPTY_SIZE(size), \
+                N_PP_NOT_EQUAL(n,size) \
                 ), \
-            NSL_PP_SEQ_REST_N_DETAIL_EXEC_MATCH, \
-            NSL_PP_SEQ_REST_N_DETAIL_EXEC_NO_MATCH \
+            N_PP_SEQ_REST_N_DETAIL_EXEC_MATCH, \
+            N_PP_SEQ_REST_N_DETAIL_EXEC_NO_MATCH \
             ) \
         (n, seq)  \
 /**/

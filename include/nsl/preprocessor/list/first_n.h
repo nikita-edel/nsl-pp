@@ -22,37 +22,37 @@
 # include "nsl/preprocessor/tuple/elem.h"
 # include "nsl/preprocessor/tuple/rem.h"
 #
-# /* NSL_PP_LIST_FIRST_N */
+# /* N_PP_LIST_FIRST_N */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_LIST_FIRST_N(count, list) NSL_PP_LIST_REVERSE(NSL_PP_TUPLE_ELEM(3, 2, NSL_PP_WHILE(NSL_PP_LIST_FIRST_N_P, NSL_PP_LIST_FIRST_N_O, (count, list, NSL_PP_NIL))))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_LIST_FIRST_N(count, list) N_PP_LIST_REVERSE(N_PP_TUPLE_ELEM(3, 2, N_PP_WHILE(N_PP_LIST_FIRST_N_P, N_PP_LIST_FIRST_N_O, (count, list, N_PP_NIL))))
 # else
-#    define NSL_PP_LIST_FIRST_N(count, list) NSL_PP_LIST_FIRST_N_I(count, list)
-#    define NSL_PP_LIST_FIRST_N_I(count, list) NSL_PP_LIST_REVERSE(NSL_PP_TUPLE_ELEM(3, 2, NSL_PP_WHILE(NSL_PP_LIST_FIRST_N_P, NSL_PP_LIST_FIRST_N_O, (count, list, NSL_PP_NIL))))
+#    define N_PP_LIST_FIRST_N(count, list) N_PP_LIST_FIRST_N_I(count, list)
+#    define N_PP_LIST_FIRST_N_I(count, list) N_PP_LIST_REVERSE(N_PP_TUPLE_ELEM(3, 2, N_PP_WHILE(N_PP_LIST_FIRST_N_P, N_PP_LIST_FIRST_N_O, (count, list, N_PP_NIL))))
 # endif
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_LIST_FIRST_N_P(d, data) NSL_PP_TUPLE_ELEM(3, 0, data)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_LIST_FIRST_N_P(d, data) N_PP_TUPLE_ELEM(3, 0, data)
 # else
-#    define NSL_PP_LIST_FIRST_N_P(d, data) NSL_PP_LIST_FIRST_N_P_I data
-#    define NSL_PP_LIST_FIRST_N_P_I(c, l, nl) c
+#    define N_PP_LIST_FIRST_N_P(d, data) N_PP_LIST_FIRST_N_P_I data
+#    define N_PP_LIST_FIRST_N_P_I(c, l, nl) c
 # endif
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_MWCC()
-#    define NSL_PP_LIST_FIRST_N_O(d, data) NSL_PP_LIST_FIRST_N_O_D data
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MWCC()
+#    define N_PP_LIST_FIRST_N_O(d, data) N_PP_LIST_FIRST_N_O_D data
 # else
-#    define NSL_PP_LIST_FIRST_N_O(d, data) NSL_PP_LIST_FIRST_N_O_D(NSL_PP_TUPLE_ELEM(3, 0, data), NSL_PP_TUPLE_ELEM(3, 1, data), NSL_PP_TUPLE_ELEM(3, 2, data))
+#    define N_PP_LIST_FIRST_N_O(d, data) N_PP_LIST_FIRST_N_O_D(N_PP_TUPLE_ELEM(3, 0, data), N_PP_TUPLE_ELEM(3, 1, data), N_PP_TUPLE_ELEM(3, 2, data))
 # endif
 #
-# define NSL_PP_LIST_FIRST_N_O_D(c, l, nl) (NSL_PP_DEC(c), NSL_PP_LIST_REST(l), (NSL_PP_LIST_FIRST(l), nl))
+# define N_PP_LIST_FIRST_N_O_D(c, l, nl) (N_PP_DEC(c), N_PP_LIST_REST(l), (N_PP_LIST_FIRST(l), nl))
 #
-# /* NSL_PP_LIST_FIRST_N_D */
+# /* N_PP_LIST_FIRST_N_D */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_LIST_FIRST_N_D(d, count, list) NSL_PP_LIST_REVERSE_D(d, NSL_PP_TUPLE_ELEM(3, 2, NSL_PP_WHILE_ ## d(NSL_PP_LIST_FIRST_N_P, NSL_PP_LIST_FIRST_N_O, (count, list, NSL_PP_NIL))))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_LIST_FIRST_N_D(d, count, list) N_PP_LIST_REVERSE_D(d, N_PP_TUPLE_ELEM(3, 2, N_PP_WHILE_ ## d(N_PP_LIST_FIRST_N_P, N_PP_LIST_FIRST_N_O, (count, list, N_PP_NIL))))
 # else
-#    define NSL_PP_LIST_FIRST_N_D(d, count, list) NSL_PP_LIST_FIRST_N_D_I(d, count, list)
-#    define NSL_PP_LIST_FIRST_N_D_I(d, count, list) NSL_PP_LIST_REVERSE_D(d, NSL_PP_TUPLE_ELEM(3, 2, NSL_PP_WHILE_ ## d(NSL_PP_LIST_FIRST_N_P, NSL_PP_LIST_FIRST_N_O, (count, list, NSL_PP_NIL))))
+#    define N_PP_LIST_FIRST_N_D(d, count, list) N_PP_LIST_FIRST_N_D_I(d, count, list)
+#    define N_PP_LIST_FIRST_N_D_I(d, count, list) N_PP_LIST_REVERSE_D(d, N_PP_TUPLE_ELEM(3, 2, N_PP_WHILE_ ## d(N_PP_LIST_FIRST_N_P, N_PP_LIST_FIRST_N_O, (count, list, N_PP_NIL))))
 # endif
 #
 # endif

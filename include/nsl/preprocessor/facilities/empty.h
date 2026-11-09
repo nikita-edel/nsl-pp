@@ -16,8 +16,8 @@
 #
 # include "nsl/preprocessor/config/config.h"
 #
-# /* NSL_PP_EMPTY */
+# /* N_PP_EMPTY */
 #
-# define NSL_PP_EMPTY()
+# define N_PP_EMPTY()
 #
 # endif

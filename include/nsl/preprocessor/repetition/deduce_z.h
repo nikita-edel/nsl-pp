@@ -15,8 +15,8 @@
 # include "nsl/preprocessor/detail/auto_rec.h"
 # include "nsl/preprocessor/repetition/repeat.h"
 #
-# /* NSL_PP_DEDUCE_Z */
+# /* N_PP_DEDUCE_Z */
 #
-# define NSL_PP_DEDUCE_Z() NSL_PP_AUTO_REC(NSL_PP_REPEAT_P, 4)
+# define N_PP_DEDUCE_Z() N_PP_AUTO_REC(N_PP_REPEAT_P, 4)
 #
 # endif

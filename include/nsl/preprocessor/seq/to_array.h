@@ -16,13 +16,13 @@
 # include "nsl/preprocessor/seq/enum.h"
 # include "nsl/preprocessor/seq/size.h"
 #
-# /* NSL_PP_SEQ_TO_ARRAY */
+# /* N_PP_SEQ_TO_ARRAY */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_SEQ_TO_ARRAY(seq) (NSL_PP_SEQ_SIZE(seq), (NSL_PP_SEQ_ENUM(seq)))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_SEQ_TO_ARRAY(seq) (N_PP_SEQ_SIZE(seq), (N_PP_SEQ_ENUM(seq)))
 # else
-#    define NSL_PP_SEQ_TO_ARRAY(seq) NSL_PP_SEQ_TO_ARRAY_I(seq)
-#    define NSL_PP_SEQ_TO_ARRAY_I(seq) (NSL_PP_SEQ_SIZE(seq), (NSL_PP_SEQ_ENUM(seq)))
+#    define N_PP_SEQ_TO_ARRAY(seq) N_PP_SEQ_TO_ARRAY_I(seq)
+#    define N_PP_SEQ_TO_ARRAY_I(seq) (N_PP_SEQ_SIZE(seq), (N_PP_SEQ_ENUM(seq)))
 # endif
 #
 # endif

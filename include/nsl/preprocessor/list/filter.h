@@ -20,35 +20,35 @@
 # include "nsl/preprocessor/tuple/elem.h"
 # include "nsl/preprocessor/tuple/rem.h"
 #
-# /* NSL_PP_LIST_FILTER */
+# /* N_PP_LIST_FILTER */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_LIST_FILTER(pred, data, list) NSL_PP_TUPLE_ELEM(3, 2, NSL_PP_LIST_FOLD_RIGHT(NSL_PP_LIST_FILTER_O, (pred, data, NSL_PP_NIL), list))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_LIST_FILTER(pred, data, list) N_PP_TUPLE_ELEM(3, 2, N_PP_LIST_FOLD_RIGHT(N_PP_LIST_FILTER_O, (pred, data, N_PP_NIL), list))
 # else
-#    define NSL_PP_LIST_FILTER(pred, data, list) NSL_PP_LIST_FILTER_I(pred, data, list)
-#    define NSL_PP_LIST_FILTER_I(pred, data, list) NSL_PP_TUPLE_ELEM(3, 2, NSL_PP_LIST_FOLD_RIGHT(NSL_PP_LIST_FILTER_O, (pred, data, NSL_PP_NIL), list))
+#    define N_PP_LIST_FILTER(pred, data, list) N_PP_LIST_FILTER_I(pred, data, list)
+#    define N_PP_LIST_FILTER_I(pred, data, list) N_PP_TUPLE_ELEM(3, 2, N_PP_LIST_FOLD_RIGHT(N_PP_LIST_FILTER_O, (pred, data, N_PP_NIL), list))
 # endif
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_LIST_FILTER_O(d, pdr, elem) NSL_PP_LIST_FILTER_O_D(d, NSL_PP_TUPLE_ELEM(3, 0, pdr), NSL_PP_TUPLE_ELEM(3, 1, pdr), NSL_PP_TUPLE_ELEM(3, 2, pdr), elem)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_LIST_FILTER_O(d, pdr, elem) N_PP_LIST_FILTER_O_D(d, N_PP_TUPLE_ELEM(3, 0, pdr), N_PP_TUPLE_ELEM(3, 1, pdr), N_PP_TUPLE_ELEM(3, 2, pdr), elem)
 # else
-#    define NSL_PP_LIST_FILTER_O(d, pdr, elem) NSL_PP_LIST_FILTER_O_I(d, NSL_PP_TUPLE_REM_3 pdr, elem)
-#    define NSL_PP_LIST_FILTER_O_I(d, im, elem) NSL_PP_LIST_FILTER_O_D(d, im, elem)
+#    define N_PP_LIST_FILTER_O(d, pdr, elem) N_PP_LIST_FILTER_O_I(d, N_PP_TUPLE_REM_3 pdr, elem)
+#    define N_PP_LIST_FILTER_O_I(d, im, elem) N_PP_LIST_FILTER_O_D(d, im, elem)
 # endif
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_DMC()
-#    define NSL_PP_LIST_FILTER_O_D(d, pred, data, res, elem) (pred, data, NSL_PP_IF(pred(d, data, elem), (elem, res), res))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_DMC()
+#    define N_PP_LIST_FILTER_O_D(d, pred, data, res, elem) (pred, data, N_PP_IF(pred(d, data, elem), (elem, res), res))
 # else
-#    define NSL_PP_LIST_FILTER_O_D(d, pred, data, res, elem) (pred, data, NSL_PP_IF(pred##(d, data, elem), (elem, res), res))
+#    define N_PP_LIST_FILTER_O_D(d, pred, data, res, elem) (pred, data, N_PP_IF(pred##(d, data, elem), (elem, res), res))
 # endif
 #
-# /* NSL_PP_LIST_FILTER_D */
+# /* N_PP_LIST_FILTER_D */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_LIST_FILTER_D(d, pred, data, list) NSL_PP_TUPLE_ELEM(3, 2, NSL_PP_LIST_FOLD_RIGHT_ ## d(NSL_PP_LIST_FILTER_O, (pred, data, NSL_PP_NIL), list))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_LIST_FILTER_D(d, pred, data, list) N_PP_TUPLE_ELEM(3, 2, N_PP_LIST_FOLD_RIGHT_ ## d(N_PP_LIST_FILTER_O, (pred, data, N_PP_NIL), list))
 # else
-#    define NSL_PP_LIST_FILTER_D(d, pred, data, list) NSL_PP_LIST_FILTER_D_I(d, pred, data, list)
-#    define NSL_PP_LIST_FILTER_D_I(d, pred, data, list) NSL_PP_TUPLE_ELEM(3, 2, NSL_PP_LIST_FOLD_RIGHT_ ## d(NSL_PP_LIST_FILTER_O, (pred, data, NSL_PP_NIL), list))
+#    define N_PP_LIST_FILTER_D(d, pred, data, list) N_PP_LIST_FILTER_D_I(d, pred, data, list)
+#    define N_PP_LIST_FILTER_D_I(d, pred, data, list) N_PP_TUPLE_ELEM(3, 2, N_PP_LIST_FOLD_RIGHT_ ## d(N_PP_LIST_FILTER_O, (pred, data, N_PP_NIL), list))
 # endif
 #
 # endif

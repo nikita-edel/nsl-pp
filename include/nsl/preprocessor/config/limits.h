@@ -17,147 +17,147 @@
 #
 # include "nsl/preprocessor/config/config.h"
 #
-# if defined(NSL_PP_LIMIT_DIM)
-# undef NSL_PP_LIMIT_DIM
+# if defined(N_PP_LIMIT_DIM)
+# undef N_PP_LIMIT_DIM
 # endif
-# if defined(NSL_PP_LIMIT_ITERATION_DIM)
-# undef NSL_PP_LIMIT_ITERATION_DIM
+# if defined(N_PP_LIMIT_ITERATION_DIM)
+# undef N_PP_LIMIT_ITERATION_DIM
 # endif
-# if defined(NSL_PP_LIMIT_SLOT_SIG)
-# undef NSL_PP_LIMIT_SLOT_SIG
+# if defined(N_PP_LIMIT_SLOT_SIG)
+# undef N_PP_LIMIT_SLOT_SIG
 # endif
-# if defined(NSL_PP_LIMIT_SLOT_COUNT)
-# undef NSL_PP_LIMIT_SLOT_COUNT
+# if defined(N_PP_LIMIT_SLOT_COUNT)
+# undef N_PP_LIMIT_SLOT_COUNT
 # endif
-# if defined(NSL_PP_LIMIT_WHILE)
-# undef NSL_PP_LIMIT_WHILE
-# endif
-#
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_STRICT()
-#
-# if defined(NSL_PP_LIMIT_MAG)
-# undef NSL_PP_LIMIT_MAG
-# endif
-# if defined(NSL_PP_LIMIT_VARIADIC)
-# undef NSL_PP_LIMIT_VARIADIC
-# endif
-# if defined(NSL_PP_LIMIT_TUPLE)
-# undef NSL_PP_LIMIT_TUPLE
-# endif
-# if defined(NSL_PP_LIMIT_FOR)
-# undef NSL_PP_LIMIT_FOR
-# endif
-# if defined(NSL_PP_LIMIT_REPEAT)
-# undef NSL_PP_LIMIT_REPEAT
-# endif
-# if defined(NSL_PP_LIMIT_SEQ)
-# undef NSL_PP_LIMIT_SEQ
-# endif
-# if defined(NSL_PP_LIMIT_ITERATION)
-# undef NSL_PP_LIMIT_ITERATION
+# if defined(N_PP_LIMIT_WHILE)
+# undef N_PP_LIMIT_WHILE
 # endif
 #
-# define NSL_PP_LIMIT_MAG 256
-# define NSL_PP_LIMIT_WHILE 256
-# define NSL_PP_LIMIT_VARIADIC 64
-# define NSL_PP_LIMIT_TUPLE 64
-# define NSL_PP_LIMIT_FOR 256
-# define NSL_PP_LIMIT_SEQ 256
-# define NSL_PP_LIMIT_REPEAT 256
-# define NSL_PP_LIMIT_ITERATION 256
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_STRICT()
+#
+# if defined(N_PP_LIMIT_MAG)
+# undef N_PP_LIMIT_MAG
+# endif
+# if defined(N_PP_LIMIT_VARIADIC)
+# undef N_PP_LIMIT_VARIADIC
+# endif
+# if defined(N_PP_LIMIT_TUPLE)
+# undef N_PP_LIMIT_TUPLE
+# endif
+# if defined(N_PP_LIMIT_FOR)
+# undef N_PP_LIMIT_FOR
+# endif
+# if defined(N_PP_LIMIT_REPEAT)
+# undef N_PP_LIMIT_REPEAT
+# endif
+# if defined(N_PP_LIMIT_SEQ)
+# undef N_PP_LIMIT_SEQ
+# endif
+# if defined(N_PP_LIMIT_ITERATION)
+# undef N_PP_LIMIT_ITERATION
+# endif
+#
+# define N_PP_LIMIT_MAG 256
+# define N_PP_LIMIT_WHILE 256
+# define N_PP_LIMIT_VARIADIC 64
+# define N_PP_LIMIT_TUPLE 64
+# define N_PP_LIMIT_FOR 256
+# define N_PP_LIMIT_SEQ 256
+# define N_PP_LIMIT_REPEAT 256
+# define N_PP_LIMIT_ITERATION 256
 #
 #else
 #
-# if defined(NSL_PP_LIMIT_MAG)
-# if !(NSL_PP_LIMIT_MAG == 256 || NSL_PP_LIMIT_MAG == 512 || NSL_PP_LIMIT_MAG == 1024)
-# undef NSL_PP_LIMIT_MAG
-# define NSL_PP_LIMIT_MAG 256
-# define NSL_PP_LIMIT_WHILE 256
+# if defined(N_PP_LIMIT_MAG)
+# if !(N_PP_LIMIT_MAG == 256 || N_PP_LIMIT_MAG == 512 || N_PP_LIMIT_MAG == 1024)
+# undef N_PP_LIMIT_MAG
+# define N_PP_LIMIT_MAG 256
+# define N_PP_LIMIT_WHILE 256
 # else
-# define NSL_PP_LIMIT_WHILE NSL_PP_LIMIT_MAG
-# if !defined(NSL_PP_LIMIT_SEQ)
-# define NSL_PP_LIMIT_SEQ NSL_PP_LIMIT_MAG
+# define N_PP_LIMIT_WHILE N_PP_LIMIT_MAG
+# if !defined(N_PP_LIMIT_SEQ)
+# define N_PP_LIMIT_SEQ N_PP_LIMIT_MAG
 # endif
-# endif
-# else
-# define NSL_PP_LIMIT_MAG 256
-# define NSL_PP_LIMIT_WHILE 256
-# endif
-#
-# if defined(NSL_PP_LIMIT_VARIADIC)
-# if !(NSL_PP_LIMIT_VARIADIC == 64 || NSL_PP_LIMIT_VARIADIC == 128 || NSL_PP_LIMIT_VARIADIC == 256)
-# undef NSL_PP_LIMIT_VARIADIC
-# define NSL_PP_LIMIT_VARIADIC 64
 # endif
 # else
-# define NSL_PP_LIMIT_VARIADIC 64
+# define N_PP_LIMIT_MAG 256
+# define N_PP_LIMIT_WHILE 256
 # endif
 #
-# if defined(NSL_PP_LIMIT_TUPLE)
-# if !(NSL_PP_LIMIT_TUPLE == 64 || NSL_PP_LIMIT_TUPLE == 128 || NSL_PP_LIMIT_TUPLE == 256)
-# undef NSL_PP_LIMIT_TUPLE
-# define NSL_PP_LIMIT_TUPLE 64
-# elif NSL_PP_LIMIT_TUPLE > NSL_PP_LIMIT_VARIADIC
-# undef NSL_PP_LIMIT_VARIADIC
-# define NSL_PP_LIMIT_VARIADIC NSL_PP_LIMIT_TUPLE
+# if defined(N_PP_LIMIT_VARIADIC)
+# if !(N_PP_LIMIT_VARIADIC == 64 || N_PP_LIMIT_VARIADIC == 128 || N_PP_LIMIT_VARIADIC == 256)
+# undef N_PP_LIMIT_VARIADIC
+# define N_PP_LIMIT_VARIADIC 64
 # endif
 # else
-# define NSL_PP_LIMIT_TUPLE 64
+# define N_PP_LIMIT_VARIADIC 64
 # endif
 #
-# if defined(NSL_PP_LIMIT_FOR)
-# if !(NSL_PP_LIMIT_FOR == 256 || NSL_PP_LIMIT_FOR == 512 || NSL_PP_LIMIT_FOR == 1024)
-# undef NSL_PP_LIMIT_FOR
-# define NSL_PP_LIMIT_FOR 256
-# elif NSL_PP_LIMIT_FOR > NSL_PP_LIMIT_MAG
-# undef NSL_PP_LIMIT_FOR
-# define NSL_PP_LIMIT_FOR NSL_PP_LIMIT_MAG
+# if defined(N_PP_LIMIT_TUPLE)
+# if !(N_PP_LIMIT_TUPLE == 64 || N_PP_LIMIT_TUPLE == 128 || N_PP_LIMIT_TUPLE == 256)
+# undef N_PP_LIMIT_TUPLE
+# define N_PP_LIMIT_TUPLE 64
+# elif N_PP_LIMIT_TUPLE > N_PP_LIMIT_VARIADIC
+# undef N_PP_LIMIT_VARIADIC
+# define N_PP_LIMIT_VARIADIC N_PP_LIMIT_TUPLE
 # endif
 # else
-# define NSL_PP_LIMIT_FOR 256
+# define N_PP_LIMIT_TUPLE 64
 # endif
 #
-# if defined(NSL_PP_LIMIT_REPEAT)
-# if !(NSL_PP_LIMIT_REPEAT == 256 || NSL_PP_LIMIT_REPEAT == 512 || NSL_PP_LIMIT_REPEAT == 1024)
-# undef NSL_PP_LIMIT_REPEAT
-# define NSL_PP_LIMIT_REPEAT 256
-# elif NSL_PP_LIMIT_REPEAT > NSL_PP_LIMIT_MAG
-# undef NSL_PP_LIMIT_REPEAT
-# define NSL_PP_LIMIT_REPEAT NSL_PP_LIMIT_MAG
+# if defined(N_PP_LIMIT_FOR)
+# if !(N_PP_LIMIT_FOR == 256 || N_PP_LIMIT_FOR == 512 || N_PP_LIMIT_FOR == 1024)
+# undef N_PP_LIMIT_FOR
+# define N_PP_LIMIT_FOR 256
+# elif N_PP_LIMIT_FOR > N_PP_LIMIT_MAG
+# undef N_PP_LIMIT_FOR
+# define N_PP_LIMIT_FOR N_PP_LIMIT_MAG
 # endif
 # else
-# define NSL_PP_LIMIT_REPEAT 256
+# define N_PP_LIMIT_FOR 256
 # endif
 #
-# if defined(NSL_PP_LIMIT_SEQ)
-# if !(NSL_PP_LIMIT_SEQ == 256 || NSL_PP_LIMIT_SEQ == 512 || NSL_PP_LIMIT_SEQ == 1024)
-# undef NSL_PP_LIMIT_SEQ
-# define NSL_PP_LIMIT_SEQ 256
-# elif NSL_PP_LIMIT_SEQ > NSL_PP_LIMIT_MAG
-# undef NSL_PP_LIMIT_SEQ
-# define NSL_PP_LIMIT_SEQ NSL_PP_LIMIT_MAG
+# if defined(N_PP_LIMIT_REPEAT)
+# if !(N_PP_LIMIT_REPEAT == 256 || N_PP_LIMIT_REPEAT == 512 || N_PP_LIMIT_REPEAT == 1024)
+# undef N_PP_LIMIT_REPEAT
+# define N_PP_LIMIT_REPEAT 256
+# elif N_PP_LIMIT_REPEAT > N_PP_LIMIT_MAG
+# undef N_PP_LIMIT_REPEAT
+# define N_PP_LIMIT_REPEAT N_PP_LIMIT_MAG
 # endif
 # else
-# define NSL_PP_LIMIT_SEQ 256
+# define N_PP_LIMIT_REPEAT 256
 # endif
 #
-# if defined(NSL_PP_LIMIT_ITERATION)
-# if !(NSL_PP_LIMIT_ITERATION == 256 || NSL_PP_LIMIT_ITERATION == 512 || NSL_PP_LIMIT_ITERATION == 1024)
-# undef NSL_PP_LIMIT_ITERATION
-# define NSL_PP_LIMIT_ITERATION 256
-# elif NSL_PP_LIMIT_ITERATION > NSL_PP_LIMIT_MAG
-# undef NSL_PP_LIMIT_ITERATION
-# define NSL_PP_LIMIT_ITERATION NSL_PP_LIMIT_MAG
+# if defined(N_PP_LIMIT_SEQ)
+# if !(N_PP_LIMIT_SEQ == 256 || N_PP_LIMIT_SEQ == 512 || N_PP_LIMIT_SEQ == 1024)
+# undef N_PP_LIMIT_SEQ
+# define N_PP_LIMIT_SEQ 256
+# elif N_PP_LIMIT_SEQ > N_PP_LIMIT_MAG
+# undef N_PP_LIMIT_SEQ
+# define N_PP_LIMIT_SEQ N_PP_LIMIT_MAG
 # endif
 # else
-# define NSL_PP_LIMIT_ITERATION 256
+# define N_PP_LIMIT_SEQ 256
+# endif
+#
+# if defined(N_PP_LIMIT_ITERATION)
+# if !(N_PP_LIMIT_ITERATION == 256 || N_PP_LIMIT_ITERATION == 512 || N_PP_LIMIT_ITERATION == 1024)
+# undef N_PP_LIMIT_ITERATION
+# define N_PP_LIMIT_ITERATION 256
+# elif N_PP_LIMIT_ITERATION > N_PP_LIMIT_MAG
+# undef N_PP_LIMIT_ITERATION
+# define N_PP_LIMIT_ITERATION N_PP_LIMIT_MAG
+# endif
+# else
+# define N_PP_LIMIT_ITERATION 256
 # endif
 #
 # endif
 #
-# define NSL_PP_LIMIT_DIM 3
-# define NSL_PP_LIMIT_ITERATION_DIM 3
-# define NSL_PP_LIMIT_SLOT_SIG 10
-# define NSL_PP_LIMIT_SLOT_COUNT 5
+# define N_PP_LIMIT_DIM 3
+# define N_PP_LIMIT_ITERATION_DIM 3
+# define N_PP_LIMIT_SLOT_SIG 10
+# define N_PP_LIMIT_SLOT_COUNT 5
 #
 # endif

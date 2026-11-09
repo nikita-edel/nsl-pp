@@ -15,13 +15,13 @@
 # include "nsl/preprocessor/config/config.h"
 # include "nsl/preprocessor/seq/enum.h"
 #
-# /* NSL_PP_SEQ_TO_TUPLE */
+# /* N_PP_SEQ_TO_TUPLE */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_SEQ_TO_TUPLE(seq) (NSL_PP_SEQ_ENUM(seq))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_SEQ_TO_TUPLE(seq) (N_PP_SEQ_ENUM(seq))
 # else
-#    define NSL_PP_SEQ_TO_TUPLE(seq) NSL_PP_SEQ_TO_TUPLE_I(seq)
-#    define NSL_PP_SEQ_TO_TUPLE_I(seq) (NSL_PP_SEQ_ENUM(seq))
+#    define N_PP_SEQ_TO_TUPLE(seq) N_PP_SEQ_TO_TUPLE_I(seq)
+#    define N_PP_SEQ_TO_TUPLE_I(seq) (N_PP_SEQ_ENUM(seq))
 # endif
 #
 # endif

@@ -11,37 +11,37 @@
 #
 # include "nsl/preprocessor/config/limits.h"
 #
-# if !NSL_PP_IS_SELFISH
+# if !N_PP_IS_SELFISH
 #
 # include "iteration.h"
 #
 # define TEST(n) BEGIN n == n END
 #
-# define NSL_PP_LOCAL_MACRO(n) TEST(n)
-# define NSL_PP_LOCAL_LIMITS (1, 5)
-# include NSL_PP_LOCAL_ITERATE()
+# define N_PP_LOCAL_MACRO(n) TEST(n)
+# define N_PP_LOCAL_LIMITS (1, 5)
+# include N_PP_LOCAL_ITERATE()
 #
-# define NSL_PP_LOCAL_MACRO(n) TEST(n)
-# define NSL_PP_LOCAL_LIMITS (5, 1)
-# include NSL_PP_LOCAL_ITERATE()
+# define N_PP_LOCAL_MACRO(n) TEST(n)
+# define N_PP_LOCAL_LIMITS (5, 1)
+# include N_PP_LOCAL_ITERATE()
 #
-# if NSL_PP_LIMIT_ITERATION != 256
+# if N_PP_LIMIT_ITERATION != 256
 #
-# define NSL_PP_LOCAL_MACRO(n) int NSL_PP_CAT(int_li_f_,n) = n ;
-# define NSL_PP_LOCAL_LIMITS (0, NSL_PP_LIMIT_ITERATION)
-# include NSL_PP_LOCAL_ITERATE()
+# define N_PP_LOCAL_MACRO(n) int N_PP_CAT(int_li_f_,n) = n ;
+# define N_PP_LOCAL_LIMITS (0, N_PP_LIMIT_ITERATION)
+# include N_PP_LOCAL_ITERATE()
 #
-# define NSL_PP_LOCAL_MACRO(n) int NSL_PP_CAT(int_li_r_,n) = n ;
-# define NSL_PP_LOCAL_LIMITS (NSL_PP_LIMIT_ITERATION, 0)
-# include NSL_PP_LOCAL_ITERATE()
+# define N_PP_LOCAL_MACRO(n) int N_PP_CAT(int_li_r_,n) = n ;
+# define N_PP_LOCAL_LIMITS (N_PP_LIMIT_ITERATION, 0)
+# include N_PP_LOCAL_ITERATE()
 #
 # endif
 #
-# define NSL_PP_INDIRECT_SELF "iteration.cpp"
-# include NSL_PP_INCLUDE_SELF()
+# define N_PP_INDIRECT_SELF "iteration.cpp"
+# include N_PP_INCLUDE_SELF()
 #
 # else
 
-BEGIN NSL_PP_IS_SELFISH == 1 END
+BEGIN N_PP_IS_SELFISH == 1 END
 
 # endif

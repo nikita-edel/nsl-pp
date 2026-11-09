@@ -14,8 +14,8 @@
 # ifndef NSL_PREPROCESSOR_PUNCTUATION_COMMA_H
 # define NSL_PREPROCESSOR_PUNCTUATION_COMMA_H
 #
-# /* NSL_PP_COMMA */
+# /* N_PP_COMMA */
 #
-# define NSL_PP_COMMA() ,
+# define N_PP_COMMA() ,
 #
 # endif

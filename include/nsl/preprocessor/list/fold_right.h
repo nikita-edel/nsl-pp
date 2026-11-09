@@ -17,7 +17,7 @@
 #
 # include "nsl/preprocessor/config/config.h"
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_STRICT()
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_STRICT()
 #
 # include "nsl/preprocessor/cat.h"
 # include "nsl/preprocessor/control/while.h"
@@ -25,18 +25,18 @@
 # include "nsl/preprocessor/detail/auto_rec.h"
 #
 # if 0
-#    define NSL_PP_LIST_FOLD_RIGHT(op, state, list)
+#    define N_PP_LIST_FOLD_RIGHT(op, state, list)
 # endif
 #
-# define NSL_PP_LIST_FOLD_RIGHT NSL_PP_CAT(NSL_PP_LIST_FOLD_RIGHT_, NSL_PP_AUTO_REC(NSL_PP_WHILE_P, 256))
+# define N_PP_LIST_FOLD_RIGHT N_PP_CAT(N_PP_LIST_FOLD_RIGHT_, N_PP_AUTO_REC(N_PP_WHILE_P, 256))
 #
-# define NSL_PP_LIST_FOLD_RIGHT_257(o, s, l) NSL_PP_ERROR(0x0004)
+# define N_PP_LIST_FOLD_RIGHT_257(o, s, l) N_PP_ERROR(0x0004)
 #
-# define NSL_PP_LIST_FOLD_RIGHT_D(d, o, s, l) NSL_PP_LIST_FOLD_RIGHT_ ## d(o, s, l)
-# define NSL_PP_LIST_FOLD_RIGHT_2ND NSL_PP_LIST_FOLD_RIGHT
-# define NSL_PP_LIST_FOLD_RIGHT_2ND_D NSL_PP_LIST_FOLD_RIGHT_D
+# define N_PP_LIST_FOLD_RIGHT_D(d, o, s, l) N_PP_LIST_FOLD_RIGHT_ ## d(o, s, l)
+# define N_PP_LIST_FOLD_RIGHT_2ND N_PP_LIST_FOLD_RIGHT
+# define N_PP_LIST_FOLD_RIGHT_2ND_D N_PP_LIST_FOLD_RIGHT_D
 #
-# if NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
+# if N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
 #    include "nsl/preprocessor/list/detail/edg/fold_right.h"
 # else
 #    include "nsl/preprocessor/list/detail/fold_right.h"
@@ -51,29 +51,29 @@
 # include "nsl/preprocessor/detail/auto_rec.h"
 #
 # if 0
-#    define NSL_PP_LIST_FOLD_RIGHT(op, state, list)
+#    define N_PP_LIST_FOLD_RIGHT(op, state, list)
 # endif
 #
 # include "nsl/preprocessor/config/limits.h"
 #
-# if NSL_PP_LIMIT_WHILE == 256
-# define NSL_PP_LIST_FOLD_RIGHT NSL_PP_CAT(NSL_PP_LIST_FOLD_RIGHT_, NSL_PP_DEC(NSL_PP_AUTO_REC(NSL_PP_WHILE_P, 256)))
-# define NSL_PP_LIST_FOLD_RIGHT_257(o, s, l) NSL_PP_ERROR(0x0004)
-# elif NSL_PP_LIMIT_WHILE == 512
-# define NSL_PP_LIST_FOLD_RIGHT NSL_PP_CAT(NSL_PP_LIST_FOLD_RIGHT_, NSL_PP_DEC(NSL_PP_AUTO_REC(NSL_PP_WHILE_P, 512)))
-# define NSL_PP_LIST_FOLD_RIGHT_513(o, s, l) NSL_PP_ERROR(0x0004)
-# elif NSL_PP_LIMIT_WHILE == 1024
-# define NSL_PP_LIST_FOLD_RIGHT NSL_PP_CAT(NSL_PP_LIST_FOLD_RIGHT_, NSL_PP_DEC(NSL_PP_AUTO_REC(NSL_PP_WHILE_P, 1024)))
-# define NSL_PP_LIST_FOLD_RIGHT_1025(o, s, l) NSL_PP_ERROR(0x0004)
+# if N_PP_LIMIT_WHILE == 256
+# define N_PP_LIST_FOLD_RIGHT N_PP_CAT(N_PP_LIST_FOLD_RIGHT_, N_PP_DEC(N_PP_AUTO_REC(N_PP_WHILE_P, 256)))
+# define N_PP_LIST_FOLD_RIGHT_257(o, s, l) N_PP_ERROR(0x0004)
+# elif N_PP_LIMIT_WHILE == 512
+# define N_PP_LIST_FOLD_RIGHT N_PP_CAT(N_PP_LIST_FOLD_RIGHT_, N_PP_DEC(N_PP_AUTO_REC(N_PP_WHILE_P, 512)))
+# define N_PP_LIST_FOLD_RIGHT_513(o, s, l) N_PP_ERROR(0x0004)
+# elif N_PP_LIMIT_WHILE == 1024
+# define N_PP_LIST_FOLD_RIGHT N_PP_CAT(N_PP_LIST_FOLD_RIGHT_, N_PP_DEC(N_PP_AUTO_REC(N_PP_WHILE_P, 1024)))
+# define N_PP_LIST_FOLD_RIGHT_1025(o, s, l) N_PP_ERROR(0x0004)
 # else
-# error Incorrect value for the NSL_PP_LIMIT_WHILE limit
+# error Incorrect value for the N_PP_LIMIT_WHILE limit
 # endif
 #
-# define NSL_PP_LIST_FOLD_RIGHT_D(d, o, s, l) NSL_PP_LIST_FOLD_RIGHT_ ## d(o, s, l)
-# define NSL_PP_LIST_FOLD_RIGHT_2ND NSL_PP_LIST_FOLD_RIGHT
-# define NSL_PP_LIST_FOLD_RIGHT_2ND_D NSL_PP_LIST_FOLD_RIGHT_D
+# define N_PP_LIST_FOLD_RIGHT_D(d, o, s, l) N_PP_LIST_FOLD_RIGHT_ ## d(o, s, l)
+# define N_PP_LIST_FOLD_RIGHT_2ND N_PP_LIST_FOLD_RIGHT
+# define N_PP_LIST_FOLD_RIGHT_2ND_D N_PP_LIST_FOLD_RIGHT_D
 #
-# if NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
+# if N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
 #    include "nsl/preprocessor/list/detail/edg/fold_right.h"
 # else
 #    include "nsl/preprocessor/list/detail/fold_right.h"
