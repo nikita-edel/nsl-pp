@@ -18,17 +18,17 @@
 # include "nsl/preprocessor/config/config.h"
 # include "nsl/preprocessor/logical/compl.h"
 #
-# /* NSL_PP_EQUAL */
+# /* N_PP_EQUAL */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_EQUAL(x, y) NSL_PP_COMPL(NSL_PP_NOT_EQUAL(x, y))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_EQUAL(x, y) N_PP_COMPL(N_PP_NOT_EQUAL(x, y))
 # else
-#    define NSL_PP_EQUAL(x, y) NSL_PP_EQUAL_I(x, y)
-#    define NSL_PP_EQUAL_I(x, y) NSL_PP_COMPL(NSL_PP_NOT_EQUAL(x, y))
+#    define N_PP_EQUAL(x, y) N_PP_EQUAL_I(x, y)
+#    define N_PP_EQUAL_I(x, y) N_PP_COMPL(N_PP_NOT_EQUAL(x, y))
 # endif
 #
-# /* NSL_PP_EQUAL_D */
+# /* N_PP_EQUAL_D */
 #
-# define NSL_PP_EQUAL_D(d, x, y) NSL_PP_EQUAL(x, y)
+# define N_PP_EQUAL_D(d, x, y) N_PP_EQUAL(x, y)
 #
 # endif

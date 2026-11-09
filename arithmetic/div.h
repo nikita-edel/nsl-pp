@@ -17,27 +17,27 @@
 #
 # include "nsl/preprocessor/config/config.h"
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_STRICT()
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_STRICT()
 #
 # include "nsl/preprocessor/arithmetic/detail/div_base.h"
 # include "nsl/preprocessor/tuple/elem.h"
 #
-# /* NSL_PP_DIV */
+# /* N_PP_DIV */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_DIV(x, y) NSL_PP_TUPLE_ELEM(3, 0, NSL_PP_DIV_BASE(x, y))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_DIV(x, y) N_PP_TUPLE_ELEM(3, 0, N_PP_DIV_BASE(x, y))
 # else
-#    define NSL_PP_DIV(x, y) NSL_PP_DIV_I(x, y)
-#    define NSL_PP_DIV_I(x, y) NSL_PP_TUPLE_ELEM(3, 0, NSL_PP_DIV_BASE(x, y))
+#    define N_PP_DIV(x, y) N_PP_DIV_I(x, y)
+#    define N_PP_DIV_I(x, y) N_PP_TUPLE_ELEM(3, 0, N_PP_DIV_BASE(x, y))
 # endif
 #
-# /* NSL_PP_DIV_D */
+# /* N_PP_DIV_D */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_DIV_D(d, x, y) NSL_PP_TUPLE_ELEM(3, 0, NSL_PP_DIV_BASE_D(d, x, y))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_DIV_D(d, x, y) N_PP_TUPLE_ELEM(3, 0, N_PP_DIV_BASE_D(d, x, y))
 # else
-#    define NSL_PP_DIV_D(d, x, y) NSL_PP_DIV_D_I(d, x, y)
-#    define NSL_PP_DIV_D_I(d, x, y) NSL_PP_TUPLE_ELEM(3, 0, NSL_PP_DIV_BASE_D(d, x, y))
+#    define N_PP_DIV_D(d, x, y) N_PP_DIV_D_I(d, x, y)
+#    define N_PP_DIV_D_I(d, x, y) N_PP_TUPLE_ELEM(3, 0, N_PP_DIV_BASE_D(d, x, y))
 # endif
 #
 # else
@@ -48,26 +48,26 @@
 # include "nsl/preprocessor/tuple/elem.h"
 # include "nsl/preprocessor/arithmetic/detail/is_1_number.h"
 #
-# /* NSL_PP_DIV */
+# /* N_PP_DIV */
 #
-#    define NSL_PP_DIV(x, y) NSL_PP_IIF(NSL_PP_DETAIL_IS_1_NUMBER(y),NSL_PP_IDENTITY_N(x,2),NSL_PP_DIV_DO)(x,y)
+#    define N_PP_DIV(x, y) N_PP_IIF(N_PP_DETAIL_IS_1_NUMBER(y),N_PP_IDENTITY_N(x,2),N_PP_DIV_DO)(x,y)
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_DIV_DO(x, y) NSL_PP_TUPLE_ELEM(3, 0, NSL_PP_DIV_BASE(x, y))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_DIV_DO(x, y) N_PP_TUPLE_ELEM(3, 0, N_PP_DIV_BASE(x, y))
 # else
-#    define NSL_PP_DIV_DO(x, y) NSL_PP_DIV_I(x, y)
-#    define NSL_PP_DIV_I(x, y) NSL_PP_TUPLE_ELEM(3, 0, NSL_PP_DIV_BASE(x, y))
+#    define N_PP_DIV_DO(x, y) N_PP_DIV_I(x, y)
+#    define N_PP_DIV_I(x, y) N_PP_TUPLE_ELEM(3, 0, N_PP_DIV_BASE(x, y))
 # endif
 #
-# /* NSL_PP_DIV_D */
+# /* N_PP_DIV_D */
 #
-#    define NSL_PP_DIV_D(d, x, y) NSL_PP_IIF(NSL_PP_DETAIL_IS_1_NUMBER(y),NSL_PP_IDENTITY_N(x,3),NSL_PP_DIV_DO_D)(d,x,y)
+#    define N_PP_DIV_D(d, x, y) N_PP_IIF(N_PP_DETAIL_IS_1_NUMBER(y),N_PP_IDENTITY_N(x,3),N_PP_DIV_DO_D)(d,x,y)
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_DIV_DO_D(d, x, y) NSL_PP_TUPLE_ELEM(3, 0, NSL_PP_DIV_BASE_D(d, x, y))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_DIV_DO_D(d, x, y) N_PP_TUPLE_ELEM(3, 0, N_PP_DIV_BASE_D(d, x, y))
 # else
-#    define NSL_PP_DIV_DO_D(d, x, y) NSL_PP_DIV_D_I(d, x, y)
-#    define NSL_PP_DIV_D_I(d, x, y) NSL_PP_TUPLE_ELEM(3, 0, NSL_PP_DIV_BASE_D(d, x, y))
+#    define N_PP_DIV_DO_D(d, x, y) N_PP_DIV_D_I(d, x, y)
+#    define N_PP_DIV_D_I(d, x, y) N_PP_TUPLE_ELEM(3, 0, N_PP_DIV_BASE_D(d, x, y))
 # endif
 #
 # endif

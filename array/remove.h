@@ -16,7 +16,7 @@
 #
 # include "nsl/preprocessor/config/config.h"
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_STRICT()
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_STRICT()
 #
 # include "nsl/preprocessor/arithmetic/inc.h"
 # include "nsl/preprocessor/array/elem.h"
@@ -29,32 +29,32 @@
 # include "nsl/preprocessor/tuple/eat.h"
 # include "nsl/preprocessor/tuple/elem.h"
 #
-# /* NSL_PP_ARRAY_REMOVE */
+# /* N_PP_ARRAY_REMOVE */
 #
-# define NSL_PP_ARRAY_REMOVE(array, i) NSL_PP_ARRAY_REMOVE_I(NSL_PP_DEDUCE_D(), array, i)
-# define NSL_PP_ARRAY_REMOVE_I(d, array, i) NSL_PP_ARRAY_REMOVE_D(d, array, i)
+# define N_PP_ARRAY_REMOVE(array, i) N_PP_ARRAY_REMOVE_I(N_PP_DEDUCE_D(), array, i)
+# define N_PP_ARRAY_REMOVE_I(d, array, i) N_PP_ARRAY_REMOVE_D(d, array, i)
 #
-# /* NSL_PP_ARRAY_REMOVE_D */
+# /* N_PP_ARRAY_REMOVE_D */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_ARRAY_REMOVE_D(d, array, i) NSL_PP_TUPLE_ELEM(4, 2, NSL_PP_WHILE_ ## d(NSL_PP_ARRAY_REMOVE_P, NSL_PP_ARRAY_REMOVE_O, (0, i, (0, ()), array)))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_ARRAY_REMOVE_D(d, array, i) N_PP_TUPLE_ELEM(4, 2, N_PP_WHILE_ ## d(N_PP_ARRAY_REMOVE_P, N_PP_ARRAY_REMOVE_O, (0, i, (0, ()), array)))
 # else
-#    define NSL_PP_ARRAY_REMOVE_D(d, array, i) NSL_PP_ARRAY_REMOVE_D_I(d, array, i)
-#    define NSL_PP_ARRAY_REMOVE_D_I(d, array, i) NSL_PP_TUPLE_ELEM(4, 2, NSL_PP_WHILE_ ## d(NSL_PP_ARRAY_REMOVE_P, NSL_PP_ARRAY_REMOVE_O, (0, i, (0, ()), array)))
+#    define N_PP_ARRAY_REMOVE_D(d, array, i) N_PP_ARRAY_REMOVE_D_I(d, array, i)
+#    define N_PP_ARRAY_REMOVE_D_I(d, array, i) N_PP_TUPLE_ELEM(4, 2, N_PP_WHILE_ ## d(N_PP_ARRAY_REMOVE_P, N_PP_ARRAY_REMOVE_O, (0, i, (0, ()), array)))
 # endif
 #
-# define NSL_PP_ARRAY_REMOVE_P(d, st) NSL_PP_NOT_EQUAL(NSL_PP_TUPLE_ELEM(4, 0, st), NSL_PP_ARRAY_SIZE(NSL_PP_TUPLE_ELEM(4, 3, st)))
+# define N_PP_ARRAY_REMOVE_P(d, st) N_PP_NOT_EQUAL(N_PP_TUPLE_ELEM(4, 0, st), N_PP_ARRAY_SIZE(N_PP_TUPLE_ELEM(4, 3, st)))
 #
-# if NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_STRICT()
-#    define NSL_PP_ARRAY_REMOVE_O(d, st) NSL_PP_ARRAY_REMOVE_O_I st
+# if N_PP_CONFIG_FLAGS() & N_PP_CONFIG_STRICT()
+#    define N_PP_ARRAY_REMOVE_O(d, st) N_PP_ARRAY_REMOVE_O_I st
 # else
-#    define NSL_PP_ARRAY_REMOVE_O(d, st) NSL_PP_ARRAY_REMOVE_O_I(NSL_PP_TUPLE_ELEM(4, 0, st), NSL_PP_TUPLE_ELEM(4, 1, st), NSL_PP_TUPLE_ELEM(4, 2, st), NSL_PP_TUPLE_ELEM(4, 3, st))
+#    define N_PP_ARRAY_REMOVE_O(d, st) N_PP_ARRAY_REMOVE_O_I(N_PP_TUPLE_ELEM(4, 0, st), N_PP_TUPLE_ELEM(4, 1, st), N_PP_TUPLE_ELEM(4, 2, st), N_PP_TUPLE_ELEM(4, 3, st))
 # endif
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_DMC()
-#    define NSL_PP_ARRAY_REMOVE_O_I(n, i, res, arr) (NSL_PP_INC(n), i, NSL_PP_IIF(NSL_PP_NOT_EQUAL(n, i), NSL_PP_ARRAY_PUSH_BACK, res NSL_PP_TUPLE_EAT_2)(res, NSL_PP_ARRAY_ELEM(n, arr)), arr)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_DMC()
+#    define N_PP_ARRAY_REMOVE_O_I(n, i, res, arr) (N_PP_INC(n), i, N_PP_IIF(N_PP_NOT_EQUAL(n, i), N_PP_ARRAY_PUSH_BACK, res N_PP_TUPLE_EAT_2)(res, N_PP_ARRAY_ELEM(n, arr)), arr)
 # else
-#    define NSL_PP_ARRAY_REMOVE_O_I(n, i, res, arr) (NSL_PP_INC(n), i, NSL_PP_IIF(NSL_PP_NOT_EQUAL(n, i), NSL_PP_ARRAY_PUSH_BACK, NSL_PP_TUPLE_ELEM_2_0)(res, NSL_PP_ARRAY_ELEM(n, arr)), arr)
+#    define N_PP_ARRAY_REMOVE_O_I(n, i, res, arr) (N_PP_INC(n), i, N_PP_IIF(N_PP_NOT_EQUAL(n, i), N_PP_ARRAY_PUSH_BACK, N_PP_TUPLE_ELEM_2_0)(res, N_PP_ARRAY_ELEM(n, arr)), arr)
 # endif
 #
 # else
@@ -67,52 +67,52 @@
 # include "nsl/preprocessor/control/deduce_d.h"
 # include "nsl/preprocessor/control/iif.h"
 # include "nsl/preprocessor/control/while.h"
-# if NSL_PP_LIMIT_TUPLE == 256
+# if N_PP_LIMIT_TUPLE == 256
 # include "nsl/preprocessor/logical/not.h"
 # endif
 # include "nsl/preprocessor/tuple/eat.h"
 # include "nsl/preprocessor/tuple/elem.h"
 #
-# /* NSL_PP_ARRAY_REMOVE */
+# /* N_PP_ARRAY_REMOVE */
 #
-# define NSL_PP_ARRAY_REMOVE(array, i) NSL_PP_ARRAY_REMOVE_I(NSL_PP_DEDUCE_D(), array, i)
-# define NSL_PP_ARRAY_REMOVE_I(d, array, i) NSL_PP_ARRAY_REMOVE_D(d, array, i)
+# define N_PP_ARRAY_REMOVE(array, i) N_PP_ARRAY_REMOVE_I(N_PP_DEDUCE_D(), array, i)
+# define N_PP_ARRAY_REMOVE_I(d, array, i) N_PP_ARRAY_REMOVE_D(d, array, i)
 #
-# /* NSL_PP_ARRAY_REMOVE_D */
+# /* N_PP_ARRAY_REMOVE_D */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-# if NSL_PP_LIMIT_TUPLE == 256
-#    define NSL_PP_ARRAY_REMOVE_D(d, array, i) NSL_PP_ARRAY_REMOVE_ZERO_D(d, array, i, NSL_PP_NOT(i))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+# if N_PP_LIMIT_TUPLE == 256
+#    define N_PP_ARRAY_REMOVE_D(d, array, i) N_PP_ARRAY_REMOVE_ZERO_D(d, array, i, N_PP_NOT(i))
 # else
-#    define NSL_PP_ARRAY_REMOVE_D(d, array, i) NSL_PP_TUPLE_ELEM(4, 2, NSL_PP_WHILE_ ## d(NSL_PP_ARRAY_REMOVE_P, NSL_PP_ARRAY_REMOVE_O, (0, i, (0, ()), array)))
+#    define N_PP_ARRAY_REMOVE_D(d, array, i) N_PP_TUPLE_ELEM(4, 2, N_PP_WHILE_ ## d(N_PP_ARRAY_REMOVE_P, N_PP_ARRAY_REMOVE_O, (0, i, (0, ()), array)))
 # endif
 # else
-#    define NSL_PP_ARRAY_REMOVE_D(d, array, i) NSL_PP_ARRAY_REMOVE_D_I(d, array, i)
-# if NSL_PP_LIMIT_TUPLE == 256
-#    define NSL_PP_ARRAY_REMOVE_D_I(d, array, i) NSL_PP_ARRAY_REMOVE_ZERO_D(d, array, i, NSL_PP_NOT(i))
+#    define N_PP_ARRAY_REMOVE_D(d, array, i) N_PP_ARRAY_REMOVE_D_I(d, array, i)
+# if N_PP_LIMIT_TUPLE == 256
+#    define N_PP_ARRAY_REMOVE_D_I(d, array, i) N_PP_ARRAY_REMOVE_ZERO_D(d, array, i, N_PP_NOT(i))
 # else
-#    define NSL_PP_ARRAY_REMOVE_D_I(d, array, i) NSL_PP_TUPLE_ELEM(4, 2, NSL_PP_WHILE_ ## d(NSL_PP_ARRAY_REMOVE_P, NSL_PP_ARRAY_REMOVE_O, (0, i, (0, ()), array)))
+#    define N_PP_ARRAY_REMOVE_D_I(d, array, i) N_PP_TUPLE_ELEM(4, 2, N_PP_WHILE_ ## d(N_PP_ARRAY_REMOVE_P, N_PP_ARRAY_REMOVE_O, (0, i, (0, ()), array)))
 # endif
 # endif
 #
-# if NSL_PP_LIMIT_TUPLE == 256
-# define NSL_PP_ARRAY_REMOVE_ZERO_D(d, array, i, zero) \
-         NSL_PP_TUPLE_ELEM(4, 2, NSL_PP_WHILE_ ## d(NSL_PP_ARRAY_REMOVE_P, NSL_PP_ARRAY_REMOVE_O, \
-         (1, i, NSL_PP_IIF(zero,(0, ()),(1, (NSL_PP_ARRAY_ELEM(0,array)))), array)))
+# if N_PP_LIMIT_TUPLE == 256
+# define N_PP_ARRAY_REMOVE_ZERO_D(d, array, i, zero) \
+         N_PP_TUPLE_ELEM(4, 2, N_PP_WHILE_ ## d(N_PP_ARRAY_REMOVE_P, N_PP_ARRAY_REMOVE_O, \
+         (1, i, N_PP_IIF(zero,(0, ()),(1, (N_PP_ARRAY_ELEM(0,array)))), array)))
 # endif
 #
-# define NSL_PP_ARRAY_REMOVE_P(d, st) NSL_PP_NOT_EQUAL(NSL_PP_TUPLE_ELEM(4, 0, st), NSL_PP_ARRAY_SIZE(NSL_PP_TUPLE_ELEM(4, 3, st)))
+# define N_PP_ARRAY_REMOVE_P(d, st) N_PP_NOT_EQUAL(N_PP_TUPLE_ELEM(4, 0, st), N_PP_ARRAY_SIZE(N_PP_TUPLE_ELEM(4, 3, st)))
 #
-# if NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_STRICT()
-#    define NSL_PP_ARRAY_REMOVE_O(d, st) NSL_PP_ARRAY_REMOVE_O_I st
+# if N_PP_CONFIG_FLAGS() & N_PP_CONFIG_STRICT()
+#    define N_PP_ARRAY_REMOVE_O(d, st) N_PP_ARRAY_REMOVE_O_I st
 # else
-#    define NSL_PP_ARRAY_REMOVE_O(d, st) NSL_PP_ARRAY_REMOVE_O_I(NSL_PP_TUPLE_ELEM(4, 0, st), NSL_PP_TUPLE_ELEM(4, 1, st), NSL_PP_TUPLE_ELEM(4, 2, st), NSL_PP_TUPLE_ELEM(4, 3, st))
+#    define N_PP_ARRAY_REMOVE_O(d, st) N_PP_ARRAY_REMOVE_O_I(N_PP_TUPLE_ELEM(4, 0, st), N_PP_TUPLE_ELEM(4, 1, st), N_PP_TUPLE_ELEM(4, 2, st), N_PP_TUPLE_ELEM(4, 3, st))
 # endif
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_DMC()
-#    define NSL_PP_ARRAY_REMOVE_O_I(n, i, res, arr) (NSL_PP_INC(n), i, NSL_PP_IIF(NSL_PP_NOT_EQUAL(n, i), NSL_PP_ARRAY_PUSH_BACK, res NSL_PP_TUPLE_EAT_2)(res, NSL_PP_ARRAY_ELEM(n, arr)), arr)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_DMC()
+#    define N_PP_ARRAY_REMOVE_O_I(n, i, res, arr) (N_PP_INC(n), i, N_PP_IIF(N_PP_NOT_EQUAL(n, i), N_PP_ARRAY_PUSH_BACK, res N_PP_TUPLE_EAT_2)(res, N_PP_ARRAY_ELEM(n, arr)), arr)
 # else
-#    define NSL_PP_ARRAY_REMOVE_O_I(n, i, res, arr) (NSL_PP_INC(n), i, NSL_PP_IIF(NSL_PP_NOT_EQUAL(n, i), NSL_PP_ARRAY_PUSH_BACK, NSL_PP_TUPLE_ELEM_2_0)(res, NSL_PP_ARRAY_ELEM(n, arr)), arr)
+#    define N_PP_ARRAY_REMOVE_O_I(n, i, res, arr) (N_PP_INC(n), i, N_PP_IIF(N_PP_NOT_EQUAL(n, i), N_PP_ARRAY_PUSH_BACK, N_PP_TUPLE_ELEM_2_0)(res, N_PP_ARRAY_ELEM(n, arr)), arr)
 # endif
 #
 # endif

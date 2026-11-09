@@ -14,42 +14,42 @@
 #
 # include "nsl/preprocessor/config/config.h"
 #
-# if NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_MSVC()
+# if N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MSVC()
 #
 # include "nsl/preprocessor/cat.h"
 # include "nsl/preprocessor/arithmetic/dec.h"
 # include "nsl/preprocessor/control/while.h"
 # include "nsl/preprocessor/tuple/elem.h"
 #
-# define NSL_PP_SEQ_DETAIL_TO_LIST_MSVC_STATE_RESULT(state) \
-    NSL_PP_TUPLE_ELEM(2, 0, state) \
+# define N_PP_SEQ_DETAIL_TO_LIST_MSVC_STATE_RESULT(state) \
+    N_PP_TUPLE_ELEM(2, 0, state) \
 /**/
-# define NSL_PP_SEQ_DETAIL_TO_LIST_MSVC_STATE_SIZE(state) \
-    NSL_PP_TUPLE_ELEM(2, 1, state) \
+# define N_PP_SEQ_DETAIL_TO_LIST_MSVC_STATE_SIZE(state) \
+    N_PP_TUPLE_ELEM(2, 1, state) \
 /**/
-# define NSL_PP_SEQ_DETAIL_TO_LIST_MSVC_PRED(d,state) \
-    NSL_PP_SEQ_DETAIL_TO_LIST_MSVC_STATE_SIZE(state) \
+# define N_PP_SEQ_DETAIL_TO_LIST_MSVC_PRED(d,state) \
+    N_PP_SEQ_DETAIL_TO_LIST_MSVC_STATE_SIZE(state) \
 /**/
-# define NSL_PP_SEQ_DETAIL_TO_LIST_MSVC_OP(d,state) \
+# define N_PP_SEQ_DETAIL_TO_LIST_MSVC_OP(d,state) \
     ( \
-    NSL_PP_CAT(NSL_PP_SEQ_DETAIL_TO_LIST_MSVC_STATE_RESULT(state),), \
-    NSL_PP_DEC(NSL_PP_SEQ_DETAIL_TO_LIST_MSVC_STATE_SIZE(state)) \
+    N_PP_CAT(N_PP_SEQ_DETAIL_TO_LIST_MSVC_STATE_RESULT(state),), \
+    N_PP_DEC(N_PP_SEQ_DETAIL_TO_LIST_MSVC_STATE_SIZE(state)) \
     ) \
 /**/
 #
-# /* NSL_PP_SEQ_DETAIL_TO_LIST_MSVC */
+# /* N_PP_SEQ_DETAIL_TO_LIST_MSVC */
 #
-# define NSL_PP_SEQ_DETAIL_TO_LIST_MSVC(result,seqsize) \
-    NSL_PP_SEQ_DETAIL_TO_LIST_MSVC_STATE_RESULT \
+# define N_PP_SEQ_DETAIL_TO_LIST_MSVC(result,seqsize) \
+    N_PP_SEQ_DETAIL_TO_LIST_MSVC_STATE_RESULT \
         ( \
-        NSL_PP_WHILE \
+        N_PP_WHILE \
             ( \
-            NSL_PP_SEQ_DETAIL_TO_LIST_MSVC_PRED, \
-            NSL_PP_SEQ_DETAIL_TO_LIST_MSVC_OP, \
+            N_PP_SEQ_DETAIL_TO_LIST_MSVC_PRED, \
+            N_PP_SEQ_DETAIL_TO_LIST_MSVC_OP, \
             (result,seqsize) \
             ) \
         ) \
 /**/
-# endif // NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_MSVC()
+# endif // N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MSVC()
 #
 # endif // NSL_PREPROCESSOR_SEQ_DETAIL_TO_LIST_MSVC_H

@@ -9,13 +9,13 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# if !defined(NSL_PP_INDIRECT_SELF)
-#    error NSL_PP_ERROR:  no indirect file to include
+# if !defined(N_PP_INDIRECT_SELF)
+#    error N_PP_ERROR:  no indirect file to include
 # endif
 #
-# define NSL_PP_IS_SELFISH 1
+# define N_PP_IS_SELFISH 1
 #
-# include NSL_PP_INDIRECT_SELF
+# include N_PP_INDIRECT_SELF
 #
-# undef NSL_PP_IS_SELFISH
-# undef NSL_PP_INDIRECT_SELF
+# undef N_PP_IS_SELFISH
+# undef N_PP_INDIRECT_SELF

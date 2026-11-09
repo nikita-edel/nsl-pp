@@ -17,7 +17,7 @@
 #
 # include "nsl/preprocessor/config/config.h"
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_STRICT()
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_STRICT()
 #
 # include "nsl/preprocessor/arithmetic/add.h"
 # include "nsl/preprocessor/arithmetic/dec.h"
@@ -25,33 +25,33 @@
 # include "nsl/preprocessor/tuple/elem.h"
 # include "nsl/preprocessor/tuple/rem.h"
 #
-# /* NSL_PP_MUL */
+# /* N_PP_MUL */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_MUL(x, y) NSL_PP_TUPLE_ELEM(3, 0, NSL_PP_WHILE(NSL_PP_MUL_P, NSL_PP_MUL_O, (0, x, y)))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_MUL(x, y) N_PP_TUPLE_ELEM(3, 0, N_PP_WHILE(N_PP_MUL_P, N_PP_MUL_O, (0, x, y)))
 # else
-#    define NSL_PP_MUL(x, y) NSL_PP_MUL_I(x, y)
-#    define NSL_PP_MUL_I(x, y) NSL_PP_TUPLE_ELEM(3, 0, NSL_PP_WHILE(NSL_PP_MUL_P, NSL_PP_MUL_O, (0, x, y)))
+#    define N_PP_MUL(x, y) N_PP_MUL_I(x, y)
+#    define N_PP_MUL_I(x, y) N_PP_TUPLE_ELEM(3, 0, N_PP_WHILE(N_PP_MUL_P, N_PP_MUL_O, (0, x, y)))
 # endif
 #
-# define NSL_PP_MUL_P(d, rxy) NSL_PP_TUPLE_ELEM(3, 2, rxy)
+# define N_PP_MUL_P(d, rxy) N_PP_TUPLE_ELEM(3, 2, rxy)
 #
-# if NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_STRICT()
-#    define NSL_PP_MUL_O(d, rxy) NSL_PP_MUL_O_IM(d, NSL_PP_TUPLE_REM_3 rxy)
-#    define NSL_PP_MUL_O_IM(d, im) NSL_PP_MUL_O_I(d, im)
+# if N_PP_CONFIG_FLAGS() & N_PP_CONFIG_STRICT()
+#    define N_PP_MUL_O(d, rxy) N_PP_MUL_O_IM(d, N_PP_TUPLE_REM_3 rxy)
+#    define N_PP_MUL_O_IM(d, im) N_PP_MUL_O_I(d, im)
 # else
-#    define NSL_PP_MUL_O(d, rxy) NSL_PP_MUL_O_I(d, NSL_PP_TUPLE_ELEM(3, 0, rxy), NSL_PP_TUPLE_ELEM(3, 1, rxy), NSL_PP_TUPLE_ELEM(3, 2, rxy))
+#    define N_PP_MUL_O(d, rxy) N_PP_MUL_O_I(d, N_PP_TUPLE_ELEM(3, 0, rxy), N_PP_TUPLE_ELEM(3, 1, rxy), N_PP_TUPLE_ELEM(3, 2, rxy))
 # endif
 #
-# define NSL_PP_MUL_O_I(d, r, x, y) (NSL_PP_ADD_D(d, r, x), x, NSL_PP_DEC(y))
+# define N_PP_MUL_O_I(d, r, x, y) (N_PP_ADD_D(d, r, x), x, N_PP_DEC(y))
 #
-# /* NSL_PP_MUL_D */
+# /* N_PP_MUL_D */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_MUL_D(d, x, y) NSL_PP_TUPLE_ELEM(3, 0, NSL_PP_WHILE_ ## d(NSL_PP_MUL_P, NSL_PP_MUL_O, (0, x, y)))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_MUL_D(d, x, y) N_PP_TUPLE_ELEM(3, 0, N_PP_WHILE_ ## d(N_PP_MUL_P, N_PP_MUL_O, (0, x, y)))
 # else
-#    define NSL_PP_MUL_D(d, x, y) NSL_PP_MUL_D_I(d, x, y)
-#    define NSL_PP_MUL_D_I(d, x, y) NSL_PP_TUPLE_ELEM(3, 0, NSL_PP_WHILE_ ## d(NSL_PP_MUL_P, NSL_PP_MUL_O, (0, x, y)))
+#    define N_PP_MUL_D(d, x, y) N_PP_MUL_D_I(d, x, y)
+#    define N_PP_MUL_D_I(d, x, y) N_PP_TUPLE_ELEM(3, 0, N_PP_WHILE_ ## d(N_PP_MUL_P, N_PP_MUL_O, (0, x, y)))
 # endif
 #
 # else
@@ -70,41 +70,41 @@
 # include "nsl/preprocessor/arithmetic/detail/is_maximum_number.h"
 # include "nsl/preprocessor/arithmetic/detail/is_1_number.h"
 #
-# /* NSL_PP_MUL */
+# /* N_PP_MUL */
 #
-#    define NSL_PP_MUL(x, y) NSL_PP_IIF(NSL_PP_DETAIL_IS_MINIMUM_NUMBER(x),NSL_PP_IDENTITY_N(x,2),NSL_PP_MUL_CHECK_1X)(x,y)
+#    define N_PP_MUL(x, y) N_PP_IIF(N_PP_DETAIL_IS_MINIMUM_NUMBER(x),N_PP_IDENTITY_N(x,2),N_PP_MUL_CHECK_1X)(x,y)
 #
-#    define NSL_PP_MUL_CHECK_1X(x, y) NSL_PP_IIF(NSL_PP_DETAIL_IS_1_NUMBER(x),NSL_PP_IDENTITY_N(y,2),NSL_PP_MUL_DO)(x,y)
+#    define N_PP_MUL_CHECK_1X(x, y) N_PP_IIF(N_PP_DETAIL_IS_1_NUMBER(x),N_PP_IDENTITY_N(y,2),N_PP_MUL_DO)(x,y)
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_MUL_DO(x, y) NSL_PP_TUPLE_ELEM(3, 0, NSL_PP_WHILE(NSL_PP_MUL_P, NSL_PP_MUL_O, (0, x, y)))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_MUL_DO(x, y) N_PP_TUPLE_ELEM(3, 0, N_PP_WHILE(N_PP_MUL_P, N_PP_MUL_O, (0, x, y)))
 # else
-#    define NSL_PP_MUL_DO(x, y) NSL_PP_MUL_I(x, y)
-#    define NSL_PP_MUL_I(x, y) NSL_PP_TUPLE_ELEM(3, 0, NSL_PP_WHILE(NSL_PP_MUL_P, NSL_PP_MUL_O, (0, x, y)))
+#    define N_PP_MUL_DO(x, y) N_PP_MUL_I(x, y)
+#    define N_PP_MUL_I(x, y) N_PP_TUPLE_ELEM(3, 0, N_PP_WHILE(N_PP_MUL_P, N_PP_MUL_O, (0, x, y)))
 # endif
 #
-# define NSL_PP_MUL_P(d, rxy) NSL_PP_BITAND(NSL_PP_BOOL(NSL_PP_TUPLE_ELEM(3, 2, rxy)),NSL_PP_COMPL(NSL_PP_DETAIL_IS_MAXIMUM_NUMBER(NSL_PP_TUPLE_ELEM(3, 0, rxy))))
+# define N_PP_MUL_P(d, rxy) N_PP_BITAND(N_PP_BOOL(N_PP_TUPLE_ELEM(3, 2, rxy)),N_PP_COMPL(N_PP_DETAIL_IS_MAXIMUM_NUMBER(N_PP_TUPLE_ELEM(3, 0, rxy))))
 #
-# if NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_STRICT()
-#    define NSL_PP_MUL_O(d, rxy) NSL_PP_MUL_O_IM(d, NSL_PP_TUPLE_REM_3 rxy)
-#    define NSL_PP_MUL_O_IM(d, im) NSL_PP_MUL_O_I(d, im)
+# if N_PP_CONFIG_FLAGS() & N_PP_CONFIG_STRICT()
+#    define N_PP_MUL_O(d, rxy) N_PP_MUL_O_IM(d, N_PP_TUPLE_REM_3 rxy)
+#    define N_PP_MUL_O_IM(d, im) N_PP_MUL_O_I(d, im)
 # else
-#    define NSL_PP_MUL_O(d, rxy) NSL_PP_MUL_O_I(d, NSL_PP_TUPLE_ELEM(3, 0, rxy), NSL_PP_TUPLE_ELEM(3, 1, rxy), NSL_PP_TUPLE_ELEM(3, 2, rxy))
+#    define N_PP_MUL_O(d, rxy) N_PP_MUL_O_I(d, N_PP_TUPLE_ELEM(3, 0, rxy), N_PP_TUPLE_ELEM(3, 1, rxy), N_PP_TUPLE_ELEM(3, 2, rxy))
 # endif
 #
-# define NSL_PP_MUL_O_I(d, r, x, y) (NSL_PP_ADD_D(d, r, x), x, NSL_PP_DEC(y))
+# define N_PP_MUL_O_I(d, r, x, y) (N_PP_ADD_D(d, r, x), x, N_PP_DEC(y))
 #
-# /* NSL_PP_MUL_D */
+# /* N_PP_MUL_D */
 #
-#    define NSL_PP_MUL_D(d, x, y) NSL_PP_IIF(NSL_PP_DETAIL_IS_MINIMUM_NUMBER(x),NSL_PP_IDENTITY_N(x,3),NSL_PP_MUL_CHECK_1X_D)(d,x,y)
+#    define N_PP_MUL_D(d, x, y) N_PP_IIF(N_PP_DETAIL_IS_MINIMUM_NUMBER(x),N_PP_IDENTITY_N(x,3),N_PP_MUL_CHECK_1X_D)(d,x,y)
 #
-#    define NSL_PP_MUL_CHECK_1X_D(d, x, y) NSL_PP_IIF(NSL_PP_DETAIL_IS_1_NUMBER(x),NSL_PP_IDENTITY_N(y,3),NSL_PP_MUL_DO_D)(d,x,y)
+#    define N_PP_MUL_CHECK_1X_D(d, x, y) N_PP_IIF(N_PP_DETAIL_IS_1_NUMBER(x),N_PP_IDENTITY_N(y,3),N_PP_MUL_DO_D)(d,x,y)
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_MUL_DO_D(d, x, y) NSL_PP_TUPLE_ELEM(3, 0, NSL_PP_WHILE_ ## d(NSL_PP_MUL_P, NSL_PP_MUL_O, (0, x, y)))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_MUL_DO_D(d, x, y) N_PP_TUPLE_ELEM(3, 0, N_PP_WHILE_ ## d(N_PP_MUL_P, N_PP_MUL_O, (0, x, y)))
 # else
-#    define NSL_PP_MUL_DO_D(d, x, y) NSL_PP_MUL_D_I(d, x, y)
-#    define NSL_PP_MUL_D_I(d, x, y) NSL_PP_TUPLE_ELEM(3, 0, NSL_PP_WHILE_ ## d(NSL_PP_MUL_P, NSL_PP_MUL_O, (0, x, y)))
+#    define N_PP_MUL_DO_D(d, x, y) N_PP_MUL_D_I(d, x, y)
+#    define N_PP_MUL_D_I(d, x, y) N_PP_TUPLE_ELEM(3, 0, N_PP_WHILE_ ## d(N_PP_MUL_P, N_PP_MUL_O, (0, x, y)))
 # endif
 #
 # endif

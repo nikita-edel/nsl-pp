@@ -17,24 +17,24 @@
 # include "nsl/preprocessor/config/config.h"
 # include "nsl/preprocessor/list/fold_right.h"
 #
-# /* NSL_PP_LIST_APPEND */
+# /* N_PP_LIST_APPEND */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_LIST_APPEND(a, b) NSL_PP_LIST_FOLD_RIGHT(NSL_PP_LIST_APPEND_O, b, a)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_LIST_APPEND(a, b) N_PP_LIST_FOLD_RIGHT(N_PP_LIST_APPEND_O, b, a)
 # else
-#    define NSL_PP_LIST_APPEND(a, b) NSL_PP_LIST_APPEND_I(a, b)
-#    define NSL_PP_LIST_APPEND_I(a, b) NSL_PP_LIST_FOLD_RIGHT(NSL_PP_LIST_APPEND_O, b, a)
+#    define N_PP_LIST_APPEND(a, b) N_PP_LIST_APPEND_I(a, b)
+#    define N_PP_LIST_APPEND_I(a, b) N_PP_LIST_FOLD_RIGHT(N_PP_LIST_APPEND_O, b, a)
 # endif
 #
-# define NSL_PP_LIST_APPEND_O(d, s, x) (x, s)
+# define N_PP_LIST_APPEND_O(d, s, x) (x, s)
 #
-# /* NSL_PP_LIST_APPEND_D */
+# /* N_PP_LIST_APPEND_D */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_LIST_APPEND_D(d, a, b) NSL_PP_LIST_FOLD_RIGHT_ ## d(NSL_PP_LIST_APPEND_O, b, a)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_LIST_APPEND_D(d, a, b) N_PP_LIST_FOLD_RIGHT_ ## d(N_PP_LIST_APPEND_O, b, a)
 # else
-#    define NSL_PP_LIST_APPEND_D(d, a, b) NSL_PP_LIST_APPEND_D_I(d, a, b)
-#    define NSL_PP_LIST_APPEND_D_I(d, a, b) NSL_PP_LIST_FOLD_RIGHT_ ## d(NSL_PP_LIST_APPEND_O, b, a)
+#    define N_PP_LIST_APPEND_D(d, a, b) N_PP_LIST_APPEND_D_I(d, a, b)
+#    define N_PP_LIST_APPEND_D_I(d, a, b) N_PP_LIST_FOLD_RIGHT_ ## d(N_PP_LIST_APPEND_O, b, a)
 # endif
 #
 # endif

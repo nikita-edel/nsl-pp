@@ -18,32 +18,32 @@
 # include "nsl/preprocessor/logical/compl.h"
 # include "nsl/preprocessor/seq/size.h"
 #
-/* An empty seq is one that is just NSL_PP_SEQ_NIL */
+/* An empty seq is one that is just N_PP_SEQ_NIL */
 #
-# define NSL_PP_SEQ_DETAIL_IS_EMPTY(seq) \
-    NSL_PP_COMPL \
+# define N_PP_SEQ_DETAIL_IS_EMPTY(seq) \
+    N_PP_COMPL \
         ( \
-        NSL_PP_SEQ_DETAIL_IS_NOT_EMPTY(seq) \
+        N_PP_SEQ_DETAIL_IS_NOT_EMPTY(seq) \
         ) \
 /**/
 #
-# define NSL_PP_SEQ_DETAIL_IS_EMPTY_SIZE(size) \
-    NSL_PP_COMPL \
+# define N_PP_SEQ_DETAIL_IS_EMPTY_SIZE(size) \
+    N_PP_COMPL \
         ( \
-        NSL_PP_SEQ_DETAIL_IS_NOT_EMPTY_SIZE(size) \
+        N_PP_SEQ_DETAIL_IS_NOT_EMPTY_SIZE(size) \
         ) \
 /**/
 #
-# define NSL_PP_SEQ_DETAIL_IS_NOT_EMPTY(seq) \
-    NSL_PP_SEQ_DETAIL_IS_NOT_EMPTY_SIZE(NSL_PP_SEQ_DETAIL_EMPTY_SIZE(seq)) \
+# define N_PP_SEQ_DETAIL_IS_NOT_EMPTY(seq) \
+    N_PP_SEQ_DETAIL_IS_NOT_EMPTY_SIZE(N_PP_SEQ_DETAIL_EMPTY_SIZE(seq)) \
 /**/
 #
-# define NSL_PP_SEQ_DETAIL_IS_NOT_EMPTY_SIZE(size) \
-    NSL_PP_BOOL(size) \
+# define N_PP_SEQ_DETAIL_IS_NOT_EMPTY_SIZE(size) \
+    N_PP_BOOL(size) \
 /**/
 #
-# define NSL_PP_SEQ_DETAIL_EMPTY_SIZE(seq) \
-    NSL_PP_DEC(NSL_PP_SEQ_SIZE(seq (nil))) \
+# define N_PP_SEQ_DETAIL_EMPTY_SIZE(seq) \
+    N_PP_DEC(N_PP_SEQ_SIZE(seq (nil))) \
 /**/
 #
 # endif

@@ -18,44 +18,44 @@
 # include "nsl/preprocessor/list/enum.h"
 # include "nsl/preprocessor/control/iif.h"
 #
-# /* NSL_PP_LIST_TO_TUPLE */
+# /* N_PP_LIST_TO_TUPLE */
 #
-# define NSL_PP_LIST_TO_TUPLE(list) \
-    NSL_PP_IIF \
+# define N_PP_LIST_TO_TUPLE(list) \
+    N_PP_IIF \
         ( \
-        NSL_PP_LIST_IS_NIL(list), \
-        NSL_PP_LIST_TO_TUPLE_EMPTY, \
-        NSL_PP_LIST_TO_TUPLE_DO \
+        N_PP_LIST_IS_NIL(list), \
+        N_PP_LIST_TO_TUPLE_EMPTY, \
+        N_PP_LIST_TO_TUPLE_DO \
         ) \
     (list) \
 /**/
-# define NSL_PP_LIST_TO_TUPLE_EMPTY(list)
+# define N_PP_LIST_TO_TUPLE_EMPTY(list)
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_LIST_TO_TUPLE_DO(list) (NSL_PP_LIST_ENUM(list))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_LIST_TO_TUPLE_DO(list) (N_PP_LIST_ENUM(list))
 # else
-#    define NSL_PP_LIST_TO_TUPLE_DO(list) NSL_PP_LIST_TO_TUPLE_I(list)
-#    define NSL_PP_LIST_TO_TUPLE_I(list) (NSL_PP_LIST_ENUM(list))
+#    define N_PP_LIST_TO_TUPLE_DO(list) N_PP_LIST_TO_TUPLE_I(list)
+#    define N_PP_LIST_TO_TUPLE_I(list) (N_PP_LIST_ENUM(list))
 # endif
 #
-# /* NSL_PP_LIST_TO_TUPLE_R */
+# /* N_PP_LIST_TO_TUPLE_R */
 #
-# define NSL_PP_LIST_TO_TUPLE_R(r, list) \
-    NSL_PP_IIF \
+# define N_PP_LIST_TO_TUPLE_R(r, list) \
+    N_PP_IIF \
         ( \
-        NSL_PP_LIST_IS_NIL(list), \
-        NSL_PP_LIST_TO_TUPLE_R_EMPTY, \
-        NSL_PP_LIST_TO_TUPLE_R_DO \
+        N_PP_LIST_IS_NIL(list), \
+        N_PP_LIST_TO_TUPLE_R_EMPTY, \
+        N_PP_LIST_TO_TUPLE_R_DO \
         ) \
     (r, list) \
 /**/
-# define NSL_PP_LIST_TO_TUPLE_R_EMPTY(r,list)
+# define N_PP_LIST_TO_TUPLE_R_EMPTY(r,list)
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_LIST_TO_TUPLE_R_DO(r, list) (NSL_PP_LIST_ENUM_R(r, list))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_LIST_TO_TUPLE_R_DO(r, list) (N_PP_LIST_ENUM_R(r, list))
 # else
-#    define NSL_PP_LIST_TO_TUPLE_R_DO(r, list) NSL_PP_LIST_TO_TUPLE_R_I(r, list)
-#    define NSL_PP_LIST_TO_TUPLE_R_I(r, list) (NSL_PP_LIST_ENUM_R(r, list))
+#    define N_PP_LIST_TO_TUPLE_R_DO(r, list) N_PP_LIST_TO_TUPLE_R_I(r, list)
+#    define N_PP_LIST_TO_TUPLE_R_I(r, list) (N_PP_LIST_ENUM_R(r, list))
 # endif
 #
 # endif

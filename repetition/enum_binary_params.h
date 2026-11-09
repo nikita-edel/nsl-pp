@@ -19,36 +19,36 @@
 # include "nsl/preprocessor/tuple/elem.h"
 # include "nsl/preprocessor/tuple/rem.h"
 #
-# /* NSL_PP_ENUM_BINARY_PARAMS */
+# /* N_PP_ENUM_BINARY_PARAMS */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_ENUM_BINARY_PARAMS(count, p1, p2) NSL_PP_REPEAT(count, NSL_PP_ENUM_BINARY_PARAMS_M, (p1, p2))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_ENUM_BINARY_PARAMS(count, p1, p2) N_PP_REPEAT(count, N_PP_ENUM_BINARY_PARAMS_M, (p1, p2))
 # else
-#    define NSL_PP_ENUM_BINARY_PARAMS(count, p1, p2) NSL_PP_ENUM_BINARY_PARAMS_I(count, p1, p2)
-#    define NSL_PP_ENUM_BINARY_PARAMS_I(count, p1, p2) NSL_PP_REPEAT(count, NSL_PP_ENUM_BINARY_PARAMS_M, (p1, p2))
+#    define N_PP_ENUM_BINARY_PARAMS(count, p1, p2) N_PP_ENUM_BINARY_PARAMS_I(count, p1, p2)
+#    define N_PP_ENUM_BINARY_PARAMS_I(count, p1, p2) N_PP_REPEAT(count, N_PP_ENUM_BINARY_PARAMS_M, (p1, p2))
 # endif
 #
-# if NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_STRICT()
-#    define NSL_PP_ENUM_BINARY_PARAMS_M(z, n, pp) NSL_PP_ENUM_BINARY_PARAMS_M_IM(z, n, NSL_PP_TUPLE_REM_2 pp)
-#    define NSL_PP_ENUM_BINARY_PARAMS_M_IM(z, n, im) NSL_PP_ENUM_BINARY_PARAMS_M_I(z, n, im)
+# if N_PP_CONFIG_FLAGS() & N_PP_CONFIG_STRICT()
+#    define N_PP_ENUM_BINARY_PARAMS_M(z, n, pp) N_PP_ENUM_BINARY_PARAMS_M_IM(z, n, N_PP_TUPLE_REM_2 pp)
+#    define N_PP_ENUM_BINARY_PARAMS_M_IM(z, n, im) N_PP_ENUM_BINARY_PARAMS_M_I(z, n, im)
 # else
-#    define NSL_PP_ENUM_BINARY_PARAMS_M(z, n, pp) NSL_PP_ENUM_BINARY_PARAMS_M_I(z, n, NSL_PP_TUPLE_ELEM(2, 0, pp), NSL_PP_TUPLE_ELEM(2, 1, pp))
+#    define N_PP_ENUM_BINARY_PARAMS_M(z, n, pp) N_PP_ENUM_BINARY_PARAMS_M_I(z, n, N_PP_TUPLE_ELEM(2, 0, pp), N_PP_TUPLE_ELEM(2, 1, pp))
 # endif
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_MSVC()
-#    define NSL_PP_ENUM_BINARY_PARAMS_M_I(z, n, p1, p2) NSL_PP_ENUM_BINARY_PARAMS_M_II(z, n, p1, p2)
-#    define NSL_PP_ENUM_BINARY_PARAMS_M_II(z, n, p1, p2) NSL_PP_COMMA_IF(n) p1 ## n p2 ## n
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MSVC()
+#    define N_PP_ENUM_BINARY_PARAMS_M_I(z, n, p1, p2) N_PP_ENUM_BINARY_PARAMS_M_II(z, n, p1, p2)
+#    define N_PP_ENUM_BINARY_PARAMS_M_II(z, n, p1, p2) N_PP_COMMA_IF(n) p1 ## n p2 ## n
 # else
-#    define NSL_PP_ENUM_BINARY_PARAMS_M_I(z, n, p1, p2) NSL_PP_COMMA_IF(n) NSL_PP_CAT(p1, n) NSL_PP_CAT(p2, n)
+#    define N_PP_ENUM_BINARY_PARAMS_M_I(z, n, p1, p2) N_PP_COMMA_IF(n) N_PP_CAT(p1, n) N_PP_CAT(p2, n)
 # endif
 #
-# /* NSL_PP_ENUM_BINARY_PARAMS_Z */
+# /* N_PP_ENUM_BINARY_PARAMS_Z */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_ENUM_BINARY_PARAMS_Z(z, count, p1, p2) NSL_PP_REPEAT_ ## z(count, NSL_PP_ENUM_BINARY_PARAMS_M, (p1, p2))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_ENUM_BINARY_PARAMS_Z(z, count, p1, p2) N_PP_REPEAT_ ## z(count, N_PP_ENUM_BINARY_PARAMS_M, (p1, p2))
 # else
-#    define NSL_PP_ENUM_BINARY_PARAMS_Z(z, count, p1, p2) NSL_PP_ENUM_BINARY_PARAMS_Z_I(z, count, p1, p2)
-#    define NSL_PP_ENUM_BINARY_PARAMS_Z_I(z, count, p1, p2) NSL_PP_REPEAT_ ## z(count, NSL_PP_ENUM_BINARY_PARAMS_M, (p1, p2))
+#    define N_PP_ENUM_BINARY_PARAMS_Z(z, count, p1, p2) N_PP_ENUM_BINARY_PARAMS_Z_I(z, count, p1, p2)
+#    define N_PP_ENUM_BINARY_PARAMS_Z_I(z, count, p1, p2) N_PP_REPEAT_ ## z(count, N_PP_ENUM_BINARY_PARAMS_M, (p1, p2))
 # endif
 #
 # endif

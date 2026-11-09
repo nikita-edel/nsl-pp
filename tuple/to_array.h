@@ -21,22 +21,22 @@
 # include "nsl/preprocessor/variadic/size.h"
 # include "nsl/preprocessor/variadic/has_opt.h"
 #
-# /* NSL_PP_TUPLE_TO_ARRAY */
+# /* N_PP_TUPLE_TO_ARRAY */
 #
-# if NSL_PP_VARIADICS_MSVC
-#     define NSL_PP_TUPLE_TO_ARRAY(...) NSL_PP_TUPLE_TO_ARRAY_I(NSL_PP_OVERLOAD(NSL_PP_TUPLE_TO_ARRAY_, __VA_ARGS__), (__VA_ARGS__))
-#     define NSL_PP_TUPLE_TO_ARRAY_I(m, args) NSL_PP_TUPLE_TO_ARRAY_II(m, args)
-#     define NSL_PP_TUPLE_TO_ARRAY_II(m, args) NSL_PP_CAT(m ## args,)
-#     define NSL_PP_TUPLE_TO_ARRAY_1(tuple) (NSL_PP_TUPLE_SIZE(tuple), tuple)
+# if N_PP_VARIADICS_MSVC
+#     define N_PP_TUPLE_TO_ARRAY(...) N_PP_TUPLE_TO_ARRAY_I(N_PP_OVERLOAD(N_PP_TUPLE_TO_ARRAY_, __VA_ARGS__), (__VA_ARGS__))
+#     define N_PP_TUPLE_TO_ARRAY_I(m, args) N_PP_TUPLE_TO_ARRAY_II(m, args)
+#     define N_PP_TUPLE_TO_ARRAY_II(m, args) N_PP_CAT(m ## args,)
+#     define N_PP_TUPLE_TO_ARRAY_1(tuple) (N_PP_TUPLE_SIZE(tuple), tuple)
 # else
-#     define NSL_PP_TUPLE_TO_ARRAY(...) NSL_PP_OVERLOAD(NSL_PP_TUPLE_TO_ARRAY_, __VA_ARGS__)(__VA_ARGS__)
-#     if NSL_PP_VARIADIC_HAS_OPT()
-#         define NSL_PP_TUPLE_TO_ARRAY_1(tuple) NSL_PP_TUPLE_TO_ARRAY_1_SIZE(NSL_PP_VARIADIC_SIZE tuple, tuple)
-#         define NSL_PP_TUPLE_TO_ARRAY_1_SIZE(size,tuple) (NSL_PP_IF(size,size,1), tuple)
+#     define N_PP_TUPLE_TO_ARRAY(...) N_PP_OVERLOAD(N_PP_TUPLE_TO_ARRAY_, __VA_ARGS__)(__VA_ARGS__)
+#     if N_PP_VARIADIC_HAS_OPT()
+#         define N_PP_TUPLE_TO_ARRAY_1(tuple) N_PP_TUPLE_TO_ARRAY_1_SIZE(N_PP_VARIADIC_SIZE tuple, tuple)
+#         define N_PP_TUPLE_TO_ARRAY_1_SIZE(size,tuple) (N_PP_IF(size,size,1), tuple)
 #     else
-#         define NSL_PP_TUPLE_TO_ARRAY_1(tuple) (NSL_PP_VARIADIC_SIZE tuple, tuple)
+#         define N_PP_TUPLE_TO_ARRAY_1(tuple) (N_PP_VARIADIC_SIZE tuple, tuple)
 #     endif
 # endif
-# define NSL_PP_TUPLE_TO_ARRAY_2(size, tuple) (size, tuple)
+# define N_PP_TUPLE_TO_ARRAY_2(size, tuple) (size, tuple)
 #
 # endif

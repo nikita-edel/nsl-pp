@@ -19,14 +19,14 @@
 # include "nsl/preprocessor/variadic/has_opt.h"
 # include "nsl/preprocessor/variadic/size.h"
 #
-# /* NSL_PP_VARIADIC_TO_LIST */
+# /* N_PP_VARIADIC_TO_LIST */
 #
-# if NSL_PP_VARIADIC_HAS_OPT()
-#     define NSL_PP_VARIADIC_TO_LIST_NOT_EMPTY(...) NSL_PP_TUPLE_TO_LIST((__VA_ARGS__))
-#     define NSL_PP_VARIADIC_TO_LIST_EMPTY(...) NSL_PP_NIL
-#     define NSL_PP_VARIADIC_TO_LIST(...) NSL_PP_IF(NSL_PP_VARIADIC_SIZE(__VA_ARGS__),NSL_PP_VARIADIC_TO_LIST_NOT_EMPTY,NSL_PP_VARIADIC_TO_LIST_EMPTY)(__VA_ARGS__)
+# if N_PP_VARIADIC_HAS_OPT()
+#     define N_PP_VARIADIC_TO_LIST_NOT_EMPTY(...) N_PP_TUPLE_TO_LIST((__VA_ARGS__))
+#     define N_PP_VARIADIC_TO_LIST_EMPTY(...) N_PP_NIL
+#     define N_PP_VARIADIC_TO_LIST(...) N_PP_IF(N_PP_VARIADIC_SIZE(__VA_ARGS__),N_PP_VARIADIC_TO_LIST_NOT_EMPTY,N_PP_VARIADIC_TO_LIST_EMPTY)(__VA_ARGS__)
 # else
-#     define NSL_PP_VARIADIC_TO_LIST(...) NSL_PP_TUPLE_TO_LIST((__VA_ARGS__))
+#     define N_PP_VARIADIC_TO_LIST(...) N_PP_TUPLE_TO_LIST((__VA_ARGS__))
 # endif
 #
 # endif

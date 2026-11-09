@@ -16,20 +16,20 @@
 #
 # include "nsl/preprocessor/config/config.h"
 #
-# /* NSL_PP_CAT */
+# /* N_PP_CAT */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_MWCC()
-#    define NSL_PP_CAT(a, b) NSL_PP_CAT_I(a, b)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MWCC()
+#    define N_PP_CAT(a, b) N_PP_CAT_I(a, b)
 # else
-#    define NSL_PP_CAT(a, b) NSL_PP_CAT_OO((a, b))
-#    define NSL_PP_CAT_OO(par) NSL_PP_CAT_I ## par
+#    define N_PP_CAT(a, b) N_PP_CAT_OO((a, b))
+#    define N_PP_CAT_OO(par) N_PP_CAT_I ## par
 # endif
 #
-# if (~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_MSVC()) || (defined(__INTEL_COMPILER) && __INTEL_COMPILER >= 1700)
-#    define NSL_PP_CAT_I(a, b) a ## b
+# if (~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MSVC()) || (defined(__INTEL_COMPILER) && __INTEL_COMPILER >= 1700)
+#    define N_PP_CAT_I(a, b) a ## b
 # else
-#    define NSL_PP_CAT_I(a, b) NSL_PP_CAT_II(~, a ## b)
-#    define NSL_PP_CAT_II(p, res) res
+#    define N_PP_CAT_I(a, b) N_PP_CAT_II(~, a ## b)
+#    define N_PP_CAT_II(p, res) res
 # endif
 #
 # endif

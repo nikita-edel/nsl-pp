@@ -17,8 +17,8 @@
 # include "nsl/preprocessor/config/config.h"
 # include "nsl/preprocessor/repetition/enum_binary_params.h"
 #
-# /* NSL_PP_ENUM_PARAMS_WITH_DEFAULTS */
+# /* N_PP_ENUM_PARAMS_WITH_DEFAULTS */
 #
-# define NSL_PP_ENUM_PARAMS_WITH_DEFAULTS(count, param, def) NSL_PP_ENUM_BINARY_PARAMS(count, param, = def)
+# define N_PP_ENUM_PARAMS_WITH_DEFAULTS(count, param, def) N_PP_ENUM_BINARY_PARAMS(count, param, = def)
 #
 # endif

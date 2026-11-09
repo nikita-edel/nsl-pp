@@ -16,32 +16,32 @@
 #
 # include "nsl/preprocessor/config/config.h"
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_STRICT()
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_STRICT()
 #
 # include "nsl/preprocessor/detail/auto_rec.h"
 # include "nsl/preprocessor/repetition/for.h"
 #
-# /* NSL_PP_DEDUCE_R */
+# /* N_PP_DEDUCE_R */
 #
-# define NSL_PP_DEDUCE_R() NSL_PP_AUTO_REC(NSL_PP_FOR_P, 256)
+# define N_PP_DEDUCE_R() N_PP_AUTO_REC(N_PP_FOR_P, 256)
 #
 # else
 #
-# /* NSL_PP_DEDUCE_R */
+# /* N_PP_DEDUCE_R */
 #
 # include "nsl/preprocessor/arithmetic/dec.h"
 # include "nsl/preprocessor/detail/auto_rec.h"
 # include "nsl/preprocessor/repetition/for.h"
 # include "nsl/preprocessor/config/limits.h"
 #
-# if NSL_PP_LIMIT_FOR == 256
-# define NSL_PP_DEDUCE_R() NSL_PP_DEC(NSL_PP_AUTO_REC(NSL_PP_FOR_P, 256))
-# elif NSL_PP_LIMIT_FOR == 512
-# define NSL_PP_DEDUCE_R() NSL_PP_DEC(NSL_PP_AUTO_REC(NSL_PP_FOR_P, 512))
-# elif NSL_PP_LIMIT_FOR == 1024
-# define NSL_PP_DEDUCE_R() NSL_PP_DEC(NSL_PP_AUTO_REC(NSL_PP_FOR_P, 1024))
+# if N_PP_LIMIT_FOR == 256
+# define N_PP_DEDUCE_R() N_PP_DEC(N_PP_AUTO_REC(N_PP_FOR_P, 256))
+# elif N_PP_LIMIT_FOR == 512
+# define N_PP_DEDUCE_R() N_PP_DEC(N_PP_AUTO_REC(N_PP_FOR_P, 512))
+# elif N_PP_LIMIT_FOR == 1024
+# define N_PP_DEDUCE_R() N_PP_DEC(N_PP_AUTO_REC(N_PP_FOR_P, 1024))
 # else
-# error Incorrect value for the NSL_PP_LIMIT_FOR limit
+# error Incorrect value for the N_PP_LIMIT_FOR limit
 # endif
 #
 # endif

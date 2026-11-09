@@ -16,11 +16,11 @@
 # include "nsl/preprocessor/slot/slot.h"
 # include "nsl/preprocessor/tuple/elem.h"
 #
-# /* NSL_PP_LOCAL_ITERATE */
+# /* N_PP_LOCAL_ITERATE */
 #
-# define NSL_PP_LOCAL_ITERATE() <nsl/preprocessor/iteration/detail/local.h>
+# define N_PP_LOCAL_ITERATE() <nsl/preprocessor/iteration/detail/local.h>
 #
-# define NSL_PP_LOCAL_C(n) (NSL_PP_LOCAL_S) <= n && (NSL_PP_LOCAL_F) >= n
-# define NSL_PP_LOCAL_R(n) (NSL_PP_LOCAL_F) <= n && (NSL_PP_LOCAL_S) >= n
+# define N_PP_LOCAL_C(n) (N_PP_LOCAL_S) <= n && (N_PP_LOCAL_F) >= n
+# define N_PP_LOCAL_R(n) (N_PP_LOCAL_F) <= n && (N_PP_LOCAL_S) >= n
 #
 # endif

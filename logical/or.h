@@ -18,13 +18,13 @@
 # include "nsl/preprocessor/logical/bool.h"
 # include "nsl/preprocessor/logical/bitor.h"
 #
-# /* NSL_PP_OR */
+# /* N_PP_OR */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_OR(p, q) NSL_PP_BITOR(NSL_PP_BOOL(p), NSL_PP_BOOL(q))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_OR(p, q) N_PP_BITOR(N_PP_BOOL(p), N_PP_BOOL(q))
 # else
-#    define NSL_PP_OR(p, q) NSL_PP_OR_I(p, q)
-#    define NSL_PP_OR_I(p, q) NSL_PP_BITOR(NSL_PP_BOOL(p), NSL_PP_BOOL(q))
+#    define N_PP_OR(p, q) N_PP_OR_I(p, q)
+#    define N_PP_OR_I(p, q) N_PP_BITOR(N_PP_BOOL(p), N_PP_BOOL(q))
 # endif
 #
 # endif

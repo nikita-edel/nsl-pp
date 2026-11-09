@@ -18,13 +18,13 @@
 # include "nsl/preprocessor/control/expr_iif.h"
 # include "nsl/preprocessor/logical/bool.h"
 #
-# /* NSL_PP_EXPR_IF */
+# /* N_PP_EXPR_IF */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_EXPR_IF(cond, expr) NSL_PP_EXPR_IIF(NSL_PP_BOOL(cond), expr)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_EXPR_IF(cond, expr) N_PP_EXPR_IIF(N_PP_BOOL(cond), expr)
 # else
-#    define NSL_PP_EXPR_IF(cond, expr) NSL_PP_EXPR_IF_I(cond, expr)
-#    define NSL_PP_EXPR_IF_I(cond, expr) NSL_PP_EXPR_IIF(NSL_PP_BOOL(cond), expr)
+#    define N_PP_EXPR_IF(cond, expr) N_PP_EXPR_IF_I(cond, expr)
+#    define N_PP_EXPR_IF_I(cond, expr) N_PP_EXPR_IIF(N_PP_BOOL(cond), expr)
 # endif
 #
 # endif

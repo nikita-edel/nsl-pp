@@ -19,13 +19,13 @@
 # include "nsl/preprocessor/facilities/empty.h"
 # include "nsl/preprocessor/punctuation/comma.h"
 #
-# /* NSL_PP_COMMA_IF */
+# /* N_PP_COMMA_IF */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_COMMA_IF(cond) NSL_PP_IF(cond, NSL_PP_COMMA, NSL_PP_EMPTY)()
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_COMMA_IF(cond) N_PP_IF(cond, N_PP_COMMA, N_PP_EMPTY)()
 # else
-#    define NSL_PP_COMMA_IF(cond) NSL_PP_COMMA_IF_I(cond)
-#    define NSL_PP_COMMA_IF_I(cond) NSL_PP_IF(cond, NSL_PP_COMMA, NSL_PP_EMPTY)()
+#    define N_PP_COMMA_IF(cond) N_PP_COMMA_IF_I(cond)
+#    define N_PP_COMMA_IF_I(cond) N_PP_IF(cond, N_PP_COMMA, N_PP_EMPTY)()
 # endif
 #
 # endif

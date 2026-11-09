@@ -19,55 +19,55 @@
 # include "nsl/preprocessor/logical/compl.h"
 # include "nsl/preprocessor/tuple/eat.h"
 #
-# /* NSL_PP_LIST_CONS */
+# /* N_PP_LIST_CONS */
 #
-# define NSL_PP_LIST_CONS(head, tail) (head, tail)
+# define N_PP_LIST_CONS(head, tail) (head, tail)
 #
-# /* NSL_PP_LIST_NIL */
+# /* N_PP_LIST_NIL */
 #
-# define NSL_PP_LIST_NIL NSL_PP_NIL
+# define N_PP_LIST_NIL N_PP_NIL
 #
-# /* NSL_PP_LIST_FIRST */
+# /* N_PP_LIST_FIRST */
 #
-# define NSL_PP_LIST_FIRST(list) NSL_PP_LIST_FIRST_D(list)
+# define N_PP_LIST_FIRST(list) N_PP_LIST_FIRST_D(list)
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_MWCC()
-#    define NSL_PP_LIST_FIRST_D(list) NSL_PP_LIST_FIRST_I list
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MWCC()
+#    define N_PP_LIST_FIRST_D(list) N_PP_LIST_FIRST_I list
 # else
-#    define NSL_PP_LIST_FIRST_D(list) NSL_PP_LIST_FIRST_I ## list
+#    define N_PP_LIST_FIRST_D(list) N_PP_LIST_FIRST_I ## list
 # endif
 #
-# define NSL_PP_LIST_FIRST_I(head, tail) head
+# define N_PP_LIST_FIRST_I(head, tail) head
 #
-# /* NSL_PP_LIST_REST */
+# /* N_PP_LIST_REST */
 #
-# define NSL_PP_LIST_REST(list) NSL_PP_LIST_REST_D(list)
+# define N_PP_LIST_REST(list) N_PP_LIST_REST_D(list)
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_MWCC()
-#    define NSL_PP_LIST_REST_D(list) NSL_PP_LIST_REST_I list
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MWCC()
+#    define N_PP_LIST_REST_D(list) N_PP_LIST_REST_I list
 # else
-#    define NSL_PP_LIST_REST_D(list) NSL_PP_LIST_REST_I ## list
+#    define N_PP_LIST_REST_D(list) N_PP_LIST_REST_I ## list
 # endif
 #
-# define NSL_PP_LIST_REST_I(head, tail) tail
+# define N_PP_LIST_REST_I(head, tail) tail
 #
-# /* NSL_PP_LIST_IS_CONS */
+# /* N_PP_LIST_IS_CONS */
 #
-# if NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_BCC()
-#    define NSL_PP_LIST_IS_CONS(list) NSL_PP_LIST_IS_CONS_D(list)
-#    define NSL_PP_LIST_IS_CONS_D(list) NSL_PP_LIST_IS_CONS_ ## list
-#    define NSL_PP_LIST_IS_CONS_(head, tail) 1
-#    define NSL_PP_LIST_IS_CONS_NSL_PP_NIL 0
+# if N_PP_CONFIG_FLAGS() & N_PP_CONFIG_BCC()
+#    define N_PP_LIST_IS_CONS(list) N_PP_LIST_IS_CONS_D(list)
+#    define N_PP_LIST_IS_CONS_D(list) N_PP_LIST_IS_CONS_ ## list
+#    define N_PP_LIST_IS_CONS_(head, tail) 1
+#    define N_PP_LIST_IS_CONS_N_PP_NIL 0
 # else
-#    define NSL_PP_LIST_IS_CONS(list) NSL_PP_IS_BINARY(list)
+#    define N_PP_LIST_IS_CONS(list) N_PP_IS_BINARY(list)
 # endif
 #
-# /* NSL_PP_LIST_IS_NIL */
+# /* N_PP_LIST_IS_NIL */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_BCC()
-#    define NSL_PP_LIST_IS_NIL(list) NSL_PP_COMPL(NSL_PP_IS_BINARY(list))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_BCC()
+#    define N_PP_LIST_IS_NIL(list) N_PP_COMPL(N_PP_IS_BINARY(list))
 # else
-#    define NSL_PP_LIST_IS_NIL(list) NSL_PP_COMPL(NSL_PP_LIST_IS_CONS(list))
+#    define N_PP_LIST_IS_NIL(list) N_PP_COMPL(N_PP_LIST_IS_CONS(list))
 # endif
 #
 # endif

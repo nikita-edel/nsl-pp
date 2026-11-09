@@ -14,15 +14,15 @@
 #
 # include "nsl/preprocessor/config/config.h"
 #
-# /* NSL_PP_TUPLE_IS_SINGLE_RETURN */
+# /* N_PP_TUPLE_IS_SINGLE_RETURN */
 #
-# if NSL_PP_VARIADICS_MSVC
+# if N_PP_VARIADICS_MSVC
 # include "nsl/preprocessor/control/iif.h"
 # include "nsl/preprocessor/facilities/is_1.h"
 # include "nsl/preprocessor/tuple/size.h"
-# define NSL_PP_TUPLE_IS_SINGLE_RETURN(sr,nsr,tuple)  \
-    NSL_PP_IIF(NSL_PP_IS_1(NSL_PP_TUPLE_SIZE(tuple)),sr,nsr) \
+# define N_PP_TUPLE_IS_SINGLE_RETURN(sr,nsr,tuple)  \
+    N_PP_IIF(N_PP_IS_1(N_PP_TUPLE_SIZE(tuple)),sr,nsr) \
     /**/
-# endif /* NSL_PP_VARIADICS_MSVC */
+# endif /* N_PP_VARIADICS_MSVC */
 #
 # endif /* NSL_PREPROCESSOR_TUPLE_DETAIL_IS_SINGLE_RETURN_H */

@@ -15,8 +15,8 @@
 #
 # include "nsl/preprocessor/config/config.h"
 #
-# /* NSL_PP_VARIADIC_TO_TUPLE */
+# /* N_PP_VARIADIC_TO_TUPLE */
 #
-# define NSL_PP_VARIADIC_TO_TUPLE(...) (__VA_ARGS__)
+# define N_PP_VARIADIC_TO_TUPLE(...) (__VA_ARGS__)
 #
 # endif

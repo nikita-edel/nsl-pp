@@ -16,28 +16,28 @@
 #
 # include "nsl/preprocessor/config/config.h"
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_STRICT()
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_STRICT()
 #
 # include "nsl/preprocessor/list/fold_left.h"
 #
-# /* NSL_PP_LIST_REVERSE */
+# /* N_PP_LIST_REVERSE */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_LIST_REVERSE(list) NSL_PP_LIST_FOLD_LEFT(NSL_PP_LIST_REVERSE_O, NSL_PP_NIL, list)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_LIST_REVERSE(list) N_PP_LIST_FOLD_LEFT(N_PP_LIST_REVERSE_O, N_PP_NIL, list)
 # else
-#    define NSL_PP_LIST_REVERSE(list) NSL_PP_LIST_REVERSE_I(list)
-#    define NSL_PP_LIST_REVERSE_I(list) NSL_PP_LIST_FOLD_LEFT(NSL_PP_LIST_REVERSE_O, NSL_PP_NIL, list)
+#    define N_PP_LIST_REVERSE(list) N_PP_LIST_REVERSE_I(list)
+#    define N_PP_LIST_REVERSE_I(list) N_PP_LIST_FOLD_LEFT(N_PP_LIST_REVERSE_O, N_PP_NIL, list)
 # endif
 #
-# define NSL_PP_LIST_REVERSE_O(d, s, x) (x, s)
+# define N_PP_LIST_REVERSE_O(d, s, x) (x, s)
 #
-# /* NSL_PP_LIST_REVERSE_D */
+# /* N_PP_LIST_REVERSE_D */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_LIST_REVERSE_D(d, list) NSL_PP_LIST_FOLD_LEFT_ ## d(NSL_PP_LIST_REVERSE_O, NSL_PP_NIL, list)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_LIST_REVERSE_D(d, list) N_PP_LIST_FOLD_LEFT_ ## d(N_PP_LIST_REVERSE_O, N_PP_NIL, list)
 # else
-#    define NSL_PP_LIST_REVERSE_D(d, list) NSL_PP_LIST_REVERSE_D_I(d, list)
-#    define NSL_PP_LIST_REVERSE_D_I(d, list) NSL_PP_LIST_FOLD_LEFT_ ## d(NSL_PP_LIST_REVERSE_O, NSL_PP_NIL, list)
+#    define N_PP_LIST_REVERSE_D(d, list) N_PP_LIST_REVERSE_D_I(d, list)
+#    define N_PP_LIST_REVERSE_D_I(d, list) N_PP_LIST_FOLD_LEFT_ ## d(N_PP_LIST_REVERSE_O, N_PP_NIL, list)
 # endif
 #
 # else
@@ -47,28 +47,28 @@
 # include "nsl/preprocessor/list/adt.h"
 # include "nsl/preprocessor/list/fold_left.h"
 #
-# /* NSL_PP_LIST_REVERSE */
+# /* N_PP_LIST_REVERSE */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_LIST_REVERSE(list) NSL_PP_IIF(NSL_PP_LIST_IS_CONS(list),NSL_PP_LIST_REVERSE_CONS,NSL_PP_IDENTITY_N(NSL_PP_NIL,1))(list)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_LIST_REVERSE(list) N_PP_IIF(N_PP_LIST_IS_CONS(list),N_PP_LIST_REVERSE_CONS,N_PP_IDENTITY_N(N_PP_NIL,1))(list)
 # else
-#    define NSL_PP_LIST_REVERSE(list) NSL_PP_LIST_REVERSE_I(list)
-#    define NSL_PP_LIST_REVERSE_I(list) NSL_PP_IIF(NSL_PP_LIST_IS_CONS(list),NSL_PP_LIST_REVERSE_CONS,NSL_PP_IDENTITY_N(NSL_PP_NIL,1))(list)
+#    define N_PP_LIST_REVERSE(list) N_PP_LIST_REVERSE_I(list)
+#    define N_PP_LIST_REVERSE_I(list) N_PP_IIF(N_PP_LIST_IS_CONS(list),N_PP_LIST_REVERSE_CONS,N_PP_IDENTITY_N(N_PP_NIL,1))(list)
 # endif
 #
-# define NSL_PP_LIST_REVERSE_O(d, s, x) (x, s)
+# define N_PP_LIST_REVERSE_O(d, s, x) (x, s)
 #
-# /* NSL_PP_LIST_REVERSE_D */
+# /* N_PP_LIST_REVERSE_D */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_LIST_REVERSE_D(d, list) NSL_PP_IIF(NSL_PP_LIST_IS_CONS(list),NSL_PP_LIST_REVERSE_CONS_D,NSL_PP_IDENTITY_N(NSL_PP_NIL,2))(d,list)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_LIST_REVERSE_D(d, list) N_PP_IIF(N_PP_LIST_IS_CONS(list),N_PP_LIST_REVERSE_CONS_D,N_PP_IDENTITY_N(N_PP_NIL,2))(d,list)
 # else
-#    define NSL_PP_LIST_REVERSE_D(d, list) NSL_PP_LIST_REVERSE_D_I(d, list)
-#    define NSL_PP_LIST_REVERSE_D_I(d, list) NSL_PP_IIF(NSL_PP_LIST_IS_CONS(list),NSL_PP_LIST_REVERSE_CONS_D,NSL_PP_IDENTITY_N(NSL_PP_NIL,2))(d,list)
+#    define N_PP_LIST_REVERSE_D(d, list) N_PP_LIST_REVERSE_D_I(d, list)
+#    define N_PP_LIST_REVERSE_D_I(d, list) N_PP_IIF(N_PP_LIST_IS_CONS(list),N_PP_LIST_REVERSE_CONS_D,N_PP_IDENTITY_N(N_PP_NIL,2))(d,list)
 # endif
 #
-# define NSL_PP_LIST_REVERSE_CONS(list) NSL_PP_LIST_FOLD_LEFT(NSL_PP_LIST_REVERSE_O, (NSL_PP_LIST_FIRST(list),NSL_PP_NIL), NSL_PP_LIST_REST(list))
-# define NSL_PP_LIST_REVERSE_CONS_D(d, list) NSL_PP_LIST_FOLD_LEFT_ ## d(NSL_PP_LIST_REVERSE_O, (NSL_PP_LIST_FIRST(list),NSL_PP_NIL), NSL_PP_LIST_REST(list))
+# define N_PP_LIST_REVERSE_CONS(list) N_PP_LIST_FOLD_LEFT(N_PP_LIST_REVERSE_O, (N_PP_LIST_FIRST(list),N_PP_NIL), N_PP_LIST_REST(list))
+# define N_PP_LIST_REVERSE_CONS_D(d, list) N_PP_LIST_FOLD_LEFT_ ## d(N_PP_LIST_REVERSE_O, (N_PP_LIST_FIRST(list),N_PP_NIL), N_PP_LIST_REST(list))
 #
 # endif
 #

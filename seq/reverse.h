@@ -16,24 +16,24 @@
 # include "nsl/preprocessor/facilities/empty.h"
 # include "nsl/preprocessor/seq/fold_left.h"
 #
-# /* NSL_PP_SEQ_REVERSE */
+# /* N_PP_SEQ_REVERSE */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_SEQ_REVERSE(seq) NSL_PP_SEQ_FOLD_LEFT(NSL_PP_SEQ_REVERSE_O, NSL_PP_EMPTY, seq)()
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_SEQ_REVERSE(seq) N_PP_SEQ_FOLD_LEFT(N_PP_SEQ_REVERSE_O, N_PP_EMPTY, seq)()
 # else
-#    define NSL_PP_SEQ_REVERSE(seq) NSL_PP_SEQ_REVERSE_I(seq)
-#    define NSL_PP_SEQ_REVERSE_I(seq) NSL_PP_SEQ_FOLD_LEFT(NSL_PP_SEQ_REVERSE_O, NSL_PP_EMPTY, seq)()
+#    define N_PP_SEQ_REVERSE(seq) N_PP_SEQ_REVERSE_I(seq)
+#    define N_PP_SEQ_REVERSE_I(seq) N_PP_SEQ_FOLD_LEFT(N_PP_SEQ_REVERSE_O, N_PP_EMPTY, seq)()
 # endif
 #
-# define NSL_PP_SEQ_REVERSE_O(s, state, elem) (elem) state
+# define N_PP_SEQ_REVERSE_O(s, state, elem) (elem) state
 #
-# /* NSL_PP_SEQ_REVERSE_S */
+# /* N_PP_SEQ_REVERSE_S */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_SEQ_REVERSE_S(s, seq) NSL_PP_SEQ_FOLD_LEFT_ ## s(NSL_PP_SEQ_REVERSE_O, NSL_PP_EMPTY, seq)()
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_SEQ_REVERSE_S(s, seq) N_PP_SEQ_FOLD_LEFT_ ## s(N_PP_SEQ_REVERSE_O, N_PP_EMPTY, seq)()
 # else
-#    define NSL_PP_SEQ_REVERSE_S(s, seq) NSL_PP_SEQ_REVERSE_S_I(s, seq)
-#    define NSL_PP_SEQ_REVERSE_S_I(s, seq) NSL_PP_SEQ_FOLD_LEFT_ ## s(NSL_PP_SEQ_REVERSE_O, NSL_PP_EMPTY, seq)()
+#    define N_PP_SEQ_REVERSE_S(s, seq) N_PP_SEQ_REVERSE_S_I(s, seq)
+#    define N_PP_SEQ_REVERSE_S_I(s, seq) N_PP_SEQ_FOLD_LEFT_ ## s(N_PP_SEQ_REVERSE_O, N_PP_EMPTY, seq)()
 # endif
 #
 # endif

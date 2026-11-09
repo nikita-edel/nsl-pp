@@ -17,22 +17,22 @@
 # include "nsl/preprocessor/facilities/empty.h"
 # include "nsl/preprocessor/punctuation/paren.h"
 #
-# /* NSL_PP_LPAREN_IF */
+# /* N_PP_LPAREN_IF */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_LPAREN_IF(cond) NSL_PP_IF(cond, NSL_PP_LPAREN, NSL_PP_EMPTY)()
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_LPAREN_IF(cond) N_PP_IF(cond, N_PP_LPAREN, N_PP_EMPTY)()
 # else
-#    define NSL_PP_LPAREN_IF(cond) NSL_PP_LPAREN_IF_I(cond)
-#    define NSL_PP_LPAREN_IF_I(cond) NSL_PP_IF(cond, NSL_PP_LPAREN, NSL_PP_EMPTY)()
+#    define N_PP_LPAREN_IF(cond) N_PP_LPAREN_IF_I(cond)
+#    define N_PP_LPAREN_IF_I(cond) N_PP_IF(cond, N_PP_LPAREN, N_PP_EMPTY)()
 # endif
 #
-# /* NSL_PP_RPAREN_IF */
+# /* N_PP_RPAREN_IF */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_RPAREN_IF(cond) NSL_PP_IF(cond, NSL_PP_RPAREN, NSL_PP_EMPTY)()
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_RPAREN_IF(cond) N_PP_IF(cond, N_PP_RPAREN, N_PP_EMPTY)()
 # else
-#    define NSL_PP_RPAREN_IF(cond) NSL_PP_RPAREN_IF_I(cond)
-#    define NSL_PP_RPAREN_IF_I(cond) NSL_PP_IF(cond, NSL_PP_RPAREN, NSL_PP_EMPTY)()
+#    define N_PP_RPAREN_IF(cond) N_PP_RPAREN_IF_I(cond)
+#    define N_PP_RPAREN_IF_I(cond) N_PP_IF(cond, N_PP_RPAREN, N_PP_EMPTY)()
 # endif
 #
 # endif

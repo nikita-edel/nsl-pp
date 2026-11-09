@@ -12,10 +12,10 @@
 # ifndef NSL_PREPROCESSOR_ARITHMETIC_DETAIL_IS_1_NUMBER_H
 # define NSL_PREPROCESSOR_ARITHMETIC_DETAIL_IS_1_NUMBER_H
 #
-# /* NSL_PP_DETAIL_IS_1_NUMBER */
+# /* N_PP_DETAIL_IS_1_NUMBER */
 #
 # include "nsl/preprocessor/comparison/equal.h"
 #
-# define NSL_PP_DETAIL_IS_1_NUMBER(x) NSL_PP_EQUAL(x,1)
+# define N_PP_DETAIL_IS_1_NUMBER(x) N_PP_EQUAL(x,1)
 #
 # endif

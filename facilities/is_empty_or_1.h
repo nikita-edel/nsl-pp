@@ -18,13 +18,13 @@
 # include "nsl/preprocessor/facilities/is_1.h"
 # include "nsl/preprocessor/facilities/is_empty.h"
 #
-# /* NSL_PP_IS_EMPTY_OR_1 */
+# /* N_PP_IS_EMPTY_OR_1 */
 #
-# define NSL_PP_IS_EMPTY_OR_1(x) \
-    NSL_PP_IIF( \
-        NSL_PP_IS_EMPTY(x NSL_PP_EMPTY()), \
-        NSL_PP_IDENTITY(1), \
-        NSL_PP_IS_1 \
+# define N_PP_IS_EMPTY_OR_1(x) \
+    N_PP_IIF( \
+        N_PP_IS_EMPTY(x N_PP_EMPTY()), \
+        N_PP_IDENTITY(1), \
+        N_PP_IS_1 \
     )(x) \
     /**/
 #

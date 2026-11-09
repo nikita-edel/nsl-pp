@@ -18,13 +18,13 @@
 # include "nsl/preprocessor/logical/bool.h"
 # include "nsl/preprocessor/logical/compl.h"
 #
-# /* NSL_PP_NOT */
+# /* N_PP_NOT */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_NOT(x) NSL_PP_COMPL(NSL_PP_BOOL(x))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_NOT(x) N_PP_COMPL(N_PP_BOOL(x))
 # else
-#    define NSL_PP_NOT(x) NSL_PP_NOT_I(x)
-#    define NSL_PP_NOT_I(x) NSL_PP_COMPL(NSL_PP_BOOL(x))
+#    define N_PP_NOT(x) N_PP_NOT_I(x)
+#    define N_PP_NOT_I(x) N_PP_COMPL(N_PP_BOOL(x))
 # endif
 #
 # endif

@@ -20,35 +20,35 @@
 # include "nsl/preprocessor/tuple/elem.h"
 # include "nsl/preprocessor/tuple/rem.h"
 #
-# /* NSL_PP_SEQ_FILTER */
+# /* N_PP_SEQ_FILTER */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_SEQ_FILTER(pred, data, seq) NSL_PP_SEQ_TAIL(NSL_PP_TUPLE_ELEM(3, 2, NSL_PP_SEQ_FOLD_LEFT(NSL_PP_SEQ_FILTER_O, (pred, data, (nil)), seq)))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_SEQ_FILTER(pred, data, seq) N_PP_SEQ_TAIL(N_PP_TUPLE_ELEM(3, 2, N_PP_SEQ_FOLD_LEFT(N_PP_SEQ_FILTER_O, (pred, data, (nil)), seq)))
 # else
-#    define NSL_PP_SEQ_FILTER(pred, data, seq) NSL_PP_SEQ_FILTER_I(pred, data, seq)
-#    define NSL_PP_SEQ_FILTER_I(pred, data, seq) NSL_PP_SEQ_TAIL(NSL_PP_TUPLE_ELEM(3, 2, NSL_PP_SEQ_FOLD_LEFT(NSL_PP_SEQ_FILTER_O, (pred, data, (nil)), seq)))
+#    define N_PP_SEQ_FILTER(pred, data, seq) N_PP_SEQ_FILTER_I(pred, data, seq)
+#    define N_PP_SEQ_FILTER_I(pred, data, seq) N_PP_SEQ_TAIL(N_PP_TUPLE_ELEM(3, 2, N_PP_SEQ_FOLD_LEFT(N_PP_SEQ_FILTER_O, (pred, data, (nil)), seq)))
 # endif
 #
-# if NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_STRICT()
-#    define NSL_PP_SEQ_FILTER_O(s, st, elem) NSL_PP_SEQ_FILTER_O_IM(s, NSL_PP_TUPLE_REM_3 st, elem)
-#    define NSL_PP_SEQ_FILTER_O_IM(s, im, elem) NSL_PP_SEQ_FILTER_O_I(s, im, elem)
+# if N_PP_CONFIG_FLAGS() & N_PP_CONFIG_STRICT()
+#    define N_PP_SEQ_FILTER_O(s, st, elem) N_PP_SEQ_FILTER_O_IM(s, N_PP_TUPLE_REM_3 st, elem)
+#    define N_PP_SEQ_FILTER_O_IM(s, im, elem) N_PP_SEQ_FILTER_O_I(s, im, elem)
 # else
-#    define NSL_PP_SEQ_FILTER_O(s, st, elem) NSL_PP_SEQ_FILTER_O_I(s, NSL_PP_TUPLE_ELEM(3, 0, st), NSL_PP_TUPLE_ELEM(3, 1, st), NSL_PP_TUPLE_ELEM(3, 2, st), elem)
+#    define N_PP_SEQ_FILTER_O(s, st, elem) N_PP_SEQ_FILTER_O_I(s, N_PP_TUPLE_ELEM(3, 0, st), N_PP_TUPLE_ELEM(3, 1, st), N_PP_TUPLE_ELEM(3, 2, st), elem)
 # endif
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_DMC()
-#   define NSL_PP_SEQ_FILTER_O_I(s, pred, data, res, elem) (pred, data, res NSL_PP_EXPR_IF(pred(s, data, elem), (elem)))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_DMC()
+#   define N_PP_SEQ_FILTER_O_I(s, pred, data, res, elem) (pred, data, res N_PP_EXPR_IF(pred(s, data, elem), (elem)))
 # else
-#   define NSL_PP_SEQ_FILTER_O_I(s, pred, data, res, elem) (pred, data, res NSL_PP_EXPR_IF(pred##(s, data, elem), (elem)))
+#   define N_PP_SEQ_FILTER_O_I(s, pred, data, res, elem) (pred, data, res N_PP_EXPR_IF(pred##(s, data, elem), (elem)))
 # endif
 #
-# /* NSL_PP_SEQ_FILTER_S */
+# /* N_PP_SEQ_FILTER_S */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_SEQ_FILTER_S(s, pred, data, seq) NSL_PP_SEQ_TAIL(NSL_PP_TUPLE_ELEM(3, 2, NSL_PP_SEQ_FOLD_LEFT_ ## s(NSL_PP_SEQ_FILTER_O, (pred, data, (nil)), seq)))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_SEQ_FILTER_S(s, pred, data, seq) N_PP_SEQ_TAIL(N_PP_TUPLE_ELEM(3, 2, N_PP_SEQ_FOLD_LEFT_ ## s(N_PP_SEQ_FILTER_O, (pred, data, (nil)), seq)))
 # else
-#    define NSL_PP_SEQ_FILTER_S(s, pred, data, seq) NSL_PP_SEQ_FILTER_S_I(s, pred, data, seq)
-#    define NSL_PP_SEQ_FILTER_S_I(s, pred, data, seq) NSL_PP_SEQ_TAIL(NSL_PP_TUPLE_ELEM(3, 2, NSL_PP_SEQ_FOLD_LEFT_ ## s(NSL_PP_SEQ_FILTER_O, (pred, data, (nil)), seq)))
+#    define N_PP_SEQ_FILTER_S(s, pred, data, seq) N_PP_SEQ_FILTER_S_I(s, pred, data, seq)
+#    define N_PP_SEQ_FILTER_S_I(s, pred, data, seq) N_PP_SEQ_TAIL(N_PP_TUPLE_ELEM(3, 2, N_PP_SEQ_FOLD_LEFT_ ## s(N_PP_SEQ_FILTER_O, (pred, data, (nil)), seq)))
 # endif
 #
 # endif

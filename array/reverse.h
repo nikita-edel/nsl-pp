@@ -17,13 +17,13 @@
 # include "nsl/preprocessor/config/config.h"
 # include "nsl/preprocessor/tuple/reverse.h"
 #
-# /* NSL_PP_ARRAY_REVERSE */
+# /* N_PP_ARRAY_REVERSE */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_ARRAY_REVERSE(array) (NSL_PP_ARRAY_SIZE(array), NSL_PP_TUPLE_REVERSE(NSL_PP_ARRAY_SIZE(array), NSL_PP_ARRAY_DATA(array)))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_ARRAY_REVERSE(array) (N_PP_ARRAY_SIZE(array), N_PP_TUPLE_REVERSE(N_PP_ARRAY_SIZE(array), N_PP_ARRAY_DATA(array)))
 # else
-#    define NSL_PP_ARRAY_REVERSE(array) NSL_PP_ARRAY_REVERSE_I(array)
-#    define NSL_PP_ARRAY_REVERSE_I(array) (NSL_PP_ARRAY_SIZE(array), NSL_PP_TUPLE_REVERSE(NSL_PP_ARRAY_SIZE(array), NSL_PP_ARRAY_DATA(array)))
+#    define N_PP_ARRAY_REVERSE(array) N_PP_ARRAY_REVERSE_I(array)
+#    define N_PP_ARRAY_REVERSE_I(array) (N_PP_ARRAY_SIZE(array), N_PP_TUPLE_REVERSE(N_PP_ARRAY_SIZE(array), N_PP_ARRAY_DATA(array)))
 # endif
 #
 # endif

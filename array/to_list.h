@@ -19,29 +19,29 @@
 # include "nsl/preprocessor/control/if.h"
 # include "nsl/preprocessor/tuple/to_list.h"
 #
-# /* NSL_PP_ARRAY_TO_LIST */
+# /* N_PP_ARRAY_TO_LIST */
 #
-#    define NSL_PP_ARRAY_TO_LIST(array) \
-        NSL_PP_IF \
+#    define N_PP_ARRAY_TO_LIST(array) \
+        N_PP_IF \
             ( \
-            NSL_PP_ARRAY_SIZE(array), \
-            NSL_PP_ARRAY_TO_LIST_DO, \
-            NSL_PP_ARRAY_TO_LIST_EMPTY \
+            N_PP_ARRAY_SIZE(array), \
+            N_PP_ARRAY_TO_LIST_DO, \
+            N_PP_ARRAY_TO_LIST_EMPTY \
             ) \
         (array) \
 /**/
 #
-#    define NSL_PP_ARRAY_TO_LIST_EMPTY(array) NSL_PP_NIL
+#    define N_PP_ARRAY_TO_LIST_EMPTY(array) N_PP_NIL
 #
-# if NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_MSVC()
-#    define NSL_PP_ARRAY_TO_LIST_DO(array) NSL_PP_ARRAY_TO_LIST_I(NSL_PP_TUPLE_TO_LIST, array)
-#    define NSL_PP_ARRAY_TO_LIST_I(m, args) NSL_PP_ARRAY_TO_LIST_II(m, args)
-#    define NSL_PP_ARRAY_TO_LIST_II(m, args) NSL_PP_CAT(m ## args,)
-# elif NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_MWCC()
-#    define NSL_PP_ARRAY_TO_LIST_DO(array) NSL_PP_ARRAY_TO_LIST_I(array)
-#    define NSL_PP_ARRAY_TO_LIST_I(array) NSL_PP_TUPLE_TO_LIST ## array
+# if N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MSVC()
+#    define N_PP_ARRAY_TO_LIST_DO(array) N_PP_ARRAY_TO_LIST_I(N_PP_TUPLE_TO_LIST, array)
+#    define N_PP_ARRAY_TO_LIST_I(m, args) N_PP_ARRAY_TO_LIST_II(m, args)
+#    define N_PP_ARRAY_TO_LIST_II(m, args) N_PP_CAT(m ## args,)
+# elif N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MWCC()
+#    define N_PP_ARRAY_TO_LIST_DO(array) N_PP_ARRAY_TO_LIST_I(array)
+#    define N_PP_ARRAY_TO_LIST_I(array) N_PP_TUPLE_TO_LIST ## array
 # else
-#    define NSL_PP_ARRAY_TO_LIST_DO(array) NSL_PP_TUPLE_TO_LIST array
+#    define N_PP_ARRAY_TO_LIST_DO(array) N_PP_TUPLE_TO_LIST array
 # endif
 #
 # endif

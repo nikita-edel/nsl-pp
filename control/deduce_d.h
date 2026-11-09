@@ -16,14 +16,14 @@
 #
 # include "nsl/preprocessor/config/config.h"
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_STRICT()
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_STRICT()
 #
 # include "nsl/preprocessor/control/while.h"
 # include "nsl/preprocessor/detail/auto_rec.h"
 #
-# /* NSL_PP_DEDUCE_D */
+# /* N_PP_DEDUCE_D */
 #
-# define NSL_PP_DEDUCE_D() NSL_PP_AUTO_REC(NSL_PP_WHILE_P, 256)
+# define N_PP_DEDUCE_D() N_PP_AUTO_REC(N_PP_WHILE_P, 256)
 #
 # else
 #
@@ -32,16 +32,16 @@
 # include "nsl/preprocessor/detail/auto_rec.h"
 # include "nsl/preprocessor/config/limits.h"
 #
-# /* NSL_PP_DEDUCE_D */
+# /* N_PP_DEDUCE_D */
 #
-# if NSL_PP_LIMIT_WHILE == 256
-# define NSL_PP_DEDUCE_D() NSL_PP_DEC(NSL_PP_AUTO_REC(NSL_PP_WHILE_P, 256))
-# elif NSL_PP_LIMIT_WHILE == 512
-# define NSL_PP_DEDUCE_D() NSL_PP_DEC(NSL_PP_AUTO_REC(NSL_PP_WHILE_P, 512))
-# elif NSL_PP_LIMIT_WHILE == 1024
-# define NSL_PP_DEDUCE_D() NSL_PP_DEC(NSL_PP_AUTO_REC(NSL_PP_WHILE_P, 1024))
+# if N_PP_LIMIT_WHILE == 256
+# define N_PP_DEDUCE_D() N_PP_DEC(N_PP_AUTO_REC(N_PP_WHILE_P, 256))
+# elif N_PP_LIMIT_WHILE == 512
+# define N_PP_DEDUCE_D() N_PP_DEC(N_PP_AUTO_REC(N_PP_WHILE_P, 512))
+# elif N_PP_LIMIT_WHILE == 1024
+# define N_PP_DEDUCE_D() N_PP_DEC(N_PP_AUTO_REC(N_PP_WHILE_P, 1024))
 # else
-# error Incorrect value for the NSL_PP_LIMIT_WHILE limit
+# error Incorrect value for the N_PP_LIMIT_WHILE limit
 # endif
 #
 # endif

@@ -15,30 +15,30 @@
 # include "nsl/preprocessor/config/config.h"
 # include "nsl/preprocessor/seq/elem.h"
 #
-# /* NSL_PP_SEQ_HEAD */
+# /* N_PP_SEQ_HEAD */
 #
-# define NSL_PP_SEQ_HEAD(seq) NSL_PP_SEQ_ELEM(0, seq)
+# define N_PP_SEQ_HEAD(seq) N_PP_SEQ_ELEM(0, seq)
 #
-# /* NSL_PP_SEQ_TAIL */
+# /* N_PP_SEQ_TAIL */
 #
-# if NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_MWCC()
-#    define NSL_PP_SEQ_TAIL(seq) NSL_PP_SEQ_TAIL_1((seq))
-#    define NSL_PP_SEQ_TAIL_1(par) NSL_PP_SEQ_TAIL_2 ## par
-#    define NSL_PP_SEQ_TAIL_2(seq) NSL_PP_SEQ_TAIL_I ## seq
-# elif NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_MSVC()
-#    define NSL_PP_SEQ_TAIL(seq) NSL_PP_SEQ_TAIL_ID(NSL_PP_SEQ_TAIL_I seq)
-#    define NSL_PP_SEQ_TAIL_ID(id) id
-# elif NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_SEQ_TAIL(seq) NSL_PP_SEQ_TAIL_D(seq)
-#    define NSL_PP_SEQ_TAIL_D(seq) NSL_PP_SEQ_TAIL_I seq
+# if N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MWCC()
+#    define N_PP_SEQ_TAIL(seq) N_PP_SEQ_TAIL_1((seq))
+#    define N_PP_SEQ_TAIL_1(par) N_PP_SEQ_TAIL_2 ## par
+#    define N_PP_SEQ_TAIL_2(seq) N_PP_SEQ_TAIL_I ## seq
+# elif N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MSVC()
+#    define N_PP_SEQ_TAIL(seq) N_PP_SEQ_TAIL_ID(N_PP_SEQ_TAIL_I seq)
+#    define N_PP_SEQ_TAIL_ID(id) id
+# elif N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_SEQ_TAIL(seq) N_PP_SEQ_TAIL_D(seq)
+#    define N_PP_SEQ_TAIL_D(seq) N_PP_SEQ_TAIL_I seq
 # else
-#    define NSL_PP_SEQ_TAIL(seq) NSL_PP_SEQ_TAIL_I seq
+#    define N_PP_SEQ_TAIL(seq) N_PP_SEQ_TAIL_I seq
 # endif
 #
-# define NSL_PP_SEQ_TAIL_I(x)
+# define N_PP_SEQ_TAIL_I(x)
 #
-# /* NSL_PP_SEQ_NIL */
+# /* N_PP_SEQ_NIL */
 #
-# define NSL_PP_SEQ_NIL(x) (x)
+# define N_PP_SEQ_NIL(x) (x)
 #
 # endif

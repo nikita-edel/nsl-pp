@@ -17,13 +17,13 @@
 # include "nsl/preprocessor/seq/first_n.h"
 # include "nsl/preprocessor/seq/rest_n.h"
 #
-# /* NSL_PP_SEQ_REMOVE */
+# /* N_PP_SEQ_REMOVE */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_SEQ_REMOVE(seq, i) NSL_PP_SEQ_FIRST_N(i, seq) NSL_PP_SEQ_REST_N(NSL_PP_INC(i), seq)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_SEQ_REMOVE(seq, i) N_PP_SEQ_FIRST_N(i, seq) N_PP_SEQ_REST_N(N_PP_INC(i), seq)
 # else
-#    define NSL_PP_SEQ_REMOVE(seq, i) NSL_PP_SEQ_REMOVE_I(seq, i)
-#    define NSL_PP_SEQ_REMOVE_I(seq, i) NSL_PP_SEQ_FIRST_N(i, seq) NSL_PP_SEQ_REST_N(NSL_PP_INC(i), seq)
+#    define N_PP_SEQ_REMOVE(seq, i) N_PP_SEQ_REMOVE_I(seq, i)
+#    define N_PP_SEQ_REMOVE_I(seq, i) N_PP_SEQ_FIRST_N(i, seq) N_PP_SEQ_REST_N(N_PP_INC(i), seq)
 # endif
 #
 # endif

@@ -14,18 +14,18 @@
 #
 # include "nsl/preprocessor/config/config.h"
 #
-# /* NSL_PP_EXPR_IIF */
+# /* N_PP_EXPR_IIF */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_MWCC()
-#    define NSL_PP_EXPR_IIF(bit, expr) NSL_PP_EXPR_IIF_I(bit, expr)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MWCC()
+#    define N_PP_EXPR_IIF(bit, expr) N_PP_EXPR_IIF_I(bit, expr)
 # else
-#    define NSL_PP_EXPR_IIF(bit, expr) NSL_PP_EXPR_IIF_OO((bit, expr))
-#    define NSL_PP_EXPR_IIF_OO(par) NSL_PP_EXPR_IIF_I ## par
+#    define N_PP_EXPR_IIF(bit, expr) N_PP_EXPR_IIF_OO((bit, expr))
+#    define N_PP_EXPR_IIF_OO(par) N_PP_EXPR_IIF_I ## par
 # endif
 #
-# define NSL_PP_EXPR_IIF_I(bit, expr) NSL_PP_EXPR_IIF_ ## bit(expr)
+# define N_PP_EXPR_IIF_I(bit, expr) N_PP_EXPR_IIF_ ## bit(expr)
 #
-# define NSL_PP_EXPR_IIF_0(expr)
-# define NSL_PP_EXPR_IIF_1(expr) expr
+# define N_PP_EXPR_IIF_0(expr)
+# define N_PP_EXPR_IIF_1(expr) expr
 #
 # endif

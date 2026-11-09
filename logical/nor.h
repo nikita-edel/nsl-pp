@@ -18,13 +18,13 @@
 # include "nsl/preprocessor/logical/bool.h"
 # include "nsl/preprocessor/logical/bitnor.h"
 #
-# /* NSL_PP_NOR */
+# /* N_PP_NOR */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_NOR(p, q) NSL_PP_BITNOR(NSL_PP_BOOL(p), NSL_PP_BOOL(q))
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_NOR(p, q) N_PP_BITNOR(N_PP_BOOL(p), N_PP_BOOL(q))
 # else
-#    define NSL_PP_NOR(p, q) NSL_PP_NOR_I(p, q)
-#    define NSL_PP_NOR_I(p, q) NSL_PP_BITNOR(NSL_PP_BOOL(p), NSL_PP_BOOL(q))
+#    define N_PP_NOR(p, q) N_PP_NOR_I(p, q)
+#    define N_PP_NOR_I(p, q) N_PP_BITNOR(N_PP_BOOL(p), N_PP_BOOL(q))
 # endif
 #
 # endif

@@ -14,21 +14,21 @@
 #
 # include "nsl/preprocessor/config/config.h"
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_MWCC()
-#    define NSL_PP_IIF(bit, t, f) NSL_PP_IIF_I(bit, t, f)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MWCC()
+#    define N_PP_IIF(bit, t, f) N_PP_IIF_I(bit, t, f)
 # else
-#    define NSL_PP_IIF(bit, t, f) NSL_PP_IIF_OO((bit, t, f))
-#    define NSL_PP_IIF_OO(par) NSL_PP_IIF_I ## par
+#    define N_PP_IIF(bit, t, f) N_PP_IIF_OO((bit, t, f))
+#    define N_PP_IIF_OO(par) N_PP_IIF_I ## par
 # endif
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_MSVC()
-#    define NSL_PP_IIF_I(bit, t, f) NSL_PP_IIF_ ## bit(t, f)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MSVC()
+#    define N_PP_IIF_I(bit, t, f) N_PP_IIF_ ## bit(t, f)
 # else
-#    define NSL_PP_IIF_I(bit, t, f) NSL_PP_IIF_II(NSL_PP_IIF_ ## bit(t, f))
-#    define NSL_PP_IIF_II(id) id
+#    define N_PP_IIF_I(bit, t, f) N_PP_IIF_II(N_PP_IIF_ ## bit(t, f))
+#    define N_PP_IIF_II(id) id
 # endif
 #
-# define NSL_PP_IIF_0(t, f) f
-# define NSL_PP_IIF_1(t, f) t
+# define N_PP_IIF_0(t, f) f
+# define N_PP_IIF_1(t, f) t
 #
 # endif

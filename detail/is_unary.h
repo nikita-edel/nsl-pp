@@ -15,16 +15,16 @@
 # include "nsl/preprocessor/config/config.h"
 # include "nsl/preprocessor/detail/check.h"
 #
-# /* NSL_PP_IS_UNARY */
+# /* N_PP_IS_UNARY */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_IS_UNARY(x) NSL_PP_CHECK(x, NSL_PP_IS_UNARY_CHECK)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_IS_UNARY(x) N_PP_CHECK(x, N_PP_IS_UNARY_CHECK)
 # else
-#    define NSL_PP_IS_UNARY(x) NSL_PP_IS_UNARY_I(x)
-#    define NSL_PP_IS_UNARY_I(x) NSL_PP_CHECK(x, NSL_PP_IS_UNARY_CHECK)
+#    define N_PP_IS_UNARY(x) N_PP_IS_UNARY_I(x)
+#    define N_PP_IS_UNARY_I(x) N_PP_CHECK(x, N_PP_IS_UNARY_CHECK)
 # endif
 #
-# define NSL_PP_IS_UNARY_CHECK(a) 1
-# define NSL_PP_CHECK_RESULT_NSL_PP_IS_UNARY_CHECK 0, NSL_PP_NIL
+# define N_PP_IS_UNARY_CHECK(a) 1
+# define N_PP_CHECK_RESULT_N_PP_IS_UNARY_CHECK 0, N_PP_NIL
 #
 # endif

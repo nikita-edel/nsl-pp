@@ -15,8 +15,8 @@
 #
 # include "nsl/preprocessor/tuple/rem.h"
 #
-# /* NSL_PP_TUPLE_ENUM */
+# /* N_PP_TUPLE_ENUM */
 #
-# define NSL_PP_TUPLE_ENUM NSL_PP_TUPLE_REM_CTOR
+# define N_PP_TUPLE_ENUM N_PP_TUPLE_REM_CTOR
 #
 # endif

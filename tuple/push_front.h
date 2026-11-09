@@ -17,10 +17,10 @@
 # include "nsl/preprocessor/array/to_tuple.h"
 # include "nsl/preprocessor/tuple/to_array.h"
 #
-# /* NSL_PP_TUPLE_PUSH_FRONT */
+# /* N_PP_TUPLE_PUSH_FRONT */
 #
-# define NSL_PP_TUPLE_PUSH_FRONT(tuple, elem) \
-    NSL_PP_ARRAY_TO_TUPLE(NSL_PP_ARRAY_PUSH_FRONT(NSL_PP_TUPLE_TO_ARRAY(tuple), elem)) \
+# define N_PP_TUPLE_PUSH_FRONT(tuple, elem) \
+    N_PP_ARRAY_TO_TUPLE(N_PP_ARRAY_PUSH_FRONT(N_PP_TUPLE_TO_ARRAY(tuple), elem)) \
 /**/
 #
 # endif // NSL_PREPROCESSOR_TUPLE_PUSH_FRONT_H

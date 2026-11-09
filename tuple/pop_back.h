@@ -20,40 +20,40 @@
 # include "nsl/preprocessor/tuple/size.h"
 # include "nsl/preprocessor/tuple/to_array.h"
 #
-# /* NSL_PP_TUPLE_POP_BACK */
+# /* N_PP_TUPLE_POP_BACK */
 #
-# define NSL_PP_TUPLE_POP_BACK(tuple) \
-    NSL_PP_IIF \
+# define N_PP_TUPLE_POP_BACK(tuple) \
+    N_PP_IIF \
         ( \
-        NSL_PP_GREATER(NSL_PP_TUPLE_SIZE(tuple),1), \
-        NSL_PP_TUPLE_POP_BACK_EXEC, \
-        NSL_PP_TUPLE_POP_BACK_RETURN \
+        N_PP_GREATER(N_PP_TUPLE_SIZE(tuple),1), \
+        N_PP_TUPLE_POP_BACK_EXEC, \
+        N_PP_TUPLE_POP_BACK_RETURN \
         ) \
     (tuple) \
 /**/
 #
-# define NSL_PP_TUPLE_POP_BACK_EXEC(tuple) \
-    NSL_PP_ARRAY_TO_TUPLE(NSL_PP_ARRAY_POP_BACK(NSL_PP_TUPLE_TO_ARRAY(tuple))) \
+# define N_PP_TUPLE_POP_BACK_EXEC(tuple) \
+    N_PP_ARRAY_TO_TUPLE(N_PP_ARRAY_POP_BACK(N_PP_TUPLE_TO_ARRAY(tuple))) \
 /**/
 #
-# define NSL_PP_TUPLE_POP_BACK_RETURN(tuple) tuple
+# define N_PP_TUPLE_POP_BACK_RETURN(tuple) tuple
 #
-# /* NSL_PP_TUPLE_POP_BACK_Z */
+# /* N_PP_TUPLE_POP_BACK_Z */
 #
-# define NSL_PP_TUPLE_POP_BACK_Z(z, tuple) \
-    NSL_PP_IIF \
+# define N_PP_TUPLE_POP_BACK_Z(z, tuple) \
+    N_PP_IIF \
         ( \
-        NSL_PP_GREATER(NSL_PP_TUPLE_SIZE(tuple),1), \
-        NSL_PP_TUPLE_POP_BACK_Z_EXEC, \
-        NSL_PP_TUPLE_POP_BACK_Z_RETURN \
+        N_PP_GREATER(N_PP_TUPLE_SIZE(tuple),1), \
+        N_PP_TUPLE_POP_BACK_Z_EXEC, \
+        N_PP_TUPLE_POP_BACK_Z_RETURN \
         ) \
     (z, tuple) \
 /**/
 #
-# define NSL_PP_TUPLE_POP_BACK_Z_EXEC(z, tuple) \
-    NSL_PP_ARRAY_TO_TUPLE(NSL_PP_ARRAY_POP_BACK_Z(z, NSL_PP_TUPLE_TO_ARRAY(tuple))) \
+# define N_PP_TUPLE_POP_BACK_Z_EXEC(z, tuple) \
+    N_PP_ARRAY_TO_TUPLE(N_PP_ARRAY_POP_BACK_Z(z, N_PP_TUPLE_TO_ARRAY(tuple))) \
 /**/
 #
-# define NSL_PP_TUPLE_POP_BACK_Z_RETURN(z, tuple) tuple
+# define N_PP_TUPLE_POP_BACK_Z_RETURN(z, tuple) tuple
 #
 # endif // NSL_PREPROCESSOR_TUPLE_POP_BACK_H

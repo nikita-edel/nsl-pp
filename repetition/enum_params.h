@@ -18,24 +18,24 @@
 # include "nsl/preprocessor/punctuation/comma_if.h"
 # include "nsl/preprocessor/repetition/repeat.h"
 #
-# /* NSL_PP_ENUM_PARAMS */
+# /* N_PP_ENUM_PARAMS */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_ENUM_PARAMS(count, param) NSL_PP_REPEAT(count, NSL_PP_ENUM_PARAMS_M, param)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_ENUM_PARAMS(count, param) N_PP_REPEAT(count, N_PP_ENUM_PARAMS_M, param)
 # else
-#    define NSL_PP_ENUM_PARAMS(count, param) NSL_PP_ENUM_PARAMS_I(count, param)
-#    define NSL_PP_ENUM_PARAMS_I(count, param) NSL_PP_REPEAT(count, NSL_PP_ENUM_PARAMS_M, param)
+#    define N_PP_ENUM_PARAMS(count, param) N_PP_ENUM_PARAMS_I(count, param)
+#    define N_PP_ENUM_PARAMS_I(count, param) N_PP_REPEAT(count, N_PP_ENUM_PARAMS_M, param)
 # endif
 #
-# define NSL_PP_ENUM_PARAMS_M(z, n, param) NSL_PP_COMMA_IF(n) param ## n
+# define N_PP_ENUM_PARAMS_M(z, n, param) N_PP_COMMA_IF(n) param ## n
 #
-# /* NSL_PP_ENUM_PARAMS_Z */
+# /* N_PP_ENUM_PARAMS_Z */
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_EDG()
-#    define NSL_PP_ENUM_PARAMS_Z(z, count, param) NSL_PP_REPEAT_ ## z(count, NSL_PP_ENUM_PARAMS_M, param)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
+#    define N_PP_ENUM_PARAMS_Z(z, count, param) N_PP_REPEAT_ ## z(count, N_PP_ENUM_PARAMS_M, param)
 # else
-#    define NSL_PP_ENUM_PARAMS_Z(z, count, param) NSL_PP_ENUM_PARAMS_Z_I(z, count, param)
-#    define NSL_PP_ENUM_PARAMS_Z_I(z, count, param) NSL_PP_REPEAT_ ## z(count, NSL_PP_ENUM_PARAMS_M, param)
+#    define N_PP_ENUM_PARAMS_Z(z, count, param) N_PP_ENUM_PARAMS_Z_I(z, count, param)
+#    define N_PP_ENUM_PARAMS_Z_I(z, count, param) N_PP_REPEAT_ ## z(count, N_PP_ENUM_PARAMS_M, param)
 # endif
 #
 # endif

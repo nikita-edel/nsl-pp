@@ -16,13 +16,13 @@
 #
 # include "nsl/preprocessor/config/config.h"
 #
-# if ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_MWCC() && ~NSL_PP_CONFIG_FLAGS() & NSL_PP_CONFIG_DMC()
-#    define NSL_PP_EXPAND(x) NSL_PP_EXPAND_I(x)
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MWCC() && ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_DMC()
+#    define N_PP_EXPAND(x) N_PP_EXPAND_I(x)
 # else
-#    define NSL_PP_EXPAND(x) NSL_PP_EXPAND_OO((x))
-#    define NSL_PP_EXPAND_OO(par) NSL_PP_EXPAND_I ## par
+#    define N_PP_EXPAND(x) N_PP_EXPAND_OO((x))
+#    define N_PP_EXPAND_OO(par) N_PP_EXPAND_I ## par
 # endif
 #
-# define NSL_PP_EXPAND_I(x) x
+# define N_PP_EXPAND_I(x) x
 #
 # endif

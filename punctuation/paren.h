@@ -12,12 +12,12 @@
 # ifndef NSL_PREPROCESSOR_PUNCTUATION_PAREN_H
 # define NSL_PREPROCESSOR_PUNCTUATION_PAREN_H
 #
-# /* NSL_PP_LPAREN */
+# /* N_PP_LPAREN */
 #
-# define NSL_PP_LPAREN() (
+# define N_PP_LPAREN() (
 #
-# /* NSL_PP_RPAREN */
+# /* N_PP_RPAREN */
 #
-# define NSL_PP_RPAREN() )
+# define N_PP_RPAREN() )
 #
 # endif

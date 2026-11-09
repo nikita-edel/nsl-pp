@@ -12,8 +12,8 @@
 # ifndef NSL_PREPROCESSOR_SEQ_PUSH_BACK_H
 # define NSL_PREPROCESSOR_SEQ_PUSH_BACK_H
 #
-# /* NSL_PP_SEQ_PUSH_BACK */
+# /* N_PP_SEQ_PUSH_BACK */
 #
-# define NSL_PP_SEQ_PUSH_BACK(seq, elem) seq(elem)
+# define N_PP_SEQ_PUSH_BACK(seq, elem) seq(elem)
 #
 # endif

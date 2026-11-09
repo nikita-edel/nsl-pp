@@ -16,23 +16,23 @@
 #
 # if defined(__cplusplus) && __cplusplus > 201703L
 #
-# if NSL_PP_VARIADICS_MSVC
+# if N_PP_VARIADICS_MSVC
 # include "nsl/preprocessor/cat.h"
 # endif
 #
-# define NSL_PP_VARIADIC_HAS_OPT_FUNCTION(...) \
+# define N_PP_VARIADIC_HAS_OPT_FUNCTION(...) \
     __VA_OPT__(,) , 1, 0 \
 /**/
 #
-# if NSL_PP_VARIADICS_MSVC
-# define NSL_PP_VARIADIC_HAS_OPT_ELEM0(e0, ...) NSL_PP_CAT(NSL_PP_VARIADIC_HAS_OPT_ELEM_0(e0,__VA_ARGS__),)
-# define NSL_PP_VARIADIC_HAS_OPT_ELEM2(e0, ...) NSL_PP_CAT(NSL_PP_VARIADIC_HAS_OPT_ELEM_2(e0,__VA_ARGS__),)
+# if N_PP_VARIADICS_MSVC
+# define N_PP_VARIADIC_HAS_OPT_ELEM0(e0, ...) N_PP_CAT(N_PP_VARIADIC_HAS_OPT_ELEM_0(e0,__VA_ARGS__),)
+# define N_PP_VARIADIC_HAS_OPT_ELEM2(e0, ...) N_PP_CAT(N_PP_VARIADIC_HAS_OPT_ELEM_2(e0,__VA_ARGS__),)
 # else
-# define NSL_PP_VARIADIC_HAS_OPT_ELEM0(e0, ...) NSL_PP_VARIADIC_HAS_OPT_ELEM_0(e0,__VA_ARGS__)
-# define NSL_PP_VARIADIC_HAS_OPT_ELEM2(e0, ...) NSL_PP_VARIADIC_HAS_OPT_ELEM_2(e0,__VA_ARGS__)
+# define N_PP_VARIADIC_HAS_OPT_ELEM0(e0, ...) N_PP_VARIADIC_HAS_OPT_ELEM_0(e0,__VA_ARGS__)
+# define N_PP_VARIADIC_HAS_OPT_ELEM2(e0, ...) N_PP_VARIADIC_HAS_OPT_ELEM_2(e0,__VA_ARGS__)
 # endif
-# define NSL_PP_VARIADIC_HAS_OPT_ELEM_0(e0, ...) e0
-# define NSL_PP_VARIADIC_HAS_OPT_ELEM_2(e0, e1, e2, ...) e2
+# define N_PP_VARIADIC_HAS_OPT_ELEM_0(e0, ...) e0
+# define N_PP_VARIADIC_HAS_OPT_ELEM_2(e0, e1, e2, ...) e2
 #
 # endif
 #
