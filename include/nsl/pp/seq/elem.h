@@ -1,0 +1,327 @@
+# /* **************************************************************************
+#  *                                                                          *
+#  *     (C) Copyright Paul Mensonides 2002.
+#  *     Distributed under the Boost Software License, Version 1.0. (See
+#  *     accompanying file LICENSE_1_0.txt or copy at
+#  *     http://www.boost.org/LICENSE_1_0.txt)
+#  *                                                                          *
+#  ************************************************************************** */
+#
+# /* Revised by Edward Diener (2020) */
+#
+# /* See http://www.boost.org for most recent version. */
+#
+# ifndef NSL_PREPROCESSOR_SEQ_ELEM_H
+# define NSL_PREPROCESSOR_SEQ_ELEM_H
+#
+# include "nsl/pp/cat.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/facilities/empty.h"
+#
+# /* N_PP_SEQ_ELEM */
+#
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MWCC()
+#    define N_PP_SEQ_ELEM(i, seq) N_PP_SEQ_ELEM_I(i, seq)
+# else
+#    define N_PP_SEQ_ELEM(i, seq) N_PP_SEQ_ELEM_I((i, seq))
+# endif
+#
+# if N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MSVC()
+#    define N_PP_SEQ_ELEM_I(i, seq) N_PP_SEQ_ELEM_II((N_PP_SEQ_ELEM_ ## i seq))
+#    define N_PP_SEQ_ELEM_II(res) N_PP_SEQ_ELEM_IV(N_PP_SEQ_ELEM_III res)
+#    define N_PP_SEQ_ELEM_III(x, _) x N_PP_EMPTY()
+#    define N_PP_SEQ_ELEM_IV(x) x
+# elif N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MWCC()
+#    define N_PP_SEQ_ELEM_I(par) N_PP_SEQ_ELEM_II ## par
+#    define N_PP_SEQ_ELEM_II(i, seq) N_PP_SEQ_ELEM_III(N_PP_SEQ_ELEM_ ## i ## seq)
+#    define N_PP_SEQ_ELEM_III(im) N_PP_SEQ_ELEM_IV(im)
+#    define N_PP_SEQ_ELEM_IV(x, _) x
+# else
+#    if defined(__IBMC__) || defined(__IBMCPP__)
+#        define N_PP_SEQ_ELEM_I(i, seq) N_PP_SEQ_ELEM_II(N_PP_CAT(N_PP_SEQ_ELEM_ ## i, seq))
+#    else
+#        define N_PP_SEQ_ELEM_I(i, seq) N_PP_SEQ_ELEM_II(N_PP_SEQ_ELEM_ ## i seq)
+#    endif
+#    define N_PP_SEQ_ELEM_II(im) N_PP_SEQ_ELEM_III(im)
+#    define N_PP_SEQ_ELEM_III(x, _) x
+# endif
+#
+# if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_STRICT()
+#
+# define N_PP_SEQ_ELEM_0(x) x, N_PP_NIL
+# define N_PP_SEQ_ELEM_1(_) N_PP_SEQ_ELEM_0
+# define N_PP_SEQ_ELEM_2(_) N_PP_SEQ_ELEM_1
+# define N_PP_SEQ_ELEM_3(_) N_PP_SEQ_ELEM_2
+# define N_PP_SEQ_ELEM_4(_) N_PP_SEQ_ELEM_3
+# define N_PP_SEQ_ELEM_5(_) N_PP_SEQ_ELEM_4
+# define N_PP_SEQ_ELEM_6(_) N_PP_SEQ_ELEM_5
+# define N_PP_SEQ_ELEM_7(_) N_PP_SEQ_ELEM_6
+# define N_PP_SEQ_ELEM_8(_) N_PP_SEQ_ELEM_7
+# define N_PP_SEQ_ELEM_9(_) N_PP_SEQ_ELEM_8
+# define N_PP_SEQ_ELEM_10(_) N_PP_SEQ_ELEM_9
+# define N_PP_SEQ_ELEM_11(_) N_PP_SEQ_ELEM_10
+# define N_PP_SEQ_ELEM_12(_) N_PP_SEQ_ELEM_11
+# define N_PP_SEQ_ELEM_13(_) N_PP_SEQ_ELEM_12
+# define N_PP_SEQ_ELEM_14(_) N_PP_SEQ_ELEM_13
+# define N_PP_SEQ_ELEM_15(_) N_PP_SEQ_ELEM_14
+# define N_PP_SEQ_ELEM_16(_) N_PP_SEQ_ELEM_15
+# define N_PP_SEQ_ELEM_17(_) N_PP_SEQ_ELEM_16
+# define N_PP_SEQ_ELEM_18(_) N_PP_SEQ_ELEM_17
+# define N_PP_SEQ_ELEM_19(_) N_PP_SEQ_ELEM_18
+# define N_PP_SEQ_ELEM_20(_) N_PP_SEQ_ELEM_19
+# define N_PP_SEQ_ELEM_21(_) N_PP_SEQ_ELEM_20
+# define N_PP_SEQ_ELEM_22(_) N_PP_SEQ_ELEM_21
+# define N_PP_SEQ_ELEM_23(_) N_PP_SEQ_ELEM_22
+# define N_PP_SEQ_ELEM_24(_) N_PP_SEQ_ELEM_23
+# define N_PP_SEQ_ELEM_25(_) N_PP_SEQ_ELEM_24
+# define N_PP_SEQ_ELEM_26(_) N_PP_SEQ_ELEM_25
+# define N_PP_SEQ_ELEM_27(_) N_PP_SEQ_ELEM_26
+# define N_PP_SEQ_ELEM_28(_) N_PP_SEQ_ELEM_27
+# define N_PP_SEQ_ELEM_29(_) N_PP_SEQ_ELEM_28
+# define N_PP_SEQ_ELEM_30(_) N_PP_SEQ_ELEM_29
+# define N_PP_SEQ_ELEM_31(_) N_PP_SEQ_ELEM_30
+# define N_PP_SEQ_ELEM_32(_) N_PP_SEQ_ELEM_31
+# define N_PP_SEQ_ELEM_33(_) N_PP_SEQ_ELEM_32
+# define N_PP_SEQ_ELEM_34(_) N_PP_SEQ_ELEM_33
+# define N_PP_SEQ_ELEM_35(_) N_PP_SEQ_ELEM_34
+# define N_PP_SEQ_ELEM_36(_) N_PP_SEQ_ELEM_35
+# define N_PP_SEQ_ELEM_37(_) N_PP_SEQ_ELEM_36
+# define N_PP_SEQ_ELEM_38(_) N_PP_SEQ_ELEM_37
+# define N_PP_SEQ_ELEM_39(_) N_PP_SEQ_ELEM_38
+# define N_PP_SEQ_ELEM_40(_) N_PP_SEQ_ELEM_39
+# define N_PP_SEQ_ELEM_41(_) N_PP_SEQ_ELEM_40
+# define N_PP_SEQ_ELEM_42(_) N_PP_SEQ_ELEM_41
+# define N_PP_SEQ_ELEM_43(_) N_PP_SEQ_ELEM_42
+# define N_PP_SEQ_ELEM_44(_) N_PP_SEQ_ELEM_43
+# define N_PP_SEQ_ELEM_45(_) N_PP_SEQ_ELEM_44
+# define N_PP_SEQ_ELEM_46(_) N_PP_SEQ_ELEM_45
+# define N_PP_SEQ_ELEM_47(_) N_PP_SEQ_ELEM_46
+# define N_PP_SEQ_ELEM_48(_) N_PP_SEQ_ELEM_47
+# define N_PP_SEQ_ELEM_49(_) N_PP_SEQ_ELEM_48
+# define N_PP_SEQ_ELEM_50(_) N_PP_SEQ_ELEM_49
+# define N_PP_SEQ_ELEM_51(_) N_PP_SEQ_ELEM_50
+# define N_PP_SEQ_ELEM_52(_) N_PP_SEQ_ELEM_51
+# define N_PP_SEQ_ELEM_53(_) N_PP_SEQ_ELEM_52
+# define N_PP_SEQ_ELEM_54(_) N_PP_SEQ_ELEM_53
+# define N_PP_SEQ_ELEM_55(_) N_PP_SEQ_ELEM_54
+# define N_PP_SEQ_ELEM_56(_) N_PP_SEQ_ELEM_55
+# define N_PP_SEQ_ELEM_57(_) N_PP_SEQ_ELEM_56
+# define N_PP_SEQ_ELEM_58(_) N_PP_SEQ_ELEM_57
+# define N_PP_SEQ_ELEM_59(_) N_PP_SEQ_ELEM_58
+# define N_PP_SEQ_ELEM_60(_) N_PP_SEQ_ELEM_59
+# define N_PP_SEQ_ELEM_61(_) N_PP_SEQ_ELEM_60
+# define N_PP_SEQ_ELEM_62(_) N_PP_SEQ_ELEM_61
+# define N_PP_SEQ_ELEM_63(_) N_PP_SEQ_ELEM_62
+# define N_PP_SEQ_ELEM_64(_) N_PP_SEQ_ELEM_63
+# define N_PP_SEQ_ELEM_65(_) N_PP_SEQ_ELEM_64
+# define N_PP_SEQ_ELEM_66(_) N_PP_SEQ_ELEM_65
+# define N_PP_SEQ_ELEM_67(_) N_PP_SEQ_ELEM_66
+# define N_PP_SEQ_ELEM_68(_) N_PP_SEQ_ELEM_67
+# define N_PP_SEQ_ELEM_69(_) N_PP_SEQ_ELEM_68
+# define N_PP_SEQ_ELEM_70(_) N_PP_SEQ_ELEM_69
+# define N_PP_SEQ_ELEM_71(_) N_PP_SEQ_ELEM_70
+# define N_PP_SEQ_ELEM_72(_) N_PP_SEQ_ELEM_71
+# define N_PP_SEQ_ELEM_73(_) N_PP_SEQ_ELEM_72
+# define N_PP_SEQ_ELEM_74(_) N_PP_SEQ_ELEM_73
+# define N_PP_SEQ_ELEM_75(_) N_PP_SEQ_ELEM_74
+# define N_PP_SEQ_ELEM_76(_) N_PP_SEQ_ELEM_75
+# define N_PP_SEQ_ELEM_77(_) N_PP_SEQ_ELEM_76
+# define N_PP_SEQ_ELEM_78(_) N_PP_SEQ_ELEM_77
+# define N_PP_SEQ_ELEM_79(_) N_PP_SEQ_ELEM_78
+# define N_PP_SEQ_ELEM_80(_) N_PP_SEQ_ELEM_79
+# define N_PP_SEQ_ELEM_81(_) N_PP_SEQ_ELEM_80
+# define N_PP_SEQ_ELEM_82(_) N_PP_SEQ_ELEM_81
+# define N_PP_SEQ_ELEM_83(_) N_PP_SEQ_ELEM_82
+# define N_PP_SEQ_ELEM_84(_) N_PP_SEQ_ELEM_83
+# define N_PP_SEQ_ELEM_85(_) N_PP_SEQ_ELEM_84
+# define N_PP_SEQ_ELEM_86(_) N_PP_SEQ_ELEM_85
+# define N_PP_SEQ_ELEM_87(_) N_PP_SEQ_ELEM_86
+# define N_PP_SEQ_ELEM_88(_) N_PP_SEQ_ELEM_87
+# define N_PP_SEQ_ELEM_89(_) N_PP_SEQ_ELEM_88
+# define N_PP_SEQ_ELEM_90(_) N_PP_SEQ_ELEM_89
+# define N_PP_SEQ_ELEM_91(_) N_PP_SEQ_ELEM_90
+# define N_PP_SEQ_ELEM_92(_) N_PP_SEQ_ELEM_91
+# define N_PP_SEQ_ELEM_93(_) N_PP_SEQ_ELEM_92
+# define N_PP_SEQ_ELEM_94(_) N_PP_SEQ_ELEM_93
+# define N_PP_SEQ_ELEM_95(_) N_PP_SEQ_ELEM_94
+# define N_PP_SEQ_ELEM_96(_) N_PP_SEQ_ELEM_95
+# define N_PP_SEQ_ELEM_97(_) N_PP_SEQ_ELEM_96
+# define N_PP_SEQ_ELEM_98(_) N_PP_SEQ_ELEM_97
+# define N_PP_SEQ_ELEM_99(_) N_PP_SEQ_ELEM_98
+# define N_PP_SEQ_ELEM_100(_) N_PP_SEQ_ELEM_99
+# define N_PP_SEQ_ELEM_101(_) N_PP_SEQ_ELEM_100
+# define N_PP_SEQ_ELEM_102(_) N_PP_SEQ_ELEM_101
+# define N_PP_SEQ_ELEM_103(_) N_PP_SEQ_ELEM_102
+# define N_PP_SEQ_ELEM_104(_) N_PP_SEQ_ELEM_103
+# define N_PP_SEQ_ELEM_105(_) N_PP_SEQ_ELEM_104
+# define N_PP_SEQ_ELEM_106(_) N_PP_SEQ_ELEM_105
+# define N_PP_SEQ_ELEM_107(_) N_PP_SEQ_ELEM_106
+# define N_PP_SEQ_ELEM_108(_) N_PP_SEQ_ELEM_107
+# define N_PP_SEQ_ELEM_109(_) N_PP_SEQ_ELEM_108
+# define N_PP_SEQ_ELEM_110(_) N_PP_SEQ_ELEM_109
+# define N_PP_SEQ_ELEM_111(_) N_PP_SEQ_ELEM_110
+# define N_PP_SEQ_ELEM_112(_) N_PP_SEQ_ELEM_111
+# define N_PP_SEQ_ELEM_113(_) N_PP_SEQ_ELEM_112
+# define N_PP_SEQ_ELEM_114(_) N_PP_SEQ_ELEM_113
+# define N_PP_SEQ_ELEM_115(_) N_PP_SEQ_ELEM_114
+# define N_PP_SEQ_ELEM_116(_) N_PP_SEQ_ELEM_115
+# define N_PP_SEQ_ELEM_117(_) N_PP_SEQ_ELEM_116
+# define N_PP_SEQ_ELEM_118(_) N_PP_SEQ_ELEM_117
+# define N_PP_SEQ_ELEM_119(_) N_PP_SEQ_ELEM_118
+# define N_PP_SEQ_ELEM_120(_) N_PP_SEQ_ELEM_119
+# define N_PP_SEQ_ELEM_121(_) N_PP_SEQ_ELEM_120
+# define N_PP_SEQ_ELEM_122(_) N_PP_SEQ_ELEM_121
+# define N_PP_SEQ_ELEM_123(_) N_PP_SEQ_ELEM_122
+# define N_PP_SEQ_ELEM_124(_) N_PP_SEQ_ELEM_123
+# define N_PP_SEQ_ELEM_125(_) N_PP_SEQ_ELEM_124
+# define N_PP_SEQ_ELEM_126(_) N_PP_SEQ_ELEM_125
+# define N_PP_SEQ_ELEM_127(_) N_PP_SEQ_ELEM_126
+# define N_PP_SEQ_ELEM_128(_) N_PP_SEQ_ELEM_127
+# define N_PP_SEQ_ELEM_129(_) N_PP_SEQ_ELEM_128
+# define N_PP_SEQ_ELEM_130(_) N_PP_SEQ_ELEM_129
+# define N_PP_SEQ_ELEM_131(_) N_PP_SEQ_ELEM_130
+# define N_PP_SEQ_ELEM_132(_) N_PP_SEQ_ELEM_131
+# define N_PP_SEQ_ELEM_133(_) N_PP_SEQ_ELEM_132
+# define N_PP_SEQ_ELEM_134(_) N_PP_SEQ_ELEM_133
+# define N_PP_SEQ_ELEM_135(_) N_PP_SEQ_ELEM_134
+# define N_PP_SEQ_ELEM_136(_) N_PP_SEQ_ELEM_135
+# define N_PP_SEQ_ELEM_137(_) N_PP_SEQ_ELEM_136
+# define N_PP_SEQ_ELEM_138(_) N_PP_SEQ_ELEM_137
+# define N_PP_SEQ_ELEM_139(_) N_PP_SEQ_ELEM_138
+# define N_PP_SEQ_ELEM_140(_) N_PP_SEQ_ELEM_139
+# define N_PP_SEQ_ELEM_141(_) N_PP_SEQ_ELEM_140
+# define N_PP_SEQ_ELEM_142(_) N_PP_SEQ_ELEM_141
+# define N_PP_SEQ_ELEM_143(_) N_PP_SEQ_ELEM_142
+# define N_PP_SEQ_ELEM_144(_) N_PP_SEQ_ELEM_143
+# define N_PP_SEQ_ELEM_145(_) N_PP_SEQ_ELEM_144
+# define N_PP_SEQ_ELEM_146(_) N_PP_SEQ_ELEM_145
+# define N_PP_SEQ_ELEM_147(_) N_PP_SEQ_ELEM_146
+# define N_PP_SEQ_ELEM_148(_) N_PP_SEQ_ELEM_147
+# define N_PP_SEQ_ELEM_149(_) N_PP_SEQ_ELEM_148
+# define N_PP_SEQ_ELEM_150(_) N_PP_SEQ_ELEM_149
+# define N_PP_SEQ_ELEM_151(_) N_PP_SEQ_ELEM_150
+# define N_PP_SEQ_ELEM_152(_) N_PP_SEQ_ELEM_151
+# define N_PP_SEQ_ELEM_153(_) N_PP_SEQ_ELEM_152
+# define N_PP_SEQ_ELEM_154(_) N_PP_SEQ_ELEM_153
+# define N_PP_SEQ_ELEM_155(_) N_PP_SEQ_ELEM_154
+# define N_PP_SEQ_ELEM_156(_) N_PP_SEQ_ELEM_155
+# define N_PP_SEQ_ELEM_157(_) N_PP_SEQ_ELEM_156
+# define N_PP_SEQ_ELEM_158(_) N_PP_SEQ_ELEM_157
+# define N_PP_SEQ_ELEM_159(_) N_PP_SEQ_ELEM_158
+# define N_PP_SEQ_ELEM_160(_) N_PP_SEQ_ELEM_159
+# define N_PP_SEQ_ELEM_161(_) N_PP_SEQ_ELEM_160
+# define N_PP_SEQ_ELEM_162(_) N_PP_SEQ_ELEM_161
+# define N_PP_SEQ_ELEM_163(_) N_PP_SEQ_ELEM_162
+# define N_PP_SEQ_ELEM_164(_) N_PP_SEQ_ELEM_163
+# define N_PP_SEQ_ELEM_165(_) N_PP_SEQ_ELEM_164
+# define N_PP_SEQ_ELEM_166(_) N_PP_SEQ_ELEM_165
+# define N_PP_SEQ_ELEM_167(_) N_PP_SEQ_ELEM_166
+# define N_PP_SEQ_ELEM_168(_) N_PP_SEQ_ELEM_167
+# define N_PP_SEQ_ELEM_169(_) N_PP_SEQ_ELEM_168
+# define N_PP_SEQ_ELEM_170(_) N_PP_SEQ_ELEM_169
+# define N_PP_SEQ_ELEM_171(_) N_PP_SEQ_ELEM_170
+# define N_PP_SEQ_ELEM_172(_) N_PP_SEQ_ELEM_171
+# define N_PP_SEQ_ELEM_173(_) N_PP_SEQ_ELEM_172
+# define N_PP_SEQ_ELEM_174(_) N_PP_SEQ_ELEM_173
+# define N_PP_SEQ_ELEM_175(_) N_PP_SEQ_ELEM_174
+# define N_PP_SEQ_ELEM_176(_) N_PP_SEQ_ELEM_175
+# define N_PP_SEQ_ELEM_177(_) N_PP_SEQ_ELEM_176
+# define N_PP_SEQ_ELEM_178(_) N_PP_SEQ_ELEM_177
+# define N_PP_SEQ_ELEM_179(_) N_PP_SEQ_ELEM_178
+# define N_PP_SEQ_ELEM_180(_) N_PP_SEQ_ELEM_179
+# define N_PP_SEQ_ELEM_181(_) N_PP_SEQ_ELEM_180
+# define N_PP_SEQ_ELEM_182(_) N_PP_SEQ_ELEM_181
+# define N_PP_SEQ_ELEM_183(_) N_PP_SEQ_ELEM_182
+# define N_PP_SEQ_ELEM_184(_) N_PP_SEQ_ELEM_183
+# define N_PP_SEQ_ELEM_185(_) N_PP_SEQ_ELEM_184
+# define N_PP_SEQ_ELEM_186(_) N_PP_SEQ_ELEM_185
+# define N_PP_SEQ_ELEM_187(_) N_PP_SEQ_ELEM_186
+# define N_PP_SEQ_ELEM_188(_) N_PP_SEQ_ELEM_187
+# define N_PP_SEQ_ELEM_189(_) N_PP_SEQ_ELEM_188
+# define N_PP_SEQ_ELEM_190(_) N_PP_SEQ_ELEM_189
+# define N_PP_SEQ_ELEM_191(_) N_PP_SEQ_ELEM_190
+# define N_PP_SEQ_ELEM_192(_) N_PP_SEQ_ELEM_191
+# define N_PP_SEQ_ELEM_193(_) N_PP_SEQ_ELEM_192
+# define N_PP_SEQ_ELEM_194(_) N_PP_SEQ_ELEM_193
+# define N_PP_SEQ_ELEM_195(_) N_PP_SEQ_ELEM_194
+# define N_PP_SEQ_ELEM_196(_) N_PP_SEQ_ELEM_195
+# define N_PP_SEQ_ELEM_197(_) N_PP_SEQ_ELEM_196
+# define N_PP_SEQ_ELEM_198(_) N_PP_SEQ_ELEM_197
+# define N_PP_SEQ_ELEM_199(_) N_PP_SEQ_ELEM_198
+# define N_PP_SEQ_ELEM_200(_) N_PP_SEQ_ELEM_199
+# define N_PP_SEQ_ELEM_201(_) N_PP_SEQ_ELEM_200
+# define N_PP_SEQ_ELEM_202(_) N_PP_SEQ_ELEM_201
+# define N_PP_SEQ_ELEM_203(_) N_PP_SEQ_ELEM_202
+# define N_PP_SEQ_ELEM_204(_) N_PP_SEQ_ELEM_203
+# define N_PP_SEQ_ELEM_205(_) N_PP_SEQ_ELEM_204
+# define N_PP_SEQ_ELEM_206(_) N_PP_SEQ_ELEM_205
+# define N_PP_SEQ_ELEM_207(_) N_PP_SEQ_ELEM_206
+# define N_PP_SEQ_ELEM_208(_) N_PP_SEQ_ELEM_207
+# define N_PP_SEQ_ELEM_209(_) N_PP_SEQ_ELEM_208
+# define N_PP_SEQ_ELEM_210(_) N_PP_SEQ_ELEM_209
+# define N_PP_SEQ_ELEM_211(_) N_PP_SEQ_ELEM_210
+# define N_PP_SEQ_ELEM_212(_) N_PP_SEQ_ELEM_211
+# define N_PP_SEQ_ELEM_213(_) N_PP_SEQ_ELEM_212
+# define N_PP_SEQ_ELEM_214(_) N_PP_SEQ_ELEM_213
+# define N_PP_SEQ_ELEM_215(_) N_PP_SEQ_ELEM_214
+# define N_PP_SEQ_ELEM_216(_) N_PP_SEQ_ELEM_215
+# define N_PP_SEQ_ELEM_217(_) N_PP_SEQ_ELEM_216
+# define N_PP_SEQ_ELEM_218(_) N_PP_SEQ_ELEM_217
+# define N_PP_SEQ_ELEM_219(_) N_PP_SEQ_ELEM_218
+# define N_PP_SEQ_ELEM_220(_) N_PP_SEQ_ELEM_219
+# define N_PP_SEQ_ELEM_221(_) N_PP_SEQ_ELEM_220
+# define N_PP_SEQ_ELEM_222(_) N_PP_SEQ_ELEM_221
+# define N_PP_SEQ_ELEM_223(_) N_PP_SEQ_ELEM_222
+# define N_PP_SEQ_ELEM_224(_) N_PP_SEQ_ELEM_223
+# define N_PP_SEQ_ELEM_225(_) N_PP_SEQ_ELEM_224
+# define N_PP_SEQ_ELEM_226(_) N_PP_SEQ_ELEM_225
+# define N_PP_SEQ_ELEM_227(_) N_PP_SEQ_ELEM_226
+# define N_PP_SEQ_ELEM_228(_) N_PP_SEQ_ELEM_227
+# define N_PP_SEQ_ELEM_229(_) N_PP_SEQ_ELEM_228
+# define N_PP_SEQ_ELEM_230(_) N_PP_SEQ_ELEM_229
+# define N_PP_SEQ_ELEM_231(_) N_PP_SEQ_ELEM_230
+# define N_PP_SEQ_ELEM_232(_) N_PP_SEQ_ELEM_231
+# define N_PP_SEQ_ELEM_233(_) N_PP_SEQ_ELEM_232
+# define N_PP_SEQ_ELEM_234(_) N_PP_SEQ_ELEM_233
+# define N_PP_SEQ_ELEM_235(_) N_PP_SEQ_ELEM_234
+# define N_PP_SEQ_ELEM_236(_) N_PP_SEQ_ELEM_235
+# define N_PP_SEQ_ELEM_237(_) N_PP_SEQ_ELEM_236
+# define N_PP_SEQ_ELEM_238(_) N_PP_SEQ_ELEM_237
+# define N_PP_SEQ_ELEM_239(_) N_PP_SEQ_ELEM_238
+# define N_PP_SEQ_ELEM_240(_) N_PP_SEQ_ELEM_239
+# define N_PP_SEQ_ELEM_241(_) N_PP_SEQ_ELEM_240
+# define N_PP_SEQ_ELEM_242(_) N_PP_SEQ_ELEM_241
+# define N_PP_SEQ_ELEM_243(_) N_PP_SEQ_ELEM_242
+# define N_PP_SEQ_ELEM_244(_) N_PP_SEQ_ELEM_243
+# define N_PP_SEQ_ELEM_245(_) N_PP_SEQ_ELEM_244
+# define N_PP_SEQ_ELEM_246(_) N_PP_SEQ_ELEM_245
+# define N_PP_SEQ_ELEM_247(_) N_PP_SEQ_ELEM_246
+# define N_PP_SEQ_ELEM_248(_) N_PP_SEQ_ELEM_247
+# define N_PP_SEQ_ELEM_249(_) N_PP_SEQ_ELEM_248
+# define N_PP_SEQ_ELEM_250(_) N_PP_SEQ_ELEM_249
+# define N_PP_SEQ_ELEM_251(_) N_PP_SEQ_ELEM_250
+# define N_PP_SEQ_ELEM_252(_) N_PP_SEQ_ELEM_251
+# define N_PP_SEQ_ELEM_253(_) N_PP_SEQ_ELEM_252
+# define N_PP_SEQ_ELEM_254(_) N_PP_SEQ_ELEM_253
+# define N_PP_SEQ_ELEM_255(_) N_PP_SEQ_ELEM_254
+#
+# else
+#
+# include "nsl/pp/config/limits.h"
+#
+# if N_PP_LIMIT_SEQ == 256
+# include "nsl/pp/seq/limits/elem_256.h"
+# elif N_PP_LIMIT_SEQ == 512
+# include "nsl/pp/seq/limits/elem_256.h"
+# include "nsl/pp/seq/limits/elem_512.h"
+# elif N_PP_LIMIT_SEQ == 1024
+# include "nsl/pp/seq/limits/elem_256.h"
+# include "nsl/pp/seq/limits/elem_512.h"
+# include "nsl/pp/seq/limits/elem_1024.h"
+# else
+# error Incorrect value for the N_PP_LIMIT_SEQ limit
+# endif
+#
+# endif
+#
+# endif

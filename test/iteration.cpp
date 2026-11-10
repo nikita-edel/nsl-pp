@@ -9,7 +9,7 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# include "nsl/preprocessor/config/limits.h"
+# include "nsl/pp/config/limits.h"
 #
 # if !N_PP_IS_SELFISH
 #

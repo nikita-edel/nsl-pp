@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# include "nsl/preprocessor/config/limits.h"
-# include "nsl/preprocessor/selection.h"
+# include "nsl/pp/config/limits.h"
+# include "nsl/pp/selection.h"
 # include "test.h"
 
 BEGIN N_PP_MAX(2, 2) == 2 END

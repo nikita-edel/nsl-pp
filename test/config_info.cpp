@@ -12,8 +12,8 @@
 #include <iostream>
 #include <iomanip>
 #include <string.h>
-#include "nsl/preprocessor/stringize.h"
-#include "nsl/preprocessor/variadic/has_opt.h"
+#include "nsl/pp/stringize.h"
+#include "nsl/pp/variadic/has_opt.h"
 
 static unsigned int indent = 4;
 static unsigned int width = 40;

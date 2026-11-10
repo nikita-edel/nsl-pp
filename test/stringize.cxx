@@ -9,9 +9,9 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# include "nsl/preprocessor/stringize.h"
-# include "nsl/preprocessor/wstringize.h"
-# include "nsl/preprocessor/arithmetic/inc.h"
+# include "nsl/pp/stringize.h"
+# include "nsl/pp/wstringize.h"
+# include "nsl/pp/arithmetic/inc.h"
 # if !defined __cplusplus
 #include <wchar.h>
 #endif
