@@ -14,7 +14,7 @@
 # ifndef NSL_PREPROCESSOR_FACILITIES_EXPAND_H
 # define NSL_PREPROCESSOR_FACILITIES_EXPAND_H
 #
-# include "nsl/preprocessor/config/config.h"
+# include "nsl/pp/config/config.h"
 #
 # if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MWCC() && ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_DMC()
 #    define N_PP_EXPAND(x) N_PP_EXPAND_I(x)

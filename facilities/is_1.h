@@ -12,8 +12,8 @@
 # ifndef NSL_PREPROCESSOR_FACILITIES_IS_1_H
 # define NSL_PREPROCESSOR_FACILITIES_IS_1_H
 #
-# include "nsl/preprocessor/cat.h"
-# include "nsl/preprocessor/facilities/is_empty.h"
+# include "nsl/pp/cat.h"
+# include "nsl/pp/facilities/is_empty.h"
 #
 # /* N_PP_IS_1 */
 #

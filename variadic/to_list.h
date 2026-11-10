@@ -13,11 +13,11 @@
 # ifndef NSL_PREPROCESSOR_VARIADIC_TO_LIST_H
 # define NSL_PREPROCESSOR_VARIADIC_TO_LIST_H
 #
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/control/if.h"
-# include "nsl/preprocessor/tuple/to_list.h"
-# include "nsl/preprocessor/variadic/has_opt.h"
-# include "nsl/preprocessor/variadic/size.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/control/if.h"
+# include "nsl/pp/tuple/to_list.h"
+# include "nsl/pp/variadic/has_opt.h"
+# include "nsl/pp/variadic/size.h"
 #
 # /* N_PP_VARIADIC_TO_LIST */
 #

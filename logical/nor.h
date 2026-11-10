@@ -14,9 +14,9 @@
 # ifndef NSL_PREPROCESSOR_LOGICAL_NOR_H
 # define NSL_PREPROCESSOR_LOGICAL_NOR_H
 #
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/logical/bool.h"
-# include "nsl/preprocessor/logical/bitnor.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/logical/bool.h"
+# include "nsl/pp/logical/bitnor.h"
 #
 # /* N_PP_NOR */
 #

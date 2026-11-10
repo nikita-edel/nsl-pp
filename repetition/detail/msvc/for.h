@@ -15,8 +15,8 @@
 # ifndef NSL_PREPROCESSOR_REPETITION_DETAIL_MSVC_FOR_H
 # define NSL_PREPROCESSOR_REPETITION_DETAIL_MSVC_FOR_H
 #
-# include "nsl/preprocessor/control/if.h"
-# include "nsl/preprocessor/tuple/eat.h"
+# include "nsl/pp/control/if.h"
+# include "nsl/pp/tuple/eat.h"
 #
 # define N_PP_FOR_1(s, p, o, m) N_PP_IF(p(2, s), m, N_PP_TUPLE_EAT_2)(2, s) N_PP_IF(p(2, s), N_PP_FOR_2, N_PP_TUPLE_EAT_4)(o(2, s), p, o, m)
 # define N_PP_FOR_2(s, p, o, m) N_PP_IF(p(3, s), m, N_PP_TUPLE_EAT_2)(3, s) N_PP_IF(p(3, s), N_PP_FOR_3, N_PP_TUPLE_EAT_4)(o(3, s), p, o, m)

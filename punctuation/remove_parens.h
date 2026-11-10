@@ -12,11 +12,11 @@
 #ifndef NSL_PREPROCESSOR_REMOVE_PARENS_H
 #define NSL_PREPROCESSOR_REMOVE_PARENS_H
 
-#include "nsl/preprocessor/config/config.h"
-#include "nsl/preprocessor/control/iif.h"
-#include "nsl/preprocessor/facilities/identity.h"
-#include "nsl/preprocessor/punctuation/is_begin_parens.h"
-#include "nsl/preprocessor/tuple/enum.h"
+#include "nsl/pp/config/config.h"
+#include "nsl/pp/control/iif.h"
+#include "nsl/pp/facilities/identity.h"
+#include "nsl/pp/punctuation/is_begin_parens.h"
+#include "nsl/pp/tuple/enum.h"
 
 #define N_PP_REMOVE_PARENS(param) \
     N_PP_IIF \

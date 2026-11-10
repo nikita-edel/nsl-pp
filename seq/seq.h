@@ -12,8 +12,8 @@
 # ifndef NSL_PREPROCESSOR_SEQ_SEQ_H
 # define NSL_PREPROCESSOR_SEQ_SEQ_H
 #
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/seq/elem.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/seq/elem.h"
 #
 # /* N_PP_SEQ_HEAD */
 #

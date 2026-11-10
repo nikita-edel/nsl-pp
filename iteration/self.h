@@ -14,6 +14,6 @@
 #
 # /* N_PP_INCLUDE_SELF */
 #
-# define N_PP_INCLUDE_SELF() <nsl/preprocessor/iteration/detail/self.h>
+# define N_PP_INCLUDE_SELF() <nsl/pp/iteration/detail/self.h>
 #
 # endif

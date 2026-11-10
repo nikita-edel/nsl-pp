@@ -12,11 +12,11 @@
 # ifndef NSL_PREPROCESSOR_ARRAY_DETAIL_GET_DATA_H
 # define NSL_PREPROCESSOR_ARRAY_DETAIL_GET_DATA_H
 #
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/tuple/rem.h"
-# include "nsl/preprocessor/control/if.h"
-# include "nsl/preprocessor/control/iif.h"
-# include "nsl/preprocessor/facilities/is_1.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/tuple/rem.h"
+# include "nsl/pp/control/if.h"
+# include "nsl/pp/control/iif.h"
+# include "nsl/pp/facilities/is_1.h"
 #
 # /* N_PP_ARRAY_DETAIL_GET_DATA */
 #

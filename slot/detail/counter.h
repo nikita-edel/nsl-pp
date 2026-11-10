@@ -11,7 +11,7 @@
 #
 # define N_PP_VALUE N_PP_COUNTER + 1
 #
-# include "nsl/preprocessor/slot/detail/shared.h"
+# include "nsl/pp/slot/detail/shared.h"
 #
 # undef N_PP_COUNTER
 #

@@ -12,11 +12,11 @@
 # ifndef NSL_PREPROCESSOR_FACILITIES_IS_EMPTY_OR_1_H
 # define NSL_PREPROCESSOR_FACILITIES_IS_EMPTY_OR_1_H
 #
-# include "nsl/preprocessor/control/iif.h"
-# include "nsl/preprocessor/facilities/empty.h"
-# include "nsl/preprocessor/facilities/identity.h"
-# include "nsl/preprocessor/facilities/is_1.h"
-# include "nsl/preprocessor/facilities/is_empty.h"
+# include "nsl/pp/control/iif.h"
+# include "nsl/pp/facilities/empty.h"
+# include "nsl/pp/facilities/identity.h"
+# include "nsl/pp/facilities/is_1.h"
+# include "nsl/pp/facilities/is_empty.h"
 #
 # /* N_PP_IS_EMPTY_OR_1 */
 #

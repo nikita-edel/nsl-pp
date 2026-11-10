@@ -15,8 +15,8 @@
 # ifndef NSL_PREPROCESSOR_FACILITIES_IDENTITY_H
 # define NSL_PREPROCESSOR_FACILITIES_IDENTITY_H
 #
-# include "nsl/preprocessor/facilities/empty.h"
-# include "nsl/preprocessor/tuple/eat.h"
+# include "nsl/pp/facilities/empty.h"
+# include "nsl/pp/tuple/eat.h"
 #
 # /* N_PP_IDENTITY */
 #

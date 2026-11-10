@@ -12,6 +12,6 @@
 # ifndef NSL_PREPROCESSOR_DEC_H
 # define NSL_PREPROCESSOR_DEC_H
 #
-# include "nsl/preprocessor/arithmetic/dec.h"
+# include "nsl/pp/arithmetic/dec.h"
 #
 # endif

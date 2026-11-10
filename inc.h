@@ -12,6 +12,6 @@
 # ifndef NSL_PREPROCESSOR_INC_H
 # define NSL_PREPROCESSOR_INC_H
 #
-# include "nsl/preprocessor/arithmetic/inc.h"
+# include "nsl/pp/arithmetic/inc.h"
 #
 # endif

@@ -11,9 +11,9 @@
 #
 # ifndef NSL_PREPROCESSOR_FACILITIES_CHECK_EMPTY_H
 # define NSL_PREPROCESSOR_FACILITIES_CHECK_EMPTY_H
-# include "nsl/preprocessor/variadic/has_opt.h"
+# include "nsl/pp/variadic/has_opt.h"
 # if N_PP_VARIADIC_HAS_OPT()
-# include "nsl/preprocessor/facilities/is_empty_variadic.h"
+# include "nsl/pp/facilities/is_empty_variadic.h"
 # define N_PP_CHECK_EMPTY(...) N_PP_IS_EMPTY_OPT(__VA_ARGS__)
 # endif /* N_PP_VARIADIC_HAS_OPT() */
 # endif /* NSL_PREPROCESSOR_FACILITIES_CHECK_EMPTY_H */

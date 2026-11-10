@@ -12,11 +12,11 @@
 # ifndef NSL_PREPROCESSOR_SEQ_FIRST_N_H
 # define NSL_PREPROCESSOR_SEQ_FIRST_N_H
 #
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/control/if.h"
-# include "nsl/preprocessor/seq/detail/split.h"
-# include "nsl/preprocessor/tuple/eat.h"
-# include "nsl/preprocessor/tuple/elem.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/control/if.h"
+# include "nsl/pp/seq/detail/split.h"
+# include "nsl/pp/tuple/eat.h"
+# include "nsl/pp/tuple/elem.h"
 #
 # /* N_PP_SEQ_FIRST_N */
 #

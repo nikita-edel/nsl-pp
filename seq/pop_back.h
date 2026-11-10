@@ -12,10 +12,10 @@
 # ifndef NSL_PREPROCESSOR_SEQ_POP_BACK_H
 # define NSL_PREPROCESSOR_SEQ_POP_BACK_H
 #
-# include "nsl/preprocessor/arithmetic/dec.h"
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/seq/first_n.h"
-# include "nsl/preprocessor/seq/size.h"
+# include "nsl/pp/arithmetic/dec.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/seq/first_n.h"
+# include "nsl/pp/seq/size.h"
 #
 # /* N_PP_SEQ_POP_BACK */
 #

@@ -12,6 +12,6 @@
 # ifndef NSL_PREPROCESSOR_ASSERT_MSG_H
 # define NSL_PREPROCESSOR_ASSERT_MSG_H
 #
-# include "nsl/preprocessor/debug/assert.h"
+# include "nsl/pp/debug/assert.h"
 #
 # endif

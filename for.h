@@ -12,6 +12,6 @@
 # ifndef NSL_PREPROCESSOR_FOR_H
 # define NSL_PREPROCESSOR_FOR_H
 #
-# include "nsl/preprocessor/repetition/for.h"
+# include "nsl/pp/repetition/for.h"
 #
 # endif

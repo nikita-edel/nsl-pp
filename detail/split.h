@@ -10,7 +10,7 @@
 # ifndef NSL_PREPROCESSOR_DETAIL_SPLIT_H
 # define NSL_PREPROCESSOR_DETAIL_SPLIT_H
 #
-# include "nsl/preprocessor/config/config.h"
+# include "nsl/pp/config/config.h"
 #
 # /* N_PP_SPLIT */
 #

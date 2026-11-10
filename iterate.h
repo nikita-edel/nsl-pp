@@ -12,6 +12,6 @@
 # ifndef NSL_PREPROCESSOR_ITERATE_H
 # define NSL_PREPROCESSOR_ITERATE_H
 #
-# include "nsl/preprocessor/iteration/iterate.h"
+# include "nsl/pp/iteration/iterate.h"
 #
 # endif

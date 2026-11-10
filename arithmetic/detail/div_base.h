@@ -14,13 +14,13 @@
 # ifndef NSL_PREPROCESSOR_ARITHMETIC_DETAIL_DIV_BASE_H
 # define NSL_PREPROCESSOR_ARITHMETIC_DETAIL_DIV_BASE_H
 #
-# include "nsl/preprocessor/arithmetic/inc.h"
-# include "nsl/preprocessor/arithmetic/sub.h"
-# include "nsl/preprocessor/comparison/less_equal.h"
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/control/while.h"
-# include "nsl/preprocessor/tuple/elem.h"
-# include "nsl/preprocessor/tuple/rem.h"
+# include "nsl/pp/arithmetic/inc.h"
+# include "nsl/pp/arithmetic/sub.h"
+# include "nsl/pp/comparison/less_equal.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/control/while.h"
+# include "nsl/pp/tuple/elem.h"
+# include "nsl/pp/tuple/rem.h"
 #
 # /* N_PP_DIV_BASE */
 #

@@ -14,9 +14,9 @@
 # ifndef NSL_PREPROCESSOR_LIST_TO_TUPLE_H
 # define NSL_PREPROCESSOR_LIST_TO_TUPLE_H
 #
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/list/enum.h"
-# include "nsl/preprocessor/control/iif.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/list/enum.h"
+# include "nsl/pp/control/iif.h"
 #
 # /* N_PP_LIST_TO_TUPLE */
 #

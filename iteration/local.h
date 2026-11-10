@@ -12,13 +12,13 @@
 # ifndef NSL_PREPROCESSOR_ITERATION_LOCAL_H
 # define NSL_PREPROCESSOR_ITERATION_LOCAL_H
 #
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/slot/slot.h"
-# include "nsl/preprocessor/tuple/elem.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/slot/slot.h"
+# include "nsl/pp/tuple/elem.h"
 #
 # /* N_PP_LOCAL_ITERATE */
 #
-# define N_PP_LOCAL_ITERATE() <nsl/preprocessor/iteration/detail/local.h>
+# define N_PP_LOCAL_ITERATE() <nsl/pp/iteration/detail/local.h>
 #
 # define N_PP_LOCAL_C(n) (N_PP_LOCAL_S) <= n && (N_PP_LOCAL_F) >= n
 # define N_PP_LOCAL_R(n) (N_PP_LOCAL_F) <= n && (N_PP_LOCAL_S) >= n

@@ -11,18 +11,18 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# include "nsl/preprocessor/config/config.h"
+# include "nsl/pp/config/config.h"
 #
 # if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_STRICT()
 #
 # if N_PP_CONFIG_FLAGS() & N_PP_CONFIG_DMC()
-#     include "nsl/preprocessor/detail/dmc/auto_rec.h"
+#     include "nsl/pp/detail/dmc/auto_rec.h"
 # else
 #
 # ifndef NSL_PREPROCESSOR_DETAIL_AUTO_REC_H
 # define NSL_PREPROCESSOR_DETAIL_AUTO_REC_H
 #
-# include "nsl/preprocessor/control/iif.h"
+# include "nsl/pp/control/iif.h"
 #
 # /* N_PP_AUTO_REC */
 #
@@ -300,7 +300,7 @@
 # else
 #
 # if N_PP_CONFIG_FLAGS() & N_PP_CONFIG_DMC()
-#     include "nsl/preprocessor/detail/dmc/auto_rec.h"
+#     include "nsl/pp/detail/dmc/auto_rec.h"
 # else
 #
 # ifndef NSL_PREPROCESSOR_DETAIL_AUTO_REC_H
@@ -308,21 +308,21 @@
 #
 # /* N_PP_AUTO_REC */
 #
-# include "nsl/preprocessor/control/iif.h"
+# include "nsl/pp/control/iif.h"
 #
 # define N_PP_AUTO_REC(pred, n) N_PP_NODE_ENTRY_ ## n(pred)
 #
-# include "nsl/preprocessor/config/limits.h"
+# include "nsl/pp/config/limits.h"
 #
 # if N_PP_LIMIT_MAG == 256
-# include "nsl/preprocessor/detail/limits/auto_rec_256.h"
+# include "nsl/pp/detail/limits/auto_rec_256.h"
 # elif N_PP_LIMIT_MAG == 512
-# include "nsl/preprocessor/detail/limits/auto_rec_256.h"
-# include "nsl/preprocessor/detail/limits/auto_rec_512.h"
+# include "nsl/pp/detail/limits/auto_rec_256.h"
+# include "nsl/pp/detail/limits/auto_rec_512.h"
 # elif N_PP_LIMIT_MAG == 1024
-# include "nsl/preprocessor/detail/limits/auto_rec_256.h"
-# include "nsl/preprocessor/detail/limits/auto_rec_512.h"
-# include "nsl/preprocessor/detail/limits/auto_rec_1024.h"
+# include "nsl/pp/detail/limits/auto_rec_256.h"
+# include "nsl/pp/detail/limits/auto_rec_512.h"
+# include "nsl/pp/detail/limits/auto_rec_1024.h"
 # else
 # error Incorrect value for the N_PP_LIMIT_MAG limit
 # endif

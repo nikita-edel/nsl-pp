@@ -14,13 +14,13 @@
 # ifndef NSL_PREPROCESSOR_LIST_FIRST_N_H
 # define NSL_PREPROCESSOR_LIST_FIRST_N_H
 #
-# include "nsl/preprocessor/arithmetic/dec.h"
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/control/while.h"
-# include "nsl/preprocessor/list/adt.h"
-# include "nsl/preprocessor/list/reverse.h"
-# include "nsl/preprocessor/tuple/elem.h"
-# include "nsl/preprocessor/tuple/rem.h"
+# include "nsl/pp/arithmetic/dec.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/control/while.h"
+# include "nsl/pp/list/adt.h"
+# include "nsl/pp/list/reverse.h"
+# include "nsl/pp/tuple/elem.h"
+# include "nsl/pp/tuple/rem.h"
 #
 # /* N_PP_LIST_FIRST_N */
 #

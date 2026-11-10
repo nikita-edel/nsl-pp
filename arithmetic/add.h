@@ -15,14 +15,14 @@
 # ifndef NSL_PREPROCESSOR_ARITHMETIC_ADD_H
 # define NSL_PREPROCESSOR_ARITHMETIC_ADD_H
 #
-# include "nsl/preprocessor/config/config.h"
+# include "nsl/pp/config/config.h"
 #
 # if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_STRICT()
 #
-# include "nsl/preprocessor/arithmetic/dec.h"
-# include "nsl/preprocessor/arithmetic/inc.h"
-# include "nsl/preprocessor/control/while.h"
-# include "nsl/preprocessor/tuple/elem.h"
+# include "nsl/pp/arithmetic/dec.h"
+# include "nsl/pp/arithmetic/inc.h"
+# include "nsl/pp/control/while.h"
+# include "nsl/pp/tuple/elem.h"
 #
 # /* N_PP_ADD */
 #
@@ -54,18 +54,18 @@
 #
 # else
 #
-# include "nsl/preprocessor/arithmetic/dec.h"
-# include "nsl/preprocessor/arithmetic/inc.h"
-# include "nsl/preprocessor/control/iif.h"
-# include "nsl/preprocessor/control/while.h"
-# include "nsl/preprocessor/facilities/identity.h"
-# include "nsl/preprocessor/logical/bitand.h"
-# include "nsl/preprocessor/logical/bitor.h"
-# include "nsl/preprocessor/logical/bool.h"
-# include "nsl/preprocessor/logical/compl.h"
-# include "nsl/preprocessor/tuple/elem.h"
-# include "nsl/preprocessor/arithmetic/detail/is_maximum_number.h"
-# include "nsl/preprocessor/arithmetic/detail/is_minimum_number.h"
+# include "nsl/pp/arithmetic/dec.h"
+# include "nsl/pp/arithmetic/inc.h"
+# include "nsl/pp/control/iif.h"
+# include "nsl/pp/control/while.h"
+# include "nsl/pp/facilities/identity.h"
+# include "nsl/pp/logical/bitand.h"
+# include "nsl/pp/logical/bitor.h"
+# include "nsl/pp/logical/bool.h"
+# include "nsl/pp/logical/compl.h"
+# include "nsl/pp/tuple/elem.h"
+# include "nsl/pp/arithmetic/detail/is_maximum_number.h"
+# include "nsl/pp/arithmetic/detail/is_minimum_number.h"
 #
 # /* N_PP_ADD */
 #

@@ -12,6 +12,6 @@
 # ifndef NSL_PREPROCESSOR_SLOT_H
 # define NSL_PREPROCESSOR_SLOT_H
 #
-# include "nsl/preprocessor/slot/slot.h"
+# include "nsl/pp/slot/slot.h"
 #
 # endif

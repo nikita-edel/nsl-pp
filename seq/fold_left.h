@@ -14,13 +14,13 @@
 # ifndef NSL_PREPROCESSOR_SEQ_FOLD_LEFT_H
 # define NSL_PREPROCESSOR_SEQ_FOLD_LEFT_H
 #
-# include "nsl/preprocessor/arithmetic/dec.h"
-# include "nsl/preprocessor/cat.h"
-# include "nsl/preprocessor/control/if.h"
-# include "nsl/preprocessor/debug/error.h"
-# include "nsl/preprocessor/detail/auto_rec.h"
-# include "nsl/preprocessor/seq/seq.h"
-# include "nsl/preprocessor/seq/size.h"
+# include "nsl/pp/arithmetic/dec.h"
+# include "nsl/pp/cat.h"
+# include "nsl/pp/control/if.h"
+# include "nsl/pp/debug/error.h"
+# include "nsl/pp/detail/auto_rec.h"
+# include "nsl/pp/seq/seq.h"
+# include "nsl/pp/seq/size.h"
 #
 # /* N_PP_SEQ_FOLD_LEFT */
 #
@@ -28,7 +28,7 @@
 #    define N_PP_SEQ_FOLD_LEFT(op, state, seq) ...
 # endif
 #
-# include "nsl/preprocessor/config/config.h"
+# include "nsl/pp/config/config.h"
 #
 # if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_STRICT()
 #
@@ -1075,7 +1075,7 @@
 #
 # else
 #
-# include "nsl/preprocessor/config/limits.h"
+# include "nsl/pp/config/limits.h"
 #
 # if N_PP_LIMIT_SEQ == 256
 # define N_PP_SEQ_FOLD_LEFT N_PP_CAT(N_PP_SEQ_FOLD_LEFT_, N_PP_DEC(N_PP_AUTO_REC(N_PP_SEQ_FOLD_LEFT_P, 256)))
@@ -1107,14 +1107,14 @@
 # define N_PP_SEQ_FOLD_LEFT_F(op, st, ss, sz) st
 #
 # if N_PP_LIMIT_SEQ == 256
-# include "nsl/preprocessor/seq/limits/fold_left_256.h"
+# include "nsl/pp/seq/limits/fold_left_256.h"
 # elif N_PP_LIMIT_SEQ == 512
-# include "nsl/preprocessor/seq/limits/fold_left_256.h"
-# include "nsl/preprocessor/seq/limits/fold_left_512.h"
+# include "nsl/pp/seq/limits/fold_left_256.h"
+# include "nsl/pp/seq/limits/fold_left_512.h"
 # elif N_PP_LIMIT_SEQ == 1024
-# include "nsl/preprocessor/seq/limits/fold_left_256.h"
-# include "nsl/preprocessor/seq/limits/fold_left_512.h"
-# include "nsl/preprocessor/seq/limits/fold_left_1024.h"
+# include "nsl/pp/seq/limits/fold_left_256.h"
+# include "nsl/pp/seq/limits/fold_left_512.h"
+# include "nsl/pp/seq/limits/fold_left_1024.h"
 # endif
 #
 # endif

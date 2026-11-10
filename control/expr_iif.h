@@ -12,7 +12,7 @@
 # ifndef NSL_PREPROCESSOR_CONTROL_EXPR_IIF_H
 # define NSL_PREPROCESSOR_CONTROL_EXPR_IIF_H
 #
-# include "nsl/preprocessor/config/config.h"
+# include "nsl/pp/config/config.h"
 #
 # /* N_PP_EXPR_IIF */
 #

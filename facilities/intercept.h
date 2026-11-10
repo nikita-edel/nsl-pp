@@ -14,7 +14,7 @@
 # ifndef NSL_PREPROCESSOR_FACILITIES_INTERCEPT_H
 # define NSL_PREPROCESSOR_FACILITIES_INTERCEPT_H
 #
-# include "nsl/preprocessor/config/config.h"
+# include "nsl/pp/config/config.h"
 #
 # if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_STRICT()
 #
@@ -286,17 +286,17 @@
 #
 # define N_PP_INTERCEPT N_PP_INTERCEPT_
 #
-# include "nsl/preprocessor/config/limits.h"
+# include "nsl/pp/config/limits.h"
 #
 # if N_PP_LIMIT_MAG == 256
-# include "nsl/preprocessor/facilities/limits/intercept_256.h"
+# include "nsl/pp/facilities/limits/intercept_256.h"
 # elif N_PP_LIMIT_MAG == 512
-# include "nsl/preprocessor/facilities/limits/intercept_256.h"
-# include "nsl/preprocessor/facilities/limits/intercept_512.h"
+# include "nsl/pp/facilities/limits/intercept_256.h"
+# include "nsl/pp/facilities/limits/intercept_512.h"
 # elif N_PP_LIMIT_MAG == 1024
-# include "nsl/preprocessor/facilities/limits/intercept_256.h"
-# include "nsl/preprocessor/facilities/limits/intercept_512.h"
-# include "nsl/preprocessor/facilities/limits/intercept_1024.h"
+# include "nsl/pp/facilities/limits/intercept_256.h"
+# include "nsl/pp/facilities/limits/intercept_512.h"
+# include "nsl/pp/facilities/limits/intercept_1024.h"
 # else
 # error Incorrect value for the N_PP_LIMIT_MAG limit
 # endif

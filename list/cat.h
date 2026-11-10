@@ -14,10 +14,10 @@
 # ifndef NSL_PREPROCESSOR_LIST_CAT_H
 # define NSL_PREPROCESSOR_LIST_CAT_H
 #
-# include "nsl/preprocessor/cat.h"
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/list/adt.h"
-# include "nsl/preprocessor/list/fold_left.h"
+# include "nsl/pp/cat.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/list/adt.h"
+# include "nsl/pp/list/fold_left.h"
 #
 # /* N_PP_LIST_CAT */
 #

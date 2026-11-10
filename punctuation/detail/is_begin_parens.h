@@ -14,7 +14,7 @@
 
 #if N_PP_VARIADICS_MSVC
 
-#include "nsl/preprocessor/facilities/empty.h"
+#include "nsl/pp/facilities/empty.h"
 
 #define N_PP_DETAIL_VD_IBP_CAT(a, b) N_PP_DETAIL_VD_IBP_CAT_I(a, b)
 #define N_PP_DETAIL_VD_IBP_CAT_I(a, b) N_PP_DETAIL_VD_IBP_CAT_II(a ## b)

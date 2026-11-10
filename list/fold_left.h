@@ -15,14 +15,14 @@
 # ifndef NSL_PREPROCESSOR_LIST_FOLD_LEFT_H
 # define NSL_PREPROCESSOR_LIST_FOLD_LEFT_H
 #
-# include "nsl/preprocessor/config/config.h"
+# include "nsl/pp/config/config.h"
 #
 # if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_STRICT()
 #
-# include "nsl/preprocessor/cat.h"
-# include "nsl/preprocessor/control/while.h"
-# include "nsl/preprocessor/debug/error.h"
-# include "nsl/preprocessor/detail/auto_rec.h"
+# include "nsl/pp/cat.h"
+# include "nsl/pp/control/while.h"
+# include "nsl/pp/debug/error.h"
+# include "nsl/pp/detail/auto_rec.h"
 #
 # /* N_PP_LIST_FOLD_LEFT */
 #
@@ -39,11 +39,11 @@
 # define N_PP_LIST_FOLD_LEFT_2ND_D N_PP_LIST_FOLD_LEFT_D
 #
 # if N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
-#    include "nsl/preprocessor/list/detail/edg/fold_left.h"
+#    include "nsl/pp/list/detail/edg/fold_left.h"
 # elif N_PP_CONFIG_FLAGS() & N_PP_CONFIG_DMC()
-#    include "nsl/preprocessor/list/detail/dmc/fold_left.h"
+#    include "nsl/pp/list/detail/dmc/fold_left.h"
 # else
-#    include "nsl/preprocessor/list/detail/fold_left.h"
+#    include "nsl/pp/list/detail/fold_left.h"
 # endif
 #
 # define N_PP_LIST_FOLD_LEFT_CHECK_N_PP_NIL 1
@@ -307,12 +307,12 @@
 #
 # else
 #
-# include "nsl/preprocessor/arithmetic/dec.h"
-# include "nsl/preprocessor/cat.h"
-# include "nsl/preprocessor/control/while.h"
-# include "nsl/preprocessor/debug/error.h"
-# include "nsl/preprocessor/detail/auto_rec.h"
-# include "nsl/preprocessor/config/limits.h"
+# include "nsl/pp/arithmetic/dec.h"
+# include "nsl/pp/cat.h"
+# include "nsl/pp/control/while.h"
+# include "nsl/pp/debug/error.h"
+# include "nsl/pp/detail/auto_rec.h"
+# include "nsl/pp/config/limits.h"
 #
 # /* N_PP_LIST_FOLD_LEFT */
 #
@@ -338,24 +338,24 @@
 # define N_PP_LIST_FOLD_LEFT_2ND_D N_PP_LIST_FOLD_LEFT_D
 #
 # if N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
-#    include "nsl/preprocessor/list/detail/edg/fold_left.h"
+#    include "nsl/pp/list/detail/edg/fold_left.h"
 # elif N_PP_CONFIG_FLAGS() & N_PP_CONFIG_DMC()
-#    include "nsl/preprocessor/list/detail/dmc/fold_left.h"
+#    include "nsl/pp/list/detail/dmc/fold_left.h"
 # else
-#    include "nsl/preprocessor/list/detail/fold_left.h"
+#    include "nsl/pp/list/detail/fold_left.h"
 # endif
 #
 # define N_PP_LIST_FOLD_LEFT_CHECK_N_PP_NIL 1
 #
 # if N_PP_LIMIT_WHILE == 256
-# include "nsl/preprocessor/list/limits/fold_left_256.h"
+# include "nsl/pp/list/limits/fold_left_256.h"
 # elif N_PP_LIMIT_WHILE == 512
-# include "nsl/preprocessor/list/limits/fold_left_256.h"
-# include "nsl/preprocessor/list/limits/fold_left_512.h"
+# include "nsl/pp/list/limits/fold_left_256.h"
+# include "nsl/pp/list/limits/fold_left_512.h"
 # elif N_PP_LIMIT_WHILE == 1024
-# include "nsl/preprocessor/list/limits/fold_left_256.h"
-# include "nsl/preprocessor/list/limits/fold_left_512.h"
-# include "nsl/preprocessor/list/limits/fold_left_1024.h"
+# include "nsl/pp/list/limits/fold_left_256.h"
+# include "nsl/pp/list/limits/fold_left_512.h"
+# include "nsl/pp/list/limits/fold_left_1024.h"
 # endif
 #
 # endif

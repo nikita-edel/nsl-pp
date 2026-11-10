@@ -12,13 +12,13 @@
 # ifndef NSL_PREPROCESSOR_TUPLE_POP_FRONT_H
 # define NSL_PREPROCESSOR_TUPLE_POP_FRONT_H
 #
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/array/pop_front.h"
-# include "nsl/preprocessor/array/to_tuple.h"
-# include "nsl/preprocessor/comparison/greater.h"
-# include "nsl/preprocessor/control/iif.h"
-# include "nsl/preprocessor/tuple/size.h"
-# include "nsl/preprocessor/tuple/to_array.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/array/pop_front.h"
+# include "nsl/pp/array/to_tuple.h"
+# include "nsl/pp/comparison/greater.h"
+# include "nsl/pp/control/iif.h"
+# include "nsl/pp/tuple/size.h"
+# include "nsl/pp/tuple/to_array.h"
 #
 #
 # /* N_PP_TUPLE_POP_FRONT */

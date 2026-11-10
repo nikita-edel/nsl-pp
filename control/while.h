@@ -15,17 +15,17 @@
 # ifndef NSL_PREPROCESSOR_CONTROL_WHILE_H
 # define NSL_PREPROCESSOR_CONTROL_WHILE_H
 #
-# include "nsl/preprocessor/config/config.h"
+# include "nsl/pp/config/config.h"
 #
 # if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_STRICT()
 #
-# include "nsl/preprocessor/cat.h"
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/debug/error.h"
-# include "nsl/preprocessor/detail/auto_rec.h"
-# include "nsl/preprocessor/list/fold_left.h"
-# include "nsl/preprocessor/list/fold_right.h"
-# include "nsl/preprocessor/logical/bitand.h"
+# include "nsl/pp/cat.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/debug/error.h"
+# include "nsl/pp/detail/auto_rec.h"
+# include "nsl/pp/list/fold_left.h"
+# include "nsl/pp/list/fold_right.h"
+# include "nsl/pp/logical/bitand.h"
 #
 # /* N_PP_WHILE */
 #
@@ -44,13 +44,13 @@
 # define N_PP_WHILE_F(d, _) 0
 #
 # if N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
-#    include "nsl/preprocessor/control/detail/edg/while.h"
+#    include "nsl/pp/control/detail/edg/while.h"
 # elif N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MSVC()
-#    include "nsl/preprocessor/control/detail/msvc/while.h"
+#    include "nsl/pp/control/detail/msvc/while.h"
 # elif N_PP_CONFIG_FLAGS() & N_PP_CONFIG_DMC()
-#    include "nsl/preprocessor/control/detail/dmc/while.h"
+#    include "nsl/pp/control/detail/dmc/while.h"
 # else
-#    include "nsl/preprocessor/control/detail/while.h"
+#    include "nsl/pp/control/detail/while.h"
 # endif
 #
 # define N_PP_WHILE_257(p, o, s) N_PP_ERROR(0x0001)
@@ -316,14 +316,14 @@
 #
 # else
 #
-# include "nsl/preprocessor/arithmetic/dec.h"
-# include "nsl/preprocessor/cat.h"
-# include "nsl/preprocessor/debug/error.h"
-# include "nsl/preprocessor/detail/auto_rec.h"
-# include "nsl/preprocessor/list/fold_left.h"
-# include "nsl/preprocessor/list/fold_right.h"
-# include "nsl/preprocessor/logical/bitand.h"
-# include "nsl/preprocessor/config/limits.h"
+# include "nsl/pp/arithmetic/dec.h"
+# include "nsl/pp/cat.h"
+# include "nsl/pp/debug/error.h"
+# include "nsl/pp/detail/auto_rec.h"
+# include "nsl/pp/list/fold_left.h"
+# include "nsl/pp/list/fold_right.h"
+# include "nsl/pp/logical/bitand.h"
+# include "nsl/pp/config/limits.h"
 #
 # /* N_PP_WHILE */
 #
@@ -352,13 +352,13 @@
 # define N_PP_WHILE_F(d, _) 0
 #
 # if N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
-#    include "nsl/preprocessor/control/detail/edg/while.h"
+#    include "nsl/pp/control/detail/edg/while.h"
 # elif N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MSVC()
-#    include "nsl/preprocessor/control/detail/msvc/while.h"
+#    include "nsl/pp/control/detail/msvc/while.h"
 # elif N_PP_CONFIG_FLAGS() & N_PP_CONFIG_DMC()
-#    include "nsl/preprocessor/control/detail/dmc/while.h"
+#    include "nsl/pp/control/detail/dmc/while.h"
 # else
-#    include "nsl/preprocessor/control/detail/while.h"
+#    include "nsl/pp/control/detail/while.h"
 # endif
 #
 # if N_PP_LIMIT_WHILE == 256
@@ -372,14 +372,14 @@
 # define N_PP_WHILE_CHECK_N_PP_NIL 1
 #
 # if N_PP_LIMIT_WHILE == 256
-# include "nsl/preprocessor/control/limits/while_256.h"
+# include "nsl/pp/control/limits/while_256.h"
 # elif N_PP_LIMIT_WHILE == 512
-# include "nsl/preprocessor/control/limits/while_256.h"
-# include "nsl/preprocessor/control/limits/while_512.h"
+# include "nsl/pp/control/limits/while_256.h"
+# include "nsl/pp/control/limits/while_512.h"
 # elif N_PP_LIMIT_WHILE == 1024
-# include "nsl/preprocessor/control/limits/while_256.h"
-# include "nsl/preprocessor/control/limits/while_512.h"
-# include "nsl/preprocessor/control/limits/while_1024.h"
+# include "nsl/pp/control/limits/while_256.h"
+# include "nsl/pp/control/limits/while_512.h"
+# include "nsl/pp/control/limits/while_1024.h"
 # endif
 #
 # endif

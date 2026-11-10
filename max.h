@@ -12,6 +12,6 @@
 # ifndef NSL_PREPROCESSOR_MAX_H
 # define NSL_PREPROCESSOR_MAX_H
 #
-# include "nsl/preprocessor/selection/max.h"
+# include "nsl/pp/selection/max.h"
 #
 # endif

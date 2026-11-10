@@ -12,14 +12,14 @@
 # ifndef NSL_PREPROCESSOR_SEQ_DETAIL_TO_LIST_MSVC_H
 # define NSL_PREPROCESSOR_SEQ_DETAIL_TO_LIST_MSVC_H
 #
-# include "nsl/preprocessor/config/config.h"
+# include "nsl/pp/config/config.h"
 #
 # if N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MSVC()
 #
-# include "nsl/preprocessor/cat.h"
-# include "nsl/preprocessor/arithmetic/dec.h"
-# include "nsl/preprocessor/control/while.h"
-# include "nsl/preprocessor/tuple/elem.h"
+# include "nsl/pp/cat.h"
+# include "nsl/pp/arithmetic/dec.h"
+# include "nsl/pp/control/while.h"
+# include "nsl/pp/tuple/elem.h"
 #
 # define N_PP_SEQ_DETAIL_TO_LIST_MSVC_STATE_RESULT(state) \
     N_PP_TUPLE_ELEM(2, 0, state) \

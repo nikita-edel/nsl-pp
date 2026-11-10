@@ -12,6 +12,6 @@
 # ifndef NSL_PREPROCESSOR_ENUM_H
 # define NSL_PREPROCESSOR_ENUM_H
 #
-# include "nsl/preprocessor/repetition/enum.h"
+# include "nsl/pp/repetition/enum.h"
 #
 # endif

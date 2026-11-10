@@ -12,11 +12,11 @@
 # ifndef NSL_PREPROCESSOR_SEQ_DETAIL_IS_EMPTY_H
 # define NSL_PREPROCESSOR_SEQ_DETAIL_IS_EMPTY_H
 #
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/arithmetic/dec.h"
-# include "nsl/preprocessor/logical/bool.h"
-# include "nsl/preprocessor/logical/compl.h"
-# include "nsl/preprocessor/seq/size.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/arithmetic/dec.h"
+# include "nsl/pp/logical/bool.h"
+# include "nsl/pp/logical/compl.h"
+# include "nsl/pp/seq/size.h"
 #
 /* An empty seq is one that is just N_PP_SEQ_NIL */
 #

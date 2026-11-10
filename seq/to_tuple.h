@@ -12,8 +12,8 @@
 # ifndef NSL_PREPROCESSOR_SEQ_TO_TUPLE_H
 # define NSL_PREPROCESSOR_SEQ_TO_TUPLE_H
 #
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/seq/enum.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/seq/enum.h"
 #
 # /* N_PP_SEQ_TO_TUPLE */
 #

@@ -15,12 +15,12 @@
 # ifndef NSL_PREPROCESSOR_LIST_DETAIL_FOLD_RIGHT_H
 # define NSL_PREPROCESSOR_LIST_DETAIL_FOLD_RIGHT_H
 #
-# include "nsl/preprocessor/config/config.h"
+# include "nsl/pp/config/config.h"
 #
 # if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_STRICT()
 #
-# include "nsl/preprocessor/list/fold_left.h"
-# include "nsl/preprocessor/list/reverse.h"
+# include "nsl/pp/list/fold_left.h"
+# include "nsl/pp/list/reverse.h"
 #
 # define N_PP_LIST_FOLD_RIGHT_1(o, s, l) N_PP_LIST_FOLD_LEFT_1(o, s, N_PP_LIST_REVERSE_D(1, l))
 # define N_PP_LIST_FOLD_RIGHT_2(o, s, l) N_PP_LIST_FOLD_LEFT_2(o, s, N_PP_LIST_REVERSE_D(2, l))
@@ -281,19 +281,19 @@
 #
 # else
 #
-# include "nsl/preprocessor/list/fold_left.h"
-# include "nsl/preprocessor/list/reverse.h"
-# include "nsl/preprocessor/config/limits.h"
+# include "nsl/pp/list/fold_left.h"
+# include "nsl/pp/list/reverse.h"
+# include "nsl/pp/config/limits.h"
 #
 # if N_PP_LIMIT_WHILE == 256
-# include "nsl/preprocessor/list/detail/limits/fold_right_256.h"
+# include "nsl/pp/list/detail/limits/fold_right_256.h"
 # elif N_PP_LIMIT_WHILE == 512
-# include "nsl/preprocessor/list/detail/limits/fold_right_256.h"
-# include "nsl/preprocessor/list/detail/limits/fold_right_512.h"
+# include "nsl/pp/list/detail/limits/fold_right_256.h"
+# include "nsl/pp/list/detail/limits/fold_right_512.h"
 # elif N_PP_LIMIT_WHILE == 1024
-# include "nsl/preprocessor/list/detail/limits/fold_right_256.h"
-# include "nsl/preprocessor/list/detail/limits/fold_right_512.h"
-# include "nsl/preprocessor/list/detail/limits/fold_right_1024.h"
+# include "nsl/pp/list/detail/limits/fold_right_256.h"
+# include "nsl/pp/list/detail/limits/fold_right_512.h"
+# include "nsl/pp/list/detail/limits/fold_right_1024.h"
 # else
 # error Incorrect value for the N_PP_LIMIT_WHILE limit
 # endif

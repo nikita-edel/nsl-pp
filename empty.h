@@ -12,6 +12,6 @@
 # ifndef NSL_PREPROCESSOR_EMPTY_H
 # define NSL_PREPROCESSOR_EMPTY_H
 #
-# include "nsl/preprocessor/facilities/empty.h"
+# include "nsl/pp/facilities/empty.h"
 #
 # endif

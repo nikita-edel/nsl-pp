@@ -14,9 +14,9 @@
 # ifndef NSL_PREPROCESSOR_LOGICAL_OR_H
 # define NSL_PREPROCESSOR_LOGICAL_OR_H
 #
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/logical/bool.h"
-# include "nsl/preprocessor/logical/bitor.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/logical/bool.h"
+# include "nsl/pp/logical/bitor.h"
 #
 # /* N_PP_OR */
 #

@@ -13,15 +13,15 @@
 # ifndef NSL_PREPROCESSOR_SEQ_TO_LIST_H
 # define NSL_PREPROCESSOR_SEQ_TO_LIST_H
 #
-# include "nsl/preprocessor/punctuation/comma.h"
-# include "nsl/preprocessor/punctuation/paren.h"
-# include "nsl/preprocessor/seq/detail/binary_transform.h"
+# include "nsl/pp/punctuation/comma.h"
+# include "nsl/pp/punctuation/paren.h"
+# include "nsl/pp/seq/detail/binary_transform.h"
 #
 # /* N_PP_SEQ_TO_LIST */
 #
 # if N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MSVC()
-# include "nsl/preprocessor/seq/size.h"
-# include "nsl/preprocessor/seq/detail/to_list_msvc.h"
+# include "nsl/pp/seq/size.h"
+# include "nsl/pp/seq/detail/to_list_msvc.h"
 # define N_PP_SEQ_TO_LIST(seq) \
     N_PP_SEQ_DETAIL_TO_LIST_MSVC \
         ( \

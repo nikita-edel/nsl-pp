@@ -11,7 +11,7 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# include "nsl/preprocessor/config/config.h"
+# include "nsl/pp/config/config.h"
 #
 # if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_STRICT()
 #
@@ -1303,17 +1303,17 @@
 #
 # else
 #
-# include "nsl/preprocessor/config/limits.h"
+# include "nsl/pp/config/limits.h"
 #
 # if N_PP_LIMIT_ITERATION == 256
-# include "nsl/preprocessor/iteration/detail/iter/limits/reverse4_256.h"
+# include "nsl/pp/iteration/detail/iter/limits/reverse4_256.h"
 # elif N_PP_LIMIT_ITERATION == 512
-# include "nsl/preprocessor/iteration/detail/iter/limits/reverse4_512.h"
-# include "nsl/preprocessor/iteration/detail/iter/limits/reverse4_256.h"
+# include "nsl/pp/iteration/detail/iter/limits/reverse4_512.h"
+# include "nsl/pp/iteration/detail/iter/limits/reverse4_256.h"
 # elif N_PP_LIMIT_ITERATION == 1024
-# include "nsl/preprocessor/iteration/detail/iter/limits/reverse4_1024.h"
-# include "nsl/preprocessor/iteration/detail/iter/limits/reverse4_512.h"
-# include "nsl/preprocessor/iteration/detail/iter/limits/reverse4_256.h"
+# include "nsl/pp/iteration/detail/iter/limits/reverse4_1024.h"
+# include "nsl/pp/iteration/detail/iter/limits/reverse4_512.h"
+# include "nsl/pp/iteration/detail/iter/limits/reverse4_256.h"
 # else
 # error Incorrect value for the N_PP_LIMIT_ITERATION limit
 # endif

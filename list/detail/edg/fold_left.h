@@ -15,14 +15,14 @@
 # ifndef NSL_PREPROCESSOR_LIST_DETAIL_EDG_FOLD_LEFT_H
 # define NSL_PREPROCESSOR_LIST_DETAIL_EDG_FOLD_LEFT_H
 #
-# include "nsl/preprocessor/config/config.h"
+# include "nsl/pp/config/config.h"
 #
 # if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_STRICT()
 #
-# include "nsl/preprocessor/control/expr_iif.h"
-# include "nsl/preprocessor/control/iif.h"
-# include "nsl/preprocessor/list/adt.h"
-# include "nsl/preprocessor/tuple/eat.h"
+# include "nsl/pp/control/expr_iif.h"
+# include "nsl/pp/control/iif.h"
+# include "nsl/pp/list/adt.h"
+# include "nsl/pp/tuple/eat.h"
 #
 # define N_PP_LIST_FOLD_LEFT_1(o, s, l) N_PP_LIST_FOLD_LEFT_1_D(o, s, l)
 # define N_PP_LIST_FOLD_LEFT_2(o, s, l) N_PP_LIST_FOLD_LEFT_2_D(o, s, l)
@@ -540,21 +540,21 @@
 #
 # else
 #
-# include "nsl/preprocessor/control/expr_iif.h"
-# include "nsl/preprocessor/control/iif.h"
-# include "nsl/preprocessor/list/adt.h"
-# include "nsl/preprocessor/tuple/eat.h"
-# include "nsl/preprocessor/config/limits.h"
+# include "nsl/pp/control/expr_iif.h"
+# include "nsl/pp/control/iif.h"
+# include "nsl/pp/list/adt.h"
+# include "nsl/pp/tuple/eat.h"
+# include "nsl/pp/config/limits.h"
 #
 # if N_PP_LIMIT_WHILE == 256
-# include "nsl/preprocessor/list/detail/edg/limits/fold_left_256.h"
+# include "nsl/pp/list/detail/edg/limits/fold_left_256.h"
 # elif N_PP_LIMIT_WHILE == 512
-# include "nsl/preprocessor/list/detail/edg/limits/fold_left_256.h"
-# include "nsl/preprocessor/list/detail/edg/limits/fold_left_512.h"
+# include "nsl/pp/list/detail/edg/limits/fold_left_256.h"
+# include "nsl/pp/list/detail/edg/limits/fold_left_512.h"
 # elif N_PP_LIMIT_WHILE == 1024
-# include "nsl/preprocessor/list/detail/edg/limits/fold_left_256.h"
-# include "nsl/preprocessor/list/detail/edg/limits/fold_left_512.h"
-# include "nsl/preprocessor/list/detail/edg/limits/fold_left_1024.h"
+# include "nsl/pp/list/detail/edg/limits/fold_left_256.h"
+# include "nsl/pp/list/detail/edg/limits/fold_left_512.h"
+# include "nsl/pp/list/detail/edg/limits/fold_left_1024.h"
 # else
 # error Incorrect value for the N_PP_LIMIT_WHILE limit
 # endif

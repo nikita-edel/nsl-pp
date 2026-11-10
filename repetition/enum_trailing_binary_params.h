@@ -12,11 +12,11 @@
 # ifndef NSL_PREPROCESSOR_REPETITION_ENUM_TRAILING_BINARY_PARAMS_H
 # define NSL_PREPROCESSOR_REPETITION_ENUM_TRAILING_BINARY_PARAMS_H
 #
-# include "nsl/preprocessor/cat.h"
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/repetition/repeat.h"
-# include "nsl/preprocessor/tuple/elem.h"
-# include "nsl/preprocessor/tuple/rem.h"
+# include "nsl/pp/cat.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/repetition/repeat.h"
+# include "nsl/pp/tuple/elem.h"
+# include "nsl/pp/tuple/rem.h"
 #
 # /* N_PP_ENUM_TRAILING_BINARY_PARAMS */
 #

@@ -12,6 +12,6 @@
 # ifndef NSL_PREPROCESSOR_EXPR_IF_H
 # define NSL_PREPROCESSOR_EXPR_IF_H
 #
-# include "nsl/preprocessor/control/expr_if.h"
+# include "nsl/pp/control/expr_if.h"
 #
 # endif

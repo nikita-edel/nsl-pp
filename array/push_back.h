@@ -13,13 +13,13 @@
 # ifndef NSL_PREPROCESSOR_ARRAY_PUSH_BACK_H
 # define NSL_PREPROCESSOR_ARRAY_PUSH_BACK_H
 #
-# include "nsl/preprocessor/arithmetic/inc.h"
-# include "nsl/preprocessor/array/data.h"
-# include "nsl/preprocessor/array/size.h"
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/punctuation/comma_if.h"
-# include "nsl/preprocessor/tuple/rem.h"
-# include "nsl/preprocessor/array/detail/get_data.h"
+# include "nsl/pp/arithmetic/inc.h"
+# include "nsl/pp/array/data.h"
+# include "nsl/pp/array/size.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/punctuation/comma_if.h"
+# include "nsl/pp/tuple/rem.h"
+# include "nsl/pp/array/detail/get_data.h"
 #
 # /* N_PP_ARRAY_PUSH_BACK */
 #

@@ -12,10 +12,10 @@
 # ifndef NSL_PREPROCESSOR_PUNCTUATION_PAREN_IF_H
 # define NSL_PREPROCESSOR_PUNCTUATION_PAREN_IF_H
 #
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/control/if.h"
-# include "nsl/preprocessor/facilities/empty.h"
-# include "nsl/preprocessor/punctuation/paren.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/control/if.h"
+# include "nsl/pp/facilities/empty.h"
+# include "nsl/pp/punctuation/paren.h"
 #
 # /* N_PP_LPAREN_IF */
 #

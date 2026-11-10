@@ -9,7 +9,7 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# include "nsl/preprocessor/slot/detail/shared.h"
+# include "nsl/pp/slot/detail/shared.h"
 #
 # undef N_PP_SLOT_4
 #

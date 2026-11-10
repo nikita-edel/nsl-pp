@@ -12,14 +12,14 @@
 # ifndef NSL_PREPROCESSOR_SEQ_REPLACE_H
 # define NSL_PREPROCESSOR_SEQ_REPLACE_H
 #
-# include "nsl/preprocessor/arithmetic/dec.h"
-# include "nsl/preprocessor/arithmetic/inc.h"
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/comparison/equal.h"
-# include "nsl/preprocessor/control/iif.h"
-# include "nsl/preprocessor/seq/first_n.h"
-# include "nsl/preprocessor/seq/rest_n.h"
-# include "nsl/preprocessor/seq/size.h"
+# include "nsl/pp/arithmetic/dec.h"
+# include "nsl/pp/arithmetic/inc.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/comparison/equal.h"
+# include "nsl/pp/control/iif.h"
+# include "nsl/pp/seq/first_n.h"
+# include "nsl/pp/seq/rest_n.h"
+# include "nsl/pp/seq/size.h"
 #
 # /* N_PP_SEQ_REPLACE */
 #

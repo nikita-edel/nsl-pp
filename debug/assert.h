@@ -14,11 +14,11 @@
 # ifndef NSL_PREPROCESSOR_DEBUG_ASSERT_H
 # define NSL_PREPROCESSOR_DEBUG_ASSERT_H
 #
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/control/expr_iif.h"
-# include "nsl/preprocessor/control/iif.h"
-# include "nsl/preprocessor/logical/not.h"
-# include "nsl/preprocessor/tuple/eat.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/control/expr_iif.h"
+# include "nsl/pp/control/iif.h"
+# include "nsl/pp/logical/not.h"
+# include "nsl/pp/tuple/eat.h"
 #
 # /* N_PP_ASSERT */
 #

@@ -15,11 +15,11 @@
 # ifndef NSL_PREPROCESSOR_REPETITION_REPEAT_H
 # define NSL_PREPROCESSOR_REPETITION_REPEAT_H
 #
-# include "nsl/preprocessor/cat.h"
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/debug/error.h"
-# include "nsl/preprocessor/detail/auto_rec.h"
-# include "nsl/preprocessor/tuple/eat.h"
+# include "nsl/pp/cat.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/debug/error.h"
+# include "nsl/pp/detail/auto_rec.h"
+# include "nsl/pp/tuple/eat.h"
 #
 # /* N_PP_REPEAT */
 #
@@ -827,17 +827,17 @@
 #
 # else
 #
-# include "nsl/preprocessor/config/limits.h"
+# include "nsl/pp/config/limits.h"
 #
 # if N_PP_LIMIT_REPEAT == 256
-# include "nsl/preprocessor/repetition/limits/repeat_256.h"
+# include "nsl/pp/repetition/limits/repeat_256.h"
 # elif N_PP_LIMIT_REPEAT == 512
-# include "nsl/preprocessor/repetition/limits/repeat_256.h"
-# include "nsl/preprocessor/repetition/limits/repeat_512.h"
+# include "nsl/pp/repetition/limits/repeat_256.h"
+# include "nsl/pp/repetition/limits/repeat_512.h"
 # elif N_PP_LIMIT_REPEAT == 1024
-# include "nsl/preprocessor/repetition/limits/repeat_256.h"
-# include "nsl/preprocessor/repetition/limits/repeat_512.h"
-# include "nsl/preprocessor/repetition/limits/repeat_1024.h"
+# include "nsl/pp/repetition/limits/repeat_256.h"
+# include "nsl/pp/repetition/limits/repeat_512.h"
+# include "nsl/pp/repetition/limits/repeat_1024.h"
 # else
 # error Incorrect value for the N_PP_LIMIT_REPEAT limit
 # endif

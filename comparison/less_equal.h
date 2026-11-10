@@ -14,9 +14,9 @@
 # ifndef NSL_PREPROCESSOR_COMPARISON_LESS_EQUAL_H
 # define NSL_PREPROCESSOR_COMPARISON_LESS_EQUAL_H
 #
-# include "nsl/preprocessor/arithmetic/sub.h"
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/logical/not.h"
+# include "nsl/pp/arithmetic/sub.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/logical/not.h"
 #
 # /* N_PP_LESS_EQUAL */
 #

@@ -14,11 +14,11 @@
 # ifndef NSL_PREPROCESSOR_LIST_REVERSE_H
 # define NSL_PREPROCESSOR_LIST_REVERSE_H
 #
-# include "nsl/preprocessor/config/config.h"
+# include "nsl/pp/config/config.h"
 #
 # if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_STRICT()
 #
-# include "nsl/preprocessor/list/fold_left.h"
+# include "nsl/pp/list/fold_left.h"
 #
 # /* N_PP_LIST_REVERSE */
 #
@@ -42,10 +42,10 @@
 #
 # else
 #
-# include "nsl/preprocessor/control/iif.h"
-# include "nsl/preprocessor/facilities/identity.h"
-# include "nsl/preprocessor/list/adt.h"
-# include "nsl/preprocessor/list/fold_left.h"
+# include "nsl/pp/control/iif.h"
+# include "nsl/pp/facilities/identity.h"
+# include "nsl/pp/list/adt.h"
+# include "nsl/pp/list/fold_left.h"
 #
 # /* N_PP_LIST_REVERSE */
 #

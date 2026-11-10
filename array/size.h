@@ -12,8 +12,8 @@
 # ifndef NSL_PREPROCESSOR_ARRAY_SIZE_H
 # define NSL_PREPROCESSOR_ARRAY_SIZE_H
 #
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/tuple/elem.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/tuple/elem.h"
 #
 # /* N_PP_ARRAY_SIZE */
 #

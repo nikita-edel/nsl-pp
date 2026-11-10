@@ -14,20 +14,20 @@
 # ifndef NSL_PREPROCESSOR_ARRAY_REMOVE_H
 # define NSL_PREPROCESSOR_ARRAY_REMOVE_H
 #
-# include "nsl/preprocessor/config/config.h"
+# include "nsl/pp/config/config.h"
 #
 # if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_STRICT()
 #
-# include "nsl/preprocessor/arithmetic/inc.h"
-# include "nsl/preprocessor/array/elem.h"
-# include "nsl/preprocessor/array/push_back.h"
-# include "nsl/preprocessor/array/size.h"
-# include "nsl/preprocessor/comparison/not_equal.h"
-# include "nsl/preprocessor/control/deduce_d.h"
-# include "nsl/preprocessor/control/iif.h"
-# include "nsl/preprocessor/control/while.h"
-# include "nsl/preprocessor/tuple/eat.h"
-# include "nsl/preprocessor/tuple/elem.h"
+# include "nsl/pp/arithmetic/inc.h"
+# include "nsl/pp/array/elem.h"
+# include "nsl/pp/array/push_back.h"
+# include "nsl/pp/array/size.h"
+# include "nsl/pp/comparison/not_equal.h"
+# include "nsl/pp/control/deduce_d.h"
+# include "nsl/pp/control/iif.h"
+# include "nsl/pp/control/while.h"
+# include "nsl/pp/tuple/eat.h"
+# include "nsl/pp/tuple/elem.h"
 #
 # /* N_PP_ARRAY_REMOVE */
 #
@@ -59,19 +59,19 @@
 #
 # else
 #
-# include "nsl/preprocessor/arithmetic/inc.h"
-# include "nsl/preprocessor/array/elem.h"
-# include "nsl/preprocessor/array/push_back.h"
-# include "nsl/preprocessor/array/size.h"
-# include "nsl/preprocessor/comparison/not_equal.h"
-# include "nsl/preprocessor/control/deduce_d.h"
-# include "nsl/preprocessor/control/iif.h"
-# include "nsl/preprocessor/control/while.h"
+# include "nsl/pp/arithmetic/inc.h"
+# include "nsl/pp/array/elem.h"
+# include "nsl/pp/array/push_back.h"
+# include "nsl/pp/array/size.h"
+# include "nsl/pp/comparison/not_equal.h"
+# include "nsl/pp/control/deduce_d.h"
+# include "nsl/pp/control/iif.h"
+# include "nsl/pp/control/while.h"
 # if N_PP_LIMIT_TUPLE == 256
-# include "nsl/preprocessor/logical/not.h"
+# include "nsl/pp/logical/not.h"
 # endif
-# include "nsl/preprocessor/tuple/eat.h"
-# include "nsl/preprocessor/tuple/elem.h"
+# include "nsl/pp/tuple/eat.h"
+# include "nsl/pp/tuple/elem.h"
 #
 # /* N_PP_ARRAY_REMOVE */
 #

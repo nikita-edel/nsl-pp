@@ -14,9 +14,9 @@
 # ifndef NSL_PREPROCESSOR_LOGICAL_NOT_H
 # define NSL_PREPROCESSOR_LOGICAL_NOT_H
 #
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/logical/bool.h"
-# include "nsl/preprocessor/logical/compl.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/logical/bool.h"
+# include "nsl/pp/logical/compl.h"
 #
 # /* N_PP_NOT */
 #

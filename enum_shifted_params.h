@@ -12,6 +12,6 @@
 # ifndef NSL_PREPROCESSOR_ENUM_SHIFTED_PARAMS_H
 # define NSL_PREPROCESSOR_ENUM_SHIFTED_PARAMS_H
 #
-# include "nsl/preprocessor/repetition/enum_shifted_params.h"
+# include "nsl/pp/repetition/enum_shifted_params.h"
 #
 # endif

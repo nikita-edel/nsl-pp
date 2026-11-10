@@ -14,9 +14,9 @@
 # ifndef NSL_PREPROCESSOR_CONTROL_DETAIL_DMC_WHILE_H
 # define NSL_PREPROCESSOR_CONTROL_DETAIL_DMC_WHILE_H
 #
-# include "nsl/preprocessor/control/iif.h"
-# include "nsl/preprocessor/logical/bool.h"
-# include "nsl/preprocessor/tuple/eat.h"
+# include "nsl/pp/control/iif.h"
+# include "nsl/pp/logical/bool.h"
+# include "nsl/pp/tuple/eat.h"
 #
 # define N_PP_WHILE_1(p, o, s) N_PP_WHILE_1_C(N_PP_BOOL(p##(2, s)), p, o, s)
 # define N_PP_WHILE_2(p, o, s) N_PP_WHILE_2_C(N_PP_BOOL(p##(3, s)), p, o, s)

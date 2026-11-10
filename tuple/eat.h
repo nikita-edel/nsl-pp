@@ -15,7 +15,7 @@
 # ifndef NSL_PREPROCESSOR_TUPLE_EAT_H
 # define NSL_PREPROCESSOR_TUPLE_EAT_H
 #
-# include "nsl/preprocessor/config/config.h"
+# include "nsl/pp/config/config.h"
 #
 # /* N_PP_EAT */
 #

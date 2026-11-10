@@ -12,11 +12,11 @@
 # ifndef NSL_PREPROCESSOR_SEQ_DETAIL_BINARY_TRANSFORM_H
 # define NSL_PREPROCESSOR_SEQ_DETAIL_BINARY_TRANSFORM_H
 #
-# include "nsl/preprocessor/cat.h"
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/tuple/eat.h"
-# include "nsl/preprocessor/tuple/rem.h"
-# include "nsl/preprocessor/variadic/detail/is_single_return.h"
+# include "nsl/pp/cat.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/tuple/eat.h"
+# include "nsl/pp/tuple/rem.h"
+# include "nsl/pp/variadic/detail/is_single_return.h"
 #
 # /* N_PP_SEQ_BINARY_TRANSFORM */
 #

@@ -13,7 +13,7 @@
 # ifndef NSL_PREPROCESSOR_FACILITIES_IS_EMPTY_H
 # define NSL_PREPROCESSOR_FACILITIES_IS_EMPTY_H
 #
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/facilities/is_empty_variadic.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/facilities/is_empty_variadic.h"
 #
 # endif /* NSL_PREPROCESSOR_FACILITIES_IS_EMPTY_H */

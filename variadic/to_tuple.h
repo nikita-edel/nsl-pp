@@ -13,7 +13,7 @@
 # ifndef NSL_PREPROCESSOR_VARIADIC_TO_TUPLE_H
 # define NSL_PREPROCESSOR_VARIADIC_TO_TUPLE_H
 #
-# include "nsl/preprocessor/config/config.h"
+# include "nsl/pp/config/config.h"
 #
 # /* N_PP_VARIADIC_TO_TUPLE */
 #

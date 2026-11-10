@@ -12,6 +12,6 @@
 # ifndef NSL_PREPROCESSOR_REPEAT_2ND_H
 # define NSL_PREPROCESSOR_REPEAT_2ND_H
 #
-# include "nsl/preprocessor/repetition/repeat.h"
+# include "nsl/pp/repetition/repeat.h"
 #
 # endif

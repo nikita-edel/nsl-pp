@@ -14,9 +14,9 @@
 # ifndef NSL_PREPROCESSOR_SEQ_ENUM_H
 # define NSL_PREPROCESSOR_SEQ_ENUM_H
 #
-# include "nsl/preprocessor/cat.h"
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/seq/size.h"
+# include "nsl/pp/cat.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/seq/size.h"
 #
 # /* N_PP_SEQ_ENUM */
 #
@@ -291,17 +291,17 @@
 #
 # else
 #
-# include "nsl/preprocessor/config/limits.h"
+# include "nsl/pp/config/limits.h"
 #
 # if N_PP_LIMIT_SEQ == 256
-# include "nsl/preprocessor/seq/limits/enum_256.h"
+# include "nsl/pp/seq/limits/enum_256.h"
 # elif N_PP_LIMIT_SEQ == 512
-# include "nsl/preprocessor/seq/limits/enum_256.h"
-# include "nsl/preprocessor/seq/limits/enum_512.h"
+# include "nsl/pp/seq/limits/enum_256.h"
+# include "nsl/pp/seq/limits/enum_512.h"
 # elif N_PP_LIMIT_SEQ == 1024
-# include "nsl/preprocessor/seq/limits/enum_256.h"
-# include "nsl/preprocessor/seq/limits/enum_512.h"
-# include "nsl/preprocessor/seq/limits/enum_1024.h"
+# include "nsl/pp/seq/limits/enum_256.h"
+# include "nsl/pp/seq/limits/enum_512.h"
+# include "nsl/pp/seq/limits/enum_1024.h"
 # else
 # error Incorrect value for the N_PP_LIMIT_SEQ limit
 # endif

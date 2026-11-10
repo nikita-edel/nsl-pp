@@ -12,8 +12,8 @@
 # ifndef NSL_PREPROCESSOR_REPETITION_DEDUCE_Z_H
 # define NSL_PREPROCESSOR_REPETITION_DEDUCE_Z_H
 #
-# include "nsl/preprocessor/detail/auto_rec.h"
-# include "nsl/preprocessor/repetition/repeat.h"
+# include "nsl/pp/detail/auto_rec.h"
+# include "nsl/pp/repetition/repeat.h"
 #
 # /* N_PP_DEDUCE_Z */
 #

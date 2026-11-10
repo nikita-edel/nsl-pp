@@ -11,11 +11,11 @@
 #
 # ifndef NSL_PREPROCESSOR_FACILITIES_VA_OPT_H
 # define NSL_PREPROCESSOR_FACILITIES_VA_OPT_H
-# include "nsl/preprocessor/variadic/has_opt.h"
+# include "nsl/pp/variadic/has_opt.h"
 # if N_PP_VARIADIC_HAS_OPT()
-# include "nsl/preprocessor/control/iif.h"
-# include "nsl/preprocessor/facilities/check_empty.h"
-# include "nsl/preprocessor/tuple/rem.h"
+# include "nsl/pp/control/iif.h"
+# include "nsl/pp/facilities/check_empty.h"
+# include "nsl/pp/tuple/rem.h"
 # define N_PP_VA_OPT_IMPL(atuple) \
     N_PP_TUPLE_REM() atuple       \
 /**/

@@ -12,8 +12,8 @@
 # ifndef NSL_PREPROCESSOR_DETAIL_IS_UNARY_H
 # define NSL_PREPROCESSOR_DETAIL_IS_UNARY_H
 #
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/detail/check.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/detail/check.h"
 #
 # /* N_PP_IS_UNARY */
 #

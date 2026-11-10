@@ -13,13 +13,13 @@
 # ifndef NSL_PREPROCESSOR_FACILITIES_H
 # define NSL_PREPROCESSOR_FACILITIES_H
 #
-# include "nsl/preprocessor/facilities/apply.h"
-# include "nsl/preprocessor/facilities/check_empty.h"
-# include "nsl/preprocessor/facilities/empty.h"
-# include "nsl/preprocessor/facilities/expand.h"
-# include "nsl/preprocessor/facilities/identity.h"
-# include "nsl/preprocessor/facilities/intercept.h"
-# include "nsl/preprocessor/facilities/overload.h"
-# include "nsl/preprocessor/facilities/va_opt.h"
+# include "nsl/pp/facilities/apply.h"
+# include "nsl/pp/facilities/check_empty.h"
+# include "nsl/pp/facilities/empty.h"
+# include "nsl/pp/facilities/expand.h"
+# include "nsl/pp/facilities/identity.h"
+# include "nsl/pp/facilities/intercept.h"
+# include "nsl/pp/facilities/overload.h"
+# include "nsl/pp/facilities/va_opt.h"
 #
 # endif

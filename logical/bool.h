@@ -15,7 +15,7 @@
 # ifndef NSL_PREPROCESSOR_LOGICAL_BOOL_H
 # define NSL_PREPROCESSOR_LOGICAL_BOOL_H
 #
-# include "nsl/preprocessor/config/config.h"
+# include "nsl/pp/config/config.h"
 #
 # /* N_PP_BOOL */
 #
@@ -290,17 +290,17 @@
 #
 # else
 #
-# include "nsl/preprocessor/config/limits.h"
+# include "nsl/pp/config/limits.h"
 #
 # if N_PP_LIMIT_MAG == 256
-# include "nsl/preprocessor/logical/limits/bool_256.h"
+# include "nsl/pp/logical/limits/bool_256.h"
 # elif N_PP_LIMIT_MAG == 512
-# include "nsl/preprocessor/logical/limits/bool_256.h"
-# include "nsl/preprocessor/logical/limits/bool_512.h"
+# include "nsl/pp/logical/limits/bool_256.h"
+# include "nsl/pp/logical/limits/bool_512.h"
 # elif N_PP_LIMIT_MAG == 1024
-# include "nsl/preprocessor/logical/limits/bool_256.h"
-# include "nsl/preprocessor/logical/limits/bool_512.h"
-# include "nsl/preprocessor/logical/limits/bool_1024.h"
+# include "nsl/pp/logical/limits/bool_256.h"
+# include "nsl/pp/logical/limits/bool_512.h"
+# include "nsl/pp/logical/limits/bool_1024.h"
 # else
 # error Incorrect value for the N_PP_LIMIT_MAG limit
 # endif

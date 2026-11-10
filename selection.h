@@ -12,7 +12,7 @@
 # ifndef NSL_PREPROCESSOR_SELECTION_H
 # define NSL_PREPROCESSOR_SELECTION_H
 #
-# include "nsl/preprocessor/selection/max.h"
-# include "nsl/preprocessor/selection/min.h"
+# include "nsl/pp/selection/max.h"
+# include "nsl/pp/selection/min.h"
 #
 # endif

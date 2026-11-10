@@ -15,12 +15,12 @@
 # ifndef NSL_PREPROCESSOR_COMPARISON_NOT_EQUAL_H
 # define NSL_PREPROCESSOR_COMPARISON_NOT_EQUAL_H
 #
-# include "nsl/preprocessor/config/config.h"
+# include "nsl/pp/config/config.h"
 #
 # if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_STRICT()
 #
-# include "nsl/preprocessor/cat.h"
-# include "nsl/preprocessor/control/iif.h"
+# include "nsl/pp/cat.h"
+# include "nsl/pp/control/iif.h"
 #
 # /* N_PP_NOT_EQUAL */
 #
@@ -817,8 +817,8 @@
 #
 # else
 #
-# include "nsl/preprocessor/cat.h"
-# include "nsl/preprocessor/control/iif.h"
+# include "nsl/pp/cat.h"
+# include "nsl/pp/control/iif.h"
 #
 # /* N_PP_NOT_EQUAL */
 #
@@ -837,17 +837,17 @@
 #
 # define N_PP_NOT_EQUAL_CHECK_N_PP_NIL 1
 #
-# include "nsl/preprocessor/config/limits.h"
+# include "nsl/pp/config/limits.h"
 #
 # if N_PP_LIMIT_MAG == 256
-# include "nsl/preprocessor/comparison/limits/not_equal_256.h"
+# include "nsl/pp/comparison/limits/not_equal_256.h"
 # elif N_PP_LIMIT_MAG == 512
-# include "nsl/preprocessor/comparison/limits/not_equal_256.h"
-# include "nsl/preprocessor/comparison/limits/not_equal_512.h"
+# include "nsl/pp/comparison/limits/not_equal_256.h"
+# include "nsl/pp/comparison/limits/not_equal_512.h"
 # elif N_PP_LIMIT_MAG == 1024
-# include "nsl/preprocessor/comparison/limits/not_equal_256.h"
-# include "nsl/preprocessor/comparison/limits/not_equal_512.h"
-# include "nsl/preprocessor/comparison/limits/not_equal_1024.h"
+# include "nsl/pp/comparison/limits/not_equal_256.h"
+# include "nsl/pp/comparison/limits/not_equal_512.h"
+# include "nsl/pp/comparison/limits/not_equal_1024.h"
 # else
 # error Incorrect value for the N_PP_LIMIT_MAG limit
 # endif

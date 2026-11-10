@@ -13,12 +13,12 @@
 # ifndef NSL_PREPROCESSOR_ARRAY_ENUM_H
 # define NSL_PREPROCESSOR_ARRAY_ENUM_H
 #
-# include "nsl/preprocessor/cat.h"
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/control/if.h"
-# include "nsl/preprocessor/array/size.h"
-# include "nsl/preprocessor/tuple/rem.h"
-# include "nsl/preprocessor/variadic/has_opt.h"
+# include "nsl/pp/cat.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/control/if.h"
+# include "nsl/pp/array/size.h"
+# include "nsl/pp/tuple/rem.h"
+# include "nsl/pp/variadic/has_opt.h"
 #
 # /* N_PP_ARRAY_ENUM */
 #

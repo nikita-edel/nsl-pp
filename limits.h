@@ -12,6 +12,6 @@
 # ifndef NSL_PREPROCESSOR_LIMITS_H
 # define NSL_PREPROCESSOR_LIMITS_H
 #
-# include "nsl/preprocessor/config/limits.h"
+# include "nsl/pp/config/limits.h"
 #
 # endif

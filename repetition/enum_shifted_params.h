@@ -14,12 +14,12 @@
 # ifndef NSL_PREPROCESSOR_REPETITION_ENUM_SHIFTED_PARAMS_H
 # define NSL_PREPROCESSOR_REPETITION_ENUM_SHIFTED_PARAMS_H
 #
-# include "nsl/preprocessor/arithmetic/dec.h"
-# include "nsl/preprocessor/arithmetic/inc.h"
-# include "nsl/preprocessor/cat.h"
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/punctuation/comma_if.h"
-# include "nsl/preprocessor/repetition/repeat.h"
+# include "nsl/pp/arithmetic/dec.h"
+# include "nsl/pp/arithmetic/inc.h"
+# include "nsl/pp/cat.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/punctuation/comma_if.h"
+# include "nsl/pp/repetition/repeat.h"
 #
 # /* N_PP_ENUM_SHIFTED_PARAMS */
 #

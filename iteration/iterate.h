@@ -12,13 +12,13 @@
 # ifndef NSL_PREPROCESSOR_ITERATION_ITERATE_H
 # define NSL_PREPROCESSOR_ITERATION_ITERATE_H
 #
-# include "nsl/preprocessor/arithmetic/dec.h"
-# include "nsl/preprocessor/arithmetic/inc.h"
-# include "nsl/preprocessor/array/elem.h"
-# include "nsl/preprocessor/array/size.h"
-# include "nsl/preprocessor/cat.h"
-# include "nsl/preprocessor/slot/slot.h"
-# include "nsl/preprocessor/tuple/elem.h"
+# include "nsl/pp/arithmetic/dec.h"
+# include "nsl/pp/arithmetic/inc.h"
+# include "nsl/pp/array/elem.h"
+# include "nsl/pp/array/size.h"
+# include "nsl/pp/cat.h"
+# include "nsl/pp/slot/slot.h"
+# include "nsl/pp/tuple/elem.h"
 #
 # /* N_PP_ITERATION_DEPTH */
 #
@@ -73,10 +73,10 @@
 #
 # define N_PP_ITERATE() N_PP_CAT(N_PP_ITERATE_, N_PP_INC(N_PP_ITERATION_DEPTH()))
 #
-# define N_PP_ITERATE_1 <nsl/preprocessor/iteration/detail/iter/forward1.h>
-# define N_PP_ITERATE_2 <nsl/preprocessor/iteration/detail/iter/forward2.h>
-# define N_PP_ITERATE_3 <nsl/preprocessor/iteration/detail/iter/forward3.h>
-# define N_PP_ITERATE_4 <nsl/preprocessor/iteration/detail/iter/forward4.h>
-# define N_PP_ITERATE_5 <nsl/preprocessor/iteration/detail/iter/forward5.h>
+# define N_PP_ITERATE_1 <nsl/pp/iteration/detail/iter/forward1.h>
+# define N_PP_ITERATE_2 <nsl/pp/iteration/detail/iter/forward2.h>
+# define N_PP_ITERATE_3 <nsl/pp/iteration/detail/iter/forward3.h>
+# define N_PP_ITERATE_4 <nsl/pp/iteration/detail/iter/forward4.h>
+# define N_PP_ITERATE_5 <nsl/pp/iteration/detail/iter/forward5.h>
 #
 # endif

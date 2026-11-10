@@ -14,9 +14,9 @@
 # ifndef NSL_PREPROCESSOR_LIST_AT_H
 # define NSL_PREPROCESSOR_LIST_AT_H
 #
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/list/adt.h"
-# include "nsl/preprocessor/list/rest_n.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/list/adt.h"
+# include "nsl/pp/list/rest_n.h"
 #
 # /* N_PP_LIST_AT */
 #

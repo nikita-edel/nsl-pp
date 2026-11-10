@@ -14,9 +14,9 @@
 # ifndef NSL_PREPROCESSOR_SELECTION_MAX_H
 # define NSL_PREPROCESSOR_SELECTION_MAX_H
 #
-# include "nsl/preprocessor/comparison/less_equal.h"
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/control/iif.h"
+# include "nsl/pp/comparison/less_equal.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/control/iif.h"
 #
 # /* N_PP_MAX */
 #

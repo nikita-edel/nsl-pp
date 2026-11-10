@@ -12,10 +12,10 @@
 # ifndef NSL_PREPROCESSOR_ARRAY_REVERSE_H
 # define NSL_PREPROCESSOR_ARRAY_REVERSE_H
 #
-# include "nsl/preprocessor/array/data.h"
-# include "nsl/preprocessor/array/size.h"
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/tuple/reverse.h"
+# include "nsl/pp/array/data.h"
+# include "nsl/pp/array/size.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/tuple/reverse.h"
 #
 # /* N_PP_ARRAY_REVERSE */
 #

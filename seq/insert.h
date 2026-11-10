@@ -12,9 +12,9 @@
 # ifndef NSL_PREPROCESSOR_SEQ_INSERT_H
 # define NSL_PREPROCESSOR_SEQ_INSERT_H
 #
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/seq/first_n.h"
-# include "nsl/preprocessor/seq/rest_n.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/seq/first_n.h"
+# include "nsl/pp/seq/rest_n.h"
 #
 # /* N_PP_SEQ_INSERT */
 #

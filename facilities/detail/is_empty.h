@@ -12,7 +12,7 @@
 #ifndef NSL_PREPROCESSOR_DETAIL_IS_EMPTY_H
 #define NSL_PREPROCESSOR_DETAIL_IS_EMPTY_H
 
-#include "nsl/preprocessor/punctuation/is_begin_parens.h"
+#include "nsl/pp/punctuation/is_begin_parens.h"
 
 #if N_PP_VARIADICS_MSVC
 

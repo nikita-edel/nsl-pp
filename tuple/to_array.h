@@ -13,13 +13,13 @@
 # ifndef NSL_PREPROCESSOR_TUPLE_TO_ARRAY_H
 # define NSL_PREPROCESSOR_TUPLE_TO_ARRAY_H
 #
-# include "nsl/preprocessor/cat.h"
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/control/if.h"
-# include "nsl/preprocessor/facilities/overload.h"
-# include "nsl/preprocessor/tuple/size.h"
-# include "nsl/preprocessor/variadic/size.h"
-# include "nsl/preprocessor/variadic/has_opt.h"
+# include "nsl/pp/cat.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/control/if.h"
+# include "nsl/pp/facilities/overload.h"
+# include "nsl/pp/tuple/size.h"
+# include "nsl/pp/variadic/size.h"
+# include "nsl/pp/variadic/has_opt.h"
 #
 # /* N_PP_TUPLE_TO_ARRAY */
 #

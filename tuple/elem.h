@@ -15,13 +15,13 @@
 # ifndef NSL_PREPROCESSOR_TUPLE_ELEM_H
 # define NSL_PREPROCESSOR_TUPLE_ELEM_H
 #
-# include "nsl/preprocessor/cat.h"
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/facilities/expand.h"
-# include "nsl/preprocessor/facilities/overload.h"
-# include "nsl/preprocessor/tuple/rem.h"
-# include "nsl/preprocessor/variadic/elem.h"
-# include "nsl/preprocessor/tuple/detail/is_single_return.h"
+# include "nsl/pp/cat.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/facilities/expand.h"
+# include "nsl/pp/facilities/overload.h"
+# include "nsl/pp/tuple/rem.h"
+# include "nsl/pp/variadic/elem.h"
+# include "nsl/pp/tuple/detail/is_single_return.h"
 #
 # if N_PP_VARIADICS_MSVC
 #     define N_PP_TUPLE_ELEM(...) N_PP_TUPLE_ELEM_I(N_PP_OVERLOAD(N_PP_TUPLE_ELEM_O_, __VA_ARGS__), (__VA_ARGS__))

@@ -14,12 +14,12 @@
 # ifndef NSL_PREPROCESSOR_ARITHMETIC_H
 # define NSL_PREPROCESSOR_ARITHMETIC_H
 #
-# include "nsl/preprocessor/arithmetic/add.h"
-# include "nsl/preprocessor/arithmetic/dec.h"
-# include "nsl/preprocessor/arithmetic/div.h"
-# include "nsl/preprocessor/arithmetic/inc.h"
-# include "nsl/preprocessor/arithmetic/mod.h"
-# include "nsl/preprocessor/arithmetic/mul.h"
-# include "nsl/preprocessor/arithmetic/sub.h"
+# include "nsl/pp/arithmetic/add.h"
+# include "nsl/pp/arithmetic/dec.h"
+# include "nsl/pp/arithmetic/div.h"
+# include "nsl/pp/arithmetic/inc.h"
+# include "nsl/pp/arithmetic/mod.h"
+# include "nsl/pp/arithmetic/mul.h"
+# include "nsl/pp/arithmetic/sub.h"
 #
 # endif

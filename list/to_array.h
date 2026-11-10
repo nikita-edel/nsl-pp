@@ -13,15 +13,15 @@
 # ifndef NSL_PREPROCESSOR_LIST_TO_ARRAY_H
 # define NSL_PREPROCESSOR_LIST_TO_ARRAY_H
 #
-# include "nsl/preprocessor/arithmetic/dec.h"
-# include "nsl/preprocessor/arithmetic/inc.h"
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/control/while.h"
-# include "nsl/preprocessor/list/adt.h"
-# include "nsl/preprocessor/tuple/elem.h"
-# include "nsl/preprocessor/tuple/rem.h"
+# include "nsl/pp/arithmetic/dec.h"
+# include "nsl/pp/arithmetic/inc.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/control/while.h"
+# include "nsl/pp/list/adt.h"
+# include "nsl/pp/tuple/elem.h"
+# include "nsl/pp/tuple/rem.h"
 # if N_PP_VARIADICS_MSVC && (_MSC_VER <= 1400)
-# include "nsl/preprocessor/control/iif.h"
+# include "nsl/pp/control/iif.h"
 # endif
 #
 # /* N_PP_LIST_TO_ARRAY */

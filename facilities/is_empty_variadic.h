@@ -12,9 +12,9 @@
 # ifndef NSL_PREPROCESSOR_FACILITIES_IS_EMPTY_VARIADIC_H
 # define NSL_PREPROCESSOR_FACILITIES_IS_EMPTY_VARIADIC_H
 #
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/punctuation/is_begin_parens.h"
-# include "nsl/preprocessor/facilities/detail/is_empty.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/punctuation/is_begin_parens.h"
+# include "nsl/pp/facilities/detail/is_empty.h"
 #
 #if N_PP_VARIADICS_MSVC && _MSC_VER <= 1400
 #
@@ -35,7 +35,7 @@
 #define N_PP_IS_EMPTY_ZERO(param) 0
 # else
 # if defined(__cplusplus) && __cplusplus > 201703L
-# include "nsl/preprocessor/variadic/has_opt.h"
+# include "nsl/pp/variadic/has_opt.h"
 #define N_PP_IS_EMPTY(...) \
     N_PP_DETAIL_IS_EMPTY_IIF \
       ( \

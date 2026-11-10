@@ -14,9 +14,9 @@
 # ifndef NSL_PREPROCESSOR_CONTROL_EXPR_IF_H
 # define NSL_PREPROCESSOR_CONTROL_EXPR_IF_H
 #
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/control/expr_iif.h"
-# include "nsl/preprocessor/logical/bool.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/control/expr_iif.h"
+# include "nsl/pp/logical/bool.h"
 #
 # /* N_PP_EXPR_IF */
 #

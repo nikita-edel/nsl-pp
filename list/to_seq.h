@@ -14,7 +14,7 @@
 # ifndef NSL_PREPROCESSOR_LIST_TO_SEQ_H
 # define NSL_PREPROCESSOR_LIST_TO_SEQ_H
 #
-# include "nsl/preprocessor/list/for_each.h"
+# include "nsl/pp/list/for_each.h"
 #
 # /* N_PP_LIST_TO_SEQ */
 #

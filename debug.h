@@ -12,7 +12,7 @@
 # ifndef NSL_PREPROCESSOR_DEBUG_H
 # define NSL_PREPROCESSOR_DEBUG_H
 #
-# include "nsl/preprocessor/debug/assert.h"
-# include "nsl/preprocessor/debug/line.h"
+# include "nsl/pp/debug/assert.h"
+# include "nsl/pp/debug/line.h"
 #
 # endif

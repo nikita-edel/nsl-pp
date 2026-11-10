@@ -12,6 +12,6 @@
 # ifndef NSL_PREPROCESSOR_ENUM_PARAMS_WITH_A_DEFAULT_H
 # define NSL_PREPROCESSOR_ENUM_PARAMS_WITH_A_DEFAULT_H
 #
-# include "nsl/preprocessor/repetition/enum_params_with_a_default.h"
+# include "nsl/pp/repetition/enum_params_with_a_default.h"
 #
 # endif

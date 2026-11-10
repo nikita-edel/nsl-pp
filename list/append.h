@@ -14,8 +14,8 @@
 # ifndef NSL_PREPROCESSOR_LIST_APPEND_H
 # define NSL_PREPROCESSOR_LIST_APPEND_H
 #
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/list/fold_right.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/list/fold_right.h"
 #
 # /* N_PP_LIST_APPEND */
 #

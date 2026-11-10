@@ -12,11 +12,11 @@
 # ifndef NSL_PREPROCESSOR_ARRAY_POP_BACK_H
 # define NSL_PREPROCESSOR_ARRAY_POP_BACK_H
 #
-# include "nsl/preprocessor/arithmetic/dec.h"
-# include "nsl/preprocessor/array/elem.h"
-# include "nsl/preprocessor/array/size.h"
-# include "nsl/preprocessor/repetition/enum.h"
-# include "nsl/preprocessor/repetition/deduce_z.h"
+# include "nsl/pp/arithmetic/dec.h"
+# include "nsl/pp/array/elem.h"
+# include "nsl/pp/array/size.h"
+# include "nsl/pp/repetition/enum.h"
+# include "nsl/pp/repetition/deduce_z.h"
 #
 # /* N_PP_ARRAY_POP_BACK */
 #

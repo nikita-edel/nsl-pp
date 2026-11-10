@@ -12,6 +12,6 @@
 # ifndef NSL_PREPROCESSOR_WHILE_H
 # define NSL_PREPROCESSOR_WHILE_H
 #
-# include "nsl/preprocessor/control/while.h"
+# include "nsl/pp/control/while.h"
 #
 # endif

@@ -14,16 +14,16 @@
 # ifndef NSL_PREPROCESSOR_LOGICAL_H
 # define NSL_PREPROCESSOR_LOGICAL_H
 #
-# include "nsl/preprocessor/logical/and.h"
-# include "nsl/preprocessor/logical/bitand.h"
-# include "nsl/preprocessor/logical/bitnor.h"
-# include "nsl/preprocessor/logical/bitor.h"
-# include "nsl/preprocessor/logical/bitxor.h"
-# include "nsl/preprocessor/logical/bool.h"
-# include "nsl/preprocessor/logical/compl.h"
-# include "nsl/preprocessor/logical/nor.h"
-# include "nsl/preprocessor/logical/not.h"
-# include "nsl/preprocessor/logical/or.h"
-# include "nsl/preprocessor/logical/xor.h"
+# include "nsl/pp/logical/and.h"
+# include "nsl/pp/logical/bitand.h"
+# include "nsl/pp/logical/bitnor.h"
+# include "nsl/pp/logical/bitor.h"
+# include "nsl/pp/logical/bitxor.h"
+# include "nsl/pp/logical/bool.h"
+# include "nsl/pp/logical/compl.h"
+# include "nsl/pp/logical/nor.h"
+# include "nsl/pp/logical/not.h"
+# include "nsl/pp/logical/or.h"
+# include "nsl/pp/logical/xor.h"
 #
 # endif

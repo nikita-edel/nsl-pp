@@ -15,14 +15,14 @@
 # ifndef NSL_PREPROCESSOR_REPETITION_DETAIL_FOR_H
 # define NSL_PREPROCESSOR_REPETITION_DETAIL_FOR_H
 #
-# include "nsl/preprocessor/config/config.h"
+# include "nsl/pp/config/config.h"
 #
 # if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_STRICT()
 #
-# include "nsl/preprocessor/control/expr_iif.h"
-# include "nsl/preprocessor/control/iif.h"
-# include "nsl/preprocessor/logical/bool.h"
-# include "nsl/preprocessor/tuple/eat.h"
+# include "nsl/pp/control/expr_iif.h"
+# include "nsl/pp/control/iif.h"
+# include "nsl/pp/logical/bool.h"
+# include "nsl/pp/tuple/eat.h"
 #
 # define N_PP_FOR_1(s, p, o, m) N_PP_FOR_1_C(N_PP_BOOL(p(2, s)), s, p, o, m)
 # define N_PP_FOR_2(s, p, o, m) N_PP_FOR_2_C(N_PP_BOOL(p(3, s)), s, p, o, m)
@@ -540,21 +540,21 @@
 #
 # else
 #
-# include "nsl/preprocessor/control/expr_iif.h"
-# include "nsl/preprocessor/control/iif.h"
-# include "nsl/preprocessor/logical/bool.h"
-# include "nsl/preprocessor/tuple/eat.h"
-# include "nsl/preprocessor/config/limits.h"
+# include "nsl/pp/control/expr_iif.h"
+# include "nsl/pp/control/iif.h"
+# include "nsl/pp/logical/bool.h"
+# include "nsl/pp/tuple/eat.h"
+# include "nsl/pp/config/limits.h"
 #
 # if N_PP_LIMIT_FOR == 256
-# include "nsl/preprocessor/repetition/detail/limits/for_256.h"
+# include "nsl/pp/repetition/detail/limits/for_256.h"
 # elif N_PP_LIMIT_FOR == 512
-# include "nsl/preprocessor/repetition/detail/limits/for_256.h"
-# include "nsl/preprocessor/repetition/detail/limits/for_512.h"
+# include "nsl/pp/repetition/detail/limits/for_256.h"
+# include "nsl/pp/repetition/detail/limits/for_512.h"
 # elif N_PP_LIMIT_FOR == 1024
-# include "nsl/preprocessor/repetition/detail/limits/for_256.h"
-# include "nsl/preprocessor/repetition/detail/limits/for_512.h"
-# include "nsl/preprocessor/repetition/detail/limits/for_1024.h"
+# include "nsl/pp/repetition/detail/limits/for_256.h"
+# include "nsl/pp/repetition/detail/limits/for_512.h"
+# include "nsl/pp/repetition/detail/limits/for_1024.h"
 # else
 # error Incorrect value for the N_PP_LIMIT_FOR limit
 # endif

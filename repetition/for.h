@@ -15,15 +15,15 @@
 # ifndef NSL_PREPROCESSOR_REPETITION_FOR_H
 # define NSL_PREPROCESSOR_REPETITION_FOR_H
 #
-# include "nsl/preprocessor/config/config.h"
+# include "nsl/pp/config/config.h"
 #
 # if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_STRICT()
 #
-# include "nsl/preprocessor/cat.h"
-# include "nsl/preprocessor/debug/error.h"
-# include "nsl/preprocessor/facilities/empty.h"
-# include "nsl/preprocessor/logical/bool.h"
-# include "nsl/preprocessor/detail/auto_rec.h"
+# include "nsl/pp/cat.h"
+# include "nsl/pp/debug/error.h"
+# include "nsl/pp/facilities/empty.h"
+# include "nsl/pp/logical/bool.h"
+# include "nsl/pp/detail/auto_rec.h"
 #
 # /* N_PP_FOR */
 #
@@ -40,13 +40,13 @@
 # define N_PP_FOR_SR_M(r, s) N_PP_NIL
 #
 # if N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
-#    include "nsl/preprocessor/repetition/detail/edg/for.h"
+#    include "nsl/pp/repetition/detail/edg/for.h"
 # elif N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MSVC()
-#    include "nsl/preprocessor/repetition/detail/msvc/for.h"
+#    include "nsl/pp/repetition/detail/msvc/for.h"
 # elif N_PP_CONFIG_FLAGS() & N_PP_CONFIG_DMC()
-#    include "nsl/preprocessor/repetition/detail/dmc/for.h"
+#    include "nsl/pp/repetition/detail/dmc/for.h"
 # else
-#    include "nsl/preprocessor/repetition/detail/for.h"
+#    include "nsl/pp/repetition/detail/for.h"
 # endif
 #
 # if N_PP_CONFIG_FLAGS() & N_PP_CONFIG_DMC()
@@ -328,13 +328,13 @@
 #
 # else
 #
-# include "nsl/preprocessor/arithmetic/dec.h"
-# include "nsl/preprocessor/cat.h"
-# include "nsl/preprocessor/debug/error.h"
-# include "nsl/preprocessor/facilities/empty.h"
-# include "nsl/preprocessor/logical/bool.h"
-# include "nsl/preprocessor/detail/auto_rec.h"
-# include "nsl/preprocessor/config/limits.h"
+# include "nsl/pp/arithmetic/dec.h"
+# include "nsl/pp/cat.h"
+# include "nsl/pp/debug/error.h"
+# include "nsl/pp/facilities/empty.h"
+# include "nsl/pp/logical/bool.h"
+# include "nsl/pp/detail/auto_rec.h"
+# include "nsl/pp/config/limits.h"
 #
 # /* N_PP_FOR */
 #
@@ -360,13 +360,13 @@
 # define N_PP_FOR_SR_M(r, s) N_PP_NIL
 #
 # if N_PP_CONFIG_FLAGS() & N_PP_CONFIG_EDG()
-#    include "nsl/preprocessor/repetition/detail/edg/for.h"
+#    include "nsl/pp/repetition/detail/edg/for.h"
 # elif N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MSVC()
-#    include "nsl/preprocessor/repetition/detail/msvc/for.h"
+#    include "nsl/pp/repetition/detail/msvc/for.h"
 # elif N_PP_CONFIG_FLAGS() & N_PP_CONFIG_DMC()
-#    include "nsl/preprocessor/repetition/detail/dmc/for.h"
+#    include "nsl/pp/repetition/detail/dmc/for.h"
 # else
-#    include "nsl/preprocessor/repetition/detail/for.h"
+#    include "nsl/pp/repetition/detail/for.h"
 # endif
 #
 # if N_PP_LIMIT_FOR == 256
@@ -423,14 +423,14 @@
 # define N_PP_FOR_CHECK_N_PP_NIL 1
 #
 # if N_PP_LIMIT_FOR == 256
-# include "nsl/preprocessor/repetition/limits/for_256.h"
+# include "nsl/pp/repetition/limits/for_256.h"
 # elif N_PP_LIMIT_FOR == 512
-# include "nsl/preprocessor/repetition/limits/for_256.h"
-# include "nsl/preprocessor/repetition/limits/for_512.h"
+# include "nsl/pp/repetition/limits/for_256.h"
+# include "nsl/pp/repetition/limits/for_512.h"
 # elif N_PP_LIMIT_FOR == 1024
-# include "nsl/preprocessor/repetition/limits/for_256.h"
-# include "nsl/preprocessor/repetition/limits/for_512.h"
-# include "nsl/preprocessor/repetition/limits/for_1024.h"
+# include "nsl/pp/repetition/limits/for_256.h"
+# include "nsl/pp/repetition/limits/for_512.h"
+# include "nsl/pp/repetition/limits/for_1024.h"
 # endif
 #
 # endif

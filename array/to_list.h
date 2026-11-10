@@ -13,11 +13,11 @@
 # ifndef NSL_PREPROCESSOR_ARRAY_TO_LIST_H
 # define NSL_PREPROCESSOR_ARRAY_TO_LIST_H
 #
-# include "nsl/preprocessor/cat.h"
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/array/size.h"
-# include "nsl/preprocessor/control/if.h"
-# include "nsl/preprocessor/tuple/to_list.h"
+# include "nsl/pp/cat.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/array/size.h"
+# include "nsl/pp/control/if.h"
+# include "nsl/pp/tuple/to_list.h"
 #
 # /* N_PP_ARRAY_TO_LIST */
 #

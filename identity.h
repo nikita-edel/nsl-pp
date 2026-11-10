@@ -12,6 +12,6 @@
 # ifndef NSL_PREPROCESSOR_IDENTITY_H
 # define NSL_PREPROCESSOR_IDENTITY_H
 #
-# include "nsl/preprocessor/facilities/identity.h"
+# include "nsl/pp/facilities/identity.h"
 #
 # endif

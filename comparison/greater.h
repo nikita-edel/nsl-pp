@@ -14,8 +14,8 @@
 # ifndef NSL_PREPROCESSOR_COMPARISON_GREATER_H
 # define NSL_PREPROCESSOR_COMPARISON_GREATER_H
 #
-# include "nsl/preprocessor/comparison/less.h"
-# include "nsl/preprocessor/config/config.h"
+# include "nsl/pp/comparison/less.h"
+# include "nsl/pp/config/config.h"
 #
 # /* N_PP_GREATER */
 #

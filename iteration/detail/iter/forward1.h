@@ -16,16 +16,16 @@
 #        error N_PP_ERROR:  depth #1 filename is not defined
 #    endif
 #    define N_PP_VALUE N_PP_TUPLE_ELEM(2, 0, N_PP_ITERATION_LIMITS)
-#    include "nsl/preprocessor/iteration/detail/bounds/lower1.h"
+#    include "nsl/pp/iteration/detail/bounds/lower1.h"
 #    define N_PP_VALUE N_PP_TUPLE_ELEM(2, 1, N_PP_ITERATION_LIMITS)
-#    include "nsl/preprocessor/iteration/detail/bounds/upper1.h"
+#    include "nsl/pp/iteration/detail/bounds/upper1.h"
 #    define N_PP_ITERATION_FLAGS_1() 0
 #    undef N_PP_ITERATION_LIMITS
 # elif defined(N_PP_ITERATION_PARAMS_1)
 #    define N_PP_VALUE N_PP_ARRAY_ELEM(0, N_PP_ITERATION_PARAMS_1)
-#    include "nsl/preprocessor/iteration/detail/bounds/lower1.h"
+#    include "nsl/pp/iteration/detail/bounds/lower1.h"
 #    define N_PP_VALUE N_PP_ARRAY_ELEM(1, N_PP_ITERATION_PARAMS_1)
-#    include "nsl/preprocessor/iteration/detail/bounds/upper1.h"
+#    include "nsl/pp/iteration/detail/bounds/upper1.h"
 #    define N_PP_FILENAME_1 N_PP_ARRAY_ELEM(2, N_PP_ITERATION_PARAMS_1)
 #    if N_PP_ARRAY_SIZE(N_PP_ITERATION_PARAMS_1) >= 4
 #        define N_PP_ITERATION_FLAGS_1() N_PP_ARRAY_ELEM(3, N_PP_ITERATION_PARAMS_1)
@@ -42,10 +42,10 @@
 # define N_PP_IS_ITERATING 1
 #
 # if (N_PP_ITERATION_START_1) > (N_PP_ITERATION_FINISH_1)
-#    include "nsl/preprocessor/iteration/detail/iter/reverse1.h"
+#    include "nsl/pp/iteration/detail/iter/reverse1.h"
 # else
 #
-# include "nsl/preprocessor/config/config.h"
+# include "nsl/pp/config/config.h"
 #
 # if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_STRICT()
 #
@@ -1337,17 +1337,17 @@
 #
 # else
 #
-#    include "nsl/preprocessor/config/limits.h"
+#    include "nsl/pp/config/limits.h"
 #   
 #    if N_PP_LIMIT_ITERATION == 256
-#    include "nsl/preprocessor/iteration/detail/iter/limits/forward1_256.h"
+#    include "nsl/pp/iteration/detail/iter/limits/forward1_256.h"
 #    elif N_PP_LIMIT_ITERATION == 512
-#    include "nsl/preprocessor/iteration/detail/iter/limits/forward1_256.h"
-#    include "nsl/preprocessor/iteration/detail/iter/limits/forward1_512.h"
+#    include "nsl/pp/iteration/detail/iter/limits/forward1_256.h"
+#    include "nsl/pp/iteration/detail/iter/limits/forward1_512.h"
 #    elif N_PP_LIMIT_ITERATION == 1024
-#    include "nsl/preprocessor/iteration/detail/iter/limits/forward1_256.h"
-#    include "nsl/preprocessor/iteration/detail/iter/limits/forward1_512.h"
-#    include "nsl/preprocessor/iteration/detail/iter/limits/forward1_1024.h"
+#    include "nsl/pp/iteration/detail/iter/limits/forward1_256.h"
+#    include "nsl/pp/iteration/detail/iter/limits/forward1_512.h"
+#    include "nsl/pp/iteration/detail/iter/limits/forward1_1024.h"
 #    else
 #    error Incorrect value for the N_PP_LIMIT_ITERATION limit
 #    endif

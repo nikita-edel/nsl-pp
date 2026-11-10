@@ -12,6 +12,6 @@
 # ifndef NSL_PREPROCESSOR_MIN_H
 # define NSL_PREPROCESSOR_MIN_H
 #
-# include "nsl/preprocessor/selection/min.h"
+# include "nsl/pp/selection/min.h"
 #
 # endif

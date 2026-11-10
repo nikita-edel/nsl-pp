@@ -12,12 +12,12 @@
 # ifndef NSL_PREPROCESSOR_VARIADIC_DETAIL_HAS_OPT_H
 # define NSL_PREPROCESSOR_VARIADIC_DETAIL_HAS_OPT_H
 #
-# include "nsl/preprocessor/config/config.h"
+# include "nsl/pp/config/config.h"
 #
 # if defined(__cplusplus) && __cplusplus > 201703L
 #
 # if N_PP_VARIADICS_MSVC
-# include "nsl/preprocessor/cat.h"
+# include "nsl/pp/cat.h"
 # endif
 #
 # define N_PP_VARIADIC_HAS_OPT_FUNCTION(...) \

@@ -12,7 +12,7 @@
 # ifndef NSL_PREPROCESSOR_SLOT_COUNTER_H
 # define NSL_PREPROCESSOR_SLOT_COUNTER_H
 #
-# include "nsl/preprocessor/slot/detail/def.h"
+# include "nsl/pp/slot/detail/def.h"
 #
 # /* N_PP_COUNTER */
 #
@@ -20,6 +20,6 @@
 #
 # /* N_PP_UPDATE_COUNTER */
 #
-# define N_PP_UPDATE_COUNTER() <nsl/preprocessor/slot/detail/counter.h>
+# define N_PP_UPDATE_COUNTER() <nsl/pp/slot/detail/counter.h>
 #
 # endif

@@ -12,15 +12,15 @@
 # ifndef NSL_PREPROCESSOR_SEQ_REST_N_H
 # define NSL_PREPROCESSOR_SEQ_REST_N_H
 #
-# include "nsl/preprocessor/arithmetic/inc.h"
-# include "nsl/preprocessor/comparison/not_equal.h"
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/control/iif.h"
-# include "nsl/preprocessor/facilities/identity.h"
-# include "nsl/preprocessor/logical/bitand.h"
-# include "nsl/preprocessor/seq/detail/is_empty.h"
-# include "nsl/preprocessor/seq/detail/split.h"
-# include "nsl/preprocessor/tuple/elem.h"
+# include "nsl/pp/arithmetic/inc.h"
+# include "nsl/pp/comparison/not_equal.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/control/iif.h"
+# include "nsl/pp/facilities/identity.h"
+# include "nsl/pp/logical/bitand.h"
+# include "nsl/pp/seq/detail/is_empty.h"
+# include "nsl/pp/seq/detail/split.h"
+# include "nsl/pp/tuple/elem.h"
 #
 # /* N_PP_SEQ_REST_N */
 #

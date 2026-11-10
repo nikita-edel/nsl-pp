@@ -12,7 +12,7 @@
 # ifndef NSL_PREPROCESSOR_WSTR_H
 # define NSL_PREPROCESSOR_WSTR_H
 #
-# include "nsl/preprocessor/config/config.h"
+# include "nsl/pp/config/config.h"
 #
 # /* N_PP_WSTR */
 #

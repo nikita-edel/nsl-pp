@@ -14,10 +14,10 @@
 # ifndef NSL_PREPROCESSOR_LIST_ADT_H
 # define NSL_PREPROCESSOR_LIST_ADT_H
 #
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/detail/is_binary.h"
-# include "nsl/preprocessor/logical/compl.h"
-# include "nsl/preprocessor/tuple/eat.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/detail/is_binary.h"
+# include "nsl/pp/logical/compl.h"
+# include "nsl/pp/tuple/eat.h"
 #
 # /* N_PP_LIST_CONS */
 #

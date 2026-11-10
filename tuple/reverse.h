@@ -15,13 +15,13 @@
 # ifndef NSL_PREPROCESSOR_TUPLE_REVERSE_H
 # define NSL_PREPROCESSOR_TUPLE_REVERSE_H
 #
-# include "nsl/preprocessor/cat.h"
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/control/if.h"
-# include "nsl/preprocessor/facilities/overload.h"
-# include "nsl/preprocessor/tuple/size.h"
-# include "nsl/preprocessor/variadic/size.h"
-# include "nsl/preprocessor/variadic/has_opt.h"
+# include "nsl/pp/cat.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/control/if.h"
+# include "nsl/pp/facilities/overload.h"
+# include "nsl/pp/tuple/size.h"
+# include "nsl/pp/variadic/size.h"
+# include "nsl/pp/variadic/has_opt.h"
 #
 # /* N_PP_TUPLE_REVERSE */
 #
@@ -110,17 +110,17 @@
 #
 # else
 #
-# include "nsl/preprocessor/config/limits.h"
+# include "nsl/pp/config/limits.h"
 #
 # if N_PP_LIMIT_TUPLE == 64
-# include "nsl/preprocessor/tuple/limits/reverse_64.h"
+# include "nsl/pp/tuple/limits/reverse_64.h"
 # elif N_PP_LIMIT_TUPLE == 128
-# include "nsl/preprocessor/tuple/limits/reverse_64.h"
-# include "nsl/preprocessor/tuple/limits/reverse_128.h"
+# include "nsl/pp/tuple/limits/reverse_64.h"
+# include "nsl/pp/tuple/limits/reverse_128.h"
 # elif N_PP_LIMIT_TUPLE == 256
-# include "nsl/preprocessor/tuple/limits/reverse_64.h"
-# include "nsl/preprocessor/tuple/limits/reverse_128.h"
-# include "nsl/preprocessor/tuple/limits/reverse_256.h"
+# include "nsl/pp/tuple/limits/reverse_64.h"
+# include "nsl/pp/tuple/limits/reverse_128.h"
+# include "nsl/pp/tuple/limits/reverse_256.h"
 # else
 # error Incorrect value for the N_PP_LIMIT_TUPLE limit
 # endif

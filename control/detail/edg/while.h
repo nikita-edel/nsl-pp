@@ -15,12 +15,12 @@
 # ifndef NSL_PREPROCESSOR_CONTROL_DETAIL_EDG_WHILE_H
 # define NSL_PREPROCESSOR_CONTROL_DETAIL_EDG_WHILE_H
 #
-# include "nsl/preprocessor/config/config.h"
+# include "nsl/pp/config/config.h"
 #
 # if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_STRICT()
 #
-# include "nsl/preprocessor/control/if.h"
-# include "nsl/preprocessor/tuple/eat.h"
+# include "nsl/pp/control/if.h"
+# include "nsl/pp/tuple/eat.h"
 #
 # define N_PP_WHILE_1(p, o, s) N_PP_WHILE_1_I(p, o, s)
 # define N_PP_WHILE_2(p, o, s) N_PP_WHILE_2_I(p, o, s)
@@ -538,20 +538,20 @@
 #
 # else
 #
-# include "nsl/preprocessor/control/if.h"
-# include "nsl/preprocessor/tuple/eat.h"
+# include "nsl/pp/control/if.h"
+# include "nsl/pp/tuple/eat.h"
 #
-# include "nsl/preprocessor/config/limits.h"
+# include "nsl/pp/config/limits.h"
 #
 # if N_PP_LIMIT_WHILE == 256
-# include "nsl/preprocessor/control/detail/edg/limits/while_256.h"
+# include "nsl/pp/control/detail/edg/limits/while_256.h"
 # elif N_PP_LIMIT_WHILE == 512
-# include "nsl/preprocessor/control/detail/edg/limits/while_256.h"
-# include "nsl/preprocessor/control/detail/edg/limits/while_512.h"
+# include "nsl/pp/control/detail/edg/limits/while_256.h"
+# include "nsl/pp/control/detail/edg/limits/while_512.h"
 # elif N_PP_LIMIT_WHILE == 1024
-# include "nsl/preprocessor/control/detail/edg/limits/while_256.h"
-# include "nsl/preprocessor/control/detail/edg/limits/while_512.h"
-# include "nsl/preprocessor/control/detail/edg/limits/while_1024.h"
+# include "nsl/pp/control/detail/edg/limits/while_256.h"
+# include "nsl/pp/control/detail/edg/limits/while_512.h"
+# include "nsl/pp/control/detail/edg/limits/while_1024.h"
 # else
 # error Incorrect value for the N_PP_LIMIT_WHILE limit
 # endif

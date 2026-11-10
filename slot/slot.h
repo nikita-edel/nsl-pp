@@ -12,18 +12,18 @@
 # ifndef NSL_PREPROCESSOR_SLOT_SLOT_H
 # define NSL_PREPROCESSOR_SLOT_SLOT_H
 #
-# include "nsl/preprocessor/cat.h"
-# include "nsl/preprocessor/slot/detail/def.h"
+# include "nsl/pp/cat.h"
+# include "nsl/pp/slot/detail/def.h"
 #
 # /* N_PP_ASSIGN_SLOT */
 #
 # define N_PP_ASSIGN_SLOT(i) N_PP_CAT(N_PP_ASSIGN_SLOT_, i)
 #
-# define N_PP_ASSIGN_SLOT_1 <nsl/preprocessor/slot/detail/slot1.h>
-# define N_PP_ASSIGN_SLOT_2 <nsl/preprocessor/slot/detail/slot2.h>
-# define N_PP_ASSIGN_SLOT_3 <nsl/preprocessor/slot/detail/slot3.h>
-# define N_PP_ASSIGN_SLOT_4 <nsl/preprocessor/slot/detail/slot4.h>
-# define N_PP_ASSIGN_SLOT_5 <nsl/preprocessor/slot/detail/slot5.h>
+# define N_PP_ASSIGN_SLOT_1 <nsl/pp/slot/detail/slot1.h>
+# define N_PP_ASSIGN_SLOT_2 <nsl/pp/slot/detail/slot2.h>
+# define N_PP_ASSIGN_SLOT_3 <nsl/pp/slot/detail/slot3.h>
+# define N_PP_ASSIGN_SLOT_4 <nsl/pp/slot/detail/slot4.h>
+# define N_PP_ASSIGN_SLOT_5 <nsl/pp/slot/detail/slot5.h>
 #
 # /* N_PP_SLOT */
 #

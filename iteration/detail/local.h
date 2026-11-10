@@ -21,19 +21,19 @@
 #        define N_PP_LOCAL_F N_PP_TUPLE_ELEM(2, 1, N_PP_LOCAL_LIMITS)
 #    else
 #        define N_PP_VALUE N_PP_TUPLE_ELEM(2, 0, N_PP_LOCAL_LIMITS)
-#        include "nsl/preprocessor/iteration/detail/start.h"
+#        include "nsl/pp/iteration/detail/start.h"
 #        define N_PP_VALUE N_PP_TUPLE_ELEM(2, 1, N_PP_LOCAL_LIMITS)
-#        include "nsl/preprocessor/iteration/detail/finish.h"
+#        include "nsl/pp/iteration/detail/finish.h"
 #        define N_PP_LOCAL_S N_PP_LOCAL_SE()
 #        define N_PP_LOCAL_F N_PP_LOCAL_FE()
 #    endif
 # endif
 #
 # if (N_PP_LOCAL_S) > (N_PP_LOCAL_F)
-#    include "nsl/preprocessor/iteration/detail/rlocal.h"
+#    include "nsl/pp/iteration/detail/rlocal.h"
 # else
 #
-# include "nsl/preprocessor/config/config.h"
+# include "nsl/pp/config/config.h"
 #
 # if ~N_PP_CONFIG_FLAGS() & N_PP_CONFIG_STRICT()
 #
@@ -812,17 +812,17 @@
 #
 # else
 #
-#    include "nsl/preprocessor/config/limits.h"
+#    include "nsl/pp/config/limits.h"
 #    
 #    if N_PP_LIMIT_ITERATION == 256
-#    include "nsl/preprocessor/iteration/detail/limits/local_256.h"
+#    include "nsl/pp/iteration/detail/limits/local_256.h"
 #    elif N_PP_LIMIT_ITERATION == 512
-#    include "nsl/preprocessor/iteration/detail/limits/local_256.h"
-#    include "nsl/preprocessor/iteration/detail/limits/local_512.h"
+#    include "nsl/pp/iteration/detail/limits/local_256.h"
+#    include "nsl/pp/iteration/detail/limits/local_512.h"
 #    elif N_PP_LIMIT_ITERATION == 1024
-#    include "nsl/preprocessor/iteration/detail/limits/local_256.h"
-#    include "nsl/preprocessor/iteration/detail/limits/local_512.h"
-#    include "nsl/preprocessor/iteration/detail/limits/local_1024.h"
+#    include "nsl/pp/iteration/detail/limits/local_256.h"
+#    include "nsl/pp/iteration/detail/limits/local_512.h"
+#    include "nsl/pp/iteration/detail/limits/local_1024.h"
 #    else
 #    error Incorrect value for the N_PP_LIMIT_ITERATION limit
 #    endif

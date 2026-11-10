@@ -12,10 +12,10 @@
 # ifndef NSL_PREPROCESSOR_TUPLE_PUSH_FRONT_H
 # define NSL_PREPROCESSOR_TUPLE_PUSH_FRONT_H
 #
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/array/push_front.h"
-# include "nsl/preprocessor/array/to_tuple.h"
-# include "nsl/preprocessor/tuple/to_array.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/array/push_front.h"
+# include "nsl/pp/array/to_tuple.h"
+# include "nsl/pp/tuple/to_array.h"
 #
 # /* N_PP_TUPLE_PUSH_FRONT */
 #

@@ -13,12 +13,12 @@
 # ifndef NSL_PREPROCESSOR_VARIADIC_H
 # define NSL_PREPROCESSOR_VARIADIC_H
 #
-# include "nsl/preprocessor/variadic/elem.h"
-# include "nsl/preprocessor/variadic/has_opt.h"
-# include "nsl/preprocessor/variadic/size.h"
-# include "nsl/preprocessor/variadic/to_array.h"
-# include "nsl/preprocessor/variadic/to_list.h"
-# include "nsl/preprocessor/variadic/to_seq.h"
-# include "nsl/preprocessor/variadic/to_tuple.h"
+# include "nsl/pp/variadic/elem.h"
+# include "nsl/pp/variadic/has_opt.h"
+# include "nsl/pp/variadic/size.h"
+# include "nsl/pp/variadic/to_array.h"
+# include "nsl/pp/variadic/to_list.h"
+# include "nsl/pp/variadic/to_seq.h"
+# include "nsl/pp/variadic/to_tuple.h"
 #
 # endif

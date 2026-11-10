@@ -14,12 +14,12 @@
 # ifndef NSL_PREPROCESSOR_COMPARISON_LESS_H
 # define NSL_PREPROCESSOR_COMPARISON_LESS_H
 #
-# include "nsl/preprocessor/comparison/less_equal.h"
-# include "nsl/preprocessor/comparison/not_equal.h"
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/control/iif.h"
-# include "nsl/preprocessor/logical/bitand.h"
-# include "nsl/preprocessor/tuple/eat.h"
+# include "nsl/pp/comparison/less_equal.h"
+# include "nsl/pp/comparison/not_equal.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/control/iif.h"
+# include "nsl/pp/logical/bitand.h"
+# include "nsl/pp/tuple/eat.h"
 #
 # /* N_PP_LESS */
 #

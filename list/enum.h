@@ -14,12 +14,12 @@
 # ifndef NSL_PREPROCESSOR_LIST_ENUM_H
 # define NSL_PREPROCESSOR_LIST_ENUM_H
 #
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/control/iif.h"
-# include "nsl/preprocessor/list/adt.h"
-# include "nsl/preprocessor/list/for_each_i.h"
-# include "nsl/preprocessor/punctuation/comma_if.h"
-# include "nsl/preprocessor/variadic/has_opt.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/control/iif.h"
+# include "nsl/pp/list/adt.h"
+# include "nsl/pp/list/for_each_i.h"
+# include "nsl/pp/punctuation/comma_if.h"
+# include "nsl/pp/variadic/has_opt.h"
 #
 # /* N_PP_LIST_ENUM */
 #

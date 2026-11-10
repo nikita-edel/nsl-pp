@@ -14,10 +14,10 @@
 # ifndef NSL_PREPROCESSOR_LIST_TRANSFORM_H
 # define NSL_PREPROCESSOR_LIST_TRANSFORM_H
 #
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/list/fold_right.h"
-# include "nsl/preprocessor/tuple/elem.h"
-# include "nsl/preprocessor/tuple/rem.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/list/fold_right.h"
+# include "nsl/pp/tuple/elem.h"
+# include "nsl/pp/tuple/rem.h"
 #
 # /* N_PP_LIST_TRANSFORM */
 #

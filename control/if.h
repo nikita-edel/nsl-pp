@@ -14,9 +14,9 @@
 # ifndef NSL_PREPROCESSOR_CONTROL_IF_H
 # define NSL_PREPROCESSOR_CONTROL_IF_H
 #
-# include "nsl/preprocessor/config/config.h"
-# include "nsl/preprocessor/control/iif.h"
-# include "nsl/preprocessor/logical/bool.h"
+# include "nsl/pp/config/config.h"
+# include "nsl/pp/control/iif.h"
+# include "nsl/pp/logical/bool.h"
 #
 # /* N_PP_IF */
 #

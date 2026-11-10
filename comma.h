@@ -12,6 +12,6 @@
 # ifndef NSL_PREPROCESSOR_COMMA_H
 # define NSL_PREPROCESSOR_COMMA_H
 #
-# include "nsl/preprocessor/punctuation/comma.h"
+# include "nsl/pp/punctuation/comma.h"
 #
 # endif
