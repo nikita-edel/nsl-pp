@@ -10,8 +10,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_ARRAY_H
-# define NSL_PREPROCESSOR_ARRAY_H
+# ifndef NSL_PP_ARRAY_H
+# define NSL_PP_ARRAY_H
 #
 # include "nsl/pp/array/data.h"
 # include "nsl/pp/array/elem.h"

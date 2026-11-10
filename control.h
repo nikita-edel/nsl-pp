@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_CONTROL_H
-# define NSL_PREPROCESSOR_CONTROL_H
+# ifndef NSL_PP_CONTROL_H
+# define NSL_PP_CONTROL_H
 #
 # include "nsl/pp/control/deduce_d.h"
 # include "nsl/pp/control/expr_if.h"

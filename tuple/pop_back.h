@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_TUPLE_POP_BACK_H
-# define NSL_PREPROCESSOR_TUPLE_POP_BACK_H
+# ifndef NSL_PP_TUPLE_POP_BACK_H
+# define NSL_PP_TUPLE_POP_BACK_H
 #
 # include "nsl/pp/config/config.h"
 # include "nsl/pp/array/pop_back.h"
@@ -56,4 +56,4 @@
 #
 # define N_PP_TUPLE_POP_BACK_Z_RETURN(z, tuple) tuple
 #
-# endif // NSL_PREPROCESSOR_TUPLE_POP_BACK_H
+# endif // NSL_PP_TUPLE_POP_BACK_H

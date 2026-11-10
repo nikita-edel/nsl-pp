@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_SEQ_FOR_EACH_H
-# define NSL_PREPROCESSOR_SEQ_FOR_EACH_H
+# ifndef NSL_PP_SEQ_FOR_EACH_H
+# define NSL_PP_SEQ_FOR_EACH_H
 #
 # include "nsl/pp/arithmetic/dec.h"
 # include "nsl/pp/config/config.h"

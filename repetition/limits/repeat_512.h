@@ -12,8 +12,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_REPETITION_REPEAT_512_H
-# define NSL_PREPROCESSOR_REPETITION_REPEAT_512_H
+# ifndef NSL_PP_REPETITION_REPEAT_512_H
+# define NSL_PP_REPETITION_REPEAT_512_H
 #
 # define N_PP_REPEAT_1_257(m, d) N_PP_REPEAT_1_256(m, d) m(2, 256, d)
 # define N_PP_REPEAT_1_258(m, d) N_PP_REPEAT_1_257(m, d) m(2, 257, d)

@@ -11,8 +11,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_SEQ_DETAIL_SPLIT_512_H
-# define NSL_PREPROCESSOR_SEQ_DETAIL_SPLIT_512_H
+# ifndef NSL_PP_SEQ_DETAIL_SPLIT_512_H
+# define NSL_PP_SEQ_DETAIL_SPLIT_512_H
 #
 # define N_PP_SEQ_SPLIT_257(x) (x) N_PP_SEQ_SPLIT_256
 # define N_PP_SEQ_SPLIT_258(x) (x) N_PP_SEQ_SPLIT_257

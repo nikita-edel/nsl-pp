@@ -10,8 +10,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_VARIADIC_ELEM_64_H
-# define NSL_PREPROCESSOR_VARIADIC_ELEM_64_H
+# ifndef NSL_PP_VARIADIC_ELEM_64_H
+# define NSL_PP_VARIADIC_ELEM_64_H
 #
 #    define N_PP_VARIADIC_ELEM_0(e0, ...) e0
 #    define N_PP_VARIADIC_ELEM_1(e0, e1, ...) e1

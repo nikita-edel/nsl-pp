@@ -11,8 +11,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_LIST_TO_SEQ_H
-# define NSL_PREPROCESSOR_LIST_TO_SEQ_H
+# ifndef NSL_PP_LIST_TO_SEQ_H
+# define NSL_PP_LIST_TO_SEQ_H
 #
 # include "nsl/pp/list/for_each.h"
 #
@@ -29,4 +29,4 @@
     N_PP_LIST_FOR_EACH_R(r, N_PP_LIST_TO_SEQ_MACRO, ~, list) \
     /**/
 #
-# endif /* NSL_PREPROCESSOR_LIST_TO_SEQ_H */
+# endif /* NSL_PP_LIST_TO_SEQ_H */

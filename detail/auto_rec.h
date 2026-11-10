@@ -19,8 +19,8 @@
 #     include "nsl/pp/detail/dmc/auto_rec.h"
 # else
 #
-# ifndef NSL_PREPROCESSOR_DETAIL_AUTO_REC_H
-# define NSL_PREPROCESSOR_DETAIL_AUTO_REC_H
+# ifndef NSL_PP_DETAIL_AUTO_REC_H
+# define NSL_PP_DETAIL_AUTO_REC_H
 #
 # include "nsl/pp/control/iif.h"
 #
@@ -303,8 +303,8 @@
 #     include "nsl/pp/detail/dmc/auto_rec.h"
 # else
 #
-# ifndef NSL_PREPROCESSOR_DETAIL_AUTO_REC_H
-# define NSL_PREPROCESSOR_DETAIL_AUTO_REC_H
+# ifndef NSL_PP_DETAIL_AUTO_REC_H
+# define NSL_PP_DETAIL_AUTO_REC_H
 #
 # /* N_PP_AUTO_REC */
 #

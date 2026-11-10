@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_IDENTITY_H
-# define NSL_PREPROCESSOR_IDENTITY_H
+# ifndef NSL_PP_IDENTITY_H
+# define NSL_PP_IDENTITY_H
 #
 # include "nsl/pp/facilities/identity.h"
 #

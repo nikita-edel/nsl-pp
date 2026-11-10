@@ -10,10 +10,10 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_FACILITIES_IS_EMPTY_H
-# define NSL_PREPROCESSOR_FACILITIES_IS_EMPTY_H
+# ifndef NSL_PP_FACILITIES_IS_EMPTY_H
+# define NSL_PP_FACILITIES_IS_EMPTY_H
 #
 # include "nsl/pp/config/config.h"
 # include "nsl/pp/facilities/is_empty_variadic.h"
 #
-# endif /* NSL_PREPROCESSOR_FACILITIES_IS_EMPTY_H */
+# endif /* NSL_PP_FACILITIES_IS_EMPTY_H */

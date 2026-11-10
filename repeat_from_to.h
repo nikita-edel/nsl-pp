@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_REPEAT_FROM_TO_H
-# define NSL_PREPROCESSOR_REPEAT_FROM_TO_H
+# ifndef NSL_PP_REPEAT_FROM_TO_H
+# define NSL_PP_REPEAT_FROM_TO_H
 #
 # include "nsl/pp/repetition/repeat_from_to.h"
 #

@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_CONTROL_EXPR_IIF_H
-# define NSL_PREPROCESSOR_CONTROL_EXPR_IIF_H
+# ifndef NSL_PP_CONTROL_EXPR_IIF_H
+# define NSL_PP_CONTROL_EXPR_IIF_H
 #
 # include "nsl/pp/config/config.h"
 #

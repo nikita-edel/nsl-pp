@@ -12,8 +12,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_LIST_DETAIL_EDG_FOLD_LEFT_H
-# define NSL_PREPROCESSOR_LIST_DETAIL_EDG_FOLD_LEFT_H
+# ifndef NSL_PP_LIST_DETAIL_EDG_FOLD_LEFT_H
+# define NSL_PP_LIST_DETAIL_EDG_FOLD_LEFT_H
 #
 # include "nsl/pp/config/config.h"
 #

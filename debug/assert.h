@@ -11,8 +11,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_DEBUG_ASSERT_H
-# define NSL_PREPROCESSOR_DEBUG_ASSERT_H
+# ifndef NSL_PP_DEBUG_ASSERT_H
+# define NSL_PP_DEBUG_ASSERT_H
 #
 # include "nsl/pp/config/config.h"
 # include "nsl/pp/control/expr_iif.h"

@@ -11,8 +11,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_COMPARISON_H
-# define NSL_PREPROCESSOR_COMPARISON_H
+# ifndef NSL_PP_COMPARISON_H
+# define NSL_PP_COMPARISON_H
 #
 # include "nsl/pp/comparison/equal.h"
 # include "nsl/pp/comparison/greater.h"

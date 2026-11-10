@@ -12,8 +12,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_TUPLE_TO_LIST_64_H
-# define NSL_PREPROCESSOR_TUPLE_TO_LIST_64_H
+# ifndef NSL_PP_TUPLE_TO_LIST_64_H
+# define NSL_PP_TUPLE_TO_LIST_64_H
 #
 # define N_PP_TUPLE_TO_LIST_1(e0) (e0, N_PP_NIL)
 # define N_PP_TUPLE_TO_LIST_2(e0, e1) (e0, (e1, N_PP_NIL))

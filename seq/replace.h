@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_SEQ_REPLACE_H
-# define NSL_PREPROCESSOR_SEQ_REPLACE_H
+# ifndef NSL_PP_SEQ_REPLACE_H
+# define NSL_PP_SEQ_REPLACE_H
 #
 # include "nsl/pp/arithmetic/dec.h"
 # include "nsl/pp/arithmetic/inc.h"

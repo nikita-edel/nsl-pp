@@ -11,8 +11,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_FACILITIES_INTERCEPT_H
-# define NSL_PREPROCESSOR_FACILITIES_INTERCEPT_H
+# ifndef NSL_PP_FACILITIES_INTERCEPT_H
+# define NSL_PP_FACILITIES_INTERCEPT_H
 #
 # include "nsl/pp/config/config.h"
 #

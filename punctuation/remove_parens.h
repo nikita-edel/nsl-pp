@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-#ifndef NSL_PREPROCESSOR_REMOVE_PARENS_H
-#define NSL_PREPROCESSOR_REMOVE_PARENS_H
+#ifndef NSL_PP_REMOVE_PARENS_H
+#define NSL_PP_REMOVE_PARENS_H
 
 #include "nsl/pp/config/config.h"
 #include "nsl/pp/control/iif.h"
@@ -32,4 +32,4 @@
   N_PP_IDENTITY(N_PP_TUPLE_ENUM(param)) \
 /**/
 
-#endif /* NSL_PREPROCESSOR_REMOVE_PARENS_H */
+#endif /* NSL_PP_REMOVE_PARENS_H */

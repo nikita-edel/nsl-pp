@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_TUPLE_PUSH_FRONT_H
-# define NSL_PREPROCESSOR_TUPLE_PUSH_FRONT_H
+# ifndef NSL_PP_TUPLE_PUSH_FRONT_H
+# define NSL_PP_TUPLE_PUSH_FRONT_H
 #
 # include "nsl/pp/config/config.h"
 # include "nsl/pp/array/push_front.h"
@@ -23,4 +23,4 @@
     N_PP_ARRAY_TO_TUPLE(N_PP_ARRAY_PUSH_FRONT(N_PP_TUPLE_TO_ARRAY(tuple), elem)) \
 /**/
 #
-# endif // NSL_PREPROCESSOR_TUPLE_PUSH_FRONT_H
+# endif // NSL_PP_TUPLE_PUSH_FRONT_H

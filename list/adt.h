@@ -11,8 +11,8 @@
 #
 # /* Revised by Paul Mensonides (2002) */
 #
-# ifndef NSL_PREPROCESSOR_LIST_ADT_H
-# define NSL_PREPROCESSOR_LIST_ADT_H
+# ifndef NSL_PP_LIST_ADT_H
+# define NSL_PP_LIST_ADT_H
 #
 # include "nsl/pp/config/config.h"
 # include "nsl/pp/detail/is_binary.h"

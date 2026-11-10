@@ -11,8 +11,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_LOGICAL_AND_H
-# define NSL_PREPROCESSOR_LOGICAL_AND_H
+# ifndef NSL_PP_LOGICAL_AND_H
+# define NSL_PP_LOGICAL_AND_H
 #
 # include "nsl/pp/config/config.h"
 # include "nsl/pp/logical/bool.h"

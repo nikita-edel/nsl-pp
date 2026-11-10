@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_ITERATE_H
-# define NSL_PREPROCESSOR_ITERATE_H
+# ifndef NSL_PP_ITERATE_H
+# define NSL_PP_ITERATE_H
 #
 # include "nsl/pp/iteration/iterate.h"
 #

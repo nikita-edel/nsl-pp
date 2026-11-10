@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_INC_H
-# define NSL_PREPROCESSOR_INC_H
+# ifndef NSL_PP_INC_H
+# define NSL_PP_INC_H
 #
 # include "nsl/pp/arithmetic/inc.h"
 #

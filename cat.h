@@ -11,8 +11,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_CAT_H
-# define NSL_PREPROCESSOR_CAT_H
+# ifndef NSL_PP_CAT_H
+# define NSL_PP_CAT_H
 #
 # include "nsl/pp/config/config.h"
 #

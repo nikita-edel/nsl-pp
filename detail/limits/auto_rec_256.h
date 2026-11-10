@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_DETAIL_AUTO_REC_256_H
-# define NSL_PREPROCESSOR_DETAIL_AUTO_REC_256_H
+# ifndef NSL_PP_DETAIL_AUTO_REC_256_H
+# define NSL_PP_DETAIL_AUTO_REC_256_H
 #
 # define N_PP_NODE_ENTRY_256(p) N_PP_NODE_128(p)(p)(p)(p)(p)(p)(p)(p)
 # define N_PP_NODE_ENTRY_128(p) N_PP_NODE_64(p)(p)(p)(p)(p)(p)(p)

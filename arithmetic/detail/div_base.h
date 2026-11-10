@@ -11,8 +11,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_ARITHMETIC_DETAIL_DIV_BASE_H
-# define NSL_PREPROCESSOR_ARITHMETIC_DETAIL_DIV_BASE_H
+# ifndef NSL_PP_ARITHMETIC_DETAIL_DIV_BASE_H
+# define NSL_PP_ARITHMETIC_DETAIL_DIV_BASE_H
 #
 # include "nsl/pp/arithmetic/inc.h"
 # include "nsl/pp/arithmetic/sub.h"

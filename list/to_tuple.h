@@ -11,8 +11,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_LIST_TO_TUPLE_H
-# define NSL_PREPROCESSOR_LIST_TO_TUPLE_H
+# ifndef NSL_PP_LIST_TO_TUPLE_H
+# define NSL_PP_LIST_TO_TUPLE_H
 #
 # include "nsl/pp/config/config.h"
 # include "nsl/pp/list/enum.h"

@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_TUPLE_POP_FRONT_H
-# define NSL_PREPROCESSOR_TUPLE_POP_FRONT_H
+# ifndef NSL_PP_TUPLE_POP_FRONT_H
+# define NSL_PP_TUPLE_POP_FRONT_H
 #
 # include "nsl/pp/config/config.h"
 # include "nsl/pp/array/pop_front.h"
@@ -57,4 +57,4 @@
 #
 # define N_PP_TUPLE_POP_FRONT_Z_RETURN(z, tuple) tuple
 #
-# endif // NSL_PREPROCESSOR_TUPLE_POP_FRONT_H
+# endif // NSL_PP_TUPLE_POP_FRONT_H

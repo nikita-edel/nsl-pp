@@ -11,8 +11,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_REPETITION_ENUM_SHIFTED_PARAMS_H
-# define NSL_PREPROCESSOR_REPETITION_ENUM_SHIFTED_PARAMS_H
+# ifndef NSL_PP_REPETITION_ENUM_SHIFTED_PARAMS_H
+# define NSL_PP_REPETITION_ENUM_SHIFTED_PARAMS_H
 #
 # include "nsl/pp/arithmetic/dec.h"
 # include "nsl/pp/arithmetic/inc.h"

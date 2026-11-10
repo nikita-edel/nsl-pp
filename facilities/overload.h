@@ -10,8 +10,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_FACILITIES_OVERLOAD_H
-# define NSL_PREPROCESSOR_FACILITIES_OVERLOAD_H
+# ifndef NSL_PP_FACILITIES_OVERLOAD_H
+# define NSL_PP_FACILITIES_OVERLOAD_H
 #
 # include "nsl/pp/cat.h"
 # include "nsl/pp/variadic/size.h"

@@ -10,8 +10,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_VARIADIC_TO_SEQ_H
-# define NSL_PREPROCESSOR_VARIADIC_TO_SEQ_H
+# ifndef NSL_PP_VARIADIC_TO_SEQ_H
+# define NSL_PP_VARIADIC_TO_SEQ_H
 #
 # include "nsl/pp/config/config.h"
 # include "nsl/pp/tuple/to_seq.h"

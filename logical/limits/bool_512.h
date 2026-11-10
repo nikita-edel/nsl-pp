@@ -12,8 +12,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_LOGICAL_BOOL_512_H
-# define NSL_PREPROCESSOR_LOGICAL_BOOL_512_H
+# ifndef NSL_PP_LOGICAL_BOOL_512_H
+# define NSL_PP_LOGICAL_BOOL_512_H
 #
 # define N_PP_BOOL_257 1
 # define N_PP_BOOL_258 1

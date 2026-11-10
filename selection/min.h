@@ -11,8 +11,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_SELECTION_MIN_H
-# define NSL_PREPROCESSOR_SELECTION_MIN_H
+# ifndef NSL_PP_SELECTION_MIN_H
+# define NSL_PP_SELECTION_MIN_H
 #
 # include "nsl/pp/comparison/less_equal.h"
 # include "nsl/pp/config/config.h"

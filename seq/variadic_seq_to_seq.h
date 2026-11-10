@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_SEQ_VARIADIC_SEQ_TO_SEQ_H
-# define NSL_PREPROCESSOR_SEQ_VARIADIC_SEQ_TO_SEQ_H
+# ifndef NSL_PP_SEQ_VARIADIC_SEQ_TO_SEQ_H
+# define NSL_PP_SEQ_VARIADIC_SEQ_TO_SEQ_H
 #
 # include "nsl/pp/cat.h"
 # include "nsl/pp/config/config.h"

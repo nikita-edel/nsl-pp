@@ -11,8 +11,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_FACILITIES_INTERCEPT_512_H
-# define NSL_PREPROCESSOR_FACILITIES_INTERCEPT_512_H
+# ifndef NSL_PP_FACILITIES_INTERCEPT_512_H
+# define NSL_PP_FACILITIES_INTERCEPT_512_H
 #
 # define N_PP_INTERCEPT_257
 # define N_PP_INTERCEPT_258

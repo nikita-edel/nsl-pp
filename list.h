@@ -11,8 +11,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_LIST_H
-# define NSL_PREPROCESSOR_LIST_H
+# ifndef NSL_PP_LIST_H
+# define NSL_PP_LIST_H
 #
 # include "nsl/pp/list/adt.h"
 # include "nsl/pp/list/append.h"

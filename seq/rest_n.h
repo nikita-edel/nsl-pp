@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_SEQ_REST_N_H
-# define NSL_PREPROCESSOR_SEQ_REST_N_H
+# ifndef NSL_PP_SEQ_REST_N_H
+# define NSL_PP_SEQ_REST_N_H
 #
 # include "nsl/pp/arithmetic/inc.h"
 # include "nsl/pp/comparison/not_equal.h"

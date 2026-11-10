@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_DETAIL_DMC_AUTO_REC_H
-# define NSL_PREPROCESSOR_DETAIL_DMC_AUTO_REC_H
+# ifndef NSL_PP_DETAIL_DMC_AUTO_REC_H
+# define NSL_PP_DETAIL_DMC_AUTO_REC_H
 #
 # include "nsl/pp/control/iif.h"
 #

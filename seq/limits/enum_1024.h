@@ -11,8 +11,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_SEQ_ENUM_1024_H
-# define NSL_PREPROCESSOR_SEQ_ENUM_1024_H
+# ifndef NSL_PP_SEQ_ENUM_1024_H
+# define NSL_PP_SEQ_ENUM_1024_H
 #
 # define N_PP_SEQ_ENUM_513(x) x, N_PP_SEQ_ENUM_512
 # define N_PP_SEQ_ENUM_514(x) x, N_PP_SEQ_ENUM_513

@@ -12,8 +12,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_CONTROL_WHILE_512_H
-# define NSL_PREPROCESSOR_CONTROL_WHILE_512_H
+# ifndef NSL_PP_CONTROL_WHILE_512_H
+# define NSL_PP_CONTROL_WHILE_512_H
 #
 # define N_PP_WHILE_CHECK_N_PP_WHILE_257(p, o, s) 0
 # define N_PP_WHILE_CHECK_N_PP_WHILE_258(p, o, s) 0

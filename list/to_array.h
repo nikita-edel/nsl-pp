@@ -10,8 +10,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_LIST_TO_ARRAY_H
-# define NSL_PREPROCESSOR_LIST_TO_ARRAY_H
+# ifndef NSL_PP_LIST_TO_ARRAY_H
+# define NSL_PP_LIST_TO_ARRAY_H
 #
 # include "nsl/pp/arithmetic/dec.h"
 # include "nsl/pp/arithmetic/inc.h"
@@ -85,4 +85,4 @@
 # define N_PP_LIST_TO_ARRAY_D(d, list) N_PP_LIST_TO_ARRAY_I(N_PP_WHILE_ ## d, list)
 # endif
 #
-# endif /* NSL_PREPROCESSOR_LIST_TO_ARRAY_H */
+# endif /* NSL_PP_LIST_TO_ARRAY_H */

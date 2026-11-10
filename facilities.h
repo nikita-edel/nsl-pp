@@ -10,8 +10,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_FACILITIES_H
-# define NSL_PREPROCESSOR_FACILITIES_H
+# ifndef NSL_PP_FACILITIES_H
+# define NSL_PP_FACILITIES_H
 #
 # include "nsl/pp/facilities/apply.h"
 # include "nsl/pp/facilities/check_empty.h"
