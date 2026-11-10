@@ -11,11 +11,11 @@
 #
 # if !N_PP_IS_ITERATING
 #
-# include "nsl/preprocessor/cat.h"
-# include "nsl/preprocessor/comparison/equal.h"
-# include "nsl/preprocessor/control/expr_iif.h"
-# include "nsl/preprocessor/iteration.h"
-# include "nsl/preprocessor/logical/bitor.h"
+# include "nsl/pp/cat.h"
+# include "nsl/pp/comparison/equal.h"
+# include "nsl/pp/control/expr_iif.h"
+# include "nsl/pp/iteration.h"
+# include "nsl/pp/logical/bitor.h"
 # include "test.h"
 #
 # define NO_FLAGS

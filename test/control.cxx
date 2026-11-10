@@ -9,10 +9,10 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# include "nsl/preprocessor/config/limits.h"
-# include "nsl/preprocessor/arithmetic/add.h"
-# include "nsl/preprocessor/arithmetic/dec.h"
-# include "nsl/preprocessor/control.h"
+# include "nsl/pp/config/limits.h"
+# include "nsl/pp/arithmetic/add.h"
+# include "nsl/pp/arithmetic/dec.h"
+# include "nsl/pp/control.h"
 # include "test.h"
 
 # define TR(x) 1

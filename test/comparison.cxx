@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# include "nsl/preprocessor/config/limits.h"
-# include "nsl/preprocessor/comparison.h"
+# include "nsl/pp/config/limits.h"
+# include "nsl/pp/comparison.h"
 # include "test.h"
 
 /* equality */

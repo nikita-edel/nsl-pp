@@ -14,6 +14,6 @@
 # ifndef NSL_PREPROCESSOR_H
 # define NSL_PREPROCESSOR_H
 #
-# include "nsl/preprocessor/library.h"
+# include "nsl/pp/library.h"
 #
 # endif

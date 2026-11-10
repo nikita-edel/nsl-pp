@@ -9,7 +9,7 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# include "nsl/preprocessor/debug.h"
+# include "nsl/pp/debug.h"
 # include "test.h"
 
 BEGIN sizeof(N_PP_ASSERT_MSG(0, "text") "") / sizeof(char) != 1 END

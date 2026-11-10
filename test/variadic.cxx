@@ -9,16 +9,16 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# include "nsl/preprocessor/config/limits.h"
-# include "nsl/preprocessor/variadic.h"
-# include "nsl/preprocessor/array/size.h"
-# include "nsl/preprocessor/array/elem.h"
-# include "nsl/preprocessor/list/at.h"
-# include "nsl/preprocessor/list/size.h"
-# include "nsl/preprocessor/seq/elem.h"
-# include "nsl/preprocessor/seq/size.h"
-# include "nsl/preprocessor/tuple/size.h"
-# include "nsl/preprocessor/tuple/elem.h"
+# include "nsl/pp/config/limits.h"
+# include "nsl/pp/variadic.h"
+# include "nsl/pp/array/size.h"
+# include "nsl/pp/array/elem.h"
+# include "nsl/pp/list/at.h"
+# include "nsl/pp/list/size.h"
+# include "nsl/pp/seq/elem.h"
+# include "nsl/pp/seq/size.h"
+# include "nsl/pp/tuple/size.h"
+# include "nsl/pp/tuple/elem.h"
 # include "test.h"
 
 #define VDATA 0,1,2,3,4,5,6

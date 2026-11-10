@@ -9,10 +9,10 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# include "nsl/preprocessor/cat.h"
-# include "nsl/preprocessor/facilities.h"
-# include "nsl/preprocessor/arithmetic/add.h"
-# include "nsl/preprocessor/arithmetic/mul.h"
+# include "nsl/pp/cat.h"
+# include "nsl/pp/facilities.h"
+# include "nsl/pp/arithmetic/add.h"
+# include "nsl/pp/arithmetic/mul.h"
 # include "test.h"
 
 BEGIN N_PP_APPLY(N_PP_NIL) 0 == 0 END

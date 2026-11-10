@@ -9,7 +9,7 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# include "nsl/preprocessor/facilities/is_empty.h"
+# include "nsl/pp/facilities/is_empty.h"
 # include "test.h"
 
 #if (N_PP_CONFIG_FLAGS() & N_PP_CONFIG_STRICT()) && !N_PP_VARIADICS_MSVC
@@ -18,7 +18,7 @@
 
 #if defined(__cplusplus) && __cplusplus > 201703L
   
-# include "nsl/preprocessor/variadic/has_opt.h"
+# include "nsl/pp/variadic/has_opt.h"
 
 BEGIN N_PP_IS_EMPTY(FUNC_GEN8) == N_PP_VARIADIC_HAS_OPT() END
 

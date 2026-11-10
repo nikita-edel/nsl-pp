@@ -9,15 +9,15 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# include "nsl/preprocessor/config/limits.h"
-# include "nsl/preprocessor/arithmetic/inc.h"
-# include "nsl/preprocessor/cat.h"
-# include "nsl/preprocessor/comparison/equal.h"
-# include "nsl/preprocessor/comparison/not_equal.h"
-# include "nsl/preprocessor/control/iif.h"
-# include "nsl/preprocessor/facilities/intercept.h"
-# include "nsl/preprocessor/logical/bitor.h"
-# include "nsl/preprocessor/repetition.h"
+# include "nsl/pp/config/limits.h"
+# include "nsl/pp/arithmetic/inc.h"
+# include "nsl/pp/cat.h"
+# include "nsl/pp/comparison/equal.h"
+# include "nsl/pp/comparison/not_equal.h"
+# include "nsl/pp/control/iif.h"
+# include "nsl/pp/facilities/intercept.h"
+# include "nsl/pp/logical/bitor.h"
+# include "nsl/pp/repetition.h"
 # include "test.h"
 
 # define MAX 10

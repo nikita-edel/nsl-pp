@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# include "nsl/preprocessor/config/limits.h"
-# include "nsl/preprocessor/logical.h"
+# include "nsl/pp/config/limits.h"
+# include "nsl/pp/logical.h"
 # include "test.h"
 
 BEGIN N_PP_NOT(0) == 1 END
