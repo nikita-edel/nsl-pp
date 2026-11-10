@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_ARRAY_DETAIL_GET_DATA_H
-# define NSL_PREPROCESSOR_ARRAY_DETAIL_GET_DATA_H
+# ifndef NSL_PP_ARRAY_DETAIL_GET_DATA_H
+# define NSL_PP_ARRAY_DETAIL_GET_DATA_H
 #
 # include "nsl/pp/config/config.h"
 # include "nsl/pp/tuple/rem.h"
@@ -52,4 +52,4 @@
     (size,data) \
 /**/
 #
-# endif /* NSL_PREPROCESSOR_ARRAY_DETAIL_GET_DATA_H */
+# endif /* NSL_PP_ARRAY_DETAIL_GET_DATA_H */

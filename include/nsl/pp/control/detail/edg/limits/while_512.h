@@ -12,8 +12,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_CONTROL_DETAIL_EDG_WHILE_512_H
-# define NSL_PREPROCESSOR_CONTROL_DETAIL_EDG_WHILE_512_H
+# ifndef NSL_PP_CONTROL_DETAIL_EDG_WHILE_512_H
+# define NSL_PP_CONTROL_DETAIL_EDG_WHILE_512_H
 #
 # define N_PP_WHILE_257(p, o, s) N_PP_WHILE_257_I(p, o, s)
 # define N_PP_WHILE_258(p, o, s) N_PP_WHILE_258_I(p, o, s)

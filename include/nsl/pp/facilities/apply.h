@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_FACILITIES_APPLY_H
-# define NSL_PREPROCESSOR_FACILITIES_APPLY_H
+# ifndef NSL_PP_FACILITIES_APPLY_H
+# define NSL_PP_FACILITIES_APPLY_H
 #
 # include "nsl/pp/config/config.h"
 # include "nsl/pp/control/expr_iif.h"

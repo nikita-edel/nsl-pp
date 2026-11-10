@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_FOR_H
-# define NSL_PREPROCESSOR_FOR_H
+# ifndef NSL_PP_FOR_H
+# define NSL_PP_FOR_H
 #
 # include "nsl/pp/repetition/for.h"
 #

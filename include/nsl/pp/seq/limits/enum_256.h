@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_SEQ_ENUM_256_H
-# define NSL_PREPROCESSOR_SEQ_ENUM_256_H
+# ifndef NSL_PP_SEQ_ENUM_256_H
+# define NSL_PP_SEQ_ENUM_256_H
 #
 # define N_PP_SEQ_ENUM_1(x) x
 # define N_PP_SEQ_ENUM_2(x) x, N_PP_SEQ_ENUM_1

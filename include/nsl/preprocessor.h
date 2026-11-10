@@ -11,8 +11,8 @@
 #
 # /* See http://www.boost.org/libs/preprocessor for documentation. */
 #
-# ifndef NSL_PREPROCESSOR_H
-# define NSL_PREPROCESSOR_H
+# ifndef NSL_PP_H
+# define NSL_PP_H
 #
 # include "nsl/pp/library.h"
 #

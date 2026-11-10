@@ -12,8 +12,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_ARITHMETIC_SUB_H
-# define NSL_PREPROCESSOR_ARITHMETIC_SUB_H
+# ifndef NSL_PP_ARITHMETIC_SUB_H
+# define NSL_PP_ARITHMETIC_SUB_H
 #
 # include "nsl/pp/config/config.h"
 #

@@ -12,8 +12,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_COMPARISON_NOT_EQUAL_512_H
-# define NSL_PREPROCESSOR_COMPARISON_NOT_EQUAL_512_H
+# ifndef NSL_PP_COMPARISON_NOT_EQUAL_512_H
+# define NSL_PP_COMPARISON_NOT_EQUAL_512_H
 #
 # define N_PP_NOT_EQUAL_CHECK_N_PP_NOT_EQUAL_257(c, y) 0
 # define N_PP_NOT_EQUAL_CHECK_N_PP_NOT_EQUAL_258(c, y) 0

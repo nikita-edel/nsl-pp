@@ -7,8 +7,8 @@
 #  *                                                                          *
 #  ************************************************************************** */
 #
-# ifndef NSL_PREPROCESSOR_DETAIL_SPLIT_H
-# define NSL_PREPROCESSOR_DETAIL_SPLIT_H
+# ifndef NSL_PP_DETAIL_SPLIT_H
+# define NSL_PP_DETAIL_SPLIT_H
 #
 # include "nsl/pp/config/config.h"
 #

@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_SEQ_TO_ARRAY_H
-# define NSL_PREPROCESSOR_SEQ_TO_ARRAY_H
+# ifndef NSL_PP_SEQ_TO_ARRAY_H
+# define NSL_PP_SEQ_TO_ARRAY_H
 #
 # include "nsl/pp/config/config.h"
 # include "nsl/pp/seq/enum.h"

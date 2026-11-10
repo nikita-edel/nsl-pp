@@ -11,8 +11,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_DETAIL_AUTO_REC_1024_H
-# define NSL_PREPROCESSOR_DETAIL_AUTO_REC_1024_H
+# ifndef NSL_PP_DETAIL_AUTO_REC_1024_H
+# define NSL_PP_DETAIL_AUTO_REC_1024_H
 #
 # define N_PP_NODE_ENTRY_1024(p) N_PP_NODE_512(p)(p)(p)(p)(p)(p)(p)(p)(p)(p)
 #

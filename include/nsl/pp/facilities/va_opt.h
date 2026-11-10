@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_FACILITIES_VA_OPT_H
-# define NSL_PREPROCESSOR_FACILITIES_VA_OPT_H
+# ifndef NSL_PP_FACILITIES_VA_OPT_H
+# define NSL_PP_FACILITIES_VA_OPT_H
 # include "nsl/pp/variadic/has_opt.h"
 # if N_PP_VARIADIC_HAS_OPT()
 # include "nsl/pp/control/iif.h"
@@ -31,4 +31,4 @@
         )                                      \
 /**/
 # endif /* N_PP_VARIADIC_HAS_OPT() */
-# endif /* NSL_PREPROCESSOR_FACILITIES_VA_OPT_H */
+# endif /* NSL_PP_FACILITIES_VA_OPT_H */

@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_ITERATION_SELF_H
-# define NSL_PREPROCESSOR_ITERATION_SELF_H
+# ifndef NSL_PP_ITERATION_SELF_H
+# define NSL_PP_ITERATION_SELF_H
 #
 # /* N_PP_INCLUDE_SELF */
 #

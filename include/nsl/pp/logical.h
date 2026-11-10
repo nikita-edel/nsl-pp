@@ -11,8 +11,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_LOGICAL_H
-# define NSL_PREPROCESSOR_LOGICAL_H
+# ifndef NSL_PP_LOGICAL_H
+# define NSL_PP_LOGICAL_H
 #
 # include "nsl/pp/logical/and.h"
 # include "nsl/pp/logical/bitand.h"

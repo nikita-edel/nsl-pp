@@ -11,8 +11,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_SEQ_FOLD_RIGHT_512_H
-# define NSL_PREPROCESSOR_SEQ_FOLD_RIGHT_512_H
+# ifndef NSL_PP_SEQ_FOLD_RIGHT_512_H
+# define NSL_PP_SEQ_FOLD_RIGHT_512_H
 #
 # define N_PP_SEQ_FOLD_RIGHT_257(op, st, ss) N_PP_SEQ_FOLD_LEFT_I_257(op, st, N_PP_SEQ_REVERSE_S(258, ss), N_PP_SEQ_SIZE(ss))
 # define N_PP_SEQ_FOLD_RIGHT_258(op, st, ss) N_PP_SEQ_FOLD_LEFT_I_258(op, st, N_PP_SEQ_REVERSE_S(259, ss), N_PP_SEQ_SIZE(ss))

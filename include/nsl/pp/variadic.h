@@ -10,8 +10,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_VARIADIC_H
-# define NSL_PREPROCESSOR_VARIADIC_H
+# ifndef NSL_PP_VARIADIC_H
+# define NSL_PP_VARIADIC_H
 #
 # include "nsl/pp/variadic/elem.h"
 # include "nsl/pp/variadic/has_opt.h"

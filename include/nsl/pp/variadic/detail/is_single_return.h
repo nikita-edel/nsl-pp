@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_VARIADIC_DETAIL_IS_SINGLE_RETURN_H
-# define NSL_PREPROCESSOR_VARIADIC_DETAIL_IS_SINGLE_RETURN_H
+# ifndef NSL_PP_VARIADIC_DETAIL_IS_SINGLE_RETURN_H
+# define NSL_PP_VARIADIC_DETAIL_IS_SINGLE_RETURN_H
 #
 # include "nsl/pp/config/config.h"
 #
@@ -25,4 +25,4 @@
     /**/
 # endif /* N_PP_VARIADICS_MSVC */
 #
-# endif /* NSL_PREPROCESSOR_VARIADIC_DETAIL_IS_SINGLE_RETURN_H */
+# endif /* NSL_PP_VARIADIC_DETAIL_IS_SINGLE_RETURN_H */

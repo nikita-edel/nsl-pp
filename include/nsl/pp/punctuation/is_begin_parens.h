@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_IS_BEGIN_PARENS_H
-# define NSL_PREPROCESSOR_IS_BEGIN_PARENS_H
+# ifndef NSL_PP_IS_BEGIN_PARENS_H
+# define NSL_PP_IS_BEGIN_PARENS_H
 
 #include "nsl/pp/config/config.h"
 #include "nsl/pp/punctuation/detail/is_begin_parens.h"
@@ -44,4 +44,4 @@
 /**/
 
 #endif /* N_PP_VARIADICS_MSVC && _MSC_VER <= 1400 */
-#endif /* NSL_PREPROCESSOR_IS_BEGIN_PARENS_H */
+#endif /* NSL_PP_IS_BEGIN_PARENS_H */

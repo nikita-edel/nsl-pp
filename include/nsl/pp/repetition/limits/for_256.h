@@ -11,8 +11,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_REPETITION_FOR_256_H
-# define NSL_PREPROCESSOR_REPETITION_FOR_256_H
+# ifndef NSL_PP_REPETITION_FOR_256_H
+# define NSL_PP_REPETITION_FOR_256_H
 #
 # define N_PP_FOR_CHECK_N_PP_FOR_0(s, p, o, m) 0
 # define N_PP_FOR_CHECK_N_PP_FOR_1(s, p, o, m) 0

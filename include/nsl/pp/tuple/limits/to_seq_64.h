@@ -10,8 +10,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_TUPLE_TO_SEQ_64_H
-# define NSL_PREPROCESSOR_TUPLE_TO_SEQ_64_H
+# ifndef NSL_PP_TUPLE_TO_SEQ_64_H
+# define NSL_PP_TUPLE_TO_SEQ_64_H
 #
 /* An empty array can be passed */
 # define N_PP_TUPLE_TO_SEQ_0() ()

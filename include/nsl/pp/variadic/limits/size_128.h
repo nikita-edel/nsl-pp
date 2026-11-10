@@ -12,8 +12,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_VARIADIC_SIZE_128_H
-# define NSL_PREPROCESSOR_VARIADIC_SIZE_128_H
+# ifndef NSL_PP_VARIADIC_SIZE_128_H
+# define NSL_PP_VARIADIC_SIZE_128_H
 #
 #    if N_PP_VARIADICS_MSVC
 #        define N_PP_VARIADIC_DO_SIZE(...)  \

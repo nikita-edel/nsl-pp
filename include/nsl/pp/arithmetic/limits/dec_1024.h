@@ -12,8 +12,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_ARITHMETIC_DEC_1024_H
-# define NSL_PREPROCESSOR_ARITHMETIC_DEC_1024_H
+# ifndef NSL_PP_ARITHMETIC_DEC_1024_H
+# define NSL_PP_ARITHMETIC_DEC_1024_H
 #
 # define N_PP_DEC_514 513
 # define N_PP_DEC_515 514

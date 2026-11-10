@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_ENUM_PARAMS_H
-# define NSL_PREPROCESSOR_ENUM_PARAMS_H
+# ifndef NSL_PP_ENUM_PARAMS_H
+# define NSL_PP_ENUM_PARAMS_H
 #
 # include "nsl/pp/repetition/enum_params.h"
 #

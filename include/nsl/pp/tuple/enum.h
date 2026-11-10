@@ -10,8 +10,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_TUPLE_ENUM_H
-# define NSL_PREPROCESSOR_TUPLE_ENUM_H
+# ifndef NSL_PP_TUPLE_ENUM_H
+# define NSL_PP_TUPLE_ENUM_H
 #
 # include "nsl/pp/tuple/rem.h"
 #

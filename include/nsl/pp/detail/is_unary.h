@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_DETAIL_IS_UNARY_H
-# define NSL_PREPROCESSOR_DETAIL_IS_UNARY_H
+# ifndef NSL_PP_DETAIL_IS_UNARY_H
+# define NSL_PP_DETAIL_IS_UNARY_H
 #
 # include "nsl/pp/config/config.h"
 # include "nsl/pp/detail/check.h"

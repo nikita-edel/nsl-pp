@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_PUNCTUATION_H
-# define NSL_PREPROCESSOR_PUNCTUATION_H
+# ifndef NSL_PP_PUNCTUATION_H
+# define NSL_PP_PUNCTUATION_H
 #
 # include "nsl/pp/punctuation/comma.h"
 # include "nsl/pp/punctuation/comma_if.h"

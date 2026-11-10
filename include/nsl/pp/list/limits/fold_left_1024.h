@@ -12,8 +12,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_LIST_FOLD_LEFT_1024_H
-# define NSL_PREPROCESSOR_LIST_FOLD_LEFT_1024_H
+# ifndef NSL_PP_LIST_FOLD_LEFT_1024_H
+# define NSL_PP_LIST_FOLD_LEFT_1024_H
 #
 # define N_PP_LIST_FOLD_LEFT_CHECK_N_PP_LIST_FOLD_LEFT_513(o, s, l) 0
 # define N_PP_LIST_FOLD_LEFT_CHECK_N_PP_LIST_FOLD_LEFT_514(o, s, l) 0

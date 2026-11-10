@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_SEQ_PUSH_BACK_H
-# define NSL_PREPROCESSOR_SEQ_PUSH_BACK_H
+# ifndef NSL_PP_SEQ_PUSH_BACK_H
+# define NSL_PP_SEQ_PUSH_BACK_H
 #
 # /* N_PP_SEQ_PUSH_BACK */
 #

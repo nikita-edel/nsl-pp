@@ -11,8 +11,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_CONTROL_DETAIL_MSVC_WHILE_H
-# define NSL_PREPROCESSOR_CONTROL_DETAIL_MSVC_WHILE_H
+# ifndef NSL_PP_CONTROL_DETAIL_MSVC_WHILE_H
+# define NSL_PP_CONTROL_DETAIL_MSVC_WHILE_H
 #
 # include "nsl/pp/control/if.h"
 # include "nsl/pp/tuple/eat.h"

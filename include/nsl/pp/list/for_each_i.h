@@ -11,8 +11,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_LIST_LIST_FOR_EACH_I_H
-# define NSL_PREPROCESSOR_LIST_LIST_FOR_EACH_I_H
+# ifndef NSL_PP_LIST_LIST_FOR_EACH_I_H
+# define NSL_PP_LIST_LIST_FOR_EACH_I_H
 #
 # include "nsl/pp/arithmetic/inc.h"
 # include "nsl/pp/config/config.h"

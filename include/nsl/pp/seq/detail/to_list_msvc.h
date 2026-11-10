@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_SEQ_DETAIL_TO_LIST_MSVC_H
-# define NSL_PREPROCESSOR_SEQ_DETAIL_TO_LIST_MSVC_H
+# ifndef NSL_PP_SEQ_DETAIL_TO_LIST_MSVC_H
+# define NSL_PP_SEQ_DETAIL_TO_LIST_MSVC_H
 #
 # include "nsl/pp/config/config.h"
 #
@@ -52,4 +52,4 @@
 /**/
 # endif // N_PP_CONFIG_FLAGS() & N_PP_CONFIG_MSVC()
 #
-# endif // NSL_PREPROCESSOR_SEQ_DETAIL_TO_LIST_MSVC_H
+# endif // NSL_PP_SEQ_DETAIL_TO_LIST_MSVC_H

@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_REPETITION_ENUM_TRAILING_BINARY_PARAMS_H
-# define NSL_PREPROCESSOR_REPETITION_ENUM_TRAILING_BINARY_PARAMS_H
+# ifndef NSL_PP_REPETITION_ENUM_TRAILING_BINARY_PARAMS_H
+# define NSL_PP_REPETITION_ENUM_TRAILING_BINARY_PARAMS_H
 #
 # include "nsl/pp/cat.h"
 # include "nsl/pp/config/config.h"

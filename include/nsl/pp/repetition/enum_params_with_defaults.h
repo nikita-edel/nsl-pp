@@ -11,8 +11,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_REPETITION_ENUM_PARAMS_WITH_DEFAULTS_H
-# define NSL_PREPROCESSOR_REPETITION_ENUM_PARAMS_WITH_DEFAULTS_H
+# ifndef NSL_PP_REPETITION_ENUM_PARAMS_WITH_DEFAULTS_H
+# define NSL_PP_REPETITION_ENUM_PARAMS_WITH_DEFAULTS_H
 #
 # include "nsl/pp/config/config.h"
 # include "nsl/pp/repetition/enum_binary_params.h"

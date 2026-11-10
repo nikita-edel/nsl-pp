@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-#ifndef NSL_PREPROCESSOR_DETAIL_IS_EMPTY_H
-#define NSL_PREPROCESSOR_DETAIL_IS_EMPTY_H
+#ifndef NSL_PP_DETAIL_IS_EMPTY_H
+#define NSL_PP_DETAIL_IS_EMPTY_H
 
 #include "nsl/pp/punctuation/is_begin_parens.h"
 
@@ -52,4 +52,4 @@
 #define N_PP_DETAIL_IS_EMPTY_IIF(bit) N_PP_DETAIL_IS_EMPTY_PRIMITIVE_CAT(N_PP_DETAIL_IS_EMPTY_IIF_,bit)
 #define N_PP_DETAIL_IS_EMPTY_NON_FUNCTION_C(...) ()
 
-#endif /* NSL_PREPROCESSOR_DETAIL_IS_EMPTY_H */
+#endif /* NSL_PP_DETAIL_IS_EMPTY_H */

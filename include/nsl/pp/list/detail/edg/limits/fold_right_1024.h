@@ -12,8 +12,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_LIST_DETAIL_EDG_FOLD_RIGHT_1024_H
-# define NSL_PREPROCESSOR_LIST_DETAIL_EDG_FOLD_RIGHT_1024_H
+# ifndef NSL_PP_LIST_DETAIL_EDG_FOLD_RIGHT_1024_H
+# define NSL_PP_LIST_DETAIL_EDG_FOLD_RIGHT_1024_H
 #
 # define N_PP_LIST_FOLD_RIGHT_513(o, s, l) N_PP_LIST_FOLD_RIGHT_513_D(o, s, l)
 # define N_PP_LIST_FOLD_RIGHT_514(o, s, l) N_PP_LIST_FOLD_RIGHT_514_D(o, s, l)

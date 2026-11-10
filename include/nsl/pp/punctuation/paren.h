@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_PUNCTUATION_PAREN_H
-# define NSL_PREPROCESSOR_PUNCTUATION_PAREN_H
+# ifndef NSL_PP_PUNCTUATION_PAREN_H
+# define NSL_PP_PUNCTUATION_PAREN_H
 #
 # /* N_PP_LPAREN */
 #

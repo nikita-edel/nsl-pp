@@ -12,8 +12,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_TUPLE_H
-# define NSL_PREPROCESSOR_TUPLE_H
+# ifndef NSL_PP_TUPLE_H
+# define NSL_PP_TUPLE_H
 #
 # include "nsl/pp/tuple/eat.h"
 # include "nsl/pp/tuple/elem.h"

@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_TUPLE_REPLACE_H
-# define NSL_PREPROCESSOR_TUPLE_REPLACE_H
+# ifndef NSL_PP_TUPLE_REPLACE_H
+# define NSL_PP_TUPLE_REPLACE_H
 #
 # include "nsl/pp/config/config.h"
 # include "nsl/pp/array/replace.h"
@@ -29,4 +29,4 @@
     N_PP_ARRAY_TO_TUPLE(N_PP_ARRAY_REPLACE_D(d, N_PP_TUPLE_TO_ARRAY(tuple), i, elem)) \
 /**/
 #
-# endif // NSL_PREPROCESSOR_TUPLE_REPLACE_H
+# endif // NSL_PP_TUPLE_REPLACE_H

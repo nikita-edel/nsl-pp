@@ -12,8 +12,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_REPETITION_DETAIL_EDG_FOR_H
-# define NSL_PREPROCESSOR_REPETITION_DETAIL_EDG_FOR_H
+# ifndef NSL_PP_REPETITION_DETAIL_EDG_FOR_H
+# define NSL_PP_REPETITION_DETAIL_EDG_FOR_H
 #
 # include "nsl/pp/config/config.h"
 #

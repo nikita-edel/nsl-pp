@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_SLOT_COUNTER_H
-# define NSL_PREPROCESSOR_SLOT_COUNTER_H
+# ifndef NSL_PP_SLOT_COUNTER_H
+# define NSL_PP_SLOT_COUNTER_H
 #
 # include "nsl/pp/slot/detail/def.h"
 #

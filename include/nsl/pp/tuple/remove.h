@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_TUPLE_REMOVE_H
-# define NSL_PREPROCESSOR_TUPLE_REMOVE_H
+# ifndef NSL_PP_TUPLE_REMOVE_H
+# define NSL_PP_TUPLE_REMOVE_H
 #
 # include "nsl/pp/config/config.h"
 # include "nsl/pp/array/remove.h"
@@ -56,4 +56,4 @@
 #
 # define N_PP_TUPLE_REMOVE_D_RETURN(d, tuple, i) tuple
 #
-# endif // NSL_PREPROCESSOR_TUPLE_REMOVE_H
+# endif // NSL_PP_TUPLE_REMOVE_H

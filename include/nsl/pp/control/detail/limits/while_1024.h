@@ -12,8 +12,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_CONTROL_DETAIL_WHILE_1024_H
-# define NSL_PREPROCESSOR_CONTROL_DETAIL_WHILE_1024_H
+# ifndef NSL_PP_CONTROL_DETAIL_WHILE_1024_H
+# define NSL_PP_CONTROL_DETAIL_WHILE_1024_H
 #
 # define N_PP_WHILE_513(p, o, s) N_PP_WHILE_513_C(N_PP_BOOL(p(514, s)), p, o, s)
 # define N_PP_WHILE_514(p, o, s) N_PP_WHILE_514_C(N_PP_BOOL(p(515, s)), p, o, s)

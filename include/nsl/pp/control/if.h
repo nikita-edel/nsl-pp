@@ -11,8 +11,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_CONTROL_IF_H
-# define NSL_PREPROCESSOR_CONTROL_IF_H
+# ifndef NSL_PP_CONTROL_IF_H
+# define NSL_PP_CONTROL_IF_H
 #
 # include "nsl/pp/config/config.h"
 # include "nsl/pp/control/iif.h"

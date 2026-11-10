@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_ITERATION_ITERATE_H
-# define NSL_PREPROCESSOR_ITERATION_ITERATE_H
+# ifndef NSL_PP_ITERATION_ITERATE_H
+# define NSL_PP_ITERATION_ITERATE_H
 #
 # include "nsl/pp/arithmetic/dec.h"
 # include "nsl/pp/arithmetic/inc.h"

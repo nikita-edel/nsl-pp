@@ -11,8 +11,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_PUNCTUATION_COMMA_H
-# define NSL_PREPROCESSOR_PUNCTUATION_COMMA_H
+# ifndef NSL_PP_PUNCTUATION_COMMA_H
+# define NSL_PP_PUNCTUATION_COMMA_H
 #
 # /* N_PP_COMMA */
 #

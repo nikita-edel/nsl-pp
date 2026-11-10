@@ -11,8 +11,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_SEQ_SIZE_512_H
-# define NSL_PREPROCESSOR_SEQ_SIZE_512_H
+# ifndef NSL_PP_SEQ_SIZE_512_H
+# define NSL_PP_SEQ_SIZE_512_H
 #
 # define N_PP_SEQ_SIZE_257(_) N_PP_SEQ_SIZE_258
 # define N_PP_SEQ_SIZE_258(_) N_PP_SEQ_SIZE_259

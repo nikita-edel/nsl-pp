@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_FACILITIES_IS_EMPTY_VARIADIC_H
-# define NSL_PREPROCESSOR_FACILITIES_IS_EMPTY_VARIADIC_H
+# ifndef NSL_PP_FACILITIES_IS_EMPTY_VARIADIC_H
+# define NSL_PP_FACILITIES_IS_EMPTY_VARIADIC_H
 #
 # include "nsl/pp/config/config.h"
 # include "nsl/pp/punctuation/is_begin_parens.h"
@@ -77,4 +77,4 @@
 /**/
 #define N_PP_IS_EMPTY_ZERO(...) 0
 # endif /* N_PP_VARIADICS_MSVC && _MSC_VER <= 1400 */
-# endif /* NSL_PREPROCESSOR_FACILITIES_IS_EMPTY_VARIADIC_H */
+# endif /* NSL_PP_FACILITIES_IS_EMPTY_VARIADIC_H */

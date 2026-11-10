@@ -12,8 +12,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_REPETITION_DETAIL_EDG_FOR_1024_H
-# define NSL_PREPROCESSOR_REPETITION_DETAIL_EDG_FOR_1024_H
+# ifndef NSL_PP_REPETITION_DETAIL_EDG_FOR_1024_H
+# define NSL_PP_REPETITION_DETAIL_EDG_FOR_1024_H
 #
 # define N_PP_FOR_513(s, p, o, m) N_PP_FOR_513_I(s, p, o, m)
 # define N_PP_FOR_514(s, p, o, m) N_PP_FOR_514_I(s, p, o, m)

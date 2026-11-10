@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_ARRAY_REVERSE_H
-# define NSL_PREPROCESSOR_ARRAY_REVERSE_H
+# ifndef NSL_PP_ARRAY_REVERSE_H
+# define NSL_PP_ARRAY_REVERSE_H
 #
 # include "nsl/pp/array/data.h"
 # include "nsl/pp/array/size.h"

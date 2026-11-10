@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_DEC_H
-# define NSL_PREPROCESSOR_DEC_H
+# ifndef NSL_PP_DEC_H
+# define NSL_PP_DEC_H
 #
 # include "nsl/pp/arithmetic/dec.h"
 #

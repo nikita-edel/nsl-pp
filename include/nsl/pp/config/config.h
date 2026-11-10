@@ -10,8 +10,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_CONFIG_CONFIG_H
-# define NSL_PREPROCESSOR_CONFIG_CONFIG_H
+# ifndef NSL_PP_CONFIG_CONFIG_H
+# define NSL_PP_CONFIG_CONFIG_H
 #
 # /* N_PP_CONFIG_FLAGS */
 #

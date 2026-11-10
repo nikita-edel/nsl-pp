@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_LOGICAL_BITXOR_H
-# define NSL_PREPROCESSOR_LOGICAL_BITXOR_H
+# ifndef NSL_PP_LOGICAL_BITXOR_H
+# define NSL_PP_LOGICAL_BITXOR_H
 #
 # include "nsl/pp/config/config.h"
 #

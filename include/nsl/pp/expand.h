@@ -9,8 +9,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_EXPAND_H
-# define NSL_PREPROCESSOR_EXPAND_H
+# ifndef NSL_PP_EXPAND_H
+# define NSL_PP_EXPAND_H
 #
 # include "nsl/pp/facilities/expand.h"
 #

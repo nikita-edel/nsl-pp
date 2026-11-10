@@ -10,8 +10,8 @@
 #
 # /* See http://www.boost.org for most recent version. */
 #
-# ifndef NSL_PREPROCESSOR_ARRAY_TO_LIST_H
-# define NSL_PREPROCESSOR_ARRAY_TO_LIST_H
+# ifndef NSL_PP_ARRAY_TO_LIST_H
+# define NSL_PP_ARRAY_TO_LIST_H
 #
 # include "nsl/pp/cat.h"
 # include "nsl/pp/config/config.h"
